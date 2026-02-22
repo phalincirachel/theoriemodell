@@ -53,48 +53,86 @@
             width: 100vw;
             height: 100vh;
             height: 100dvh;
-            background-color: #000;
-            z-index: 999999;
+            background-color: #fff;
+            z-index: 30001;
             display: none;
             flex-direction: column;
-            color: #fff;
+            color: #111;
             overflow-y: auto;
             -webkit-overflow-scrolling: touch;
         }
 
+        #mobile-text-overlay .m-text-title {
+            margin: 92px 16px 12px;
+            text-align: center;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+            line-height: 1.25;
+            color: #111;
+        }
+
         #mobile-text-overlay .m-text-img {
-            width: 100%;
-            height: 45vh;
+            width: calc(100% - 32px);
+            height: 38vh;
+            min-height: 220px;
+            max-height: 380px;
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
             flex-shrink: 0;
-            margin-top: 20px;
+            margin: 0 auto 16px;
         }
 
         #mobile-text-overlay .m-text-content {
+            margin: 0 16px 24px;
             padding: 20px;
-            font-size: 1.1rem;
+            font-size: 1rem;
             line-height: 1.6;
-            flex-grow: 1;
+            color: #111;
+            background: #fff;
+            border-radius: 4px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+            overflow-y: auto;
         }
 
         #mobile-text-overlay .m-text-close {
-            position: absolute;
-            top: 15px;
-            right: 15px;
+            position: fixed;
+            top: 40px;
+            right: 40px;
             width: 40px;
             height: 40px;
-            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid #000;
             border-radius: 50%;
+            background: #fff;
+            color: #000;
+            font-size: 20px;
+            line-height: 1;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 24px;
-            font-weight: bold;
-            color: white;
-            z-index: 1000000;
+            z-index: 30002;
             cursor: pointer;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #mobile-text-overlay .m-text-close:hover {
+            background: #000;
+            color: #fff;
+        }
+
+        @media only screen and (max-width: 768px) {
+            #mobile-text-overlay .m-text-close {
+                top: 16px;
+                right: 16px;
+            }
+
+            #mobile-text-overlay .m-text-title {
+                margin-top: 72px;
+            }
         }
 
         /* --- GLOBAL --- */
@@ -1479,6 +1517,32 @@
             color: #fff;
         }
 
+        .image-text-close-btn {
+            position: fixed;
+            top: 40px;
+            right: 40px;
+            width: 40px;
+            height: 40px;
+            border: 2px solid #000;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 10003;
+            background: #fff;
+            color: #000;
+            font-size: 20px;
+            line-height: 1;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .image-text-close-btn:hover {
+            background: #000;
+            color: #fff;
+        }
+
         /* --- STATES --- */
         body.gallery-mode .gallery-overlay {
             opacity: 1;
@@ -1631,12 +1695,12 @@
 
         .mobile-gallery-close {
             position: fixed;
-            top: 10px;
-            right: 10px;
-            width: 30px;
-            height: 30px;
+            top: 40px;
+            right: 40px;
+            width: 40px;
+            height: 40px;
             background: #fff;
-            border: 1px solid #000;
+            border: 2px solid #000;
             border-radius: 50%;
             display: flex;
             justify-content: center;
@@ -1646,7 +1710,15 @@
             opacity: 0;
             pointer-events: none;
             transition: opacity 0.3s;
-            font-size: 16px;
+            font-size: 20px;
+            line-height: 1;
+            color: #000;
+            box-sizing: border-box;
+        }
+
+        .mobile-gallery-close:hover {
+            background: #000;
+            color: #fff;
         }
 
         @media only screen and (orientation: portrait) and (max-width: 1024px) {
@@ -1967,18 +2039,34 @@
 
         .m-close-btn {
             position: fixed;
-            top: 10px;
-            right: 10px;
-            width: 30px;
-            height: 30px;
-            border: 1px solid #000;
+            top: 40px;
+            right: 40px;
+            width: 40px;
+            height: 40px;
+            border: 2px solid #000;
             border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
             background: #fff;
             z-index: 6010;
-            /* <-- ZU NIEDRIG! */
+            color: #000;
+            font-size: 20px;
+            line-height: 1;
+            box-sizing: border-box;
+        }
+
+        .m-close-btn:hover {
+            background: #000;
+            color: #fff;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .m-close-btn,
+            .mobile-gallery-close {
+                top: 16px;
+                right: 16px;
+            }
         }
 
 
@@ -2626,8 +2714,6 @@
             /* Höchster möglicher Wert */
             cursor: pointer !important;
             pointer-events: auto !important;
-            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
-            /* Kleiner Schein damit man ihn auf Schwarz sieht */
         }
 
         /* --- FIX: Animation Klassen für Level 3 --- */
@@ -4068,13 +4154,30 @@
                 const grid = document.createElement('div');
                 grid.className = 'm-gallery-grid';
                 const images = galleryConfig[`item-${i}`] || [];
-                images.forEach((imgData) => {
+                images.forEach((imgData, imgIndex) => {
                     const a = document.createElement('a');
                     a.className = 'm-gallery-tile';
-                    if (imgData.imgUrl) a.style.backgroundImage = `url('${imgData.imgUrl}')`;
-                    else a.innerHTML = "IMG";
-                    a.href = imgData.linkUrl || "#";
-                    a.target = "_blank";
+                    if (imgData.imgUrl) {
+                        a.style.backgroundImage = `url('${imgData.imgUrl}')`;
+                        const cleanUrl = imgData.imgUrl.split('#')[0].split('?')[0];
+                        let textKey = cleanUrl.split('/').pop() || "";
+                        try { textKey = decodeURIComponent(textKey); } catch (_) { }
+                        a.dataset.textKey = textKey;
+                    } else {
+                        a.innerHTML = "IMG";
+                        a.dataset.textKey = "";
+                    }
+
+                    const opensTextOverlay = imgIndex >= 5 && imgIndex <= 14;
+                    if (opensTextOverlay) {
+                        a.href = "javascript:void(0)";
+                        a.target = "_self";
+                        a.onclick = function (e) { openImageTextMode(this, e); };
+                    } else {
+                        a.href = imgData.linkUrl || "javascript:void(0)";
+                        a.target = "_blank";
+                        a.onclick = null;
+                    }
                     grid.appendChild(a);
                 });
                 sec.appendChild(grid);
@@ -4807,20 +4910,29 @@
                 const grid = document.createElement('div');
                 grid.className = 'm-gallery-grid';
                 const images = galleryConfig[`item-${i}`] || [];
-                images.forEach((imgData) => {
+                images.forEach((imgData, imgIndex) => {
                     const a = document.createElement('a');
                     a.className = 'm-gallery-tile';
-                    if (imgData.imgUrl) a.style.backgroundImage = `url('${imgData.imgUrl}')`;
-                    else a.innerHTML = "IMG";
+                    if (imgData.imgUrl) {
+                        a.style.backgroundImage = `url('${imgData.imgUrl}')`;
+                        const cleanUrl = imgData.imgUrl.split('#')[0].split('?')[0];
+                        let textKey = cleanUrl.split('/').pop() || "";
+                        try { textKey = decodeURIComponent(textKey); } catch (_) { }
+                        a.dataset.textKey = textKey;
+                    } else {
+                        a.innerHTML = "IMG";
+                        a.dataset.textKey = "";
+                    }
 
-                    // Specific logic for rows 2 and 3 representing fields 6-15
-                    if (i === 1 || i === 2) {
+                    const opensTextOverlay = imgIndex >= 5 && imgIndex <= 14;
+                    if (opensTextOverlay) {
                         a.href = "javascript:void(0)";
                         a.target = "_self";
                         a.onclick = function (e) { openImageTextMode(this, e); };
                     } else {
                         a.href = imgData.linkUrl || "javascript:void(0)";
                         a.target = "_blank";
+                        a.onclick = null;
                     }
 
                     grid.appendChild(a);
@@ -5576,22 +5688,19 @@
             return raw || "Werk";
         }
 
-        function openImageTextMode(tileElement, event) {
-            // Check if we are on mobile. If so, don't execute desktop logic.
-            // (Mobile interaction is bound separately or handled dynamically)
-            if (window.innerWidth <= 768) return;
+        function getArtworkPayloadFromTile(tileElement) {
+            if (!tileElement) return null;
 
-            if (leaveTimeout) clearTimeout(leaveTimeout);
-            event.preventDefault();
-            event.stopPropagation();
-            if (imageTextOverlayOpen) return;
-
-            const bg = tileElement.style.backgroundImage;
-            if (!bg || bg === 'none') return;
+            const inlineBg = tileElement.style ? tileElement.style.backgroundImage : '';
+            const computedBg = window.getComputedStyle(tileElement).backgroundImage;
+            const bg = (inlineBg && inlineBg !== 'none') ? inlineBg : computedBg;
+            if (!bg || bg === 'none') return null;
 
             let url = bg.replace(/^url\(['"]?/, "").replace(/['"]?\)$/, "");
             const cleanUrl = url.split('#')[0].split('?')[0];
-            let filename = cleanUrl.split('/').pop();
+            let filename = cleanUrl.split('/').pop() || "";
+            try { filename = decodeURIComponent(filename); } catch (_) { }
+
             const datasetKey = tileElement.dataset && tileElement.dataset.textKey ? tileElement.dataset.textKey : "";
             const artworkTitle = getArtworkTitle(datasetKey, filename);
 
@@ -5607,6 +5716,68 @@
                 textContent = '<p>Zu diesem Bild liegt aktuell kein Text vor.</p>';
             }
 
+            return { bg, artworkTitle, textContent };
+        }
+
+        function openMobileImageTextMode(tileElement, event) {
+            if (event) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+
+            const payload = getArtworkPayloadFromTile(tileElement);
+            if (!payload) return;
+
+            const overlay = document.getElementById('mobile-text-overlay');
+            const imgBox = document.getElementById('m-text-top-img');
+            const textBox = document.getElementById('m-text-bottom-content');
+            const titleBox = document.getElementById('m-text-title');
+            if (!overlay || !imgBox || !textBox || !titleBox) return;
+
+            imgBox.style.backgroundImage = payload.bg;
+            titleBox.textContent = payload.artworkTitle;
+            textBox.innerHTML = payload.textContent;
+
+            overlay.style.display = 'flex';
+            overlay.scrollTop = 0;
+            document.body.classList.add('image-text-mode-active');
+
+            overlay.onclick = function (e) {
+                if (e.target === overlay) {
+                    closeMobileImageTextMode(e);
+                }
+            };
+        }
+
+        function closeMobileImageTextMode(event) {
+            if (event) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+
+            const overlay = document.getElementById('mobile-text-overlay');
+            if (overlay) overlay.style.display = 'none';
+            document.body.classList.remove('image-text-mode-active');
+        }
+
+        function openImageTextMode(tileElement, event) {
+            if (leaveTimeout) clearTimeout(leaveTimeout);
+            if (event) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+
+            const isMobileViewport = window.innerWidth <= 1024 || document.body.classList.contains('mobile-mode');
+            if (isMobileViewport) {
+                openMobileImageTextMode(tileElement, event);
+                return;
+            }
+
+            if (imageTextOverlayOpen) return;
+
+            const payload = getArtworkPayloadFromTile(tileElement);
+            if (!payload) return;
+
             imageTextOverlayOpen = true;
             document.body.classList.add('image-text-mode-active');
 
@@ -5620,10 +5791,8 @@
             overlay.style.width = '100vw';
             overlay.style.height = '100vh';
             overlay.style.zIndex = '9999';
-            overlay.style.pointerEvents = 'auto'; // allow click everywhere
+            overlay.style.pointerEvents = 'auto';
             overlay.style.background = 'rgba(255, 255, 255, 0.98)';
-
-            // Optional: Hide adjacent elements (handled by CSS body.image-text-mode-active)
 
             const compactDesktop = window.innerWidth < 1500;
             const edgeGap = compactDesktop ? '6%' : '8%';
@@ -5633,8 +5802,8 @@
             const panelHeight = compactDesktop ? '74%' : '72%';
 
             const flyingImg = document.createElement('div');
-            flyingImg.style.position = 'fixed'; // fixed to stay relative to screen
-            flyingImg.style.backgroundImage = bg;
+            flyingImg.style.position = 'fixed';
+            flyingImg.style.backgroundImage = payload.bg;
             flyingImg.style.backgroundSize = 'contain';
             flyingImg.style.backgroundPosition = 'center';
             flyingImg.style.backgroundRepeat = 'no-repeat';
@@ -5666,96 +5835,61 @@
             textBox.style.borderRadius = '4px';
             textBox.style.boxShadow = '0 8px 30px rgba(0, 0, 0, 0.12)';
             textBox.style.pointerEvents = 'auto';
-            textBox.innerHTML = textContent;
+            textBox.innerHTML = payload.textContent;
 
-            const imageTitle = document.createElement('div');
-            imageTitle.id = 'image-panel-title';
-            imageTitle.textContent = artworkTitle;
-            imageTitle.style.position = 'fixed';
-            imageTitle.style.left = edgeGap;
-            imageTitle.style.top = titleTop;
-            imageTitle.style.width = panelWidth;
-            imageTitle.style.zIndex = '10001';
-            imageTitle.style.fontFamily = "'Helvetica Neue', Helvetica, Arial, sans-serif";
-            imageTitle.style.fontSize = compactDesktop ? '0.98rem' : '1.05rem';
-            imageTitle.style.fontWeight = 'bold';
-            imageTitle.style.textTransform = 'uppercase';
-            imageTitle.style.letterSpacing = '0.02em';
-            imageTitle.style.color = '#111';
-            imageTitle.style.lineHeight = '1.2';
-            imageTitle.style.pointerEvents = 'none';
-
-            const textTitle = document.createElement('div');
-            textTitle.id = 'text-panel-title';
-            textTitle.textContent = artworkTitle;
-            textTitle.style.position = 'fixed';
-            textTitle.style.right = edgeGap;
-            textTitle.style.top = titleTop;
-            textTitle.style.width = panelWidth;
-            textTitle.style.zIndex = '10002';
-            textTitle.style.fontFamily = "'Helvetica Neue', Helvetica, Arial, sans-serif";
-            textTitle.style.fontSize = compactDesktop ? '0.98rem' : '1.05rem';
-            textTitle.style.fontWeight = 'bold';
-            textTitle.style.textTransform = 'uppercase';
-            textTitle.style.letterSpacing = '0.02em';
-            textTitle.style.color = '#111';
-            textTitle.style.lineHeight = '1.2';
-            textTitle.style.pointerEvents = 'none';
+            const sharedTitle = document.createElement('div');
+            sharedTitle.id = 'image-shared-title';
+            sharedTitle.textContent = payload.artworkTitle;
+            sharedTitle.style.position = 'fixed';
+            sharedTitle.style.left = edgeGap;
+            sharedTitle.style.right = edgeGap;
+            sharedTitle.style.top = titleTop;
+            sharedTitle.style.zIndex = '10002';
+            sharedTitle.style.fontFamily = "'Helvetica Neue', Helvetica, Arial, sans-serif";
+            sharedTitle.style.fontSize = compactDesktop ? '1rem' : '1.08rem';
+            sharedTitle.style.fontWeight = 'bold';
+            sharedTitle.style.textTransform = 'uppercase';
+            sharedTitle.style.letterSpacing = '0.02em';
+            sharedTitle.style.color = '#111';
+            sharedTitle.style.lineHeight = '1.2';
+            sharedTitle.style.textAlign = 'center';
+            sharedTitle.style.pointerEvents = 'none';
 
             const closeBtn = document.createElement('button');
             closeBtn.type = 'button';
             closeBtn.id = 'image-text-close';
+            closeBtn.className = 'image-text-close-btn';
             closeBtn.innerHTML = '&times;';
-            closeBtn.style.position = 'fixed';
-            closeBtn.style.top = '22px';
-            closeBtn.style.right = '22px';
-            closeBtn.style.width = '44px';
-            closeBtn.style.height = '44px';
-            closeBtn.style.border = '2px solid #000';
-            closeBtn.style.borderRadius = '50%';
-            closeBtn.style.background = '#fff';
-            closeBtn.style.color = '#000';
-            closeBtn.style.fontSize = '30px';
-            closeBtn.style.lineHeight = '1';
-            closeBtn.style.cursor = 'pointer';
-            closeBtn.style.zIndex = '10002';
-            closeBtn.style.display = 'flex';
-            closeBtn.style.alignItems = 'center';
-            closeBtn.style.justifyContent = 'center';
-            closeBtn.style.padding = '0';
+            closeBtn.setAttribute('aria-label', 'Ansicht schliessen');
 
             closeBtn.onclick = function (e) {
                 e.preventDefault();
                 e.stopPropagation();
-                closeImageTextMode(flyingImg, overlay, textBox, closeBtn, imageTitle, textTitle, rect, tileElement);
+                closeImageTextMode(flyingImg, overlay, textBox, closeBtn, sharedTitle, rect, tileElement);
             };
 
             document.body.appendChild(overlay);
             document.body.appendChild(flyingImg);
             document.body.appendChild(textBox);
-            document.body.appendChild(imageTitle);
-            document.body.appendChild(textTitle);
+            document.body.appendChild(sharedTitle);
             document.body.appendChild(closeBtn);
 
-            // Trigger animation
             requestAnimationFrame(() => {
                 flyingImg.style.left = edgeGap;
                 flyingImg.style.top = topGap;
-                // Calculate larger size, preserving ratio approximately
                 flyingImg.style.width = panelWidth;
                 flyingImg.style.height = panelHeight;
-                // Trigger hiding of original tile so it doesn't show under overlay
                 tileElement.style.opacity = '0';
             });
 
             overlay.onclick = function (e) {
-                if (!textBox.contains(e.target) && e.target !== flyingImg) {
-                    closeImageTextMode(flyingImg, overlay, textBox, closeBtn, imageTitle, textTitle, rect, tileElement);
+                if (!textBox.contains(e.target) && e.target !== flyingImg && e.target !== closeBtn) {
+                    closeImageTextMode(flyingImg, overlay, textBox, closeBtn, sharedTitle, rect, tileElement);
                 }
             };
         }
 
-        function closeImageTextMode(flyingImg, overlay, textBox, closeBtn, imageTitle, textTitle, originalRect, tileElement) {
+        function closeImageTextMode(flyingImg, overlay, textBox, closeBtn, sharedTitle, originalRect, tileElement) {
             flyingImg.style.left = originalRect.left + 'px';
             flyingImg.style.top = originalRect.top + 'px';
             flyingImg.style.width = originalRect.width + 'px';
@@ -5771,8 +5905,7 @@
                 if (document.body.contains(flyingImg)) document.body.removeChild(flyingImg);
                 if (textBox && document.body.contains(textBox)) document.body.removeChild(textBox);
                 if (closeBtn && document.body.contains(closeBtn)) document.body.removeChild(closeBtn);
-                if (imageTitle && document.body.contains(imageTitle)) document.body.removeChild(imageTitle);
-                if (textTitle && document.body.contains(textTitle)) document.body.removeChild(textTitle);
+                if (sharedTitle && document.body.contains(sharedTitle)) document.body.removeChild(sharedTitle);
                 tileElement.style.opacity = '1';
 
                 document.body.classList.remove('image-text-mode-active');
@@ -5791,8 +5924,9 @@
         }
     </script>
     <div id="mobile-text-overlay">
-        <div class="m-text-close" onclick="document.getElementById('mobile-text-overlay').style.display='none'">&times;
+        <div class="m-text-close" onclick="closeMobileImageTextMode(event)">&times;
         </div>
+        <div class="m-text-title" id="m-text-title"></div>
         <div class="m-text-img" id="m-text-top-img"></div>
         <div class="m-text-content" id="m-text-bottom-content"></div>
     </div>
