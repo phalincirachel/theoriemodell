@@ -42,6 +42,7 @@
         body.image-text-mode-active #detail-left-container,
         body.image-text-mode-active #detail-right-container {
             opacity: 0 !important;
+            pointer-events: none !important;
         }
 
         /* Mobile Text Overlay */
@@ -742,9 +743,7 @@
             transition: opacity 0.4s ease;
         }
 
-        .detail-text-block:hover {
-            pointer-events: auto;
-        }
+        /* Removes buggy hover paradox block that catches click arrays */
 
         .detail-text-block::-webkit-scrollbar {
             width: 6px;
@@ -4290,7 +4289,8 @@
             // Set Global Index
             currentActiveIndex = index;
 
-            document.body.classList.remove('gallery-mode');
+            // KEEP gallery mode active so pointer events remain available for rows 2 and 3.
+            // document.body.classList.remove('gallery-mode');
 
             if (leaveTimeout) clearTimeout(leaveTimeout);
 
