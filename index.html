@@ -3655,6 +3655,10 @@
             // DELAYED LEAVE LOGIC TO PREVENT FLICKER
             if (leaveTimeout) clearTimeout(leaveTimeout);
             leaveTimeout = setTimeout(() => {
+                const galleryOverlay = document.getElementById('gallery-overlay');
+                if (galleryOverlay && galleryOverlay.matches(':hover')) return;
+                if (document.querySelector('.art-item:hover')) return;
+
                 activeGalleryIndex = -1;
                 document.body.classList.remove('gallery-mode');
                 artItems.forEach(item => item.classList.remove('hovered-item'));
@@ -3665,7 +3669,7 @@
                 if (!document.body.classList.contains('gallery-mode')) {
                     galleryTiles.forEach(t => { t.style.opacity = ""; });
                 }
-            }, 0); // 300ms buffer allows bridging small gaps
+            }, 300); // 300ms buffer allows bridging small gaps
         }
 
         // --- NEW FUNCTION TO CANCEL CLOSE ---
@@ -5519,6 +5523,7 @@
             // (Mobile interaction is bound separately or handled dynamically)
             if (window.innerWidth <= 768) return;
 
+            if (leaveTimeout) clearTimeout(leaveTimeout);
             event.preventDefault();
             event.stopPropagation();
             if (imageTextOverlayOpen) return;
@@ -5533,7 +5538,9 @@
             if (typeof artworkTexts !== 'undefined') {
                 textContent = artworkTexts[filename] || artworkTexts[url];
             }
-            if (!textContent) return;
+            if (!textContent) {
+                textContent = '<p>Zu diesem Bild liegt aktuell kein Text vor.</p>';
+            }
 
             imageTextOverlayOpen = true;
             document.body.classList.add('image-text-mode-active');
