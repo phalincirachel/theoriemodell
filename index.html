@@ -1497,6 +1497,12 @@
             opacity: 1 !important;
         }
 
+        body.is-active .gallery-overlay {
+            opacity: 0 !important;
+            visibility: hidden !important;
+            pointer-events: none !important;
+        }
+
         body.is-active .art-item:not(.active),
         body.is-active .header-row .header-item:not(.active-header),
         body.is-active .footer-section,
@@ -4293,8 +4299,15 @@
             // Set Global Index
             currentActiveIndex = index;
 
-            // KEEP gallery mode active so pointer events remain available for rows 2 and 3.
-            // document.body.classList.remove('gallery-mode');
+            // When entering level 2 detail mode, gallery must be fully hidden/disabled.
+            document.body.classList.remove('gallery-mode');
+            activeGalleryIndex = -1;
+            artItems.forEach(item => item.classList.remove('hovered-item'));
+            headerItems.forEach(h => h.classList.remove('highlighted'));
+            galleryTiles.forEach(t => {
+                t.style.pointerEvents = "none";
+                t.style.opacity = "";
+            });
 
             if (leaveTimeout) clearTimeout(leaveTimeout);
 
@@ -5556,6 +5569,7 @@
             overlay.style.height = '100vh';
             overlay.style.zIndex = '9999';
             overlay.style.pointerEvents = 'auto'; // allow click everywhere
+            overlay.style.background = 'rgba(255, 255, 255, 0.98)';
 
             // Optional: Hide adjacent elements (handled by CSS body.image-text-mode-active)
 
@@ -5583,7 +5597,12 @@
             textBox.style.opacity = '0';
             textBox.style.transition = 'opacity 0.4s ease';
             textBox.style.transitionDelay = '0.3s';
-            textBox.style.color = '#fff';
+            textBox.style.color = '#111';
+            textBox.style.background = '#fff';
+            textBox.style.padding = '24px';
+            textBox.style.boxSizing = 'border-box';
+            textBox.style.lineHeight = '1.6';
+            textBox.style.fontSize = '1rem';
             textBox.style.pointerEvents = 'auto';
             textBox.innerHTML = textContent;
 
