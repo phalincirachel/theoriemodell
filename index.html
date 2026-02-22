@@ -88,7 +88,7 @@
 
         #mobile-text-overlay .m-text-content {
             margin: 0 16px 24px;
-            padding: 20px;
+            padding: 12px 20px 20px;
             font-size: 1rem;
             line-height: 1.6;
             color: #111;
@@ -1518,29 +1518,20 @@
         }
 
         .image-text-close-btn {
-            position: fixed;
-            top: 40px;
-            right: 40px;
-            width: 40px;
-            height: 40px;
-            border: 2px solid #000;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            z-index: 10003;
-            background: #fff;
-            color: #000;
-            font-size: 20px;
-            line-height: 1;
-            padding: 0;
-            box-sizing: border-box;
+            opacity: 1 !important;
+            pointer-events: auto !important;
+            z-index: 10003 !important;
         }
 
         .image-text-close-btn:hover {
             background: #000;
             color: #fff;
+        }
+
+        .image-text-nav {
+            opacity: 1 !important;
+            pointer-events: auto !important;
+            z-index: 10002 !important;
         }
 
         /* --- STATES --- */
@@ -3697,6 +3688,8 @@
                 tile.style.opacity = 0;
                 tile.innerHTML = "";
                 tile.dataset.textKey = "";
+                tile.dataset.groupIndex = String(index);
+                tile.dataset.dataIndex = "";
 
                 // Disable pointer events ONLY for the top row (slots 0-4) if it's the currently hovered index.
                 // Row 2 and 3 (slots 5-14) must REMAIN clickable to trigger the text overlay.
@@ -3706,6 +3699,7 @@
                 }
                 tile.style.pointerEvents = 'auto'; // Images interactable
                 const data = currentImages[dataIndex];
+                tile.dataset.dataIndex = String(dataIndex);
                 if (data && data.imgUrl) {
                     const cleanUrl = data.imgUrl.split('#')[0].split('?')[0];
                     let textKey = cleanUrl.split('/').pop();
@@ -4157,6 +4151,8 @@
                 images.forEach((imgData, imgIndex) => {
                     const a = document.createElement('a');
                     a.className = 'm-gallery-tile';
+                    a.dataset.groupIndex = String(i);
+                    a.dataset.imgIndex = String(imgIndex);
                     if (imgData.imgUrl) {
                         a.style.backgroundImage = `url('${imgData.imgUrl}')`;
                         const cleanUrl = imgData.imgUrl.split('#')[0].split('?')[0];
@@ -4168,7 +4164,7 @@
                         a.dataset.textKey = "";
                     }
 
-                    const opensTextOverlay = imgIndex >= 5 && imgIndex <= 14;
+                    const opensTextOverlay = imgIndex >= 4;
                     if (opensTextOverlay) {
                         a.href = "javascript:void(0)";
                         a.target = "_self";
@@ -4749,11 +4745,13 @@
 
             // FIX: Verschiebt den Inhalt nach oben (Chart exakt auf Pfeilhöhe)
             coverSec.style.paddingBottom = "25vh";
+            coverSec.style.cursor = "pointer";
+            coverSec.style.touchAction = "manipulation";
 
             coverSec.innerHTML = `
-                <div class="m-cover-title">Modelle der Kunstphilosophie</div>
-                <div class="m-cover-subtitle">Harry Lehmann</div>
-                <svg class="m-cover-chart" viewBox="0 0 100 100">
+                <div class="m-cover-title" style="pointer-events:none;">Modelle der Kunstphilosophie</div>
+                <div class="m-cover-subtitle" style="pointer-events:none;">Harry Lehmann</div>
+                <svg class="m-cover-chart" viewBox="0 0 100 100" style="pointer-events:none;">
                     <!-- M Slice (Links Oben) - Pulsierend -->
                     <g class="anim-slice-m">
                         <path d="M50,50 L50,2 A48,48 0 0,0 8.43,74 Z" fill="#fff" stroke="#000" stroke-width="1.5" />
@@ -4777,6 +4775,53 @@
                     </g>
                 </svg>
             `;
+
+            let coverTapLocked = false;
+            let coverTouchStart = null;
+
+            const advanceFromCover = (e) => {
+                if (!root || coverTapLocked) return;
+
+                if (e && e.cancelable) e.preventDefault();
+                if (e) {
+                    e.stopPropagation();
+                    if (typeof e.stopImmediatePropagation === 'function') e.stopImmediatePropagation();
+                }
+
+                // Nur auf dem Deckblatt auslösen
+                const w = root.clientWidth || window.innerWidth;
+                if (root.scrollLeft > (w * 0.5)) return;
+
+                coverTapLocked = true;
+                root.scrollTo({ left: w, behavior: 'smooth' });
+
+                setTimeout(() => {
+                    coverTapLocked = false;
+                    if (typeof updateMobileArrows === 'function') updateMobileArrows();
+                }, 550);
+            };
+
+            coverSec.addEventListener('touchstart', (e) => {
+                if (e.touches && e.touches.length === 1) {
+                    coverTouchStart = {
+                        x: e.touches[0].clientX,
+                        y: e.touches[0].clientY
+                    };
+                }
+            }, { passive: true });
+
+            coverSec.addEventListener('touchend', (e) => {
+                if (!coverTouchStart || !e.changedTouches || !e.changedTouches.length) return;
+                const dx = e.changedTouches[0].clientX - coverTouchStart.x;
+                const dy = e.changedTouches[0].clientY - coverTouchStart.y;
+                coverTouchStart = null;
+
+                // Nur Tap, kein Swipe
+                if (Math.abs(dx) > 18 || Math.abs(dy) > 18) return;
+                advanceFromCover(e);
+            }, { passive: false });
+
+            coverSec.addEventListener('click', advanceFromCover, true);
             sectionsContainer.appendChild(coverSec);
             // --- ENDE DECKBLATT ---
 
@@ -4913,6 +4958,8 @@
                 images.forEach((imgData, imgIndex) => {
                     const a = document.createElement('a');
                     a.className = 'm-gallery-tile';
+                    a.dataset.groupIndex = String(i);
+                    a.dataset.imgIndex = String(imgIndex);
                     if (imgData.imgUrl) {
                         a.style.backgroundImage = `url('${imgData.imgUrl}')`;
                         const cleanUrl = imgData.imgUrl.split('#')[0].split('?')[0];
@@ -4924,7 +4971,7 @@
                         a.dataset.textKey = "";
                     }
 
-                    const opensTextOverlay = imgIndex >= 5 && imgIndex <= 14;
+                    const opensTextOverlay = imgIndex >= 4;
                     if (opensTextOverlay) {
                         a.href = "javascript:void(0)";
                         a.target = "_self";
@@ -5649,10 +5696,11 @@
 
         /* --- IMAGE TEXT OVERLAY DESKTOP --- */
         let imageTextOverlayOpen = false;
+        let imageTextNavState = null;
         const artworkTitles = {
             "1skdurer.jpeg": "Albrecht Duerer: Selbstbildnis mit Pelzrock (1500)",
             "1sknatiluspokal.jpeg": "Nautiluspokal (16. Jahrhundert)",
-            "1skmichelangelo.jpg": "Michelangelo (Werkbeispiel)",
+            "1skmichelangelo.jpg": "Michelangelo: Kreuzigung",
             "1skfrauenkirche.jpeg": "Dresdner Frauenkirche",
             "1skmozart.jpg": "Wolfgang A. Mozart: Klavierkonzert d-Moll",
             "2kmschmidtrottluff.jpeg": "Karl Schmidt-Rottluff: Selbstbildnis mit Einglas (1910)",
@@ -5688,6 +5736,41 @@
             return raw || "Werk";
         }
 
+        function getImageMetaFromUrl(url) {
+            if (!url) return { rawUrl: "", cleanUrl: "", filename: "" };
+            const cleanUrl = url.split('#')[0].split('?')[0];
+            let filename = cleanUrl.split('/').pop() || "";
+            try { filename = decodeURIComponent(filename); } catch (_) { }
+            return { rawUrl: url, cleanUrl, filename };
+        }
+
+        function getArtworkPayloadFromImageUrl(imgUrl, datasetKey) {
+            if (!imgUrl) return null;
+            const meta = getImageMetaFromUrl(imgUrl);
+            const key = datasetKey || "";
+            const artworkTitle = getArtworkTitle(key, meta.filename);
+
+            let textContent = null;
+            if (typeof artworkTexts !== 'undefined') {
+                textContent =
+                    artworkTexts[key] ||
+                    artworkTexts[meta.filename] ||
+                    artworkTexts[meta.cleanUrl] ||
+                    artworkTexts[imgUrl];
+            }
+            if (!textContent) textContent = '<p>Zu diesem Bild liegt aktuell kein Text vor.</p>';
+
+            return {
+                bg: `url('${imgUrl}')`,
+                artworkTitle,
+                textContent,
+                datasetKey: key,
+                filename: meta.filename,
+                cleanUrl: meta.cleanUrl,
+                url: imgUrl
+            };
+        }
+
         function getArtworkPayloadFromTile(tileElement) {
             if (!tileElement) return null;
 
@@ -5696,27 +5779,108 @@
             const bg = (inlineBg && inlineBg !== 'none') ? inlineBg : computedBg;
             if (!bg || bg === 'none') return null;
 
-            let url = bg.replace(/^url\(['"]?/, "").replace(/['"]?\)$/, "");
-            const cleanUrl = url.split('#')[0].split('?')[0];
-            let filename = cleanUrl.split('/').pop() || "";
-            try { filename = decodeURIComponent(filename); } catch (_) { }
-
+            const rawUrl = bg.replace(/^url\(['"]?/, "").replace(/['"]?\)$/, "");
             const datasetKey = tileElement.dataset && tileElement.dataset.textKey ? tileElement.dataset.textKey : "";
-            const artworkTitle = getArtworkTitle(datasetKey, filename);
+            return getArtworkPayloadFromImageUrl(rawUrl, datasetKey);
+        }
 
-            let textContent = null;
-            if (typeof artworkTexts !== 'undefined') {
-                textContent =
-                    artworkTexts[datasetKey] ||
-                    artworkTexts[filename] ||
-                    artworkTexts[cleanUrl] ||
-                    artworkTexts[url];
-            }
-            if (!textContent) {
-                textContent = '<p>Zu diesem Bild liegt aktuell kein Text vor.</p>';
+        function getTextGalleryIndicesForGroup(groupIndex) {
+            const currentImages = galleryConfig[`item-${groupIndex}`] || [];
+            if (!currentImages.length) return [];
+            const startIndex = currentImages.length > 4 ? 4 : 0;
+            const result = [];
+            for (let i = startIndex; i < currentImages.length; i++) result.push(i);
+            return result;
+        }
+
+        function resolveImageTextContext(tileElement, payload) {
+            if (!tileElement) return null;
+
+            let groupIndex = parseInt(tileElement.dataset.groupIndex || "", 10);
+            if (Number.isNaN(groupIndex) && activeGalleryIndex >= 0) groupIndex = activeGalleryIndex;
+            if (Number.isNaN(groupIndex) || groupIndex < 0) return null;
+
+            const indices = getTextGalleryIndicesForGroup(groupIndex);
+            if (!indices.length) return null;
+
+            let dataIndex = parseInt(tileElement.dataset.dataIndex || tileElement.dataset.imgIndex || "", 10);
+            if (Number.isNaN(dataIndex) || !indices.includes(dataIndex)) {
+                const currentImages = galleryConfig[`item-${groupIndex}`] || [];
+                const candidates = [
+                    tileElement.dataset.textKey || "",
+                    payload && payload.filename ? payload.filename : "",
+                    payload && payload.cleanUrl ? payload.cleanUrl : "",
+                    payload && payload.url ? payload.url : ""
+                ].filter(Boolean);
+
+                for (const idx of indices) {
+                    const entry = currentImages[idx];
+                    if (!entry || !entry.imgUrl) continue;
+                    const meta = getImageMetaFromUrl(entry.imgUrl);
+                    if (candidates.includes(meta.filename) || candidates.includes(meta.cleanUrl) || candidates.includes(entry.imgUrl)) {
+                        dataIndex = idx;
+                        break;
+                    }
+                }
             }
 
-            return { bg, artworkTitle, textContent };
+            if (Number.isNaN(dataIndex) || !indices.includes(dataIndex)) dataIndex = indices[0];
+            return { groupIndex, indices, dataIndex };
+        }
+
+        function getPayloadForGroupAndDataIndex(groupIndex, dataIndex) {
+            const currentImages = galleryConfig[`item-${groupIndex}`] || [];
+            const item = currentImages[dataIndex];
+            if (!item || !item.imgUrl) return null;
+            return getArtworkPayloadFromImageUrl(item.imgUrl, "");
+        }
+
+        function moveImageTextOverlay(step) {
+            if (!imageTextNavState || !imageTextNavState.indices || !imageTextNavState.indices.length) return;
+
+            const indices = imageTextNavState.indices;
+            const currentPos = indices.indexOf(imageTextNavState.dataIndex);
+            const safePos = currentPos >= 0 ? currentPos : 0;
+            const nextPos = (safePos + step + indices.length) % indices.length;
+            const nextDataIndex = indices[nextPos];
+
+            const payload = getPayloadForGroupAndDataIndex(imageTextNavState.groupIndex, nextDataIndex);
+            if (!payload) return;
+
+            imageTextNavState.dataIndex = nextDataIndex;
+
+            if (imageTextNavState.mode === 'desktop') {
+                const refs = imageTextNavState.refs || {};
+                if (refs.flyingImg) refs.flyingImg.style.backgroundImage = payload.bg;
+                if (refs.textBox) {
+                    refs.textBox.innerHTML = payload.textContent;
+                    refs.textBox.scrollTop = 0;
+                }
+                if (refs.sharedTitle) refs.sharedTitle.textContent = payload.artworkTitle;
+            } else if (imageTextNavState.mode === 'mobile') {
+                const refs = imageTextNavState.refs || {};
+                if (refs.imgBox) refs.imgBox.style.backgroundImage = payload.bg;
+                if (refs.textBox) {
+                    refs.textBox.innerHTML = payload.textContent;
+                    refs.textBox.scrollTop = 0;
+                }
+                if (refs.titleBox) refs.titleBox.textContent = payload.artworkTitle;
+                if (refs.overlay) refs.overlay.scrollTop = 0;
+            }
+        }
+
+        function createDesktopImageTextArrow(direction) {
+            const arrow = document.createElement('div');
+            arrow.className = `nav-arrow-custom image-text-nav ${direction < 0 ? 'nav-arrow-left-c' : 'nav-arrow-right-c'}`;
+            arrow.innerHTML = direction < 0
+                ? `<svg viewBox="0 0 50 100"><path d="M40,10 L15,50 L40,90" /></svg>`
+                : `<svg viewBox="0 0 50 100"><path d="M10,10 L35,50 L10,90" /></svg>`;
+            arrow.onclick = function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                moveImageTextOverlay(direction < 0 ? -1 : 1);
+            };
+            return arrow;
         }
 
         function openMobileImageTextMode(tileElement, event) {
@@ -5734,6 +5898,15 @@
             const titleBox = document.getElementById('m-text-title');
             if (!overlay || !imgBox || !textBox || !titleBox) return;
 
+            const context = resolveImageTextContext(tileElement, payload);
+            imageTextNavState = {
+                mode: 'mobile',
+                groupIndex: context ? context.groupIndex : -1,
+                indices: context ? context.indices : [],
+                dataIndex: context ? context.dataIndex : -1,
+                refs: { overlay, imgBox, textBox, titleBox }
+            };
+
             imgBox.style.backgroundImage = payload.bg;
             titleBox.textContent = payload.artworkTitle;
             textBox.innerHTML = payload.textContent;
@@ -5747,6 +5920,29 @@
                     closeMobileImageTextMode(e);
                 }
             };
+
+            let touchStartX = 0;
+            let touchStartY = 0;
+            let trackingTouch = false;
+
+            overlay.ontouchstart = function (e) {
+                if (!e.touches || e.touches.length !== 1) return;
+                touchStartX = e.touches[0].clientX;
+                touchStartY = e.touches[0].clientY;
+                trackingTouch = true;
+            };
+            overlay.ontouchend = function (e) {
+                if (!trackingTouch || !e.changedTouches || !e.changedTouches.length) return;
+                trackingTouch = false;
+                const dx = e.changedTouches[0].clientX - touchStartX;
+                const dy = e.changedTouches[0].clientY - touchStartY;
+                if (Math.abs(dx) > 55 && Math.abs(dx) > Math.abs(dy) * 1.2) {
+                    moveImageTextOverlay(dx < 0 ? 1 : -1);
+                }
+            };
+            overlay.ontouchcancel = function () {
+                trackingTouch = false;
+            };
         }
 
         function closeMobileImageTextMode(event) {
@@ -5756,7 +5952,14 @@
             }
 
             const overlay = document.getElementById('mobile-text-overlay');
-            if (overlay) overlay.style.display = 'none';
+            if (overlay) {
+                overlay.style.display = 'none';
+                overlay.onclick = null;
+                overlay.ontouchstart = null;
+                overlay.ontouchend = null;
+                overlay.ontouchcancel = null;
+            }
+            if (imageTextNavState && imageTextNavState.mode === 'mobile') imageTextNavState = null;
             document.body.classList.remove('image-text-mode-active');
         }
 
@@ -5777,6 +5980,7 @@
 
             const payload = getArtworkPayloadFromTile(tileElement);
             if (!payload) return;
+            const context = resolveImageTextContext(tileElement, payload);
 
             imageTextOverlayOpen = true;
             document.body.classList.add('image-text-mode-active');
@@ -5795,11 +5999,11 @@
             overlay.style.background = 'rgba(255, 255, 255, 0.98)';
 
             const compactDesktop = window.innerWidth < 1500;
-            const edgeGap = compactDesktop ? '6%' : '8%';
-            const topGap = compactDesktop ? '12%' : '13%';
-            const titleTop = compactDesktop ? '7%' : '8%';
+            const edgeGap = compactDesktop ? '7%' : '9%';
+            const topGap = compactDesktop ? '14.8%' : '15.6%';
+            const titleTop = compactDesktop ? '6.2%' : '6.8%';
             const panelWidth = compactDesktop ? '40%' : '37%';
-            const panelHeight = compactDesktop ? '74%' : '72%';
+            const panelHeight = compactDesktop ? '68%' : '67%';
 
             const flyingImg = document.createElement('div');
             flyingImg.style.position = 'fixed';
@@ -5828,7 +6032,7 @@
             textBox.style.transitionDelay = '0.3s';
             textBox.style.color = '#111';
             textBox.style.background = '#fff';
-            textBox.style.padding = '24px';
+            textBox.style.padding = '12px 24px 24px';
             textBox.style.boxSizing = 'border-box';
             textBox.style.lineHeight = '1.6';
             textBox.style.fontSize = '1rem';
@@ -5858,14 +6062,17 @@
             const closeBtn = document.createElement('button');
             closeBtn.type = 'button';
             closeBtn.id = 'image-text-close';
-            closeBtn.className = 'image-text-close-btn';
-            closeBtn.innerHTML = '&times;';
+            closeBtn.className = 'close-btn image-text-close-btn';
+            closeBtn.innerHTML = '&#10005;';
             closeBtn.setAttribute('aria-label', 'Ansicht schliessen');
+
+            const navLeft = createDesktopImageTextArrow(-1);
+            const navRight = createDesktopImageTextArrow(1);
 
             closeBtn.onclick = function (e) {
                 e.preventDefault();
                 e.stopPropagation();
-                closeImageTextMode(flyingImg, overlay, textBox, closeBtn, sharedTitle, rect, tileElement);
+                closeImageTextMode(flyingImg, overlay, textBox, closeBtn, sharedTitle, navLeft, navRight, rect, tileElement);
             };
 
             document.body.appendChild(overlay);
@@ -5873,6 +6080,16 @@
             document.body.appendChild(textBox);
             document.body.appendChild(sharedTitle);
             document.body.appendChild(closeBtn);
+            document.body.appendChild(navLeft);
+            document.body.appendChild(navRight);
+
+            imageTextNavState = {
+                mode: 'desktop',
+                groupIndex: context ? context.groupIndex : -1,
+                indices: context ? context.indices : [],
+                dataIndex: context ? context.dataIndex : -1,
+                refs: { flyingImg, textBox, sharedTitle, overlay }
+            };
 
             requestAnimationFrame(() => {
                 flyingImg.style.left = edgeGap;
@@ -5884,12 +6101,12 @@
 
             overlay.onclick = function (e) {
                 if (!textBox.contains(e.target) && e.target !== flyingImg && e.target !== closeBtn) {
-                    closeImageTextMode(flyingImg, overlay, textBox, closeBtn, sharedTitle, rect, tileElement);
+                    closeImageTextMode(flyingImg, overlay, textBox, closeBtn, sharedTitle, navLeft, navRight, rect, tileElement);
                 }
             };
         }
 
-        function closeImageTextMode(flyingImg, overlay, textBox, closeBtn, sharedTitle, originalRect, tileElement) {
+        function closeImageTextMode(flyingImg, overlay, textBox, closeBtn, sharedTitle, navLeft, navRight, originalRect, tileElement) {
             flyingImg.style.left = originalRect.left + 'px';
             flyingImg.style.top = originalRect.top + 'px';
             flyingImg.style.width = originalRect.width + 'px';
@@ -5906,8 +6123,11 @@
                 if (textBox && document.body.contains(textBox)) document.body.removeChild(textBox);
                 if (closeBtn && document.body.contains(closeBtn)) document.body.removeChild(closeBtn);
                 if (sharedTitle && document.body.contains(sharedTitle)) document.body.removeChild(sharedTitle);
-                tileElement.style.opacity = '1';
+                if (navLeft && document.body.contains(navLeft)) document.body.removeChild(navLeft);
+                if (navRight && document.body.contains(navRight)) document.body.removeChild(navRight);
+                if (tileElement) tileElement.style.opacity = '1';
 
+                imageTextNavState = null;
                 document.body.classList.remove('image-text-mode-active');
                 imageTextOverlayOpen = false;
 
@@ -5924,7 +6144,7 @@
         }
     </script>
     <div id="mobile-text-overlay">
-        <div class="m-text-close" onclick="closeMobileImageTextMode(event)">&times;
+        <div class="m-text-close" onclick="closeMobileImageTextMode(event)">&#10005;
         </div>
         <div class="m-text-title" id="m-text-title"></div>
         <div class="m-text-img" id="m-text-top-img"></div>
