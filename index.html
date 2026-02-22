@@ -5545,11 +5545,15 @@
             if (!bg || bg === 'none') return;
 
             let url = bg.replace(/^url\(['"]?/, "").replace(/['"]?\)$/, "");
-            let filename = url.split('/').pop();
+            const cleanUrl = url.split('#')[0].split('?')[0];
+            let filename = cleanUrl.split('/').pop();
 
             let textContent = null;
             if (typeof artworkTexts !== 'undefined') {
-                textContent = artworkTexts[filename] || artworkTexts[url];
+                textContent =
+                    artworkTexts[filename] ||
+                    artworkTexts[cleanUrl] ||
+                    artworkTexts[url];
             }
             if (!textContent) {
                 textContent = '<p>Zu diesem Bild liegt aktuell kein Text vor.</p>';
@@ -5593,6 +5597,8 @@
             textBox.style.top = '10%';
             textBox.style.width = '40%';
             textBox.style.height = '80%';
+            textBox.style.maxHeight = '80%';
+            textBox.style.transform = 'none';
             textBox.style.overflowY = 'auto';
             textBox.style.opacity = '0';
             textBox.style.transition = 'opacity 0.4s ease';
