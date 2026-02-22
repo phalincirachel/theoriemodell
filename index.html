@@ -3620,9 +3620,11 @@
                 if (i >= 5 && i <= 14) {
                     tile.href = "javascript:void(0)";
                     tile.target = "_self";
+                    tile.onclick = function (e) { openImageTextMode(this, e); };
                 } else {
                     tile.href = (data && data.linkUrl) ? data.linkUrl : "javascript:void(0)";
                     tile.target = "_blank"; // <--- NEU: Links in neuem Tab Ã¶ffnen
+                    tile.onclick = null; // Clear handler for row 1
                 }
 
                 // FORCE RELOAD: Always create new image
