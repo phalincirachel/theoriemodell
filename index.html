@@ -5537,6 +5537,44 @@
 
         /* --- IMAGE TEXT OVERLAY DESKTOP --- */
         let imageTextOverlayOpen = false;
+        const artworkTitles = {
+            "1skdurer.jpeg": "Albrecht Duerer: Selbstbildnis mit Pelzrock (1500)",
+            "1sknatiluspokal.jpeg": "Nautiluspokal (16. Jahrhundert)",
+            "1skmichelangelo.jpg": "Michelangelo (Werkbeispiel)",
+            "1skfrauenkirche.jpeg": "Dresdner Frauenkirche",
+            "1skmozart.jpg": "Wolfgang A. Mozart: Klavierkonzert d-Moll",
+            "2kmschmidtrottluff.jpeg": "Karl Schmidt-Rottluff: Selbstbildnis mit Einglas (1910)",
+            "2kmboccioni.jpg": "Umberto Boccioni: Entwicklung einer Flasche im Raum (1913)",
+            "2kmrichier.jpeg": "Germaine Richier: Christus von Assy (1950)",
+            "2kmlecorbusier.jpeg": "Le Corbusier: Notre-Dame-du-Haut (Ronchamp)",
+            "2kmlachenmann.jpg": "Helmut Lachenmann: Guero (1969)",
+            "3afontana.jpeg": "Lucio Fontana: Concetto spaziale, Attesa (1960)",
+            "3aduchamp.jpeg": "Marcel Duchamp: Fountain (1917)",
+            "3abeuys.jpeg": "Joseph Beuys: Kreuzigung (1962/63)",
+            "3awotruba.jpeg": "Fritz Wotruba: Wotrubakirche",
+            "3acagejpg.jpg": "John Cage: 4'33\" (1952)",
+            "4pmliechtenstein.jpeg": "Roy Lichtenstein: Art Critic (1996)",
+            "4pmwarhol.jpeg": "Andy Warhol: Brillo Box",
+            "4pmkippenberger.jpeg": "Martin Kippenberger: Zuerst die Fuesse",
+            "4pmmoore.jpeg": "Charles Moore: Piazza d'Italia",
+            "4pmschnittke.jpg": "Alfred Schnittke: Konzert fuer Klavier und Streichorchester (1979)",
+            "5rktuymans.jpeg": "Luc Tuymans: Himmler (1997/98)",
+            "5rkai.jpeg": "Ai Weiwei: Dropping a Han Dynasty Urn",
+            "5rkcattelan.jpeg": "Maurizio Cattelan: La Nona Ora",
+            "5rkcielrouge.jpeg": "Ciel rouge (Werkbeispiel)",
+            "5rkreinholdsen.jpg": "Trond Reinholdtsen: Theory of the Subject (2016)"
+        };
+
+        function getArtworkTitle(key, filename) {
+            if (key && artworkTitles[key]) return artworkTitles[key];
+            if (filename && artworkTitles[filename]) return artworkTitles[filename];
+            const raw = (filename || key || "Werk")
+                .replace(/\.[^.]+$/, "")
+                .replace(/^\d+[a-z]*/i, "")
+                .replace(/[_-]+/g, " ")
+                .trim();
+            return raw || "Werk";
+        }
 
         function openImageTextMode(tileElement, event) {
             // Check if we are on mobile. If so, don't execute desktop logic.
@@ -5555,6 +5593,7 @@
             const cleanUrl = url.split('#')[0].split('?')[0];
             let filename = cleanUrl.split('/').pop();
             const datasetKey = tileElement.dataset && tileElement.dataset.textKey ? tileElement.dataset.textKey : "";
+            const artworkTitle = getArtworkTitle(datasetKey, filename);
 
             let textContent = null;
             if (typeof artworkTexts !== 'undefined') {
@@ -5586,6 +5625,13 @@
 
             // Optional: Hide adjacent elements (handled by CSS body.image-text-mode-active)
 
+            const compactDesktop = window.innerWidth < 1500;
+            const edgeGap = compactDesktop ? '6%' : '8%';
+            const topGap = compactDesktop ? '12%' : '13%';
+            const titleTop = compactDesktop ? '7%' : '8%';
+            const panelWidth = compactDesktop ? '40%' : '37%';
+            const panelHeight = compactDesktop ? '74%' : '72%';
+
             const flyingImg = document.createElement('div');
             flyingImg.style.position = 'fixed'; // fixed to stay relative to screen
             flyingImg.style.backgroundImage = bg;
@@ -5602,10 +5648,10 @@
             const textBox = document.createElement('div');
             textBox.id = 'image-text-panel';
             textBox.style.position = 'fixed';
-            textBox.style.right = '5%';
-            textBox.style.top = '10%';
-            textBox.style.width = '40%';
-            textBox.style.height = '80%';
+            textBox.style.right = edgeGap;
+            textBox.style.top = topGap;
+            textBox.style.width = panelWidth;
+            textBox.style.height = panelHeight;
             textBox.style.zIndex = '10001';
             textBox.style.overflowY = 'auto';
             textBox.style.opacity = '1';
@@ -5622,29 +5668,94 @@
             textBox.style.pointerEvents = 'auto';
             textBox.innerHTML = textContent;
 
+            const imageTitle = document.createElement('div');
+            imageTitle.id = 'image-panel-title';
+            imageTitle.textContent = artworkTitle;
+            imageTitle.style.position = 'fixed';
+            imageTitle.style.left = edgeGap;
+            imageTitle.style.top = titleTop;
+            imageTitle.style.width = panelWidth;
+            imageTitle.style.zIndex = '10001';
+            imageTitle.style.fontFamily = "'Helvetica Neue', Helvetica, Arial, sans-serif";
+            imageTitle.style.fontSize = compactDesktop ? '0.98rem' : '1.05rem';
+            imageTitle.style.fontWeight = 'bold';
+            imageTitle.style.textTransform = 'uppercase';
+            imageTitle.style.letterSpacing = '0.02em';
+            imageTitle.style.color = '#111';
+            imageTitle.style.lineHeight = '1.2';
+            imageTitle.style.pointerEvents = 'none';
+
+            const textTitle = document.createElement('div');
+            textTitle.id = 'text-panel-title';
+            textTitle.textContent = artworkTitle;
+            textTitle.style.position = 'fixed';
+            textTitle.style.right = edgeGap;
+            textTitle.style.top = titleTop;
+            textTitle.style.width = panelWidth;
+            textTitle.style.zIndex = '10002';
+            textTitle.style.fontFamily = "'Helvetica Neue', Helvetica, Arial, sans-serif";
+            textTitle.style.fontSize = compactDesktop ? '0.98rem' : '1.05rem';
+            textTitle.style.fontWeight = 'bold';
+            textTitle.style.textTransform = 'uppercase';
+            textTitle.style.letterSpacing = '0.02em';
+            textTitle.style.color = '#111';
+            textTitle.style.lineHeight = '1.2';
+            textTitle.style.pointerEvents = 'none';
+
+            const closeBtn = document.createElement('button');
+            closeBtn.type = 'button';
+            closeBtn.id = 'image-text-close';
+            closeBtn.innerHTML = '&times;';
+            closeBtn.style.position = 'fixed';
+            closeBtn.style.top = '22px';
+            closeBtn.style.right = '22px';
+            closeBtn.style.width = '44px';
+            closeBtn.style.height = '44px';
+            closeBtn.style.border = '2px solid #000';
+            closeBtn.style.borderRadius = '50%';
+            closeBtn.style.background = '#fff';
+            closeBtn.style.color = '#000';
+            closeBtn.style.fontSize = '30px';
+            closeBtn.style.lineHeight = '1';
+            closeBtn.style.cursor = 'pointer';
+            closeBtn.style.zIndex = '10002';
+            closeBtn.style.display = 'flex';
+            closeBtn.style.alignItems = 'center';
+            closeBtn.style.justifyContent = 'center';
+            closeBtn.style.padding = '0';
+
+            closeBtn.onclick = function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                closeImageTextMode(flyingImg, overlay, textBox, closeBtn, imageTitle, textTitle, rect, tileElement);
+            };
+
             document.body.appendChild(overlay);
             document.body.appendChild(flyingImg);
             document.body.appendChild(textBox);
+            document.body.appendChild(imageTitle);
+            document.body.appendChild(textTitle);
+            document.body.appendChild(closeBtn);
 
             // Trigger animation
             requestAnimationFrame(() => {
-                flyingImg.style.left = '10%';
-                flyingImg.style.top = '10%';
+                flyingImg.style.left = edgeGap;
+                flyingImg.style.top = topGap;
                 // Calculate larger size, preserving ratio approximately
-                flyingImg.style.width = '40%';
-                flyingImg.style.height = '80%';
+                flyingImg.style.width = panelWidth;
+                flyingImg.style.height = panelHeight;
                 // Trigger hiding of original tile so it doesn't show under overlay
                 tileElement.style.opacity = '0';
             });
 
             overlay.onclick = function (e) {
                 if (!textBox.contains(e.target) && e.target !== flyingImg) {
-                    closeImageTextMode(flyingImg, overlay, textBox, rect, tileElement);
+                    closeImageTextMode(flyingImg, overlay, textBox, closeBtn, imageTitle, textTitle, rect, tileElement);
                 }
             };
         }
 
-        function closeImageTextMode(flyingImg, overlay, textBox, originalRect, tileElement) {
+        function closeImageTextMode(flyingImg, overlay, textBox, closeBtn, imageTitle, textTitle, originalRect, tileElement) {
             flyingImg.style.left = originalRect.left + 'px';
             flyingImg.style.top = originalRect.top + 'px';
             flyingImg.style.width = originalRect.width + 'px';
@@ -5659,6 +5770,9 @@
                 if (document.body.contains(overlay)) document.body.removeChild(overlay);
                 if (document.body.contains(flyingImg)) document.body.removeChild(flyingImg);
                 if (textBox && document.body.contains(textBox)) document.body.removeChild(textBox);
+                if (closeBtn && document.body.contains(closeBtn)) document.body.removeChild(closeBtn);
+                if (imageTitle && document.body.contains(imageTitle)) document.body.removeChild(imageTitle);
+                if (textTitle && document.body.contains(textTitle)) document.body.removeChild(textTitle);
                 tileElement.style.opacity = '1';
 
                 document.body.classList.remove('image-text-mode-active');
