@@ -33,6 +33,95 @@
             -webkit-tap-highlight-color: transparent;
         }
 
+        /* --- IMAGE TEXT MODE (DESKTOP) --- */
+        body.image-text-mode-active .gallery-overlay .gallery-tile {
+            opacity: 0 !important;
+            pointer-events: none !important;
+        }
+
+        body.image-text-mode-active #detail-left-container,
+        body.image-text-mode-active #detail-right-container {
+            opacity: 0 !important;
+        }
+
+        /* Mobile Text Overlay */
+        #mobile-text-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            height: 100dvh;
+            background-color: #000;
+            z-index: 999999;
+            display: none;
+            flex-direction: column;
+            color: #fff;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        #mobile-text-overlay .m-text-img {
+            width: 100%;
+            height: 45vh;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            flex-shrink: 0;
+            margin-top: 20px;
+        }
+
+        #mobile-text-overlay .m-text-content {
+            padding: 20px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            flex-grow: 1;
+        }
+
+        #mobile-text-overlay .m-text-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            z-index: 1000000;
+            cursor: pointer;
+        }
+
+        /* --- GLOBAL --- */
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+
+            /* FIX FÃœR IOS: dvh verhindert, dass die Adressleiste Inhalte verdeckt */
+            height: 100vh;
+            height: 100dvh;
+
+            width: 100vw;
+            overflow: hidden;
+            color: #000;
+
+            /* FIX FÃœR IOS: Verhindert das "Gummiband"-Wackeln der ganzen Seite */
+            position: fixed;
+            top: 0;
+            left: 0;
+
+            /* FIX FÃœR IOS: Verhindert automatischen Text-Zoom und beschleunigt Klicks */
+            -webkit-text-size-adjust: 100%;
+            touch-action: manipulation;
+            -webkit-tap-highlight-color: transparent;
+        }
+
         /* NEUER BLOCK: Zwingt iOS, diese Elemente als klickbar zu erkennen */
         .art-item,
         .pie-chart,
@@ -1412,8 +1501,7 @@
         body.is-active .art-item:not(.active),
         body.is-active .header-row .header-item:not(.active-header),
         body.is-active .footer-section,
-        body.is-active .avantgarde-note,
-        body.is-active .gallery-overlay {
+        body.is-active .avantgarde-note {
             opacity: 0 !important;
             pointer-events: none;
             visibility: hidden;
@@ -2846,21 +2934,31 @@
             <!-- TRIGGER onmouseleave added to overlay -->
             <div class="gallery-overlay" id="gallery-overlay" onmouseleave="leaveContainer()"
                 onmouseenter="cancelLeave()" onclick="closeMobileGallery()">
-                <a href="#" class="gallery-tile" id="slot-0">Slot 1</a>
-                <a href="#" class="gallery-tile" id="slot-1">Slot 2</a>
-                <a href="#" class="gallery-tile" id="slot-2">Slot 3</a>
-                <a href="#" class="gallery-tile" id="slot-3">Slot 4</a>
-                <a href="#" class="gallery-tile" id="slot-4">Slot 5</a>
-                <a href="#" class="gallery-tile gallery-row-2" id="slot-5">Slot 6</a>
-                <a href="#" class="gallery-tile gallery-row-2" id="slot-6">Slot 7</a>
-                <a href="#" class="gallery-tile gallery-row-2" id="slot-7">Slot 8</a>
-                <a href="#" class="gallery-tile gallery-row-2" id="slot-8">Slot 9</a>
-                <a href="#" class="gallery-tile gallery-row-2" id="slot-9">Slot 10</a>
-                <a href="#" class="gallery-tile gallery-row-2" id="slot-10">Slot 11</a>
-                <a href="#" class="gallery-tile gallery-row-2" id="slot-11">Slot 12</a>
-                <a href="#" class="gallery-tile gallery-row-2" id="slot-12">Slot 13</a>
-                <a href="#" class="gallery-tile gallery-row-2" id="slot-13">Slot 14</a>
-                <a href="#" class="gallery-tile gallery-row-2" id="slot-14">Slot 15</a>
+                <a href="javascript:void(0)" class="gallery-tile" id="slot-0">Slot 1</a>
+                <a href="javascript:void(0)" class="gallery-tile" id="slot-1">Slot 2</a>
+                <a href="javascript:void(0)" class="gallery-tile" id="slot-2">Slot 3</a>
+                <a href="javascript:void(0)" class="gallery-tile" id="slot-3">Slot 4</a>
+                <a href="javascript:void(0)" class="gallery-tile" id="slot-4">Slot 5</a>
+                <a href="javascript:void(0)" class="gallery-tile gallery-row-2" id="slot-5"
+                    onclick="openImageTextMode(this, event)">Slot
+                    6</a>
+                <a href="javascript:void(0)" class="gallery-tile gallery-row-2" id="slot-6"
+                    onclick="openImageTextMode(this, event)">Slot
+                    7</a>
+                <a href="javascript:void(0)" class="gallery-tile gallery-row-2" id="slot-7"
+                    onclick="openImageTextMode(this, event)">Slot
+                    8</a>
+                <a href="javascript:void(0)" class="gallery-tile gallery-row-2" id="slot-8"
+                    onclick="openImageTextMode(this, event)">Slot
+                    9</a>
+                <a href="javascript:void(0)" class="gallery-tile gallery-row-2" id="slot-9"
+                    onclick="openImageTextMode(this, event)">Slot
+                    10</a>
+                <a href="javascript:void(0)" class="gallery-tile gallery-row-2" id="slot-10">Slot 11</a>
+                <a href="javascript:void(0)" class="gallery-tile gallery-row-2" id="slot-11">Slot 12</a>
+                <a href="javascript:void(0)" class="gallery-tile gallery-row-2" id="slot-12">Slot 13</a>
+                <a href="javascript:void(0)" class="gallery-tile gallery-row-2" id="slot-13">Slot 14</a>
+                <a href="javascript:void(0)" class="gallery-tile gallery-row-2" id="slot-14">Slot 15</a>
             </div>
 
             <!-- ITEMS: Updated with mobile hints and handleMobileClick -->
@@ -3508,14 +3606,24 @@
                 tile.style.opacity = 0;
                 tile.innerHTML = "";
 
-                if (i === index) {
+                // Disable pointer events ONLY for the top row (slots 0-4) if it's the currently hovered index.
+                // Row 2 and 3 (slots 5-14) must REMAIN clickable to trigger the text overlay.
+                if (i === index && i < 5) {
                     tile.style.pointerEvents = 'none';
                     continue;
                 }
                 tile.style.pointerEvents = 'auto'; // Images interactable
                 const data = currentImages[dataIndex];
-                tile.href = (data && data.linkUrl) ? data.linkUrl : "#";
-                tile.target = "_blank"; // <--- NEU: Links in neuem Tab Ã¶ffnen
+
+                // Do not assign external links to row 2 and 3 images (slots 5-14)
+                // because these trigger the custom image-text overlay.
+                if (i >= 5 && i <= 14) {
+                    tile.href = "javascript:void(0)";
+                    tile.target = "_self";
+                } else {
+                    tile.href = (data && data.linkUrl) ? data.linkUrl : "javascript:void(0)";
+                    tile.target = "_blank"; // <--- NEU: Links in neuem Tab Ã¶ffnen
+                }
 
                 // FORCE RELOAD: Always create new image
                 if (data && data.imgUrl) {
@@ -4678,8 +4786,17 @@
                     a.className = 'm-gallery-tile';
                     if (imgData.imgUrl) a.style.backgroundImage = `url('${imgData.imgUrl}')`;
                     else a.innerHTML = "IMG";
-                    a.href = imgData.linkUrl || "#";
-                    a.target = "_blank";
+
+                    // Specific logic for rows 2 and 3 representing fields 6-15
+                    if (i === 1 || i === 2) {
+                        a.href = "javascript:void(0)";
+                        a.target = "_self";
+                        a.onclick = function (e) { openImageTextMode(this, e); };
+                    } else {
+                        a.href = imgData.linkUrl || "javascript:void(0)";
+                        a.target = "_blank";
+                    }
+
                     grid.appendChild(a);
                 });
                 sec.appendChild(grid);
@@ -5392,7 +5509,138 @@
         // Funktion sofort aufrufen
         fixMacClipping();
 
+        /* --- IMAGE TEXT OVERLAY DESKTOP --- */
+        let imageTextOverlayOpen = false;
+
+        function openImageTextMode(tileElement, event) {
+            // Check if we are on mobile. If so, don't execute desktop logic.
+            // (Mobile interaction is bound separately or handled dynamically)
+            if (window.innerWidth <= 768) return;
+
+            event.preventDefault();
+            event.stopPropagation();
+            if (imageTextOverlayOpen) return;
+
+            const bg = tileElement.style.backgroundImage;
+            if (!bg || bg === 'none') return;
+
+            let url = bg.replace(/^url\(['"]?/, "").replace(/['"]?\)$/, "");
+            let filename = url.split('/').pop();
+
+            let textContent = null;
+            if (typeof artworkTexts !== 'undefined') {
+                textContent = artworkTexts[filename] || artworkTexts[url];
+            }
+            if (!textContent) return;
+
+            imageTextOverlayOpen = true;
+            document.body.classList.add('image-text-mode-active');
+
+            const rect = tileElement.getBoundingClientRect();
+
+            const overlay = document.createElement('div');
+            overlay.id = 'image-text-overlay';
+            overlay.style.position = 'fixed';
+            overlay.style.top = '0';
+            overlay.style.left = '0';
+            overlay.style.width = '100vw';
+            overlay.style.height = '100vh';
+            overlay.style.zIndex = '9999';
+            overlay.style.pointerEvents = 'auto'; // allow click everywhere
+
+            // Optional: Hide adjacent elements (handled by CSS body.image-text-mode-active)
+
+            const flyingImg = document.createElement('div');
+            flyingImg.style.position = 'fixed'; // fixed to stay relative to screen
+            flyingImg.style.backgroundImage = bg;
+            flyingImg.style.backgroundSize = 'contain';
+            flyingImg.style.backgroundPosition = 'center';
+            flyingImg.style.backgroundRepeat = 'no-repeat';
+            flyingImg.style.left = rect.left + 'px';
+            flyingImg.style.top = rect.top + 'px';
+            flyingImg.style.width = rect.width + 'px';
+            flyingImg.style.height = rect.height + 'px';
+            flyingImg.style.transition = 'all 0.5s cubic-bezier(0.25, 1, 0.5, 1)';
+            flyingImg.style.zIndex = '10000';
+
+            const textBox = document.createElement('div');
+            textBox.className = 'detail-text-block';
+            textBox.style.position = 'absolute';
+            textBox.style.right = '5%';
+            textBox.style.top = '10%';
+            textBox.style.width = '40%';
+            textBox.style.height = '80%';
+            textBox.style.overflowY = 'auto';
+            textBox.style.opacity = '0';
+            textBox.style.transition = 'opacity 0.4s ease';
+            textBox.style.transitionDelay = '0.3s';
+            textBox.style.color = '#fff';
+            textBox.style.pointerEvents = 'auto';
+            textBox.innerHTML = textContent;
+
+            overlay.appendChild(textBox);
+            document.body.appendChild(overlay);
+            document.body.appendChild(flyingImg);
+
+            // Trigger animation
+            requestAnimationFrame(() => {
+                flyingImg.style.left = '10%';
+                flyingImg.style.top = '10%';
+                // Calculate larger size, preserving ratio approximately
+                flyingImg.style.width = '40%';
+                flyingImg.style.height = '80%';
+                textBox.style.opacity = '1';
+                // Trigger hiding of original tile so it doesn't show under overlay
+                tileElement.style.opacity = '0';
+            });
+
+            overlay.onclick = function (e) {
+                if (!textBox.contains(e.target) && e.target !== flyingImg) {
+                    closeImageTextMode(flyingImg, overlay, rect, tileElement);
+                }
+            };
+        }
+
+        function closeImageTextMode(flyingImg, overlay, originalRect, tileElement) {
+            flyingImg.style.left = originalRect.left + 'px';
+            flyingImg.style.top = originalRect.top + 'px';
+            flyingImg.style.width = originalRect.width + 'px';
+            flyingImg.style.height = originalRect.height + 'px';
+
+            const textBox = overlay.querySelector('.detail-text-block');
+            if (textBox) {
+                textBox.style.transitionDelay = '0s';
+                textBox.style.opacity = '0';
+            }
+
+            setTimeout(() => {
+                if (document.body.contains(overlay)) document.body.removeChild(overlay);
+                if (document.body.contains(flyingImg)) document.body.removeChild(flyingImg);
+                tileElement.style.opacity = '1';
+
+                document.body.classList.remove('image-text-mode-active');
+                imageTextOverlayOpen = false;
+
+                // Track mouse position to conditionally close the level 2 layer
+                setTimeout(() => {
+                    const galleryOverlay = document.getElementById('gallery-overlay');
+                    if (galleryOverlay && !galleryOverlay.matches(':hover') && !document.querySelector('.pie-container:hover')) {
+                        if (typeof leaveContainer === 'function' && !imageTextOverlayOpen) {
+                            leaveContainer();
+                        }
+                    }
+                }, 2000);
+            }, 500);
+        }
     </script>
+    <div id="mobile-text-overlay">
+        <div class="m-text-close" onclick="document.getElementById('mobile-text-overlay').style.display='none'">&times;
+        </div>
+        <div class="m-text-img" id="m-text-top-img"></div>
+        <div class="m-text-content" id="m-text-bottom-content"></div>
+    </div>
+
+    <script src="texte.js"></script>
 </body>
 
 </html>
