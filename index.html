@@ -56,7 +56,7 @@
             position: static !important;
             overflow: visible !important;
             /* HIER GEÄNDERT: pinch-zoom hinzugefügt */
-            touch-action: pan-x pan-y pinch-zoom !important; 
+            touch-action: pan-x pan-y pinch-zoom !important;
         }
 
         /* --- LAYOUT GRID --- */
@@ -1505,7 +1505,7 @@
         }
 
         /* --- MOBILE & ORIENTATION LOGIC (V4 - ALIGNMENT FIX) --- */
-        
+
 
         .mobile-theory-hint {
             position: absolute;
@@ -1627,26 +1627,27 @@
         /* LEVEL 4 FIX: Aktive Segmente weiß füllen, um Linien zu verdecken */
         .l4-interactive-group.active path,
         .l4-interactive-group.active circle {
-            fill: #fff !important; 
+            fill: #fff !important;
             fill-opacity: 1;
             stroke: #000;
             stroke-width: 2.5px;
         }
-        
+
         /* LEVEL 4 FIX: Info Box Hintergrund transparent */
         #m-l4-info-box {
             background: transparent !important;
         }
-        
+
         /* FIX LEVEL 4: Weiße Füllung für aktive Elemente, um Linien zu verdecken */
         .l4-interactive-group.active path,
         .l4-interactive-group.active circle {
-            fill: #fff !important; /* Überdeckt Hintergründe */
-            fill-opacity: 0.95; 
+            fill: #fff !important;
+            /* Überdeckt Hintergründe */
+            fill-opacity: 0.95;
             stroke: #000;
             stroke-width: 2.5px;
         }
-        
+
         /* FIX LEVEL 4: Info Box ohne grauen Hintergrund */
         #m-l4-info-box {
             background: transparent !important;
@@ -1727,23 +1728,26 @@
             grid-template-columns: repeat(3, 1fr);
             gap: 10px;
             /* FIX: Viel mehr Platz unten, damit man bis zum Ende scrollen kann */
-            padding-bottom: 150px; 
+            padding-bottom: 150px;
             margin-bottom: 0;
         }
 
         /* FIX LEVEL 4: Aktive Elemente deckend weiß und dicker Rand */
         .l4-interactive-group.active path,
         .l4-interactive-group.active circle {
-            fill: #fff !important; 
-            fill-opacity: 1 !important; /* Volle Deckkraft verdeckt darunterliegende Linien */
+            fill: #fff !important;
+            fill-opacity: 1 !important;
+            /* Volle Deckkraft verdeckt darunterliegende Linien */
             stroke: #000 !important;
-            stroke-width: 3.5px !important; /* Dickerer Rand wie gewünscht */
+            stroke-width: 3.5px !important;
+            /* Dickerer Rand wie gewünscht */
             vector-effect: non-scaling-stroke;
         }
-        
+
         /* FIX LEVEL 4: Korrekte Skalierung von der Mitte der Box */
         .l4-interactive-group {
-            transform-box: fill-box; /* Wichtig für korrekte Mitte bei SVG Formen */
+            transform-box: fill-box;
+            /* Wichtig für korrekte Mitte bei SVG Formen */
             transform-origin: center;
         }
 
@@ -1766,13 +1770,16 @@
             position: fixed;
             top: 50%;
             transform: translateY(-50%);
-            width: 60px; /* Große Trefferfläche */
+            width: 60px;
+            /* Große Trefferfläche */
             height: 120px;
-            z-index: 22000; /* Über allem */
+            z-index: 22000;
+            /* Über allem */
             cursor: pointer;
             opacity: 0;
             transition: opacity 0.3s ease;
-            pointer-events: none; /* Klicks ignorieren wenn unsichtbar */
+            pointer-events: none;
+            /* Klicks ignorieren wenn unsichtbar */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -1788,11 +1795,13 @@
             width: 25px;
             height: 60px;
             fill: none;
-            stroke: #000; /* Schwarz für Kontrast */
+            stroke: #000;
+            /* Schwarz für Kontrast */
             stroke-width: 3;
             stroke-linecap: round;
             stroke-linejoin: round;
-            filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.9)); /* Weißer Schein für Lesbarkeit */
+            filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.9));
+            /* Weißer Schein für Lesbarkeit */
             transition: transform 0.2s ease;
         }
 
@@ -1800,8 +1809,17 @@
             transform: scale(0.9);
         }
 
-        .m-nav-left { left: 0; padding-left: 10px; justify-content: flex-start; }
-        .m-nav-right { right: 0; padding-right: 10px; justify-content: flex-end; }
+        .m-nav-left {
+            left: 0;
+            padding-left: 10px;
+            justify-content: flex-start;
+        }
+
+        .m-nav-right {
+            right: 0;
+            padding-right: 10px;
+            justify-content: flex-end;
+        }
 
         /* --- LEVEL 2 MOBILE OVERLAY --- */
         #m-level-2-overlay {
@@ -1813,7 +1831,7 @@
             height: 100dvh;
             background: #fff;
             /* FIX: Z-Index muss höher als mobile-root (9999) sein! */
-            z-index: 20000; 
+            z-index: 20000;
             display: flex;
             flex-direction: column;
             opacity: 0;
@@ -1855,19 +1873,20 @@
         }
 
         .m-close-btn {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #000;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #fff;
-    z-index: 6010;  /* <-- ZU NIEDRIG! */
-}
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            width: 30px;
+            height: 30px;
+            border: 1px solid #000;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fff;
+            z-index: 6010;
+            /* <-- ZU NIEDRIG! */
+        }
 
 
         /* --- RESPONSIVE HARMONIE & KOLLISIONSVERMEIDUNG --- */
@@ -2103,7 +2122,8 @@
             width: 60px;
             height: 120px;
             cursor: pointer;
-            z-index: 95; /* Über dem Content */
+            z-index: 95;
+            /* Über dem Content */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -2130,7 +2150,8 @@
             width: 40px;
             height: 80px;
             fill: none;
-            stroke: #c0c0c0; /* Helles Grau wie gewünscht */
+            stroke: #c0c0c0;
+            /* Helles Grau wie gewünscht */
             stroke-width: 3;
             stroke-linecap: round;
             stroke-linejoin: round;
@@ -2139,12 +2160,18 @@
         }
 
         .nav-arrow-custom:hover svg {
-            stroke: #909090; /* Etwas dunkler beim Hover */
+            stroke: #909090;
+            /* Etwas dunkler beim Hover */
             transform: scale(1.1);
         }
 
-        .nav-arrow-left-c { left: 20px; }
-        .nav-arrow-right-c { right: 20px; }
+        .nav-arrow-left-c {
+            left: 20px;
+        }
+
+        .nav-arrow-right-c {
+            right: 20px;
+        }
 
         /* --- MOBILES DECKBLATT (Cover) --- */
         /* --- MOBILES DECKBLATT (Cover) --- */
@@ -2161,17 +2188,18 @@
             background: #fff;
             position: relative;
             /* NEU: Verschiebt den optischen Mittelpunkt nach oben zur Pfeil-Höhe */
-            padding-bottom: 20vh; 
+            padding-bottom: 20vh;
             box-sizing: border-box;
         }
 
-        
+
 
         .m-cover-subtitle {
             font-size: 1.2rem;
             font-weight: normal;
             text-align: center;
-            margin-bottom: 30px; /* Platz zum Chart */
+            margin-bottom: 30px;
+            /* Platz zum Chart */
             color: #666;
         }
 
@@ -2184,24 +2212,56 @@
 
         /* Pulsierende Animation: Stücke gehen auseinander */
         @keyframes pulse-m {
-            0%, 100% { transform: translate(0, 0); }
-            50% { transform: translate(-6px, -6px); }
-        }
-        @keyframes pulse-w {
-            0%, 100% { transform: translate(0, 0); }
-            50% { transform: translate(6px, -6px); }
-        }
-        @keyframes pulse-k {
-            0%, 100% { transform: translate(0, 0); }
-            50% { transform: translate(0, 8px); }
+
+            0%,
+            100% {
+                transform: translate(0, 0);
+            }
+
+            50% {
+                transform: translate(-6px, -6px);
+            }
         }
 
-        .anim-slice-m { animation: pulse-m 3s infinite ease-in-out; }
-        .anim-slice-w { animation: pulse-w 3s infinite ease-in-out; }
-        .anim-slice-k { animation: pulse-k 3s infinite ease-in-out; }
+        @keyframes pulse-w {
+
+            0%,
+            100% {
+                transform: translate(0, 0);
+            }
+
+            50% {
+                transform: translate(6px, -6px);
+            }
+        }
+
+        @keyframes pulse-k {
+
+            0%,
+            100% {
+                transform: translate(0, 0);
+            }
+
+            50% {
+                transform: translate(0, 8px);
+            }
+        }
+
+        .anim-slice-m {
+            animation: pulse-m 3s infinite ease-in-out;
+        }
+
+        .anim-slice-w {
+            animation: pulse-w 3s infinite ease-in-out;
+        }
+
+        .anim-slice-k {
+            animation: pulse-k 3s infinite ease-in-out;
+        }
 
         .m-start-hint {
-            margin-top: 10px; /* Direkt unter dem Diagramm */
+            margin-top: 10px;
+            /* Direkt unter dem Diagramm */
             font-size: 0.8rem;
             color: #999;
             text-transform: uppercase;
@@ -2304,129 +2364,177 @@
             margin-bottom: 10px;
             text-align: center;
         }
-		/* --- NEUE NAVIGATIONSPFEILE (Desktop / Active Mode) --- */
-.nav-arrow-custom {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 60px;
-    height: 120px;
-    cursor: pointer;
-    z-index: 95; /* Über dem Content, unter Overlays */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: opacity 0.3s ease, transform 0.2s ease;
-    opacity: 0;
-    pointer-events: none;
-}
 
-/* Sichtbar machen, wenn Active Mode */
-body.is-active .nav-arrow-custom {
-    opacity: 1;
-    pointer-events: auto;
-}
+        /* --- NEUE NAVIGATIONSPFEILE (Desktop / Active Mode) --- */
+        .nav-arrow-custom {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 60px;
+            height: 120px;
+            cursor: pointer;
+            z-index: 95;
+            /* Über dem Content, unter Overlays */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.3s ease, transform 0.2s ease;
+            opacity: 0;
+            pointer-events: none;
+        }
 
-/* Ausblenden in Spezial-Modi */
-body.level-3-active .nav-arrow-custom,
-body.level-4-active .nav-arrow-custom,
-body.footer-mode .nav-arrow-custom {
-    opacity: 0 !important;
-    pointer-events: none !important;
-}
+        /* Sichtbar machen, wenn Active Mode */
+        body.is-active .nav-arrow-custom {
+            opacity: 1;
+            pointer-events: auto;
+        }
 
-.nav-arrow-custom svg {
-    width: 40px;
-    height: 80px;
-    fill: none;
-    stroke: #e0e0e0; /* Helles, blasses Grau */
-    stroke-width: 4;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    transition: stroke 0.3s ease, transform 0.3s ease;
-    filter: drop-shadow(0px 2px 3px rgba(0,0,0,0.1));
-}
+        /* Ausblenden in Spezial-Modi */
+        body.level-3-active .nav-arrow-custom,
+        body.level-4-active .nav-arrow-custom,
+        body.footer-mode .nav-arrow-custom {
+            opacity: 0 !important;
+            pointer-events: none !important;
+        }
 
-.nav-arrow-custom:hover svg {
-    stroke: #b0b0b0; /* Etwas dunkler beim Hover */
-    transform: scale(1.1);
-}
+        .nav-arrow-custom svg {
+            width: 40px;
+            height: 80px;
+            fill: none;
+            stroke: #e0e0e0;
+            /* Helles, blasses Grau */
+            stroke-width: 4;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            transition: stroke 0.3s ease, transform 0.3s ease;
+            filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.1));
+        }
 
-.nav-arrow-left-c { left: 20px; }
-.nav-arrow-right-c { right: 20px; }
+        .nav-arrow-custom:hover svg {
+            stroke: #b0b0b0;
+            /* Etwas dunkler beim Hover */
+            transform: scale(1.1);
+        }
+
+        .nav-arrow-left-c {
+            left: 20px;
+        }
+
+        .nav-arrow-right-c {
+            right: 20px;
+        }
 
 
-/* --- MOBILES DECKBLATT (Cover) --- */
-.m-cover-section {
-    min-width: 100vw;
-    height: 100vh;
-    height: 100dvh;
-    scroll-snap-align: center;
-    scroll-snap-stop: always;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #fff;
-    position: relative;
-}
+        /* --- MOBILES DECKBLATT (Cover) --- */
+        .m-cover-section {
+            min-width: 100vw;
+            height: 100vh;
+            height: 100dvh;
+            scroll-snap-align: center;
+            scroll-snap-stop: always;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #fff;
+            position: relative;
+        }
 
-.m-cover-title {
-    font-size: 1.8rem;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 5px;
-    padding: 0 20px;
-    color: #000;
-}
+        .m-cover-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 5px;
+            padding: 0 20px;
+            color: #000;
+        }
 
-.m-cover-subtitle {
-    font-size: 1.2rem;
-    font-weight: normal;
-    text-align: center;
-    margin-bottom: 40px;
-    color: #666;
-}
+        .m-cover-subtitle {
+            font-size: 1.2rem;
+            font-weight: normal;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #666;
+        }
 
-.m-cover-chart {
-    width: 240px;
-    height: 240px;
-    overflow: visible;
-}
+        .m-cover-chart {
+            width: 240px;
+            height: 240px;
+            overflow: visible;
+        }
 
-/* Pulsierende Animation für die Kuchenstücke */
-@keyframes pulse-m {
-    0%, 100% { transform: translate(0, 0); }
-    50% { transform: translate(-4px, -4px); } /* Nach oben links */
-}
-@keyframes pulse-w {
-    0%, 100% { transform: translate(0, 0); }
-    50% { transform: translate(4px, -4px); } /* Nach oben rechts */
-}
-@keyframes pulse-k {
-    0%, 100% { transform: translate(0, 0); }
-    50% { transform: translate(0, 5px); } /* Nach unten */
-}
+        /* Pulsierende Animation für die Kuchenstücke */
+        @keyframes pulse-m {
 
-.anim-slice-m { animation: pulse-m 4s infinite ease-in-out; }
-.anim-slice-w { animation: pulse-w 4s infinite ease-in-out; }
-.anim-slice-k { animation: pulse-k 4s infinite ease-in-out; }
+            0%,
+            100% {
+                transform: translate(0, 0);
+            }
 
-.m-start-hint {
-    margin-top: 40px;
-    font-size: 0.8rem;
-    color: #999;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    animation: bounce 2s infinite;
-}
+            50% {
+                transform: translate(-4px, -4px);
+            }
 
-/* --- FIX: Z-Index für Close-Button global erhöhen --- */
+            /* Nach oben links */
+        }
+
+        @keyframes pulse-w {
+
+            0%,
+            100% {
+                transform: translate(0, 0);
+            }
+
+            50% {
+                transform: translate(4px, -4px);
+            }
+
+            /* Nach oben rechts */
+        }
+
+        @keyframes pulse-k {
+
+            0%,
+            100% {
+                transform: translate(0, 0);
+            }
+
+            50% {
+                transform: translate(0, 5px);
+            }
+
+            /* Nach unten */
+        }
+
+        .anim-slice-m {
+            animation: pulse-m 4s infinite ease-in-out;
+        }
+
+        .anim-slice-w {
+            animation: pulse-w 4s infinite ease-in-out;
+        }
+
+        .anim-slice-k {
+            animation: pulse-k 4s infinite ease-in-out;
+        }
+
+        .m-start-hint {
+            margin-top: 40px;
+            font-size: 0.8rem;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: bounce 2s infinite;
+        }
+
+        /* --- FIX: Z-Index für Close-Button global erhöhen --- */
         .m-close-btn {
-            z-index: 2147483647 !important; /* Höchster möglicher Wert */
+            z-index: 2147483647 !important;
+            /* Höchster möglicher Wert */
             cursor: pointer !important;
             pointer-events: auto !important;
-            box-shadow: 0px 0px 10px rgba(255,255,255,0.8); /* Kleiner Schein damit man ihn auf Schwarz sieht */
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+            /* Kleiner Schein damit man ihn auf Schwarz sieht */
         }
 
         /* --- FIX: Animation Klassen für Level 3 --- */
@@ -2435,7 +2543,8 @@ body.footer-mode .nav-arrow-custom {
             transition: transform 1.0s cubic-bezier(0.25, 1, 0.5, 1);
             transform-origin: 50px 50px;
             transform-box: view-box;
-            transform: scale(1); /* Standard */
+            transform: scale(1);
+            /* Standard */
             cursor: pointer;
         }
 
@@ -2443,6 +2552,7 @@ body.footer-mode .nav-arrow-custom {
         .m-l3-slice.is-large {
             transform: scale(1.15) !important;
         }
+
         .m-l3-slice.is-medium {
             transform: scale(1.05) !important;
         }
@@ -2456,7 +2566,7 @@ body.footer-mode .nav-arrow-custom {
     <div class="skip-overlay" id="skip-overlay" onclick="skipAnimation()"></div>
     <div class="close-btn" onclick="resetView()">&#10005;</div>
 
-    
+
     <div id="mobile-root">
         <!-- Mobile Content will be generated by JS -->
     </div>
@@ -2492,13 +2602,14 @@ body.footer-mode .nav-arrow-custom {
     <div class="mobile-gallery-close" id="mob-gal-close" onclick="closeMobileGallery()">&#10005;</div>
     <!-- FIX: Replay Button mit korrektem SVG Icon -->
     <div class="replay-btn" id="replay-btn" onclick="replayAnimation()">
-        <svg class="replay-triangle" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-             <polyline points="23 4 23 10 17 10"></polyline>
-             <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+        <svg class="replay-triangle" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="23 4 23 10 17 10"></polyline>
+            <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
         </svg>
     </div>
-        
-<!-- NEUE DESIGN-PFEILE (Links und Rechts) -->
+
+    <!-- NEUE DESIGN-PFEILE (Links und Rechts) -->
     <div class="nav-arrow-custom nav-arrow-left-c" id="nav-arrow-left" onclick="navigateActive(-1)">
         <svg viewBox="0 0 50 100">
             <path d="M40,10 L15,50 L40,90" />
@@ -2511,7 +2622,7 @@ body.footer-mode .nav-arrow-custom {
         </svg>
     </div>
 
-  
+
 
     <!-- LEVEL 3 LAYER -->
     <!-- LEVEL 3 LAYER -->
@@ -2922,20 +3033,16 @@ body.footer-mode .nav-arrow-custom {
             <div id="footer-curtain" class="footer-curtain"></div>
             <div class="footer-content-wrapper">
                 <svg class="curves-svg" viewBox="0 0 1200 250" preserveAspectRatio="none">
-    <!-- 
+                    <!-- 
        FIX: Alles in einem einzigen Pfad (d-Attribut) zusammengefasst.
        M = Startpunkt (20,80)
        Q = Kurve nach (600,50)
        L = Linie nach unten (600,150) -> Das verbindet die Punkte fest!
        Q = Kurve nach rechts (1180,60)
     -->
-    <path d="M 20,80 Q 300,120 600,50 L 600,150 Q 900,0 1180,60" 
-          fill="none" 
-          stroke="black" 
-          stroke-width="2" 
-          stroke-linejoin="round" 
-          stroke-linecap="round" />
-</svg>
+                    <path d="M 20,80 Q 300,120 600,50 L 600,150 Q 900,0 1180,60" fill="none" stroke="black"
+                        stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+                </svg>
                 <div class="curve-labels">
                     <div class="cl-text label-material" onclick="openFooterDetail('material')">Material-&Auml;sthetik
                     </div>
@@ -3002,7 +3109,7 @@ body.footer-mode .nav-arrow-custom {
                 { imgUrl: "1sknatiluspokal.jpeg" },
                 { imgUrl: "1skmichelangelo.png" },
                 { imgUrl: "1skfrauenkirche.jpeg" },
-                {},
+                { imgUrl: "1skmozart.jpg" },
                 { imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Cranach%27s_altarpiece%2C_Stadtkirche%2C_Wittenberg.jpg/1200px-Cranach%27s_altarpiece%2C_Stadtkirche%2C_Wittenberg.jpg?20190510191442", linkUrl: "https://lucascranach.org/de/DE_ESKStMW_NONE-ESKStMW001a/" },
                 { imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Ueber-die-sammlung-19-jahrhundert-caspar-david-friedrich-wanderer-ueber-dem-nebelmeer.jpg/960px-Ueber-die-sammlung-19-jahrhundert-caspar-david-friedrich-wanderer-ueber-dem-nebelmeer.jpg", linkUrl: "https://de.wikipedia.org/wiki/Der_Wanderer_%C3%BCber_dem_Nebelmeer" },
                 { imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Caspar_David_Friedrich_-_Der_M%C3%B6nch_am_Meer_-_Google_Art_Project.jpg/1280px-Caspar_David_Friedrich_-_Der_M%C3%B6nch_am_Meer_-_Google_Art_Project.jpg", linkUrl: "https://de.wikipedia.org/wiki/Der_M%C3%B6nch_am_Meer" },
@@ -3018,7 +3125,7 @@ body.footer-mode .nav-arrow-custom {
                 { imgUrl: "2kmboccioni.jpg" },
                 { imgUrl: "2kmrichier.jpeg" },
                 { imgUrl: "2kmlecorbusier.jpeg" },
-                {},
+                { imgUrl: "2kmlachenmann.jpg" },
                 { imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Shiraz_39.jpg/1280px-Shiraz_39.jpg", linkUrl: "https://www.youtube.com/watch?v=oIxGi_bI1CI" },
                 { imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Gy%C3%B6rgy_Ligeti_%281984%29.jpg/500px-Gy%C3%B6rgy_Ligeti_%281984%29.jpg", linkUrl: "https://www.youtube.com/watch?v=zU98pqOTnTw&utm_source=chatgpt.com" },
                 { imgUrl: "https://upload.wikimedia.org/wikipedia/commons/2/22/Bundesarchiv_Bild_183-1984-1116-500%2C_Gottfried_Benn-Arzt_und_Schriftsteller.jpg", linkUrl: "https://www.planetlyrik.de/klaus-schuhmann-gottfried-benns-gedicht-kleine-aster/2013/04/" },
@@ -3034,7 +3141,7 @@ body.footer-mode .nav-arrow-custom {
                 { imgUrl: "3aduchamp.jpeg" },
                 { imgUrl: "3abeuys.jpeg" },
                 { imgUrl: "3awotruba.jpeg" },
-                {},
+                { imgUrl: "3acagejpg.jpg" },
                 { imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/One_and_Three_Chair.jpg/1280px-One_and_Three_Chair.jpg", linkUrl: "https://de.wikipedia.org/wiki/One_and_Three_Chairs" },
                 { imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Naturpark_Schlei_-_Sch%C3%B6nhagener_Steilk%C3%BCste_-_Metallschrott_%281%29.jpg/640px-Naturpark_Schlei_-_Sch%C3%B6nhagener_Steilk%C3%BCste_-_Metallschrott_%281%29.jpg", linkUrl: "https://www.spacetime-publishing.de/essays/nolle3.htm" },
                 { imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Wien_-_Wotrubakirche_%285%29.JPG/1280px-Wien_-_Wotrubakirche_%285%29.JPG", linkUrl: "https://de.wikipedia.org/wiki/Wotrubakirche" },
@@ -3050,7 +3157,7 @@ body.footer-mode .nav-arrow-custom {
                 { imgUrl: "4pmwarhol.jpeg" },
                 { imgUrl: "4pmkippenberger.jpeg" },
                 { imgUrl: "4pmmoore.jpeg" },
-                {},
+                { imgUrl: "4pmschnittke.jpg" },
                 { imgUrl: "https://upload.wikimedia.org/wikipedia/commons/f/f2/Charles_Moore_Piazza_d%27Italia.jpg", linkUrl: "https://de.wikipedia.org/wiki/Piazza_d%E2%80%99Italia" },
                 { imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Il_nome_della_rosa_%28dall%27omonimo_romanzo_di_Umberto_Eco%29.JPG/960px-Il_nome_della_rosa_%28dall%27omonimo_romanzo_di_Umberto_Eco%29.JPG", linkUrl: "https://it.wikipedia.org/wiki/Il_nome_della_rosa" },
                 { imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Robert_gernhardt.jpg/960px-Robert_gernhardt.jpg", linkUrl: "https://lyricstranslate.com/de/robert-gernhardt-roma-aeterna-lyrics" },
@@ -3066,7 +3173,7 @@ body.footer-mode .nav-arrow-custom {
                 { imgUrl: "5rkai.jpeg" },
                 { imgUrl: "5rkcattelan.jpeg" },
                 { imgUrl: "5rkcielrouge.jpeg" },
-                {},
+                { imgUrl: "5rkreinholdsen.jpg" },
                 { imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Synagoge_-_4%2C_Dresden.jpg/1280px-Synagoge_-_4%2C_Dresden.jpg", linkUrl: "https://de.wikipedia.org/wiki/Neue_Synagoge_(Dresden)" },
                 { imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Frankfurter_Buchmesse_2017_-_Ingo_Schulze_-_03.jpg/500px-Frankfurter_Buchmesse_2017_-_Ingo_Schulze_-_03.jpg", linkUrl: "https://www.fischerverlage.de/buch/ingo-schulze-simple-storys-9783596523757" },
                 { imgUrl: "https://upload.wikimedia.org/wikipedia/en/8/8d/The_Celebration_poster.jpg", linkUrl: "https://de.wikipedia.org/wiki/Das_Fest_(Film)" },
@@ -3336,13 +3443,13 @@ body.footer-mode .nav-arrow-custom {
 
         function finishAnimationState() {
             document.getElementById('anim-2-p').classList.add('p-visible');
-            
+
             // NEU: Footer und Note erst jetzt einblenden
             const ft = document.getElementById('footer-section');
-            if(ft) { ft.classList.remove('init-hidden'); ft.classList.add('init-visible'); }
-            
+            if (ft) { ft.classList.remove('init-hidden'); ft.classList.add('init-visible'); }
+
             const an = document.getElementById('avant-note');
-            if(an) { an.classList.remove('init-hidden'); an.classList.add('init-visible'); }
+            if (an) { an.classList.remove('init-hidden'); an.classList.add('init-visible'); }
 
             document.getElementById('footer-curtain').classList.add('hidden');
             document.body.classList.remove('animating');
@@ -3360,7 +3467,7 @@ body.footer-mode .nav-arrow-custom {
             // Liste erweitert um 'footer-section' -> alles auf init-hidden setzen
             ['h-1', 'h-2', 'h-3', 'h-4', 'item-1', 'item-2', 'item-3', 'item-4', 'avant-note', 'footer-section'].forEach(id => {
                 const el = document.getElementById(id);
-                if(el) { el.classList.remove('init-visible'); el.classList.add('init-hidden'); }
+                if (el) { el.classList.remove('init-visible'); el.classList.add('init-hidden'); }
             });
             document.getElementById('anim-2-p').classList.remove('p-visible');
 
@@ -3464,7 +3571,7 @@ body.footer-mode .nav-arrow-custom {
 
             // --- FIX: Klick-Blockade für Desktop Level 2 ---
             // Verhindert, dass man auf ausgeblendete/negierte Stücke klickt
-            
+
             // 1. Avantgarde (Index 2): Das Werk (W) ist negiert (P-Fläche).
             // Klicks auf 'werk' hier blockieren.
             if (currentActiveIndex === 2 && type === 'werk') {
@@ -3478,7 +3585,7 @@ body.footer-mode .nav-arrow-custom {
                 event.stopPropagation();
                 return;
             }
-            
+
             // Sicherheitshalber: Klassische Moderne (Index 1): Medium (M) ist negiert.
             if (currentActiveIndex === 1 && type === 'medium') {
                 event.stopPropagation();
@@ -3507,13 +3614,13 @@ body.footer-mode .nav-arrow-custom {
             if (group) group.classList.remove('l2-expanded');
         }
 
-        function enterLevel3(type) { 
-            document.body.classList.add('level-3-active'); 
-            hoverLevel3(type); 
+        function enterLevel3(type) {
+            document.body.classList.add('level-3-active');
+            hoverLevel3(type);
         }
 
         function hoverLevel3(type) {
-            const data = level3Data[type]; 
+            const data = level3Data[type];
             if (!data) return;
 
             const displayEl = document.getElementById('l3-display-text');
@@ -3527,10 +3634,10 @@ body.footer-mode .nav-arrow-custom {
             currentL3Type = type;
 
             // 2. RESET: Alle Highlights von ALLEN Gruppen entfernen
-            document.querySelectorAll('.l3-group').forEach(el => { 
-                el.classList.remove('l3-expanded'); 
-                el.classList.remove('l3-highlight'); 
-                el.style.transform = ''; 
+            document.querySelectorAll('.l3-group').forEach(el => {
+                el.classList.remove('l3-expanded');
+                el.classList.remove('l3-highlight');
+                el.style.transform = '';
             });
 
             // 3. NEU SETZEN: Aktiv (Groß) und Pendant (Mittel)
@@ -3541,7 +3648,7 @@ body.footer-mode .nav-arrow-custom {
             if (correspondingEl) correspondingEl.classList.add('l3-highlight'); // Skaliert auf 1.05
         }
 
-            
+
 
         function openFooterDetail(type) {
             if (document.body.classList.contains('is-active') || document.body.classList.contains('animating')) return;
@@ -3621,8 +3728,8 @@ body.footer-mode .nav-arrow-custom {
             const root = document.getElementById('mobile-root');
             if (root) {
                 // FIX: Extrem hoher Z-Index für den Container, damit er über allem liegt
-                root.style.zIndex = "30000"; 
-                
+                root.style.zIndex = "30000";
+
                 root.addEventListener('scroll', () => {
                     requestAnimationFrame(updateMobileArrows);
                 });
@@ -3637,37 +3744,37 @@ body.footer-mode .nav-arrow-custom {
                 const originalSvg = document.querySelector(`#item-${i} svg`);
                 if (originalSvg) {
                     let s = originalSvg.outerHTML;
-                    s = s.replace(/on\w+=".*?"/g, ''); 
+                    s = s.replace(/on\w+=".*?"/g, '');
                     s = s.replace(/id="/g, `id="m-sec${i}-`);
-                    s = s.replace(/opacity:\s*0/g, 'opacity: 1'); 
+                    s = s.replace(/opacity:\s*0/g, 'opacity: 1');
                     s = s.replace(/init-hidden/g, '');
 
                     const temp = document.createElement('div'); temp.innerHTML = s;
 
                     // --- ANIMATION START STATES ---
-                    if (i === 1) { 
+                    if (i === 1) {
                         const ag = temp.querySelector(`[id$="anim-group-1"]`);
-                        if(ag) { ag.style.opacity = "1"; ag.style.transform = "translate(0,0)"; ag.classList.remove('animate-fly-out-m'); }
+                        if (ag) { ag.style.opacity = "1"; ag.style.transform = "translate(0,0)"; ag.classList.remove('animate-fly-out-m'); }
                         const gh = temp.querySelector(`[id$="ghost-1"]`);
-                        if(gh) { gh.classList.remove('ghost-visible'); gh.style.opacity = "0"; gh.setAttribute('stroke-dasharray', '4, 3'); }
+                        if (gh) { gh.classList.remove('ghost-visible'); gh.style.opacity = "0"; gh.setAttribute('stroke-dasharray', '4, 3'); }
                     }
                     if (i === 2) {
                         const ag = temp.querySelector(`[id$="anim-group-2"]`);
-                        if(ag) { ag.style.opacity = "1"; ag.style.transform = "translate(0,0)"; ag.classList.remove('animate-fly-out-w'); }
-                        const pText = temp.querySelector(`[id$="anim-2-p"]`); 
-                        if(pText) { pText.classList.remove('p-visible'); pText.style.opacity = "0"; }
+                        if (ag) { ag.style.opacity = "1"; ag.style.transform = "translate(0,0)"; ag.classList.remove('animate-fly-out-w'); }
+                        const pText = temp.querySelector(`[id$="anim-2-p"]`);
+                        if (pText) { pText.classList.remove('p-visible'); pText.style.opacity = "0"; }
                     }
                     if (i === 3) {
                         const ag = temp.querySelector(`[id$="anim-group-3"]`);
-                        if(ag) { ag.style.opacity = "0"; ag.style.transform = "translate(-40px, -40px)"; ag.classList.remove('animate-fly-in-m'); }
+                        if (ag) { ag.style.opacity = "0"; ag.style.transform = "translate(-40px, -40px)"; ag.classList.remove('animate-fly-in-m'); }
                         const gh = temp.querySelector(`[id$="ghost-3"]`);
-                        if(gh) { gh.style.opacity = "1"; gh.classList.add('ghost-visible'); }
+                        if (gh) { gh.style.opacity = "1"; gh.classList.add('ghost-visible'); }
                     }
                     if (i === 4) {
                         const ag = temp.querySelector(`[id$="anim-group-4"]`);
-                        if(ag) { ag.style.opacity = "0"; ag.style.transform = "translate(40px, -40px)"; ag.classList.remove('animate-fly-in-w'); }
+                        if (ag) { ag.style.opacity = "0"; ag.style.transform = "translate(40px, -40px)"; ag.classList.remove('animate-fly-in-w'); }
                         const gh = temp.querySelector(`[id$="ghost-4"]`);
-                        if(gh) { gh.style.opacity = "1"; gh.classList.add('ghost-visible'); }
+                        if (gh) { gh.style.opacity = "1"; gh.classList.add('ghost-visible'); }
                     }
 
                     mChartStrings.push(temp.innerHTML);
@@ -3679,41 +3786,41 @@ body.footer-mode .nav-arrow-custom {
             // --- DECKBLATT EINFÜGEN ---
             const coverSec = document.createElement('div');
             coverSec.className = 'm-section m-cover-section';
-            
+
             // Layout
-            coverSec.style.paddingBottom = "25vh"; 
+            coverSec.style.paddingBottom = "25vh";
             coverSec.style.cursor = "pointer";
 
             // LOGIK: JEDE Berührung führt zum Scroll
             let coverScrolling = false;
-const performStartScroll = (e) => {
-    // Verhindere Mehrfach-Ausführung
-    if (coverScrolling) return;
-    coverScrolling = true;
-    
-    // WICHTIG: preventDefault nur bei touchend, nicht bei click
-    if (e.type === 'touchend') {
-        e.preventDefault();
-    }
-    e.stopPropagation();
-    e.stopImmediatePropagation();
-    
-    // Scroll IMMER ausführen (keine scrollLeft-Bedingung mehr)
-    if (root) {
-        const targetLeft = window.innerWidth;
-        root.scrollTo({
-            left: targetLeft,
-            behavior: 'smooth'
-        });
-    }
-    
-    // Debounce Reset
-    setTimeout(() => { coverScrolling = false; }, 1000);
-};
+            const performStartScroll = (e) => {
+                // Verhindere Mehrfach-Ausführung
+                if (coverScrolling) return;
+                coverScrolling = true;
 
-// Passive:false ist KRITISCH für preventDefault
-coverSec.addEventListener('click', performStartScroll, { passive: false });
-coverSec.addEventListener('touchend', performStartScroll, { passive: false });
+                // WICHTIG: preventDefault nur bei touchend, nicht bei click
+                if (e.type === 'touchend') {
+                    e.preventDefault();
+                }
+                e.stopPropagation();
+                e.stopImmediatePropagation();
+
+                // Scroll IMMER ausführen (keine scrollLeft-Bedingung mehr)
+                if (root) {
+                    const targetLeft = window.innerWidth;
+                    root.scrollTo({
+                        left: targetLeft,
+                        behavior: 'smooth'
+                    });
+                }
+
+                // Debounce Reset
+                setTimeout(() => { coverScrolling = false; }, 1000);
+            };
+
+            // Passive:false ist KRITISCH für preventDefault
+            coverSec.addEventListener('click', performStartScroll, { passive: false });
+            coverSec.addEventListener('touchend', performStartScroll, { passive: false });
             // INHALT: pointer-events: none sorgt dafür, dass Klicks "durch" Text/Bild auf das Div fallen
             coverSec.innerHTML = `
                 <div class="m-cover-title" style="pointer-events: none;">Modelle der Kunstphilosophie</div>
@@ -3749,7 +3856,7 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
 
                 const topDiv = document.createElement('div');
                 topDiv.className = 'm-top-container';
-                topDiv.style.justifyContent = 'center'; 
+                topDiv.style.justifyContent = 'center';
 
                 const h = document.createElement('div');
                 h.className = 'm-header-text';
@@ -3770,25 +3877,25 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
                 }
                 pieContainer.style.pointerEvents = 'auto';
                 pieContainer.style.zIndex = '50';
-                pieContainer.onclick = function(e) {
+                pieContainer.onclick = function (e) {
                     e.preventDefault(); e.stopPropagation();
                     openMobileLevel2(i);
                 };
-                
+
                 topDiv.appendChild(pieContainer);
 
                 // TEXT LABELS
                 const labelDiv = document.createElement('div');
-                labelDiv.style.height = '30px'; 
+                labelDiv.style.height = '30px';
                 labelDiv.style.display = 'flex';
                 labelDiv.style.justifyContent = 'center';
                 labelDiv.style.alignItems = 'center';
-                labelDiv.style.marginTop = '15px'; 
-                labelDiv.style.marginBottom = '15px'; 
+                labelDiv.style.marginTop = '15px';
+                labelDiv.style.marginBottom = '15px';
 
-                let labelText = "&nbsp;"; 
+                let labelText = "&nbsp;";
                 let dataKey = "";
-                let textColor = "#666"; 
+                let textColor = "#666";
                 let isClickable = false;
 
                 if (i === 1) { labelText = "Materialästhetik"; dataKey = "material"; isClickable = true; }
@@ -3796,22 +3903,22 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
                 else if (i === 4) { labelText = "Gehaltsästhetik"; dataKey = "gehalt"; textColor = "#000"; isClickable = true; }
 
                 const span = document.createElement('span');
-                span.innerHTML = labelText; 
+                span.innerHTML = labelText;
                 span.style.fontSize = '0.8rem';
                 span.style.textTransform = 'uppercase';
                 span.style.letterSpacing = '1px';
                 span.style.color = textColor;
-                span.style.borderBottom = '1px solid transparent'; 
+                span.style.borderBottom = '1px solid transparent';
 
                 if (isClickable && dataKey) {
-                    span.className = 'm-footer-link'; 
+                    span.className = 'm-footer-link';
                     span.setAttribute('data-key', dataKey);
                     span.style.cursor = 'pointer';
-                    const txtHandler = function(e) { e.preventDefault(); e.stopPropagation(); openMobileFooterText(dataKey); };
+                    const txtHandler = function (e) { e.preventDefault(); e.stopPropagation(); openMobileFooterText(dataKey); };
                     span.addEventListener('click', txtHandler);
                     span.addEventListener('touchend', txtHandler);
                 } else {
-                    span.style.pointerEvents = 'none'; 
+                    span.style.pointerEvents = 'none';
                 }
                 labelDiv.appendChild(span);
                 topDiv.appendChild(labelDiv);
@@ -3820,13 +3927,13 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
                 const btn = document.createElement('div');
                 btn.className = 'm-theory-btn';
                 btn.innerHTML = 'ZUR THEORIE';
-                btn.style.marginTop = '0px'; 
+                btn.style.marginTop = '0px';
                 btn.style.zIndex = '10001';
                 btn.style.pointerEvents = 'auto';
                 (function (index) {
-                    const h = function(e) { e.stopPropagation(); openMobileLevel2(index); };
+                    const h = function (e) { e.stopPropagation(); openMobileLevel2(index); };
                     btn.addEventListener('click', h);
-                    btn.addEventListener('touchend', function(e){ e.preventDefault(); h(e); });
+                    btn.addEventListener('touchend', function (e) { e.preventDefault(); h(e); });
                 })(i);
                 topDiv.appendChild(btn);
                 sec.appendChild(topDiv);
@@ -3854,21 +3961,21 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
                             if (entry.isIntersecting) {
                                 const chart = entry.target.querySelector('.m-pie-container');
                                 if (!chart) return;
-                                if (i === 1) { 
-                                    const ag = chart.querySelector(`[id$="anim-group-1"]`); if(ag) ag.classList.add('animate-fly-out-m'); 
-                                    const gh = chart.querySelector(`[id$="ghost-1"]`); if(gh) setTimeout(() => { gh.classList.add('ghost-visible'); gh.style.opacity = "1"; }, 1000);
+                                if (i === 1) {
+                                    const ag = chart.querySelector(`[id$="anim-group-1"]`); if (ag) ag.classList.add('animate-fly-out-m');
+                                    const gh = chart.querySelector(`[id$="ghost-1"]`); if (gh) setTimeout(() => { gh.classList.add('ghost-visible'); gh.style.opacity = "1"; }, 1000);
                                 }
-                                if (i === 2) { 
-                                    const ag = chart.querySelector(`[id$="anim-group-2"]`); if(ag) ag.classList.add('animate-fly-out-w');
-                                    const pText = chart.querySelector(`[id$="anim-2-p"]`); if(pText) setTimeout(() => { pText.classList.add('p-visible'); pText.style.opacity = "1"; }, 1500);
+                                if (i === 2) {
+                                    const ag = chart.querySelector(`[id$="anim-group-2"]`); if (ag) ag.classList.add('animate-fly-out-w');
+                                    const pText = chart.querySelector(`[id$="anim-2-p"]`); if (pText) setTimeout(() => { pText.classList.add('p-visible'); pText.style.opacity = "1"; }, 1500);
                                 }
-                                if (i === 3) { 
-                                    const ag = chart.querySelector(`[id$="anim-group-3"]`); if(ag) ag.classList.add('animate-fly-in-m');
-                                    const gh = chart.querySelector(`[id$="ghost-3"]`); if(gh) { gh.style.opacity = "0"; gh.classList.remove('ghost-visible'); }
+                                if (i === 3) {
+                                    const ag = chart.querySelector(`[id$="anim-group-3"]`); if (ag) ag.classList.add('animate-fly-in-m');
+                                    const gh = chart.querySelector(`[id$="ghost-3"]`); if (gh) { gh.style.opacity = "0"; gh.classList.remove('ghost-visible'); }
                                 }
-                                if (i === 4) { 
-                                    const ag = chart.querySelector(`[id$="anim-group-4"]`); if(ag) ag.classList.add('animate-fly-in-w');
-                                    const gh = chart.querySelector(`[id$="ghost-4"]`); if(gh) { gh.style.opacity = "0"; gh.classList.remove('ghost-visible'); }
+                                if (i === 4) {
+                                    const ag = chart.querySelector(`[id$="anim-group-4"]`); if (ag) ag.classList.add('animate-fly-in-w');
+                                    const gh = chart.querySelector(`[id$="ghost-4"]`); if (gh) { gh.style.opacity = "0"; gh.classList.remove('ghost-visible'); }
                                 }
                             }
                         });
@@ -3934,13 +4041,13 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
 
             const touchendX = e.changedTouches[0].screenX;
             const touchendY = e.changedTouches[0].screenY;
-            
+
             // Desktop Logik
             if (isDesktopActive) {
                 // Keine Navigation in Level 3/4 Desktop
                 if (document.body.classList.contains('level-3-active') || document.body.classList.contains('level-4-active')) return;
                 handleSwipeDesktop(touchstartX, touchendX, touchstartY, touchendY);
-            } 
+            }
             // Mobile Logik
             else if (isMobile) {
                 handleSwipeMobile(touchstartX, touchendX, touchstartY, touchendY);
@@ -3951,15 +4058,15 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
             // Nur horizontale Swipes akzeptieren
             if (Math.abs(starty - endy) > 100) return;
             const threshold = 50;
-            if (endx < startx - threshold) navigateActive(1); 
-            if (endx > startx + threshold) navigateActive(-1); 
+            if (endx < startx - threshold) navigateActive(1);
+            if (endx > startx + threshold) navigateActive(-1);
         }
 
         function handleSwipeMobile(startx, endx, starty, endy) {
             // Nur horizontal (mit etwas Toleranz)
             if (Math.abs(starty - endy) > 80) return;
-            
-            const threshold = 50; 
+
+            const threshold = 50;
             const diff = startx - endx;
 
             if (Math.abs(diff) < threshold) return; // Zu wenig gewischt
@@ -3989,7 +4096,7 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
 
             // Grenzen: Wir haben 5 Items (Index 0 bis 4)
             // Wenn man bei 0 nach links wischt, passiert nichts (oder man könnte schließen, aber besser nichts)
-            if (nextIndex < 0) return; 
+            if (nextIndex < 0) return;
             if (nextIndex > 4) return;
 
             // Overlay aktualisieren
@@ -4008,13 +4115,13 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
             // Wir müssen herausfinden, was gerade angezeigt wird.
             const titleEl = document.querySelector('#m-l3-content .m-l2-title');
             if (!titleEl) return;
-            
+
             const currentTitle = titleEl.innerText;
-            
+
             // Definition der Reihenfolge für Swipe (Lehmann M/W + Luhmann + Lehmann K)
             // Reihenfolge wie gewünscht: Medium -> Werk -> Information -> Mitteilung -> Verstehen -> Konzept -> (Loop)
             const types = ['medium', 'werk', 'information', 'mitteilung', 'verstehen', 'konzept'];
-            
+
             // Finde den aktuellen Key basierend auf dem Titel
             let currentKey = null;
             for (const key of types) {
@@ -4023,14 +4130,14 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
                     break;
                 }
             }
-            
-            if (!currentKey) return; 
+
+            if (!currentKey) return;
 
             let currentIndex = types.indexOf(currentKey);
             let nextIndex = currentIndex + direction;
 
             // Zyklisch (Loop)
-            if (nextIndex < 0) nextIndex = types.length - 1; 
+            if (nextIndex < 0) nextIndex = types.length - 1;
             if (nextIndex >= types.length) nextIndex = 0;
 
             openMobileLevel3(types[nextIndex]);
@@ -4100,40 +4207,40 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
                     g.style.display = 'block'; // Reset display
                     g.style.pointerEvents = 'auto';
                 });
-                
+
                 const allSlices = svg.querySelectorAll('.l2-slice-group');
                 allSlices.forEach(sl => sl.style.pointerEvents = 'auto');
 
                 // 2. Spezifische Logik pro Epoche
-                
+
                 // Item 1 (Klassische Moderne): M weg
                 if (index === 1) {
                     const ag1 = svg.querySelector('#anim-group-1');
-                    if(ag1) {
+                    if (ag1) {
                         ag1.style.display = 'none'; // WICHTIG: Display none statt opacity 0
                     }
                     const g1 = svg.querySelector('#ghost-1');
-                    if(g1) { g1.style.opacity = '1'; g1.classList.add('ghost-visible'); }
+                    if (g1) { g1.style.opacity = '1'; g1.classList.add('ghost-visible'); }
                 }
 
                 // Item 2 (Avantgarde): W weg (Lösung für das P-Problem)
                 if (index === 2) {
-                    const ag2 = svg.querySelector('#anim-group-2'); 
-                    if(ag2) {
+                    const ag2 = svg.querySelector('#anim-group-2');
+                    if (ag2) {
                         ag2.style.display = 'none'; // WICHTIG: Entfernt das W-Stück komplett aus dem Klickbereich
                     }
-                    
+
                     // P-Text sichtbar aber nicht klickbar
                     const pText = svg.querySelector('#anim-2-p');
-                    if(pText) { 
-                        pText.style.opacity = '1'; 
-                        pText.classList.add('p-visible'); 
+                    if (pText) {
+                        pText.style.opacity = '1';
+                        pText.classList.add('p-visible');
                         pText.style.pointerEvents = 'none';
                     }
 
                     // Gestrichelten Kreis (P-Fläche) nicht klickbar machen
                     const dashedPath = svg.querySelector('path.pie-dashed');
-                    if(dashedPath) dashedPath.style.pointerEvents = 'none';
+                    if (dashedPath) dashedPath.style.pointerEvents = 'none';
                 }
 
                 // Item 3 (Postmoderne): W ist eh weg, aber wir sichern ab
@@ -4144,19 +4251,19 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
 
                     // M (anim-group-3) muss da sein
                     const ag3 = svg.querySelector('#anim-group-3');
-                    if(ag3) { ag3.style.opacity = '1'; ag3.style.transform = 'translate(0,0)'; }
-                    
+                    if (ag3) { ag3.style.opacity = '1'; ag3.style.transform = 'translate(0,0)'; }
+
                     const g3 = svg.querySelector('#ghost-3');
-                    if(g3) { g3.style.opacity = '0'; g3.classList.remove('ghost-visible'); }
+                    if (g3) { g3.style.opacity = '0'; g3.classList.remove('ghost-visible'); }
                 }
 
                 // Item 4 (Reflexive): W da, Ghost weg
                 if (index === 4) {
                     const ag4 = svg.querySelector('#anim-group-4');
-                    if(ag4) { ag4.style.opacity = '1'; ag4.style.transform = 'translate(0,0)'; }
-                    
+                    if (ag4) { ag4.style.opacity = '1'; ag4.style.transform = 'translate(0,0)'; }
+
                     const g4 = svg.querySelector('#ghost-4');
-                    if(g4) { g4.style.opacity = '0'; g4.classList.remove('ghost-visible'); }
+                    if (g4) { g4.style.opacity = '0'; g4.classList.remove('ghost-visible'); }
                 }
             }
 
@@ -4214,10 +4321,10 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
             }
 
             // FIX: HIDE ARROWS (Inline-Styles überschreiben, die im Level 2 gesetzt wurden)
-            const la = document.getElementById('nav-arrow-left'); 
+            const la = document.getElementById('nav-arrow-left');
             if (la) { la.style.opacity = '0'; la.style.pointerEvents = 'none'; }
-            
-            const ra = document.getElementById('nav-arrow-right'); 
+
+            const ra = document.getElementById('nav-arrow-right');
             if (ra) { ra.style.opacity = '0'; ra.style.pointerEvents = 'none'; }
 
             const activeElement = document.querySelector('.art-item.active');
@@ -4305,11 +4412,11 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
         /* --- MOBILE IMPLEMENTATION JS --- */
         let mobileInited = false;
         const mChartStrings = [];
-		
-		
 
 
-       function initMobile() {
+
+
+        function initMobile() {
             if (mobileInited) return;
             mobileInited = true;
 
@@ -4335,62 +4442,62 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
                 const originalSvg = document.querySelector(`#item-${i} svg`);
                 if (originalSvg) {
                     let s = originalSvg.outerHTML;
-                    s = s.replace(/on\w+=".*?"/g, ''); 
+                    s = s.replace(/on\w+=".*?"/g, '');
                     s = s.replace(/id="/g, `id="m-sec${i}-`);
-                    s = s.replace(/opacity:\s*0/g, 'opacity: 1'); 
+                    s = s.replace(/opacity:\s*0/g, 'opacity: 1');
                     s = s.replace(/init-hidden/g, '');
 
                     const temp = document.createElement('div'); temp.innerHTML = s;
 
                     // --- ANIMATION START STATES ---
-                    
+
                     // Klassische Moderne (1)
-                    if (i === 1) { 
+                    if (i === 1) {
                         const ag = temp.querySelector(`[id$="anim-group-1"]`);
-                        if(ag) { 
-                            ag.style.opacity = "1"; 
-                            ag.style.transform = "translate(0,0)"; 
-                            ag.classList.remove('animate-fly-out-m'); 
+                        if (ag) {
+                            ag.style.opacity = "1";
+                            ag.style.transform = "translate(0,0)";
+                            ag.classList.remove('animate-fly-out-m');
                         }
                         const gh = temp.querySelector(`[id$="ghost-1"]`);
-                        if(gh) { 
-                            gh.classList.remove('ghost-visible'); 
-                            gh.style.opacity = "0"; 
+                        if (gh) {
+                            gh.classList.remove('ghost-visible');
+                            gh.style.opacity = "0";
                             gh.setAttribute('stroke-dasharray', '4, 3');
                         }
                     }
                     // Avantgarde (2)
                     if (i === 2) {
                         const ag = temp.querySelector(`[id$="anim-group-2"]`);
-                        if(ag) { 
-                            ag.style.opacity = "1"; 
-                            ag.style.transform = "translate(0,0)"; 
-                            ag.classList.remove('animate-fly-out-w'); 
+                        if (ag) {
+                            ag.style.opacity = "1";
+                            ag.style.transform = "translate(0,0)";
+                            ag.classList.remove('animate-fly-out-w');
                         }
-                        const pText = temp.querySelector(`[id$="anim-2-p"]`); 
-                        if(pText) { pText.classList.remove('p-visible'); pText.style.opacity = "0"; }
+                        const pText = temp.querySelector(`[id$="anim-2-p"]`);
+                        if (pText) { pText.classList.remove('p-visible'); pText.style.opacity = "0"; }
                     }
                     // Postmoderne (3)
                     if (i === 3) {
                         const ag = temp.querySelector(`[id$="anim-group-3"]`);
-                        if(ag) { 
-                            ag.style.opacity = "0"; 
-                            ag.style.transform = "translate(-40px, -40px)"; 
-                            ag.classList.remove('animate-fly-in-m'); 
+                        if (ag) {
+                            ag.style.opacity = "0";
+                            ag.style.transform = "translate(-40px, -40px)";
+                            ag.classList.remove('animate-fly-in-m');
                         }
                         const gh = temp.querySelector(`[id$="ghost-3"]`);
-                        if(gh) { gh.style.opacity = "1"; gh.classList.add('ghost-visible'); }
+                        if (gh) { gh.style.opacity = "1"; gh.classList.add('ghost-visible'); }
                     }
                     // Reflexive (4)
                     if (i === 4) {
                         const ag = temp.querySelector(`[id$="anim-group-4"]`);
-                        if(ag) { 
-                            ag.style.opacity = "0"; 
-                            ag.style.transform = "translate(40px, -40px)"; 
-                            ag.classList.remove('animate-fly-in-w'); 
+                        if (ag) {
+                            ag.style.opacity = "0";
+                            ag.style.transform = "translate(40px, -40px)";
+                            ag.classList.remove('animate-fly-in-w');
                         }
                         const gh = temp.querySelector(`[id$="ghost-4"]`);
-                        if(gh) { gh.style.opacity = "1"; gh.classList.add('ghost-visible'); }
+                        if (gh) { gh.style.opacity = "1"; gh.classList.add('ghost-visible'); }
                     }
 
                     mChartStrings.push(temp.innerHTML);
@@ -4402,9 +4509,9 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
             // --- NEU: DECKBLATT EINFÜGEN (VOR DER SCHLEIFE) ---
             const coverSec = document.createElement('div');
             coverSec.className = 'm-section m-cover-section';
-            
+
             // FIX: Verschiebt den Inhalt nach oben (Chart exakt auf Pfeilhöhe)
-            coverSec.style.paddingBottom = "25vh"; 
+            coverSec.style.paddingBottom = "25vh";
 
             coverSec.innerHTML = `
                 <div class="m-cover-title">Modelle der Kunstphilosophie</div>
@@ -4444,7 +4551,7 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
 
                 const topDiv = document.createElement('div');
                 topDiv.className = 'm-top-container';
-                topDiv.style.justifyContent = 'center'; 
+                topDiv.style.justifyContent = 'center';
 
                 const h = document.createElement('div');
                 h.className = 'm-header-text';
@@ -4465,77 +4572,77 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
                 }
                 pieContainer.style.pointerEvents = 'auto';
                 pieContainer.style.zIndex = '50';
-                pieContainer.onclick = function(e) {
+                pieContainer.onclick = function (e) {
                     e.preventDefault(); e.stopPropagation();
                     openMobileLevel2(i);
                 };
-                
+
                 topDiv.appendChild(pieContainer);
 
                 // --- TEXT LABELS ---
                 const labelDiv = document.createElement('div');
-                
-                labelDiv.style.height = '30px'; 
+
+                labelDiv.style.height = '30px';
                 labelDiv.style.display = 'flex';
                 labelDiv.style.justifyContent = 'center';
                 labelDiv.style.alignItems = 'center';
-                labelDiv.style.marginTop = '15px'; 
-                labelDiv.style.marginBottom = '15px'; 
+                labelDiv.style.marginTop = '15px';
+                labelDiv.style.marginBottom = '15px';
 
-                let labelText = "&nbsp;"; 
+                let labelText = "&nbsp;";
                 let dataKey = "";
-                let textColor = "#666"; 
+                let textColor = "#666";
                 let isClickable = false;
 
-                if (i === 0) { 
-                    labelText = "&nbsp;"; 
-                    dataKey = ""; 
+                if (i === 0) {
+                    labelText = "&nbsp;";
+                    dataKey = "";
                 }
-                else if (i === 1) { 
-                    labelText = "Materialästhetik"; 
-                    dataKey = "material"; 
+                else if (i === 1) {
+                    labelText = "Materialästhetik";
+                    dataKey = "material";
                     isClickable = true;
                 }
-                else if (i === 2) { 
-                    labelText = "Konzeptkunst"; 
-                    dataKey = "konzept"; 
-                    textColor = "#000"; 
+                else if (i === 2) {
+                    labelText = "Konzeptkunst";
+                    dataKey = "konzept";
+                    textColor = "#000";
                     isClickable = true;
                 }
-                else if (i === 3) { 
-                    labelText = "&nbsp;"; 
-                    dataKey = ""; 
+                else if (i === 3) {
+                    labelText = "&nbsp;";
+                    dataKey = "";
                     isClickable = false;
                 }
-                else if (i === 4) { 
-                    labelText = "Gehaltsästhetik"; 
-                    dataKey = "gehalt"; 
-                    textColor = "#000"; 
+                else if (i === 4) {
+                    labelText = "Gehaltsästhetik";
+                    dataKey = "gehalt";
+                    textColor = "#000";
                     isClickable = true;
                 }
 
                 const span = document.createElement('span');
-                span.innerHTML = labelText; 
-                
+                span.innerHTML = labelText;
+
                 span.style.fontSize = '0.8rem';
                 span.style.textTransform = 'uppercase';
                 span.style.letterSpacing = '1px';
                 span.style.color = textColor;
-                span.style.borderBottom = '1px solid transparent'; 
+                span.style.borderBottom = '1px solid transparent';
 
                 if (isClickable && dataKey) {
-                    span.className = 'm-footer-link'; 
+                    span.className = 'm-footer-link';
                     span.setAttribute('data-key', dataKey);
                     span.style.cursor = 'pointer';
-                    
-                    const txtHandler = function(e) {
+
+                    const txtHandler = function (e) {
                         e.preventDefault(); e.stopPropagation();
                         openMobileFooterText(dataKey);
                     };
                     span.addEventListener('click', txtHandler);
                     span.addEventListener('touchend', txtHandler);
                 } else {
-                    span.style.pointerEvents = 'none'; 
+                    span.style.pointerEvents = 'none';
                 }
 
                 labelDiv.appendChild(span);
@@ -4545,7 +4652,7 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
                 const btn = document.createElement('div');
                 btn.className = 'm-theory-btn';
                 btn.innerHTML = 'ZUR THEORIE';
-                btn.style.marginTop = '0px'; 
+                btn.style.marginTop = '0px';
                 btn.style.zIndex = '10001';
                 btn.style.pointerEvents = 'auto';
                 (function (index) {
@@ -4585,36 +4692,36 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
                             if (entry.isIntersecting) {
                                 const chart = entry.target.querySelector('.m-pie-container');
                                 if (!chart) return;
-                                
-                                if (i === 1) { 
-                                    const ag = chart.querySelector(`[id$="anim-group-1"]`); 
-                                    if (ag) ag.classList.add('animate-fly-out-m'); 
-                                    
+
+                                if (i === 1) {
+                                    const ag = chart.querySelector(`[id$="anim-group-1"]`);
+                                    if (ag) ag.classList.add('animate-fly-out-m');
+
                                     const gh = chart.querySelector(`[id$="ghost-1"]`);
                                     if (gh) {
                                         setTimeout(() => { gh.classList.add('ghost-visible'); gh.style.opacity = "1"; }, 1000);
                                     }
                                 }
-                                if (i === 2) { 
-                                    const ag = chart.querySelector(`[id$="anim-group-2"]`); 
+                                if (i === 2) {
+                                    const ag = chart.querySelector(`[id$="anim-group-2"]`);
                                     if (ag) ag.classList.add('animate-fly-out-w');
-                                    
+
                                     const pText = chart.querySelector(`[id$="anim-2-p"]`);
-                                    if(pText) setTimeout(() => { pText.classList.add('p-visible'); pText.style.opacity = "1"; }, 1500);
+                                    if (pText) setTimeout(() => { pText.classList.add('p-visible'); pText.style.opacity = "1"; }, 1500);
                                 }
-                                if (i === 3) { 
-                                    const ag = chart.querySelector(`[id$="anim-group-3"]`); 
+                                if (i === 3) {
+                                    const ag = chart.querySelector(`[id$="anim-group-3"]`);
                                     if (ag) ag.classList.add('animate-fly-in-m');
-                                    
+
                                     const gh = chart.querySelector(`[id$="ghost-3"]`);
-                                    if(gh) { gh.style.opacity = "0"; gh.classList.remove('ghost-visible'); }
+                                    if (gh) { gh.style.opacity = "0"; gh.classList.remove('ghost-visible'); }
                                 }
-                                if (i === 4) { 
-                                    const ag = chart.querySelector(`[id$="anim-group-4"]`); 
+                                if (i === 4) {
+                                    const ag = chart.querySelector(`[id$="anim-group-4"]`);
                                     if (ag) ag.classList.add('animate-fly-in-w');
-                                    
+
                                     const gh = chart.querySelector(`[id$="ghost-4"]`);
-                                    if(gh) { gh.style.opacity = "0"; gh.classList.remove('ghost-visible'); }
+                                    if (gh) { gh.style.opacity = "0"; gh.classList.remove('ghost-visible'); }
                                 }
                             }
                         });
@@ -4650,8 +4757,8 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
         let currentMobileIndex = -1;
 
         function openMobileLevel2(index, type) {
-            currentMobileIndex = index; 
-            
+            currentMobileIndex = index;
+
             const overlay = document.getElementById('m-level-2-overlay');
             const content = document.getElementById('m-l2-content');
             if (!content) return;
@@ -4675,23 +4782,23 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
             if (originalSvg) {
                 let svgContent = originalSvg.outerHTML;
                 svgContent = svgContent.replace(/id="/g, 'id="ml2-');
-                svgContent = svgContent.replace(/handleLevel2Click\(event,\s*'(\w+)'\)/g, ""); 
+                svgContent = svgContent.replace(/handleLevel2Click\(event,\s*'(\w+)'\)/g, "");
                 svgContent = svgContent.replace(/enterLevel4\(event\)/g, "");
 
                 const temp = document.createElement('div'); temp.innerHTML = svgContent;
 
                 // --- FIX: BEREINIGUNG DER ZUSTÄNDE FÜR LEVEL 2 ---
-                
+
                 // 1. Avantgarde (Index 2): P-Bereich fixieren und entklicken
-                if (index === 2) { 
-                    const ag = temp.querySelector(`[id$="anim-group-2"]`); 
+                if (index === 2) {
+                    const ag = temp.querySelector(`[id$="anim-group-2"]`);
                     if (ag) ag.style.display = 'none';
-                    
+
                     const pText = temp.querySelector(`[id$="anim-2-p"]`);
                     if (pText) {
                         pText.style.opacity = '1';
                         pText.classList.add('p-visible');
-                        pText.style.transform = 'none'; 
+                        pText.style.transform = 'none';
                         // FIX: Text nicht klickbar machen
                         pText.style.pointerEvents = 'none';
                     }
@@ -4707,45 +4814,45 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
                 }
 
                 // 2. Postmoderne (Index 3): M wieder anzeigen
-                if (index === 3) { 
-                    const ag = temp.querySelector(`[id$="anim-group-3"]`); 
-                    if (ag) { 
-                        ag.style.opacity = '1'; 
-                        ag.style.transform = 'none'; 
-                        ag.style.display = 'block'; 
+                if (index === 3) {
+                    const ag = temp.querySelector(`[id$="anim-group-3"]`);
+                    if (ag) {
+                        ag.style.opacity = '1';
+                        ag.style.transform = 'none';
+                        ag.style.display = 'block';
                     }
-                    const gh = temp.querySelector(`[id$="ghost-3"]`); 
+                    const gh = temp.querySelector(`[id$="ghost-3"]`);
                     if (gh) gh.style.opacity = '0';
                 }
 
                 // 3. Reflexive Kunst (Index 4): W wieder anzeigen
-                if (index === 4) { 
-                    const ag = temp.querySelector(`[id$="anim-group-4"]`); 
-                    if (ag) { 
-                        ag.style.opacity = '1'; 
-                        ag.style.transform = 'none'; 
-                        ag.style.display = 'block'; 
+                if (index === 4) {
+                    const ag = temp.querySelector(`[id$="anim-group-4"]`);
+                    if (ag) {
+                        ag.style.opacity = '1';
+                        ag.style.transform = 'none';
+                        ag.style.display = 'block';
                     }
-                    const gh = temp.querySelector(`[id$="ghost-4"]`); 
+                    const gh = temp.querySelector(`[id$="ghost-4"]`);
                     if (gh) gh.style.opacity = '0';
                 }
 
                 // 4. Klassische Moderne (Index 1): M weg, Ghost (Eigenwerte) da
-                if (index === 1) { 
-                    const ag = temp.querySelector(`[id$="anim-group-1"]`); 
+                if (index === 1) {
+                    const ag = temp.querySelector(`[id$="anim-group-1"]`);
                     if (ag) ag.style.display = 'none';
-                    
+
                     const ghGroup = temp.querySelector(`[id$="g-1-ghost"]`);
                     const ghPath = temp.querySelector(`[id$="ghost-1"]`);
                     const ghText = temp.querySelector(`.ghost-text`);
 
-                    if(ghGroup) {
+                    if (ghGroup) {
                         ghGroup.style.display = 'block';
                         ghGroup.style.opacity = '1';
                         ghGroup.style.pointerEvents = 'auto';
                         ghGroup.style.cursor = 'pointer';
                     }
-                    if(ghPath) {
+                    if (ghPath) {
                         ghPath.classList.add('ghost-visible');
                         ghPath.style.opacity = '1';
                         ghPath.style.display = 'block';
@@ -4753,7 +4860,7 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
                         ghPath.setAttribute('stroke-dasharray', '4, 3');
                         ghPath.style.fillOpacity = '0';
                     }
-                    if(ghText) {
+                    if (ghText) {
                         ghText.style.opacity = '1';
                     }
                 }
@@ -4763,11 +4870,11 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
                 // Event Listeners for Pieces (Level 3 Verlinkung)
                 const slices = pieContainer.querySelectorAll('.l2-slice-group');
                 slices.forEach(slice => {
-                    const id = slice.id; 
+                    const id = slice.id;
                     if (!id) return;
                     const parts = id.split('-');
-                    const typeCode = parts[parts.length - 1]; 
-                    
+                    const typeCode = parts[parts.length - 1];
+
                     // --- FIX: Klick-Blockade für Werk bei Avantgarde & Postmoderne ---
                     // Hier verhindern wir strikt, dass diese Bereiche klickbar sind
                     if (index === 2 && typeCode === 'w') {
@@ -4800,7 +4907,7 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
                 const ghostGroup = pieContainer.querySelector('[id$="-ghost"]');
                 if (ghostGroup) {
                     ghostGroup.style.cursor = 'pointer';
-                    ghostGroup.style.pointerEvents = 'auto'; 
+                    ghostGroup.style.pointerEvents = 'auto';
                     const l4Handler = function (e) {
                         e.preventDefault(); e.stopPropagation();
                         openMobileLevel4();
@@ -4825,35 +4932,35 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
         function openMobileLevel3(type) {
             const overlay = document.getElementById('m-level-3-overlay');
             const content = document.getElementById('m-l3-content');
-            
+
             // 1. Overlay sichtbar machen
             if (!overlay || !content) return;
             overlay.style.display = 'flex';
-            
+
             // Close Button erzwingen (Sicherheitsnetz)
             const closeBtn = overlay.querySelector('.m-close-btn');
-            if(closeBtn) closeBtn.style.display = 'flex';
+            if (closeBtn) closeBtn.style.display = 'flex';
 
             const data = level3Data[type];
             if (!data) return;
 
             // 2. Prüfen ob Charts schon existieren (verhindert Blinken/Neuladen)
             const isConstructed = content.classList.contains('m-l3-ready');
-            
+
             let textArea;
 
             if (!isConstructed) {
                 // --- INITIALISIERUNG (Nur 1x) ---
                 content.innerHTML = "";
                 content.classList.add('m-l3-ready');
-                
+
                 // Scroll Container
                 const scrollBox = document.createElement('div');
                 scrollBox.style.width = "100%";
                 scrollBox.style.padding = "20px";
                 scrollBox.style.paddingBottom = "100px"; // Platz unten
                 scrollBox.style.boxSizing = "border-box";
-                
+
                 // Text Container
                 textArea = document.createElement('div');
                 textArea.id = "m-l3-text-target";
@@ -4862,8 +4969,8 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
 
                 // Helper: Chart bauen
                 const buildChart = (origSvg, title, chartIndex) => {
-                    if(!origSvg) return null;
-                    
+                    if (!origSvg) return null;
+
                     const wrapper = document.createElement('div');
                     wrapper.style.display = 'flex';
                     wrapper.style.flexDirection = 'column';
@@ -4881,55 +4988,55 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
                     // SVG Container
                     const div = document.createElement('div');
                     div.className = 'm-l2-chart'; // Übernimmt CSS Größe
-                    
+
                     // SVG klonen und ID-Bereinigung
                     let svgStr = origSvg.outerHTML;
                     // Wir entfernen alle alten IDs um Konflikte zu vermeiden
-                    svgStr = svgStr.replace(/id="[^"]*"/g, ''); 
+                    svgStr = svgStr.replace(/id="[^"]*"/g, '');
                     div.innerHTML = svgStr;
-                    
+
                     wrapper.appendChild(div);
                     scrollBox.appendChild(wrapper);
 
                     // Interaktivität hinzufügen (Erst NACH dem Einfügen ins DOM)
                     setTimeout(() => {
                         const svg = div.querySelector('svg');
-                        if(svg) {
+                        if (svg) {
                             svg.style.overflow = "visible"; // Wichtig für Vergrößerung
                             const groups = svg.querySelectorAll('g');
-                            
+
                             // Wir müssen wissen, welches Stück was ist.
                             // Da wir die IDs gelöscht haben, nutzen wir die Reihenfolge oder Texte.
                             // Besser: Wir mappen basierend auf dem Inhalt.
                             // Im Originalcode hat jedes <g> einen <text>.
-                            
+
                             groups.forEach(g => {
                                 const textEl = g.querySelector('text');
-                                if(textEl) {
+                                if (textEl) {
                                     const label = textEl.textContent.trim().toLowerCase();
                                     // Mapping Label -> Key
                                     let key = null;
-                                    if(label === 'medium' || label === 'mitteilung') key = (label==='medium')?'medium':'mitteilung';
-                                    if(label === 'werk' || label === 'verstehen') key = (label==='werk')?'werk':'verstehen';
-                                    if(label === 'konzept' || label === 'information') key = (label==='konzept')?'konzept':'information';
-                                    
+                                    if (label === 'medium' || label === 'mitteilung') key = (label === 'medium') ? 'medium' : 'mitteilung';
+                                    if (label === 'werk' || label === 'verstehen') key = (label === 'werk') ? 'werk' : 'verstehen';
+                                    if (label === 'konzept' || label === 'information') key = (label === 'konzept') ? 'konzept' : 'information';
+
                                     // Bestimme den übergeordneten Datensatz-Typ für den Klick
                                     // (Lehmann vs Luhmann Mapping)
                                     // Wir machen es einfach: Klick auf "Medium" öffnet "medium".
-                                    
-                                    let clickType = null;
-                                    if(label === 'medium') clickType = 'medium';
-                                    if(label === 'werk') clickType = 'werk';
-                                    if(label === 'konzept') clickType = 'konzept';
-                                    if(label === 'mitteilung') clickType = 'mitteilung';
-                                    if(label === 'verstehen') clickType = 'verstehen';
-                                    if(label === 'information') clickType = 'information';
 
-                                    if(clickType) {
+                                    let clickType = null;
+                                    if (label === 'medium') clickType = 'medium';
+                                    if (label === 'werk') clickType = 'werk';
+                                    if (label === 'konzept') clickType = 'konzept';
+                                    if (label === 'mitteilung') clickType = 'mitteilung';
+                                    if (label === 'verstehen') clickType = 'verstehen';
+                                    if (label === 'information') clickType = 'information';
+
+                                    if (clickType) {
                                         // Identifikator setzen für späteres Finden
                                         g.setAttribute('data-ref', clickType);
                                         g.classList.add('m-l3-slice'); // CSS Transition Klasse
-                                        
+
                                         // Klick Event
                                         g.onclick = (e) => {
                                             e.preventDefault(); e.stopPropagation();
@@ -4948,7 +5055,7 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
 
                 // Charts holen (Lehmann = Index 0, Luhmann = Index 1)
                 const sourceCharts = document.querySelectorAll('.level-3-layer .l3-chart');
-                if(sourceCharts.length >= 2) {
+                if (sourceCharts.length >= 2) {
                     buildChart(sourceCharts[0], "Lehmanns Kunstkommunikation", 0);
                     buildChart(sourceCharts[1], "Luhmanns Kommunikationsmodell", 1);
                 }
@@ -4961,22 +5068,22 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
             // --- UPDATE PHASE (Text & Animation) ---
 
             // 1. Text setzen
-            if(textArea) {
+            if (textArea) {
                 textArea.innerHTML = `<div class="m-l2-title" style="display:block; text-align:center; width:100%; margin-bottom:15px;">${data.title}</div><div>${data.text}</div>`;
             }
 
             // 2. Scroll nach oben
-            if(overlay.scrollTop > 50) overlay.scrollTo({top:0, behavior:'smooth'});
+            if (overlay.scrollTop > 50) overlay.scrollTo({ top: 0, behavior: 'smooth' });
 
             // 3. Animation der Stücke
             // Wir warten einen Frame, damit die DOM-Events sicher gebunden sind (beim Erstaufruf)
             requestAnimationFrame(() => {
                 const allSlices = content.querySelectorAll('.m-l3-slice');
-                
+
                 // Wir müssen mappen: data.selfId und data.otherId sind IDs aus dem Desktop Code (z.B. l3-lehmann-medium).
                 // Unser Mobile Code nutzt data-ref="medium".
                 // Wir extrahieren den Schlüssel aus der ID.
-                
+
                 const getKeyFromId = (idString) => {
                     const parts = idString.split('-');
                     return parts[parts.length - 1]; // "medium", "werk" etc.
@@ -4987,17 +5094,17 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
 
                 allSlices.forEach(slice => {
                     const sliceKey = slice.getAttribute('data-ref');
-                    
+
                     // Reset Klassen
                     slice.classList.remove('is-large', 'is-medium');
-                    
+
                     if (sliceKey === targetKey1) {
                         // Großes Stück
                         // Nach vorne holen (SVG Z-Index Hack)
                         slice.parentNode.appendChild(slice);
                         // Timeout für CSS Transition Trigger nach DOM Move
                         setTimeout(() => slice.classList.add('is-large'), 10);
-                    } 
+                    }
                     else if (sliceKey === targetKey2) {
                         // Mittleres Stück
                         slice.parentNode.appendChild(slice);
@@ -5009,7 +5116,7 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
         }
         function closeMobileLevel3() {
             const overlay = document.getElementById('m-level-3-overlay');
-            if(overlay) overlay.style.display = 'none';
+            if (overlay) overlay.style.display = 'none';
         }
 
         function openMobileLevel4() {
@@ -5019,7 +5126,7 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
 
             overlay.style.display = 'flex';
             content.innerHTML = "";
-            content.style.paddingBottom = "50px"; 
+            content.style.paddingBottom = "50px";
 
             const title = document.createElement('div');
             title.className = 'm-l2-title';
@@ -5052,26 +5159,26 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
                 const movingLayer = newSvg.querySelector('[id$="layer-moving-parts"]') || newSvg;
 
                 const interactGroups = newSvg.querySelectorAll('.l4-interactive-group');
-                
+
                 interactGroups.forEach(g => {
                     g.removeAttribute('onclick');
                     g.style.cursor = 'pointer';
-                    g.style.pointerEvents = 'auto'; 
+                    g.style.pointerEvents = 'auto';
                     // Sanfte Transition für Größe
                     g.style.transition = 'transform 0.4s cubic-bezier(0.25, 1, 0.5, 1)';
                     // WICHTIG für saubere Zentrierung:
                     g.style.transformBox = 'fill-box';
                     g.style.transformOrigin = 'center';
-                    
-                    g.classList.remove('active'); 
+
+                    g.classList.remove('active');
 
                     g.onclick = (e) => {
                         e.preventDefault();
                         e.stopPropagation();
 
-                        const currentId = g.id; 
+                        const currentId = g.id;
                         const rawKey = currentId.replace('m-btn-', '');
-                        
+
                         const infoData = level4Data[rawKey];
                         if (!infoData) return;
 
@@ -5081,8 +5188,8 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
                             ox.classList.remove('active');
                             // Style Reset inline falls nötig
                             const p = ox.querySelector('path, circle');
-                            if(p) {
-                                p.style.strokeWidth = ""; 
+                            if (p) {
+                                p.style.strokeWidth = "";
                                 p.style.fillOpacity = "";
                                 p.style.fill = "";
                             }
@@ -5090,16 +5197,16 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
 
                         // Active State
                         g.classList.add('active'); // CSS setzt stroke-width und weiß
-                        
+
                         // Z-Index Hack: Das aktive Element ans Ende der Gruppe hängen,
                         // damit es über den anderen Linien liegt (für Deckkraft)
-                        if(g.parentNode) {
+                        if (g.parentNode) {
                             g.parentNode.appendChild(g);
                         }
 
                         // Vergrößern
                         g.style.transform = 'scale(1.15)';
-                        
+
                         const infoBox = document.getElementById('m-l4-info-box');
                         if (infoBox) {
                             infoBox.innerHTML = `<b>${infoData.title}</b><p>${infoData.text}</p>`;
@@ -5113,8 +5220,8 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
             const infoBox = document.createElement('div');
             infoBox.id = 'm-l4-info-box';
             infoBox.style.padding = '20px';
-            infoBox.style.minHeight = '300px'; 
-            infoBox.style.background = 'transparent'; 
+            infoBox.style.minHeight = '300px';
+            infoBox.style.background = 'transparent';
             infoBox.style.margin = '10px';
             infoBox.innerHTML = "<div style='color:#666; text-align:center; padding-top:20px;'>Tippe auf die Begriffe im Diagramm.</div>";
             content.appendChild(infoBox);
@@ -5152,7 +5259,7 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
         function updateMobileArrows() {
             const leftArrow = document.getElementById('mob-arrow-left');
             const rightArrow = document.getElementById('mob-arrow-right');
-            
+
             if (!leftArrow || !rightArrow) return;
 
             // NEU: Level 4 Logic (Pfeile immer AUS)
@@ -5225,7 +5332,7 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
             `;
             document.head.appendChild(style);
         });
-		/* --- MAC SPECIFIC FIX (Dynamic Centering) --- */
+        /* --- MAC SPECIFIC FIX (Dynamic Centering) --- */
         function adjustMacCurve() {
             // Nur auf Mac ausführen
             if (navigator.userAgent.indexOf("Mac") === -1) return;
@@ -5233,7 +5340,7 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
             const svg = document.querySelector('.curves-svg');
             const matLabel = document.querySelector('.label-material');
             const gehLabel = document.querySelector('.label-gehalt');
-            
+
             if (!svg || !matLabel || !gehLabel) return;
 
             // 1. Ziel-Höhe berechnen (Exakte Mitte zwischen den beiden Begriffen)
@@ -5261,13 +5368,13 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
         window.addEventListener('resize', adjustMacCurve);
         // Sicherheits-Timeout, falls Fonts nachladen und die Höhe verändern
         setTimeout(adjustMacCurve, 300);
-       
-	   /* --- MAC SPECIFIC FIX (Clipping / Schablone) --- */
+
+        /* --- MAC SPECIFIC FIX (Clipping / Schablone) --- */
         /* Behebt den Fehler, dass auf Mac Desktop die Animationen am Kreisrand abgeschnitten werden */
         function fixMacClipping() {
             // Prüfung: Nur auf Mac ausführen (schließt Windows/Android aus)
             if (navigator.userAgent.indexOf("Mac") === -1) return;
-            
+
             // Wir injizieren CSS, das border-radius entfernt.
             // border-radius auf dem SVG-Container wirkt auf Mac wie overflow:hidden,
             // auch wenn overflow:visible gesetzt ist.
@@ -5284,7 +5391,7 @@ coverSec.addEventListener('touchend', performStartScroll, { passive: false });
         }
         // Funktion sofort aufrufen
         fixMacClipping();
-	   
+
     </script>
 </body>
 
