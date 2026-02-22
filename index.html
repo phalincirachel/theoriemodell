@@ -3610,6 +3610,7 @@
                 tile.style.backgroundImage = 'none';
                 tile.style.opacity = 0;
                 tile.innerHTML = "";
+                tile.dataset.textKey = "";
 
                 // Disable pointer events ONLY for the top row (slots 0-4) if it's the currently hovered index.
                 // Row 2 and 3 (slots 5-14) must REMAIN clickable to trigger the text overlay.
@@ -3619,6 +3620,12 @@
                 }
                 tile.style.pointerEvents = 'auto'; // Images interactable
                 const data = currentImages[dataIndex];
+                if (data && data.imgUrl) {
+                    const cleanUrl = data.imgUrl.split('#')[0].split('?')[0];
+                    let textKey = cleanUrl.split('/').pop();
+                    try { textKey = decodeURIComponent(textKey); } catch (_) { }
+                    tile.dataset.textKey = textKey;
+                }
 
                 // Do not assign external links to row 2 and 3 images (slots 5-14)
                 // because these trigger the custom image-text overlay.
@@ -5547,10 +5554,12 @@
             let url = bg.replace(/^url\(['"]?/, "").replace(/['"]?\)$/, "");
             const cleanUrl = url.split('#')[0].split('?')[0];
             let filename = cleanUrl.split('/').pop();
+            const datasetKey = tileElement.dataset && tileElement.dataset.textKey ? tileElement.dataset.textKey : "";
 
             let textContent = null;
             if (typeof artworkTexts !== 'undefined') {
                 textContent =
+                    artworkTexts[datasetKey] ||
                     artworkTexts[filename] ||
                     artworkTexts[cleanUrl] ||
                     artworkTexts[url];
@@ -5591,16 +5600,15 @@
             flyingImg.style.zIndex = '10000';
 
             const textBox = document.createElement('div');
-            textBox.className = 'detail-text-block';
-            textBox.style.position = 'absolute';
+            textBox.id = 'image-text-panel';
+            textBox.style.position = 'fixed';
             textBox.style.right = '5%';
             textBox.style.top = '10%';
             textBox.style.width = '40%';
             textBox.style.height = '80%';
-            textBox.style.maxHeight = '80%';
-            textBox.style.transform = 'none';
+            textBox.style.zIndex = '10001';
             textBox.style.overflowY = 'auto';
-            textBox.style.opacity = '0';
+            textBox.style.opacity = '1';
             textBox.style.transition = 'opacity 0.4s ease';
             textBox.style.transitionDelay = '0.3s';
             textBox.style.color = '#111';
@@ -5609,12 +5617,14 @@
             textBox.style.boxSizing = 'border-box';
             textBox.style.lineHeight = '1.6';
             textBox.style.fontSize = '1rem';
+            textBox.style.borderRadius = '4px';
+            textBox.style.boxShadow = '0 8px 30px rgba(0, 0, 0, 0.12)';
             textBox.style.pointerEvents = 'auto';
             textBox.innerHTML = textContent;
 
-            overlay.appendChild(textBox);
             document.body.appendChild(overlay);
             document.body.appendChild(flyingImg);
+            document.body.appendChild(textBox);
 
             // Trigger animation
             requestAnimationFrame(() => {
@@ -5623,25 +5633,23 @@
                 // Calculate larger size, preserving ratio approximately
                 flyingImg.style.width = '40%';
                 flyingImg.style.height = '80%';
-                textBox.style.opacity = '1';
                 // Trigger hiding of original tile so it doesn't show under overlay
                 tileElement.style.opacity = '0';
             });
 
             overlay.onclick = function (e) {
                 if (!textBox.contains(e.target) && e.target !== flyingImg) {
-                    closeImageTextMode(flyingImg, overlay, rect, tileElement);
+                    closeImageTextMode(flyingImg, overlay, textBox, rect, tileElement);
                 }
             };
         }
 
-        function closeImageTextMode(flyingImg, overlay, originalRect, tileElement) {
+        function closeImageTextMode(flyingImg, overlay, textBox, originalRect, tileElement) {
             flyingImg.style.left = originalRect.left + 'px';
             flyingImg.style.top = originalRect.top + 'px';
             flyingImg.style.width = originalRect.width + 'px';
             flyingImg.style.height = originalRect.height + 'px';
 
-            const textBox = overlay.querySelector('.detail-text-block');
             if (textBox) {
                 textBox.style.transitionDelay = '0s';
                 textBox.style.opacity = '0';
@@ -5650,6 +5658,7 @@
             setTimeout(() => {
                 if (document.body.contains(overlay)) document.body.removeChild(overlay);
                 if (document.body.contains(flyingImg)) document.body.removeChild(flyingImg);
+                if (textBox && document.body.contains(textBox)) document.body.removeChild(textBox);
                 tileElement.style.opacity = '1';
 
                 document.body.classList.remove('image-text-mode-active');
