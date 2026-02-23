@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-02-23T16:27:12.411Z",
+  "total": 25,
+  "ok": 25,
+  "failed": 0,
+  "results": [
+    {
+      "key": "1skdurer.jpeg",
+      "url": "https://en.wikipedia.org/wiki/Self-Portrait_(D%C3%BCrer,_Munich)",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://en.wikipedia.org/wiki/Self-Portrait_(D%C3%BCrer,_Munich)"
+    },
+    {
+      "key": "1sknatiluspokal.jpeg",
+      "url": "https://de.wikipedia.org/wiki/Nautiluspokal",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://de.wikipedia.org/wiki/Nautiluspokal"
+    },
+    {
+      "key": "1skmichelangelo.jpg",
+      "url": "https://de.wikipedia.org/wiki/Michelangelo",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://de.wikipedia.org/wiki/Michelangelo"
+    },
+    {
+      "key": "1skfrauenkirche.jpeg",
+      "url": "https://de.wikipedia.org/wiki/Frauenkirche_(Dresden)",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://de.wikipedia.org/wiki/Frauenkirche_(Dresden)"
+    },
+    {
+      "key": "1skmozart.jpg",
+      "url": "https://www.youtube.com/watch?v=_BnfZLdePCM",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=_BnfZLdePCM"
+    },
+    {
+      "key": "2kmschmidtrottluff.jpeg",
+      "url": "https://de.wikipedia.org/wiki/Karl_Schmidt-Rottluff",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://de.wikipedia.org/wiki/Karl_Schmidt-Rottluff"
+    },
+    {
+      "key": "2kmboccioni.jpg",
+      "url": "https://it.wikipedia.org/wiki/Sviluppo_di_una_bottiglia_nello_spazio",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://it.wikipedia.org/wiki/Sviluppo_di_una_bottiglia_nello_spazio"
+    },
+    {
+      "key": "2kmrichier.jpeg",
+      "url": "https://de.wikipedia.org/wiki/Germaine_Richier",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://de.wikipedia.org/wiki/Germaine_Richier"
+    },
+    {
+      "key": "2kmlecorbusier.jpeg",
+      "url": "https://de.wikipedia.org/wiki/Notre-Dame-du-Haut_(Ronchamp)",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://de.wikipedia.org/wiki/Notre-Dame-du-Haut_(Ronchamp)"
+    },
+    {
+      "key": "2kmlachenmann.jpg",
+      "url": "https://www.youtube.com/watch?v=kQzE42VrbXg",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=kQzE42VrbXg"
+    },
+    {
+      "key": "3afontana.jpeg",
+      "url": "https://de.wikipedia.org/wiki/Lucio_Fontana",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://de.wikipedia.org/wiki/Lucio_Fontana"
+    },
+    {
+      "key": "3aduchamp.jpeg",
+      "url": "https://de.wikipedia.org/wiki/Fountain_(Duchamp)",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://de.wikipedia.org/wiki/Fountain_(Duchamp)"
+    },
+    {
+      "key": "3abeuys.jpeg",
+      "url": "https://de.wikipedia.org/wiki/Joseph_Beuys",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://de.wikipedia.org/wiki/Joseph_Beuys"
+    },
+    {
+      "key": "3awotruba.jpeg",
+      "url": "https://de.wikipedia.org/wiki/Wotrubakirche",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://de.wikipedia.org/wiki/Wotrubakirche"
+    },
+    {
+      "key": "3acagejpg.jpg",
+      "url": "https://www.youtube.com/watch?v=AWVUp12XPpU",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=AWVUp12XPpU"
+    },
+    {
+      "key": "4pmliechtenstein.jpeg",
+      "url": "https://de.wikipedia.org/wiki/Roy_Lichtenstein",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://de.wikipedia.org/wiki/Roy_Lichtenstein"
+    },
+    {
+      "key": "4pmwarhol.jpeg",
+      "url": "https://de.wikipedia.org/wiki/Brillo_Box",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://de.wikipedia.org/wiki/Brillo_Box"
+    },
+    {
+      "key": "4pmkippenberger.jpeg",
+      "url": "https://de.wikipedia.org/wiki/Martin_Kippenberger",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://de.wikipedia.org/wiki/Martin_Kippenberger"
+    },
+    {
+      "key": "4pmmoore.jpeg",
+      "url": "https://de.wikipedia.org/wiki/Piazza_d%E2%80%99Italia",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://de.wikipedia.org/wiki/Piazza_d%E2%80%99Italia"
+    },
+    {
+      "key": "4pmschnittke.jpg",
+      "url": "https://www.youtube.com/watch?v=JOKSfsC4Q64",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=JOKSfsC4Q64"
+    },
+    {
+      "key": "5rktuymans.jpeg",
+      "url": "https://de.wikipedia.org/wiki/Luc_Tuymans",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://de.wikipedia.org/wiki/Luc_Tuymans"
+    },
+    {
+      "key": "5rkai.jpeg",
+      "url": "https://en.wikipedia.org/wiki/Dropping_a_Han_Dynasty_Urn",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://en.wikipedia.org/wiki/Dropping_a_Han_Dynasty_Urn"
+    },
+    {
+      "key": "5rkcattelan.jpeg",
+      "url": "https://en.wikipedia.org/wiki/The_Ninth_Hour",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://en.wikipedia.org/wiki/The_Ninth_Hour"
+    },
+    {
+      "key": "5rkcielrouge.jpeg",
+      "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Ciel+rouge",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Ciel+rouge"
+    },
+    {
+      "key": "5rkreinholdsen.jpg",
+      "url": "https://www.youtube.com/watch?v=tRnyyd94ApI",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=tRnyyd94ApI"
+    }
+  ]
+}
