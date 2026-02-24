@@ -98,8 +98,8 @@
         }
 
         #mobile-text-overlay .m-text-content {
-            margin: 0 16px 24px;
-            padding: 12px 20px 88px;
+            margin: 0 16px calc(56px + env(safe-area-inset-bottom));
+            padding: 12px 20px 104px;
             font-size: 1rem;
             line-height: 1.6;
             color: #111;
@@ -1681,15 +1681,23 @@
         }
 
         .image-text-epoch-indicator {
-            opacity: 1 !important;
-            pointer-events: none !important;
-            z-index: 10003 !important;
+            position: fixed;
+            top: 40px;
             left: 40px;
-            right: auto;
+            width: 40px;
+            height: 40px;
+            border: 2px solid #000;
+            border-radius: 50%;
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+            opacity: 1 !important;
+            pointer-events: auto !important;
+            z-index: 10003 !important;
             padding: 0;
             overflow: hidden;
             background: #fff;
-            border-width: 2px;
+            box-sizing: border-box;
         }
 
         .image-text-epoch-indicator svg {
@@ -1698,6 +1706,58 @@
             display: block;
             margin: auto;
             pointer-events: none;
+        }
+
+        #mobile-text-overlay .m-image-text-arrow {
+            position: fixed;
+            width: 46px;
+            height: 92px;
+            border: none;
+            background: transparent;
+            padding: 0;
+            margin: 0;
+            z-index: 30003;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            touch-action: manipulation;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        #mobile-text-overlay .m-image-text-arrow svg {
+            width: 34px;
+            height: 68px;
+            fill: none;
+            stroke: #c0c0c0;
+            stroke-width: 3;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            transition: transform 0.18s ease, stroke 0.2s ease;
+            filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.16));
+        }
+
+        #mobile-text-overlay .m-image-text-arrow:active svg {
+            transform: scale(0.94);
+            stroke: #7f8894;
+        }
+
+        #mobile-text-overlay .m-image-text-arrow-right {
+            right: 6px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        #mobile-text-overlay .m-image-text-arrow-down {
+            bottom: calc(8px + env(safe-area-inset-bottom));
+            left: 50%;
+            transform: translateX(-50%);
+            width: 92px;
+            height: 46px;
+        }
+
+        #mobile-text-overlay .m-image-text-arrow-down svg {
+            transform: rotate(90deg);
         }
 
         #image-text-overlay {
@@ -6245,6 +6305,28 @@
             return arrow;
         }
 
+        function createMobileImageTextArrow(axis, direction) {
+            const arrow = document.createElement('button');
+            arrow.type = 'button';
+            const isHorizontal = axis === 'x';
+            arrow.className = `m-image-text-arrow ${isHorizontal ? 'm-image-text-arrow-right' : 'm-image-text-arrow-down'}`;
+            arrow.setAttribute(
+                'aria-label',
+                isHorizontal
+                    ? 'Zum gleichen Feld der naechsten Epoche'
+                    : 'Zum naechsten Werk dieser Epoche'
+            );
+            arrow.innerHTML = direction < 0
+                ? `<svg viewBox="0 0 50 100"><path d="M40,10 L15,50 L40,90" /></svg>`
+                : `<svg viewBox="0 0 50 100"><path d="M10,10 L35,50 L10,90" /></svg>`;
+            arrow.onclick = function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                moveImageTextOverlayAxis(axis, direction);
+            };
+            return arrow;
+        }
+
         function removeImageTextCoachmark() {
             const el = document.getElementById('image-text-coachmark');
             if (!el) return;
@@ -6345,7 +6427,7 @@
 
         function createEpochIndicatorButton(groupIndex, isMobile) {
             const btn = document.createElement('div');
-            btn.className = 'close-btn image-text-epoch-indicator';
+            btn.className = 'image-text-epoch-indicator';
             btn.style.top = isMobile ? '16px' : '40px';
             btn.style.left = isMobile ? '16px' : '40px';
             btn.style.width = '40px';
@@ -6718,6 +6800,15 @@
             imageTextNavState.refs.epochIndicator = epochIndicator;
             imageTextNavState.cleanup.push(() => {
                 if (epochIndicator.parentNode) epochIndicator.parentNode.removeChild(epochIndicator);
+            });
+
+            const navRight = createMobileImageTextArrow('x', 1);
+            const navDown = createMobileImageTextArrow('y', 1);
+            overlay.appendChild(navRight);
+            overlay.appendChild(navDown);
+            imageTextNavState.cleanup.push(() => {
+                if (navRight.parentNode) navRight.parentNode.removeChild(navRight);
+                if (navDown.parentNode) navDown.parentNode.removeChild(navDown);
             });
 
             imgBox.addEventListener('click', handleImageTextMediaActivation);
