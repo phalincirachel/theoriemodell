@@ -1557,7 +1557,7 @@
         }
 
         .image-text-nav.image-text-nav-up {
-            top: 6px;
+            top: 0;
             left: 50%;
             transform: translateX(-50%);
         }
@@ -1586,6 +1586,12 @@
         }
 
         body.desktop-arrows-idle .nav-arrow-custom {
+            opacity: 0 !important;
+            pointer-events: none !important;
+        }
+
+        body.image-text-mode-active #nav-arrow-left,
+        body.image-text-mode-active #nav-arrow-right {
             opacity: 0 !important;
             pointer-events: none !important;
         }
@@ -1624,18 +1630,35 @@
             gap: 20px;
         }
 
+        .it-coach-icons {
+            min-width: 84px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            flex-shrink: 0;
+        }
+
         .it-coach-icon {
-            width: 48px;
-            height: 48px;
+            width: 36px;
+            height: 36px;
             flex-shrink: 0;
         }
 
         .it-coach-icon path {
             fill: none;
             stroke: rgba(255, 255, 255, 0.85);
-            stroke-width: 1.8;
+            stroke-width: 3;
             stroke-linecap: round;
             stroke-linejoin: round;
+        }
+
+        .it-coach-icon-up {
+            transform: rotate(-90deg);
+        }
+
+        .it-coach-icon-down {
+            transform: rotate(90deg);
         }
 
         .it-coach-text {
@@ -1821,7 +1844,7 @@
             }
 
             .image-text-nav.image-text-nav-up {
-                top: 4px;
+                top: 2px;
             }
 
             .image-text-nav.image-text-nav-down {
@@ -6330,14 +6353,14 @@
             const hasGroup = imageTextNavState.groupIndex >= EPOCH_MIN && imageTextNavState.groupIndex <= EPOCH_MAX;
             if (left) {
                 const showLeft = hasGroup && imageTextNavState.groupIndex > EPOCH_MIN;
-                left.style.opacity = showLeft ? '1' : '0';
-                left.style.pointerEvents = showLeft ? 'auto' : 'none';
+                left.style.setProperty('opacity', showLeft ? '1' : '0', 'important');
+                left.style.setProperty('pointer-events', showLeft ? 'auto' : 'none', 'important');
                 left.setAttribute('aria-hidden', showLeft ? 'false' : 'true');
             }
             if (right) {
                 const showRight = hasGroup && imageTextNavState.groupIndex < EPOCH_MAX;
-                right.style.opacity = showRight ? '1' : '0';
-                right.style.pointerEvents = showRight ? 'auto' : 'none';
+                right.style.setProperty('opacity', showRight ? '1' : '0', 'important');
+                right.style.setProperty('pointer-events', showRight ? 'auto' : 'none', 'important');
                 right.setAttribute('aria-hidden', showRight ? 'false' : 'true');
             }
         }
@@ -6436,9 +6459,14 @@
             coach.innerHTML = `
                 <div class="image-text-coachmark-panel">
                     <div class="it-coach-row">
-                        <svg class="it-coach-icon" viewBox="0 0 48 48" aria-hidden="true">
-                            <path d="M8,24 L38,24 M38,24 L30,16 M38,24 L30,32"></path>
-                        </svg>
+                        <div class="it-coach-icons" aria-hidden="true">
+                            <svg class="it-coach-icon" viewBox="0 0 50 100">
+                                <path d="M40,10 L15,50 L40,90"></path>
+                            </svg>
+                            <svg class="it-coach-icon" viewBox="0 0 50 100">
+                                <path d="M10,10 L35,50 L10,90"></path>
+                            </svg>
+                        </div>
                         <div class="it-coach-text">
                             <div class="it-coach-action">${horizontalAction}</div>
                             <div class="it-coach-desc">${horizontalDesc}</div>
@@ -6446,9 +6474,14 @@
                     </div>
                     <div class="it-coach-divider"></div>
                     <div class="it-coach-row">
-                        <svg class="it-coach-icon" viewBox="0 0 48 48" aria-hidden="true">
-                            <path d="M24,8 L24,38 M24,38 L16,30 M24,38 L32,30"></path>
-                        </svg>
+                        <div class="it-coach-icons" aria-hidden="true">
+                            <svg class="it-coach-icon it-coach-icon-up" viewBox="0 0 50 100">
+                                <path d="M10,10 L35,50 L10,90"></path>
+                            </svg>
+                            <svg class="it-coach-icon it-coach-icon-down" viewBox="0 0 50 100">
+                                <path d="M10,10 L35,50 L10,90"></path>
+                            </svg>
+                        </div>
                         <div class="it-coach-text">
                             <div class="it-coach-action">${verticalAction}</div>
                             <div class="it-coach-desc">${verticalDesc}</div>
@@ -7068,7 +7101,7 @@
             const compactDesktop = window.innerWidth < 1500;
             const edgeGapPct = compactDesktop ? 7 : 9;
             const topGapPct = compactDesktop ? 14.8 : 15.6;
-            const titleTop = compactDesktop ? '8.4%' : '9%';
+            const titleTop = compactDesktop ? '10.2%' : '10.8%';
             const panelWidthPct = compactDesktop ? 40 : 37;
             const panelHeightPct = compactDesktop ? 68 : 67;
 
