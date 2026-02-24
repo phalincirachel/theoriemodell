@@ -1574,7 +1574,15 @@
         }
 
         .image-text-nav.image-text-nav-down svg {
-            transform: rotate(-90deg);
+            transform: rotate(90deg);
+        }
+
+        .image-text-nav.image-text-nav-up:hover svg {
+            transform: rotate(90deg) !important;
+        }
+
+        .image-text-nav.image-text-nav-down:hover svg {
+            transform: rotate(90deg) !important;
         }
 
         body.desktop-arrows-idle .nav-arrow-custom {
@@ -6091,6 +6099,11 @@
             return 1 - Math.pow(1 - x, 3);
         }
 
+        function easeInOutSine(t) {
+            const x = clamp(t, 0, 1);
+            return -(Math.cos(Math.PI * x) - 1) / 2;
+        }
+
         function getLineHeightPx(el) {
             if (!el) return 24;
             const style = window.getComputedStyle(el);
@@ -6299,6 +6312,7 @@
 
             renderImageTextPayload(payload, { resetTextScroll: true });
             updateEpochIndicatorButton(nextGroup);
+            updateDesktopImageTextHorizontalArrows();
             updateMobileImageTextHorizontalArrows();
             pingDesktopArrowActivity();
             return true;
@@ -6308,19 +6322,40 @@
             moveImageTextOverlayAxis('y', step);
         }
 
-        function updateMobileImageTextHorizontalArrows() {
-            if (!imageTextNavState || imageTextNavState.mode !== 'mobile') return;
+        function updateDesktopImageTextHorizontalArrows() {
+            if (!imageTextNavState || imageTextNavState.mode !== 'desktop') return;
             const refs = imageTextNavState.refs || {};
             const left = refs.navLeft;
             const right = refs.navRight;
+            const hasGroup = imageTextNavState.groupIndex >= EPOCH_MIN && imageTextNavState.groupIndex <= EPOCH_MAX;
             if (left) {
-                const showLeft = imageTextNavState.groupIndex > EPOCH_MIN;
+                const showLeft = hasGroup && imageTextNavState.groupIndex > EPOCH_MIN;
                 left.style.opacity = showLeft ? '1' : '0';
                 left.style.pointerEvents = showLeft ? 'auto' : 'none';
                 left.setAttribute('aria-hidden', showLeft ? 'false' : 'true');
             }
             if (right) {
-                const showRight = imageTextNavState.groupIndex < EPOCH_MAX;
+                const showRight = hasGroup && imageTextNavState.groupIndex < EPOCH_MAX;
+                right.style.opacity = showRight ? '1' : '0';
+                right.style.pointerEvents = showRight ? 'auto' : 'none';
+                right.setAttribute('aria-hidden', showRight ? 'false' : 'true');
+            }
+        }
+
+        function updateMobileImageTextHorizontalArrows() {
+            if (!imageTextNavState || imageTextNavState.mode !== 'mobile') return;
+            const refs = imageTextNavState.refs || {};
+            const left = refs.navLeft;
+            const right = refs.navRight;
+            const hasGroup = imageTextNavState.groupIndex >= EPOCH_MIN && imageTextNavState.groupIndex <= EPOCH_MAX;
+            if (left) {
+                const showLeft = hasGroup && imageTextNavState.groupIndex > EPOCH_MIN;
+                left.style.opacity = showLeft ? '1' : '0';
+                left.style.pointerEvents = showLeft ? 'auto' : 'none';
+                left.setAttribute('aria-hidden', showLeft ? 'false' : 'true');
+            }
+            if (right) {
+                const showRight = hasGroup && imageTextNavState.groupIndex < EPOCH_MAX;
                 right.style.opacity = showRight ? '1' : '0';
                 right.style.pointerEvents = showRight ? 'auto' : 'none';
                 right.setAttribute('aria-hidden', showRight ? 'false' : 'true');
@@ -6388,6 +6423,13 @@
             if (alreadySeen) return;
             try { sessionStorage.setItem(IMAGE_TEXT_COACH_SESSION_KEY, '1'); } catch (_) { }
 
+            const desktopMode = mode === 'desktop';
+            const horizontalAction = desktopMode ? 'Pfeile links/rechts' : 'Horizontal wischen';
+            const verticalAction = desktopMode ? 'Pfeile oben/unten' : 'Vertikal wischen';
+            const horizontalDesc = 'Gleiches Werkfeld in einer anderen Epoche';
+            const verticalDesc = 'Anderes Werk derselben Epoche';
+            const dismissText = desktopMode ? 'Klicken zum Schließen' : 'Tippen zum Schließen';
+
             const coach = document.createElement('div');
             coach.id = 'image-text-coachmark';
             coach.className = 'image-text-coachmark';
@@ -6398,8 +6440,8 @@
                             <path d="M8,24 L38,24 M38,24 L30,16 M38,24 L30,32"></path>
                         </svg>
                         <div class="it-coach-text">
-                            <div class="it-coach-action">Horizontal wischen</div>
-                            <div class="it-coach-desc">Gleiches Feld – nächste Epoche</div>
+                            <div class="it-coach-action">${horizontalAction}</div>
+                            <div class="it-coach-desc">${horizontalDesc}</div>
                         </div>
                     </div>
                     <div class="it-coach-divider"></div>
@@ -6408,11 +6450,11 @@
                             <path d="M24,8 L24,38 M24,38 L16,30 M24,38 L32,30"></path>
                         </svg>
                         <div class="it-coach-text">
-                            <div class="it-coach-action">Vertikal wischen</div>
-                            <div class="it-coach-desc">Weiteres Werk derselben Epoche</div>
+                            <div class="it-coach-action">${verticalAction}</div>
+                            <div class="it-coach-desc">${verticalDesc}</div>
                         </div>
                     </div>
-                    <div class="it-coach-dismiss">Tippen zum Schließen</div>
+                    <div class="it-coach-dismiss">${dismissText}</div>
                 </div>
             `;
             const host = mode === 'mobile' && overlayHost ? overlayHost : document.body;
@@ -6503,7 +6545,6 @@
 
         function focusDesktopEpoch(groupIndex) {
             if (groupIndex < EPOCH_MIN || groupIndex > EPOCH_MAX) return;
-            if (!document.body.classList.contains('is-active')) return;
             const targetItem = document.getElementById(`item-${groupIndex}`);
             if (!targetItem) return;
             const oldItem = document.querySelector('.art-item.active');
@@ -6669,11 +6710,12 @@
             if (payload.externalUrl) window.open(payload.externalUrl, '_blank', 'noopener');
         }
 
-        function getImageTextScaleFromScroll(textBox) {
+        function getImageTextScaleFromScroll(textBox, mode) {
             if (!textBox) return 1;
-            const collapsePx = Math.max(48, getLineHeightPx(textBox) * IMAGE_TEXT_COLLAPSE_LINES);
+            const collapseMultiplier = mode === 'mobile' ? 2 : 1;
+            const collapsePx = Math.max(48, getLineHeightPx(textBox) * IMAGE_TEXT_COLLAPSE_LINES * collapseMultiplier);
             const progress = clamp(textBox.scrollTop / collapsePx, 0, 1);
-            const eased = easeOutCubic(progress);
+            const eased = mode === 'mobile' ? easeInOutSine(progress) : easeOutCubic(progress);
             return 1 - (1 - IMAGE_TEXT_MIN_SCALE) * eased;
         }
 
@@ -6683,23 +6725,15 @@
             const layout = imageTextNavState.layout || null;
             if (!layout || !refs.textBox || !refs.flyingImg) return;
 
-            const rawScale = getImageTextScaleFromScroll(refs.textBox);
-            const minScaleByPx = Math.max(
-                IMAGE_TEXT_MIN_SCALE,
-                IMAGE_TEXT_MIN_MEDIA_PX_DESKTOP / layout.baseWidthPx,
-                IMAGE_TEXT_MIN_MEDIA_PX_DESKTOP / layout.baseHeightPx
-            );
-            const scale = Math.max(rawScale, minScaleByPx);
-
-            const mediaWidth = layout.baseWidthPx * scale;
-            const mediaHeight = layout.baseHeightPx * scale;
+            const mediaWidth = layout.baseWidthPx;
+            const mediaHeight = layout.baseHeightPx;
             refs.flyingImg.style.left = `${layout.edgeGapPx}px`;
             refs.flyingImg.style.top = `${layout.topGapPx}px`;
             refs.flyingImg.style.width = `${mediaWidth}px`;
             refs.flyingImg.style.height = `${mediaHeight}px`;
 
-            const desiredTextWidth = layout.baseWidthPx + (layout.baseWidthPx - mediaWidth);
-            const desiredTextHeight = layout.baseHeightPx + (layout.baseHeightPx - mediaHeight);
+            const desiredTextWidth = layout.baseWidthPx;
+            const desiredTextHeight = layout.baseHeightPx;
             const maxTextHeight = window.innerHeight - layout.topGapPx - 96;
             refs.textBox.style.right = `${layout.edgeGapPx}px`;
             refs.textBox.style.top = `${layout.topGapPx}px`;
@@ -6713,7 +6747,7 @@
             const layout = imageTextNavState.layout || null;
             if (!layout || !refs.textBox || !refs.imgBox) return;
 
-            const rawScale = getImageTextScaleFromScroll(refs.textBox);
+            const rawScale = getImageTextScaleFromScroll(refs.textBox, 'mobile');
             const minScaleByPx = Math.max(
                 IMAGE_TEXT_MIN_SCALE,
                 IMAGE_TEXT_MIN_MEDIA_PX_MOBILE / layout.baseWidthPx,
@@ -7034,7 +7068,7 @@
             const compactDesktop = window.innerWidth < 1500;
             const edgeGapPct = compactDesktop ? 7 : 9;
             const topGapPct = compactDesktop ? 14.8 : 15.6;
-            const titleTop = compactDesktop ? '6.2%' : '6.8%';
+            const titleTop = compactDesktop ? '8.4%' : '9%';
             const panelWidthPct = compactDesktop ? 40 : 37;
             const panelHeightPct = compactDesktop ? 68 : 67;
 
@@ -7132,12 +7166,24 @@
                 indices: context ? context.indices : [],
                 dataIndex: context ? context.dataIndex : -1,
                 fieldPos: context ? context.fieldPos : 0,
-                refs: { flyingImg, textBox, sharedTitle, overlay, closeDesktop, epochIndicator },
+                refs: {
+                    flyingImg,
+                    textBox,
+                    sharedTitle,
+                    overlay,
+                    closeDesktop,
+                    epochIndicator,
+                    navLeft,
+                    navRight,
+                    navUp,
+                    navDown
+                },
                 cleanup: [],
                 currentPayload: null,
                 layoutReady: false,
                 layout: null
             };
+            updateDesktopImageTextHorizontalArrows();
 
             flyingImg.addEventListener('click', handleImageTextMediaActivation);
             imageTextNavState.cleanup.push(() => flyingImg.removeEventListener('click', handleImageTextMediaActivation));
