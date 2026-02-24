@@ -1,6 +1,7 @@
 # Historische Reihen nach dem Theoriemodell der ästhetischen Moderne (Harry Lehmann)
 
-In Anlehnung an das Theoriemodell von Harry Lehmann werden hier historische Reihen für fünf weitere Kunstsparten bzw. Genres formuliert. Wie in der Theorie gefordert, wird bei jeder Reihe das Genre strikt beibehalten, um die historischen Epochenbrüche – in Form von einfachen und doppelten Negationen bei den Komponenten *Medium*, *Werk* und *Konzept* – exakt und evident nachvollziehbar zu machen.
+In Anlehnung an das Theoriemodell von Harry Lehmann werden hier historische Reihen für fünf weitere Kunstsparten bzw. Genres formuliert. Wie in der Theorie gefordert, wird bei jeder Reihe das Genre strikt beibehalten, um die historischen Epochenbrüche – in Form von einfachen und doppelten Negationen bei den Komponenten *Medium*, *Werk* und *Konzept* – exakt und evident nachvollziehbar zu machen. 
+Zudem ist für die Einstufung die **historische Zeitachse entscheidend**: Ein vormodernes Werk der "Schönen Künste" ist in seiner Entstehungszeit authentische Kunst. Würde man diese formale und mediale Geschlossenheit heute (nach den Negationen von Moderne und Avantgarde) naiv im 21. Jahrhundert rekonstruieren, wäre es keine Hochkunst mehr, sondern würde unweigerlich als Kitsch oder Populärkultur decodiert werden. Reflexive Kunst nutzt historische Formen daher nie naiv, sondern stets virtuos und reflektiert, um einen neuen epistemologischen Gehalt zu artikulieren ("Gehaltsästhetik"), der über bloße "politische Kunst" oder Ideologie hinausgeht.
 
 ---
 
@@ -40,8 +41,8 @@ In Anlehnung an das Theoriemodell von Harry Lehmann werden hier historische Reih
   Ein nahezu perfektes, klassisches Konstrukt (Werk): Narration, Bildkomposition, der unsichtbare Schnitt und das Prinzip des Suspense ergänzen sich harmonisch, um eine unmittelbar gestaltstarke Sogwirkung zu erzielen, die das Publikum vollständig einnimmt. 
 * **Klassische Moderne:** Jean-Luc Godard – *Außer Atem (À bout de souffle)* (1960)
   In diesem "Krimi" wird das Medium des unsichtbaren Hollywood-Films zertrümmert. Jump-Cuts brechen die Zeit, Achsensprünge desorientieren, die Illusion reißt. Das Materielle des Kinos – Schnitt, Kameraführung, Künstlichkeit – springt in Form bewusster ästhetischer Ambivalenzen ins Auge.
-* **Historische Avantgarde:** Andy Warhol – *Empire* (1964)
-  Zwar formal kein Kriminalfilm, bedient es sich der Form des Observierens bis ins schmerzhaft radikale Ende. Das cineastische Werk wird zu hundert Prozent verweigert: acht endlose Stunden eines statischen Gebäudes ohne Handlung. Filmografie auf den absoluten Nullpunkt eines zeitlichen Konzepts geschrumpft. 
+* **Historische Avantgarde:** Michael Snow – *Wavelength* (1967)
+  Ein struktureller Film, der 45 Minuten lang einen stoischen Kamera-Zoom durch ein New Yorker Loft auf ein Wandfoto zeigt. In der Mitte des Films bricht ein Mann zusammen und stirbt offensichtlich (eine absolute "Krimi-Handlung"), doch das filmische Medium ignoriert diesen narrativen Mord völlig. Das Werk (Spannung, Tätersuche, Aufklärung) wird auf den Nullpunkt verweigert. Es bleibt das reine, anästhetische Wahrnehmungskonzept eines unerbittlichen zeitlichen Zooms. 
 * **Postmoderne:** Quentin Tarantino – *Pulp Fiction* (1994)
   Die B-Movie-Stereotypen des Gangsterfilms kehren grandios zurück, aber die Narration ist ironisch zersplittert und das Werkhafte im klassischen Sinne bleibt als bloßes Zitatgeflecht stecken ("Doppelcodierung"). Tiefere psychologische Sinnzusammenhänge werden zerschossen in nihilistischen, oberflächlichen Konsum, markiert unter andauerndem Brechen chronologischer Linearität.
 * **Reflexive Kunst:** Bong Joon-ho – *Parasite* (2019)
@@ -128,14 +129,14 @@ In Anlehnung an das Theoriemodell von Harry Lehmann werden hier historische Reih
 
 * **Schöne Künste:** Andreas Gryphius – *Es ist alles eitel* (1643)
   Die extrem strenge Text- und Metrik-Architektur (Alexandriner, festgefügtes Reimschema) erzeugt eine hochgradige sprachliche Ordnung und Redundanz. Diese klassische Form fügt sich formvollendet in das barocke Vergänglichkeitskonzept fühlbarer „Schönheit“ ein.
-* **Klassische Moderne:** August Stramm – *Schwermut* (1915)
-  Der totale Ausfall des diskursiven Sinns und des schönen Reimschemas. In extremer Materialästhetik zerstört Stramm Syntax und Rhythmus, wodurch die Zeilen zu rohen Wort-Splittern kollabieren. Die lyrische Form zwingt zu schockartiger Assoziations-Ambivalenz.
+* **Klassische Moderne:** E. E. Cummings – *pity this busy monster, manunkind* (1944)
+  Das 14-zeilige Sonett-Format bleibt erhalten, doch in extremer Materialästhetik verfremdet Cummings die vertraute syntaktische Ebene. Neologismen, zersplitterte Zeilenbrüche und das Fehlen etablierter Großschreibung zerstören den harmonischen Lesefluss und den linearen Diskurssinn des Sonetts zugunsten einer rohen, ambigen Wort-Wahrnehmung.
 * **Historische Avantgarde:** Gerhard Rühm – *sonett* (1954)
   Die Nullstellung der Werk-Komponente in der Lyrik. Optisch kopiert das Blatt die vier Strophen (14 Zeilen) des Sonetts, besteht jedoch ausschließlich und identisch 14-mal aus dem Wort „nein“. Keine syntaktische oder inhaltliche Formenkombinatorik, bloß das auf der Seite gedruckte Wahrnehmungs-Konzept eines klaren „Neins“ an die Kunstgeschichte.
 * **Postmoderne:** Robert Gernhardt – *Materialien zu einer Kritik der bekanntesten Gedichtform italienischen Ursprungs* (1979)
   Die strengen Sonett-Regeln kehren virtuos zurück, doch in blanker Doppelcodierung. Die Reime bedienen das Genre makellos, doch sie handeln ausschließlich davon, wie lächerlich es sei, ein solches Gedicht zu verfassen. Jede inhaltliche Tiefe wird durch reflexive Ironie souverän abgewehrt.
-* **Reflexive Kunst:** Jan Wagner – *Giersch* (aus *Regentonnenvariationen*, 2014)
-  Eine erstaunliche Rückführung in formal hochkomplexe Lyrikwerke. Metrum und Reim (das alte Medium) werden komplett angenommen. Doch statt vormoderner Dogmatik zielt die hochgradige Formbeherrschung darauf ab, alltäglichen Wucherungen (Giersch) tiefgehende naturexistenzielle Bedeutung abzugewinnen (starke Gehaltsästhetik ohne Ironiekorsett).
+* **Reflexive Kunst:** Seamus Heaney – *Clearances* (1987)
+  Eine erstaunliche Rückführung in formal hochkomplexe Lyrikwerke. Metrum und das strenge 14-zeilige Sonettformat (das alte Medium) werden komplett angenommen. Doch anstatt vormoderner Schwärmerei oder postmodern-ironischem Spiel formuliert Heaney tiefen ethischen Ernst: Das architektonische Gefüge des Sonetts wird zur "epistemologischen Metapher" – die feste Form umkreist die existenzielle Leere und das absolute Fehlen nach dem Tod seiner Mutter. Eine vollendete Gehaltsästhetik, die keine platte politische Message vertritt, sondern menschlichen Weltbezug erfahrbar macht.
 
 ---
 
@@ -151,3 +152,18 @@ In Anlehnung an das Theoriemodell von Harry Lehmann werden hier historische Reih
   Das Sitcom-Universum wird zum gigantischen dekonstruktiven Spielplatz. Folge für Folge werden in reiner Doppelcodierung komplett fremde Genres (Zombie-Apokalypse, Actionfilm) kopiert. Ein Charakter (Abed) verweist permanent darauf, dass alles nur ein Meta-Fernseh-Konstrukt ist. Unendliche postmoderne Ironie mit Genuss am reinen Formen-Sampling.
 * **Reflexive Kunst:** *BoJack Horseman* (2014–2020)
   Das Comedy-Animationsformat mit sprechenden Tieren kehrt mit allen Serien-Tropes zurück, überschreitet die postmoderne Ironie jedoch in existenzielle Tiefe. Dem Werk stehen alle Mittel und Absurditäten des Fernsehens zur Verfügung, doch es ordnet sie zwingend einer massiv ethischen Gehaltsästhetik (Demenz, Schuld, Depression, Vergebung) unter und hinterlässt beim Zuschauer ein Gefühl monumental wirksamer Wahrheit.
+
+---
+
+## 11. Skulptur (Genre: Denkmal / Monument / Porträtbüste)
+
+* **Schöne Künste:** Michelangelo – *Brutus* (1538)
+  Die perfekte, handwerklich vollendete Marmorbüste. Das Material (Medium) und das Konzept des heroischen Staatsmannes verschmelzen in glatter Formenkombinatorik bruchlos zu einer Erfahrung kontemplativer Kraft und Schönheit.
+* **Klassische Moderne:** Auguste Rodin – *Balzac-Denkmal* (1898)
+  Die glatte, illusionistische Form der klassischen Schönen Künste zerbricht. Die grobe, unfertig wirkende, zerklüftete Oberfläche lenkt den Blick auf das materielle Entstehen des Werks (Materialästhetik) und führt zu einer starken Wahrnehmungsambivalenz statt einer abbildhaft idealisierenden Heldendarstellung.
+* **Historische Avantgarde:** Piero Manzoni – *Socle du monde / Sockel der Welt* (1961)
+  Die absolute Nullstellung der skulpturalen Werkkomponente (die gestaltete figürliche Plastik). Ein umgekehrter Denkmalsockel aus Eisen, der die gesamte Erde als sein Denkmal trägt. Es gibt keine zu erfahrende handwerkliche Formenkombinatorik mehr; was bleibt, ist die radikale intellektuelle Negation der Denkmalfunktion durch ein anästhetisches Wahrnehmungskonzept.
+* **Postmoderne:** Jeff Koons – *Michael Jackson and Bubbles* (1988)
+  Das figurative Medium der vergoldeten Porzellan-Monumentalplastik kehrt triumphierend zurück, jedoch als reines, banales Popkultur-Klischee. Das Denkmal entbehrt jeder inneren charakterlichen Schwere oder echten Erhabenheit und feiert in ironischer Doppelcodierung den Kitsch und die goldene Oberfläche ohne jeden ethischen Tiefensinn.
+* **Reflexive Kunst:** Antony Gormley – *Another Place* (1997)
+  Eine Wiederinklusion der (sogar figurativen, lebensgroßen) Skulptur, ohne postmoderne Ironie oder avantgardistischen Formverlust. Einhundert Abgüsse des Künstlers stehen an einem Strand und schauen auf das Meer, versinken mit jedem Gezeitenwechsel im Wasser. Das Werk nutzt das alte Medium hochkomplex, um als "epistemologische Metapher" einen existentiellen Gehalt zu artikulieren: Das Verhältnis von Mensch, geologischer Zeitdauer und der kosmischen Natur. Es ist keine fordernde "politische Kunst", sondern reine Gehaltsästhetik, die einen stillen, monumentalen Weltbezug herstellt.

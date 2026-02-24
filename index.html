@@ -3755,13 +3755,8 @@
             const nonTopEntries = entries.filter(entry => entry._sourceIndex >= DESKTOP_GALLERY_LEADING_COUNT);
             const topEntries = entries.filter(entry => entry._sourceIndex < DESKTOP_GALLERY_LEADING_COUNT);
             const row23Count = DESKTOP_GALLERY_TEXT_SLOT_END - DESKTOP_GALLERY_TEXT_SLOT_START + 1;
-            const row23 = nonTopEntries.slice(0, row23Count);
-            if (row23.length < row23Count) {
-                const missing = row23Count - row23.length;
-                row23.push(...topEntries.slice(0, missing));
-            }
             return {
-                row23,
+                row23: nonTopEntries.slice(0, row23Count),
                 row4: topEntries.slice(0, DESKTOP_GALLERY_TOP_ROW_COUNT)
             };
         }
@@ -4111,6 +4106,7 @@
                 const tile = document.getElementById(`slot-${i}`);
                 if (!tile) continue;
                 // FORCE RESET ON ENTRY: Clear old image immediately to prevent ghosting
+                tile.style.display = 'flex';
                 tile.style.backgroundImage = 'none';
                 tile.style.opacity = 0;
                 tile.innerHTML = "";
@@ -4146,6 +4142,7 @@
                     ? desktopRows.row23[i - DESKTOP_GALLERY_TEXT_SLOT_START]
                     : desktopRows.row4[i - (DESKTOP_GALLERY_TEXT_SLOT_END + 1)];
                 if (!data || !data.imgUrl) {
+                    tile.style.display = 'none';
                     tile.style.pointerEvents = 'none';
                     continue;
                 }

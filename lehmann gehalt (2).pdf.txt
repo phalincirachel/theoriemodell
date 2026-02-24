@@ -1,0 +1,449 @@
+Gehalt
+Harry Lehmann
+Der Begriff des ›Gehalts‹ ist vor fast einem halben Jahrhundert aus dem Vokabular der
+Kunstphilosophie verschwunden und wurde, wenn überhaupt, in den entsprechenden
+Lexika nur noch als historischer Begriff erwähnt. Im Wörterbuch der philosophischen Be-
+griffe (1904) war unter dem Eintrag »Ästhetik« noch ganz selbstverständlich von den
+»idealistischen Gehaltsästhetiken« die Rede; im Historischen Wörterbuch der Philosophie
+(1974) gibt es einen ausführlichen Beitrag zum ›Gehalt‹, der bis zu Adorno reicht. Im
+Lexikon der Ästhetik (1992) vermerkt noch ein kurzer Artikel, dass es sich hier um einen
+Grundbegriff der Gehaltsästhetiken des 19. Jahrhunderts handelt; und im siebenbändi-
+gen Standardwerk Ästhetische Grundbegriffe (2000) kommt das Stichwort ›Gehalt‹ über -
+haupt nicht mehr vor. Wenn der Gehaltsbegriff heute in dieses Handbuch Kunstphiloso-
+phie aufgenommen wird, dann dürfte dies vor allem auf eine aktuelle Entwicklung in den
+Künsten zurückzuführen sein, in denen ein verstärktes Interesse an gesellschaftlichen
+Themen und entsprechend auch an ästhetischen Gehalten zu verzeichnen ist. Aufgrund
+dieser unterbrochenen Begriffsgeschichte kann es im Folgenden nicht nur darum gehen,
+wie der Gehaltsbegriff in den kunsttheoretischen Diskursen gebraucht wurde, sondern
+zu klären wäre auch, weshalb er über Jahrzehnte hinweg nicht gebraucht worden ist.
+1. Idealistische Gehaltsästhetik
+Der Begriff des ›Gehalts‹ beginnt sich erst Ende des 18. Jahrhunderts im Kontext des
+deutschen Idealismus auszubilden und erlangt in Hegels Vorlesungen über die Ästhetik
+(1832–1845) seine paradigmatische Gestalt. Hier kann man ein Grundmodell der gehalts-
+ästhetischen Kunstphilosophien erkennen, das aus drei Komponenten besteht. Erstens
+wird die Kunst in einer spezifischen Weise charakterisiert: Sie ist für Hegel »schöne
+Kunst«. Zweitens liegt dieser »Philosophie der schönen Kunst«1 eine Annahme darüber
+1 Hegel 1986a, S. 13.
+II
+ 
+Kunstwerk / Aufführung216
+zugrunde, wie die Welt beschaffen ist: Sie durchläuft einen Selbstref lexionsprozess des
+Geistes, der diese Wirklichkeit erst hervorbringt, indem er sie erkennt. Und drittens be-
+schreibt Hegel die Relation zwischen diesen beiden theoretisch präparierten Relaten der
+›Kunst‹ und der ›Welt‹ als das Erscheinen eines ›Gehalts‹ im Kunstwerk.
+Da der Lauf der Weltgeschichte bei Hegel einer intrinsischen Logik und dem Telos
+einer »absoluten Idee« folgt, bezieht sich die Kunst nicht unmittelbar auf die Wirklich-
+keit, sondern auf diese sie strukturierende und sich in der Geschichte entfaltende Idee.
+Der Kunst kann somit die Funktion zugesprochen werden, dass sich in ihren Werken die-
+ser Selbstentfaltungsprozess manifestiert, und zwar nicht in einer begriff lich abstrakten
+Form, sondern als sinnliche Erscheinung: »Denn der Gehalt ist es, der […] in der Kunst
+entscheidet. Die Kunst […] hat nichts anderes zu ihrem Beruf, als das in sich selbst Ge-
+haltvolle zu adäquater, sinnlicher Gegenwart herauszustellen.«2
+Terminologisch abgerüstet könnte man auch sagen, dass der Gehalt der Kunst in den
+»wesentlichen Weltanschauungen« liegt, die Hegel mithilfe seiner Geschichtsphiloso-
+phie rekonstruiert. Ihnen korrespondieren drei verschiedene »Kunstformen«, wobei die
+»symbolische Kunstform« die ägyptische Kunst, die »klassische Kunstform« die griechi-
+sche Kunst und die »romantische Kunstform« alle Kunst danach, d. h. vom Mittelalter
+bis zu Hegels Gegenwart, charakterisiert. Die Funktion der Kunst besteht in all diesen
+Zeitaltern gleichermaßen darin, den Wesenskern dieser historischen Weltanschauun-
+gen sinnlich erfahrbar zu machen: »Das Kunstwerk muss uns die höheren Interessen des
+Geistes und Willens […] aufschließen; und dass dieser Gehalt durch alle Äußerlichkeiten
+der Erscheinung durchblicke und […] hindurchklinge, das ist die Hauptsache, um welche
+es sich wesentlich handelt.«3
+Zu den interessantesten Aspekten der Hegel’schen Kunstphilosophie zählt, dass sie
+
+nicht nur die Ausbildung dieser drei Kunstformen beschreibt, sondern auch die »Auf-
+lösung der romantischen Kunstform« vorhersieht: »Hat nun aber die Kunst die wesentli-
+chen Weltanschauungen […] nach allen Seiten hin offenbar gemacht, so ist sie diesen jedes
+Mal für ein besonderes Volk, eine besondere Zeit bestimmten Gehalt losgeworden […].«4
+Hieraus leitet sich Hegels vieldiskutierte These vom »Ende der Kunst« ab, aber eigent-
+lich ist damit nur der Selbstentfaltungsprozess des Hegel’schen Geistes im Medium der
+Kunst an sein Ende gekommen. Die Kunst selbst existiert in einer Art ›Postmoderne des
+absoluten Geistes‹ fort. Es kommt zu einer
+»Auflösung der Kunst selbst. Auf der einen Seite geht die Kunst zur Darstellung der 
+gemei-
+nen Wirklichkeit […] über […] auf der anderen Seite schlägt sie im Gegenteil zur 
+vollkomme-
+nen subjektiven Zufälligkeit der […] Darstellung um, zum Humor, als dem Verkehren und 
+Ver-
+2 Hegel 1986b, S. 242.
+3 Hegel 1986a, S. 360 f.
+4 Hegel 1986b, S. 234.
+Harry Lehmann — Gehalt 217
+rücken aller Gegenständlichkeit und Realität durch den Witz und das Spiel der subjektiven
+Ansicht […].«5
+Hegels Kunstphilosophie begründet also nicht nur die Gehaltsästhetik, sondern anti -
+zipiert im Prinzip auch ihr Ende, weil sich in der aufgelösten romantischen Kunstform
+keine wesentlichen Gehalte mehr darstellen lassen. Was in diesen ›postromantischen‹
+Kunstwerken zum Ausdruck kommt, ist die Subjektivität des Künstlers als der
+»ersinnende und ausdrückende Menschengeist, dem nichts mehr fremd ist, was in der 
+Men-
+schenbrust lebendig werden kann. Es ist dies ein Gehalt, der nicht an und für sich künst-
+lerisch bestimmt bleibt, sondern die Bestimmtheit des Inhalts und des Ausgestaltens der
+willkürlichen Erfindung überlässt, doch kein Interesse ausschließt, da die Kunst nicht mehr
+das nur darzustellen braucht, was auf einer ihrer bestimmten Stufen absolut zu Hause ist,
+sondern alles, worin der Mensch überhaupt heimisch zu sein die Befähigung hat.«6
+Wenn in diesem Sinne der »Gehalt« seine prägende Kraft für die Kunstwerke verliert –
+wenn er »nicht an und für sich künstlerisch bestimmt bleibt« –, dann wird er extrem
+subjektiviert und verliert seine Weltanschauungsfunktion.
+In das Hegel’sche Grundmodell einer Gehaltsästhetik sind von Anfang an zwei Soll-
+bruchstellen eingebaut: Es sind letztendlich zwei Theorien, die festschreiben, wie die
+›Kunst‹ und wie die ›Welt‹ beschaffen sind, so dass sich in den Kunstwerken ein Gehalt
+artikulieren kann. In der Mitte des 19. Jahrhunderts wurde aber die Welt, und mit ihr die
+Kunst, modern – was die prominentesten Hegelschüler dazu motivierte, die Hegel’sche
+Kunstphilosophie an genau diesen beiden Sollbruchstellen zu modifizieren.
+Für Friedrich Theodor Vischer bleibt die Kunst nach wie vor »schöne Kunst«, jedoch
+gibt er in seinem Spätwerk »die geschichtliche Begründung der Ästhetik […] auf«7 und
+verlagert ihren Gehalt vollständig in den »Menschen« oder besser gesagt in seine Le-
+benswelt: »Der Gehalt im Schönen ist […] mittelbar oder unmittelbar stets der Mensch.
+Das Schöne ist wesentlich persönlich.«8 Diesen vermenschlichten Gehalt der Kunst be-
+nennt Vischer dann auch als »Lebensgehalt«: »Das Schöne ist das Scheinbild eines Indi-
+viduums, das in harmonischer Form einen bestimmten Lebensgehalt eigentümlich und
+vollkommen veranschaulicht und die Vorstellung eines harmonischen Weltalls hervor-
+ruft.«9 Gleichzeitig artikuliert sich dieser Lebensgehalt nicht einfach nur im Kunstwerk,
+sondern wird auch vom Rezipienten mit geschaffen: »Zum Lebensgehalt schlägt sich der
+5 Ebd., S. 198.
+6 Ebd., S. 238.
+
+7 Lotter 2012, S. 901.
+8 Vischer 1898, S. 90.
+9 Ebd., S. 143.
+II
+ 
+Kunstwerk / Aufführung218
+Geist des Auffassenden und vollzieht an ihm einen schöpferisch umbildenden Akt.«10
+Wenn der Gehalt eines Kunstwerks aber nur noch im Subjekt verortet werden kann und
+nicht länger in der historischen Gestalt der Welt verankert ist, dann depotenziert sich
+auch in der Gehaltsästhetik von Vischer der Gehaltsbegriff und verliert weitgehend seine
+ursprüngliche welterschließende Kraft.
+Im 19. Jahrhundert wird nicht nur der gehaltsästhetische Weltbezug der Kunst frag-
+lich, sondern auch die traditionelle Auffassung, dass Kunst notwendigerweise ›schöne
+Kunst‹ sei. Die Industrialisierung der Gesellschaft bringt Phänomene in die Kunst, die
+sich nicht mehr einfach mit dem ästhetischen Positivwert des ›Schönen‹ verrechnen las-
+sen, wie dies etwa in Adolph Menzels Bild Das Eisenwalzwerk (1872–1875) deutlich wird,
+das auch den Schweiß und den Dreck von Industriearbeit zeigt. Diese Herausforde -
+rung für die Kunstphilosophie hatte der Hegel-Schüler Karl Rosenkranz schon frühzei-
+tig in seiner Ästhetik des Hässlichen (1853) antizipiert, indem er versuchte, das Hässliche
+in all seinen Erscheinungsformen ernst zu nehmen und in die Kunstphilosophie zu in -
+tegrieren. Rosenkranz beschreibt das Hässliche als das »Negativschöne« und verortet
+es in der »Mitte zwischen dem Schönen und dem Komischen«, was aber auch heißt,
+dass das Hässliche eine sekundäre und abgeleitet ästhetische Kategorie des Schönen
+bleibt: »Das Häßliche kann also neben dem Schönen, gleichsam unter seinem Patronat,
+akzidentiell erscheinen […] aber es kann nicht direkter und exklusiver Gegenstand der
+Kunst werden.«11
+2. Negativistische Gehaltsästhetik
+Erst Theodor W. Adorno gelang es in seiner Ästhetischen Theorie (1970), das Theoriegenre
+der Gehaltsästhetik in die Moderne zu überführen. Auf der einen Seite orientierte er sich
+nun primär an der Kunst der Klassischen Moderne, welche mit ihrer »Vorliebe fürs Schä-
+bige, Schmutzige« und mit ihrer »Allergie gegen Glanz und Suavität« in einer derart vor-
+dergründigen Weise mit ästhetischen Negativwerten arbeitet, dass man sie unmöglich
+noch als bloß abgeleitete Formen des Schönen interpretieren kann.12 Für Adorno waren
+vielmehr die Werke mit einer besonders ausgeprägten ästhetischen Negativität auch die
+besonders charakteristischen Werke der modernen Kunst.
+Auf der anderen Seite bezog Adorno diese Werke auf eine Konzeption der moder-
+nen Welt, die im Erfahrungsraum der beiden Weltkriege und des Holocaust selbst zum
+Inbegriff einer durch und durch negativ verfassten Wirklichkeit geworden war. Diese
+Negativitätserfahrung ist in ihrer Quintessenz eine Erfahrung des Sinnverlustes und
+10 Vischer 1898, S. 61.
+11 Rosenkranz 1990, S. 5; 7; 39.
+12 Adorno 1997a, S. 196.
+Harry Lehmann — Gehalt 219
+zeigt sich exemplarisch in einem Werk wie Samuel Becketts Warten auf Godot (1948). Weil
+aber solche Kunstwerke eine Realität zweiter Ordnung erzeugen, sind sie nicht einfach
+gehaltslose Werke, sondern es kommt zu einem dialektischen Umschlag: »Die sinnlosen
+oder sinnfremden Werke des obersten Formniveaus sind darum mehr als bloß sinnlos,
+weil ihnen Gehalt in der Negation des Sinns zuwächst.«13 Dieser aus der ästhetischen
+Negativität der Werke generierte Gehalt bezieht sich nicht direkt auf die Wirklichkeit,
+sondern aktiviert unseren Möglichkeitssinn für eine ganz andere Welt: »Das Neue als
+Kryptogramm ist das Bild des Untergangs; nur durch dessen absolute Negativität spricht
+Kunst das Unaussprechliche aus, die Utopie. Zu jenem Bild versammeln sich all die Stig-
+mata des Abstoßenden und Abscheulichen in der neuen Kunst.«14 Aufgrund dieses uto-
+pischen Potenzials, das Adornos Gehaltsästhetik den modernen Kunstwerken zuspricht,
+
+besitzt sie, anders als die idealistischen Gehaltsästhetiken, einen gesellschaftskritischen
+Impetus.
+Adornos Ästhetik ist aus einer doppelten Hegel-Kritik entstanden: Die moderne
+Kunst ist nicht schön und die Welt nicht vernünftig, wobei Adorno hier einen wesent-
+lichen Zusammenhang sieht. Die Kunst »verdunkelt« sich, sprich, sie nimmt eine ästhe-
+tisch negative Erscheinungsform an, weil die Welt sich nicht gemäß jener Hegel’schen
+Vernunftlogik entfaltet, sondern einer verhängnisvollen Dialektik der Auf klärung folgt:
+»Aber die Verdunklung ihrerseits ist Funktion des veränderten Gehalts. Negation der ab-
+soluten Idee, ist er [der Gehalt] nicht länger mit Vernunft derart in Identität zu setzen,
+wie der Idealismus es postulierte […].«15 Kam in Hegels Ästhetik in den schönen Werken
+der Kunst eine an sich vernünftige Welt zum Vorschein, sind bei Adorno beide Relate –
+die Welt und die Kunst – negativ bestimmt, so dass seine Ästhetische Theorie die Gestalt
+einer invertierten Gehaltsästhetik annimmt.
+Die Gehaltsästhetiken von Adorno und Hegel gehen gleichermaßen davon aus, dass
+Kunst einen Wahrheitsanspruch besitzt. In dem einen wie in dem anderen Fall kann in
+den gelungenen Werken der Zustand der Welt bzw. der Gesellschaft mehr oder weniger
+prägnant zum Ausdruck kommen, wobei sich der Wahrheitsgehalt der Kunst bei Hegel
+auf eine Fortschrittsgeschichte und bei Adorno auf eine Verfallsgeschichte der Vernunft
+bezieht – insofern es sich jeweils um dialektische Theorien handelt, ist aber der Verfall im
+Fortschritt und der Fortschritt im Verfall mitgedacht. Für Adorno gilt:
+»Wohl impliziert Kunst, als eine Gestalt von Erkenntnis, Erkenntnis der Realität, und es ist
+keine Realität, die nicht gesellschaftlich wäre. So sind Wahrheitsgehalt und gesellschaft-
+licher [Gehalt] vermittelt, obwohl der Erkenntnischarakter der Kunst, ihr Wahrheitsgehalt,
+13 Ebd., S. 231.
+14 Ebd., S. 55.
+15 Ebd., S. 47.
+II
+ 
+Kunstwerk / Aufführung220
+die Erkenntnis der Realität als des Seienden transzendiert. Soziale Erkenntnis wird sie, in-
+dem sie das Wesen ergreift; nicht es beredet, bebildert, irgend imitiert.«16
+3. Postmoderne
+Unmittelbar nach der posthumen Veröffentlichung von Adornos Ästhetischer Theorie
+(1970) bahnte sich im deutschsprachigen Ästhetikdiskurs ein Paradigmenwechsel an,
+und zwar hin zu Theorien der ästhetischen Erfahrung, in denen der ›Gehalt‹ von Kunst-
+werken keine Rolle mehr spielt. Konstitutiv für diesen erfahrungsästhetischen Diskurs
+waren Texte, in denen man auf der einen Seite Adornos Ästhetik als Wahrheitsästhetik
+kritisierte und auf der anderen Seite eine Rückbesinnung auf Kants Kritik der Urteilskraf t
+(1790) forderte, insofern man die Kant’sche Ästhetik als eine Prototheorie der ästheti-
+schen Erfahrung las.17
+Die Kritik an Adornos Ästhetik als einer Wahrheitsästhetik erfasste automatisch den
+für Adorno zentralen Begriff des »Wahrheitsgehalts« und blockierte infolgedessen auch
+den Gehaltsbegriff. Während sich bei Adorno die beiden ästhetischen Grundbegriffe der
+»ästhetischen Erfahrung« und des »ästhetischen Gehalts« noch komplementär ergänzen,
+schließen sie einander im Diskurs der ästhetischen Erfahrung systematisch aus – weil
+der ganze Diskurs aus einer Kritik der Wahrheitsästhetiken hervorgegangen ist und es in
+Kants Ästhetik keine ›ästhetischen Gehalte‹ gibt.18
+Es waren aber nicht bloß diskursimmanente Gründe, die zu einer Marginalisierung
+des Gehaltsbegriffes in den letzten fünf Jahrzehnten geführt haben, sondern dieser
+Paradigmenwechsel in der Kunsttheorie wurde von einem fundamentalen Kulturwan-
+del begleitet: Die liberalen Demokratien des Westens begannen sich zu dieser Zeit als
+postmoderne Gesellschaften zu beschreiben. Und in Bezug auf die neuen Leitideen der
+Postmoderne – das ›Ende der großen Erzählungen‹, die ›Dekonstruktion‹ oder den ›Plu-
+ralismus‹ – verliert die Rede vom ›Gehalt‹ eines Kunstwerks ihre diskursive Anschluss-
+
+fähigkeit: Wenn sich die Grundüberzeugung verfestigt hat, dass große Erzählungen über
+den Lauf der Weltgeschichte unglaubwürdig sind, dann erscheinen Gehaltsästhetiken
+allein schon dadurch suspekt, dass sie wie Hegel und Adorno die Entwicklung der Künste
+mit großen Narrativen über die Kunst und die Welt verknüpfen. Genauso gilt: Wenn sich
+ein dekonstruktivistischer Denkstil durchgesetzt hat, dem zufolge sich jeder Sinnzu-
+sammenhang in eine andere Bedeutung verschieben lässt, dann lassen sich in den f luiden
+16 Ebd., S. 383 f.
+17 Vgl. Jauß 1972, Bubner 1973, Baumeister/Kulenkampf f 1973. Für eine umfassende 
+Diskursanalyse
+der Theorien ästhetischer Erfahrung s. Lehmann 2016b.
+18 Siehe aber den singulären Versuch von Jens Kulenkampf f (1979), Kants Kritik der 
+Urteilskraf t als
+»Gehaltsästhetik« zu lesen.
+Harry Lehmann — Gehalt 221
+Sinnzusammenhängen von Kunstwerken auch keine ›Gehalte‹ mehr identifizieren. Und
+wenn der Perspektivenpluralismus von Subjekten den Status eines unhintergehbaren Ab-
+schlussgedankens erlangt – wenn also der Satz »Schönheit liegt im Auge des Betrachters«
+zum Leitsatz in den Ästhetikdiskursen wird –, dann können die Subjekte zwar die Kunst-
+werke auf einen Gehalt hin interpretieren, aber es bleiben subjektive Gehalte, die sich nicht
+mehr auf intersubjektive Entitäten wie die Welt, die Gesellschaft oder die Kultur beziehen.
+Bei den Theorien der ästhetischen Erfahrung waren es diskursive Vorentscheidun-
+gen, in deren Folge Ideen über die Welt, die Geschichte und die Gesellschaft bei einer
+Kunsterfahrung irrelevant wurden. Das entscheidende Distinktionsmerkmal, das diese
+Erfahrungsästhetiken mit Formalästhetiken, empirischen Ästhetiken, mathematischen
+Ästhetiken, semiotischen Ästhetiken oder der analytischen Ästhetik teilen, besteht darin,
+dass hier auf die ein oder andere Weise das Relat der Welt leer oder unbestimmt bleibt.
+In der Regel implizieren bereits die speziellen Methodologien und Untersuchungsmetho-
+den dieser Ästhetikdisziplinen, dass ›ästhetische Gehalte‹ nicht unter die ästhetischen
+Phänomene fallen, weil sie sich mit solchen Methoden nicht analysieren und untersuchen
+lassen. In der Kritik der Urteilskraf t (1790) werden hingegen die Weltbezüge a priori aus
+dem Begriff des Ästhetischen ausgeschlossen, weil Kant die ästhetischen Urteile in strik-
+ter Abgrenzung von den Erkenntnisurteilen und den moralischen Urteilen definiert.
+4. Gehaltsästhetische Wende
+Im Folgenden beziehe ich mich auf ein eigenes, bereits früher veröffentlichtes »Theorie-
+modell der ästhetischen Moderne« (Abb. 1), das die Prognose einer »gehaltsästhetischen
+Wende« in den Künsten impliziert.19 Auf der Basis von Niklas Luhmanns Kunstsoziologie
+Die Kunst der Gesellschaf t (1995) lässt sich davon ausgehen, dass die Künste ein operativ
+geschlossenes Kommunikationssystem ausgebildet haben, in welchem sich Kunst ver-
+mittels von Kunstwerken negieren lässt. Die Künste werden in dem Moment modern, in
+dem sie sich gegen ihr traditionelles Schönheitsideal wenden und nicht mehr schön, son-
+dern im emphatischen Sinne neu, sprich modern sein wollen. Mit dieser Umstellung der
+»Codierung«20 des Kunstsystems von Schönheit auf Neuheit wird in den Künsten eine je
+gattungsspezifische Negationslogik in Gang gesetzt, in der Neuheit über die Negation
+des Alten, d. h. von Kunst, die es bereits gibt, generiert wird. Setzt man voraus, dass die
+entscheidenden Komponenten der Kunstkommunikation das Werk (W), die Medien (M)
+und die Konzepte (K) sind, dann lässt sich die Geschichte der modernen Künste als eine
+Ausdifferenzierungsgeschichte der Kunstkommunikation rekonstruieren.
+19 Lehmann 2006b, speziell für die Neue Musik s. Lehmann 2012, S. 108 f f.
+20 Vgl. das Kapitel »Selbstorganisation: Codierung und Programmierung« in: Luhmann 
+1995, S. 301–
+340.
+II
+ Kunstwerk / Aufführung222
+
+
+Abb. 1: Theoriemodell der ästhetischen Moderne (W = Werk, M = Medium, K = Konzept, P
+= Perzept)
+Ausgangspunkt dieses Modells sind die schönen Künste des 19. Jahrhunderts, in denen
+Werk, Medium und Konzepte strikt aneinander gekoppelt waren. Das Konzept, dass
+Kunst sich in Kunstwerken manifestiert und dass Kunstwerke schön sind, war selbstver-
+ständlich, und genauso selbstevident war es, dass die Ästhetik des Schönen in gattungs-
+spezifischen Medien präpariert wird. Solche Medien bilden sich etwa durch das tonale
+System in der Musik, den gebundenen Vers in der Lyrik oder das Abbildprinzip und die
+Zentralperspektive in der Malerei aus.21 Den Schritt in die Moderne vollziehen die Künste
+konkret durch eine Negation der Medien der schönen Künste (was im Modell durch den
+Ausfall des Mediensegments (M) dargestellt ist). Hierdurch entsteht die charakteristi-
+sche Kunstform der Klassischen Moderne, wo anstelle der Medien jetzt ausschließlich
+die Konzepte das ästhetische Material im Kunstwerk organisieren und damit eine Viel-
+zahl von Ismen generieren, die nicht mehr dem ästhetischen Wert der Schönheit ver-
+pf lichtet sind, sondern auf alternativen »ästhetischen Eigenwerten« wie dem Ereignis,
+der Ambivalenz oder dem Erhabenen in purifizierter Form beruhen.22
+Diese klassisch moderne Kunst folgte dem Leitbild einer Materialästhetik, insofern
+diese primär durch die Erschließung von neuem ästhetischen Material wie dem atona-
+len Klang oder der abstrakten Form geprägt ist.23 Der hier verwendete Begriff der Ma-
+21 Genau genommen bilden sich solche Kunstmedien über spezielle 
+»Medienverschachtelungen«
+aus, vgl. Lehmann 2016a, S. 106 f f.
+22 Lehmann 2016a, S. 33–79.
+23 Ebd., S. 140–177.
+Harry Lehmann — Gehalt 223
+terialästhetik unterscheidet sich an einem wesentlichen Punkt von »Adornos Theorem
+vom musikalischen Material«24 bzw. des »Materialfortschritts«, was eine Kurzformel für
+dieses Theorem ist. Adornos Theorem ist eine normative Idee, in welcher er die neuesten
+Entwicklungen in den Künsten wie das Auf kommen der Zwölftontechnik als besonders
+fortschrittlich aufwertet, indem dieser Fortschritt auf der Materialseite zugleich als ein
+gesellschaftlicher Fortschritt konstruiert wird. In der Philosophie der neuen Musik konnte
+Adorno so die Kompositionen von Schönberg gegenüber denen von Strawinsky auf die
+Wertedifferenz von Fortschritt und Reaktion bringen.25
+So wie Hegels Kunstphilosophie unplausibel wurde, weil die moderne Kunst auf hör-
+te, schöne Kunst zu sein, so büßte auch Adornos Theorem des Materialfortschritts seine
+Überzeugungskraft ein, weil in den letzten beiden Jahrzehnten des 20. Jahrhunderts die
+Innovationen auf der Materialseite immer kleinteiliger wurden und sich keine markan-
+ten neuen Ismen mehr kreieren ließen. Was aber richtig bleibt, ist Adornos Beobachtung,
+dass der Anspruch auf Neuheit in der Klassischen Moderne über das ästhetische Ma-
+terial eingelöst wurde, d. h. dass die Kunst- und Musikgeschichte im Kunstsystem pri-
+mär als Geschichte der Materialästhetik geschrieben wurde. Diese Phase der Material-
+ästhetik reicht bis zu den anästhetischen Werken der historischen Avantgarde, in denen
+das ästhetische Moment der Kunst radikal negiert wird, aber in dieser Negation immer
+noch auf die Materialästhetik bezogen bleibt. Nachdem der Motor der Negationslogik
+im Kunstsystem angesprungen war, konnte eine radikale Avantgarde auch diese klas-
+sisch moderne Kunst noch einmal überbieten. Sie negierte deren Prämisse, dass Kunst
+notwendigerweise die Gestalt von Kunstwerken annehmen muss (was im Modell durch
+den Ausfall der Werkkomponente (W) veranschaulicht wird). Die Kunstkommunikation
+reduziert sich in diesem Stadium auf ein Konzept (K) und wird zur Konzeptkunst – eine
+Kunstform, die Marcel Duchamp bereits frühzeitig mit seinen Readymades antizipiert
+hat. Konzeptkunst und Konzeptmusik beruhen auf einem ›Isomorphismusprinzip‹, d. h.
+auf einer eineindeutigen Abbildrelation zwischen einem Konzept (K) und einem ein-
+
+fachen, nicht für die differenzierte ästhetische Beobachtung geschaffenen Wahrneh-
+mungseindruck, einem Perzept (P). Im Modell wird dieser Isomorphismus als (K ↔ P)
+dargestellt. Das Konzept von Robert Rauschenbergs Erased de Kooning Drawing (1953) ist
+durch den Titel gegeben und definiert, was man sieht, und was man wahrnehmen kann,
+ist genau eine solche ausradierte Zeichnung von de Kooning. Bei Konzeptkunstarbeiten
+hat man es mit einem einfachen Wahrnehmungseindruck zu tun, dem die Formenkom-
+binatorik fehlt und der entsprechend auch keinen Werkcharakter besitzt.26
+Nicht nur Adornos Theorem des Materialfortschritts, sondern das gesamte Paradig-
+ma der Materialästhetik ist damit erschöpft. Die naheliegendste Option war es dann, den
+24 Hindrichs 2011, S. 59. Siehe auch den Beitrag »Material« in diesem Handbuch.
+25 Eine umfassende Analyse zum Theorem des Materialfortschritt liefert Hindrichs 2011, 
+S. 59–70.
+26 Ebd., S. 184.
+II
+ 
+Kunstwerk / Aufführung224
+Modernitäts- und Neuheitsanspruch der Kunst aufzugeben und im Analogieschluss zu
+Hegel erneut ein »Ende der Kunst« zu postulieren: Arthur C. Danto hat die Konsequenzen
+dieser posthistorischen Haltung zur Kunst in aller wünschenswerten Deutlichkeit aus-
+formuliert: »Die Institutionen der Kunstwelt – die Galerien, die Sammler, die Ausstellun-
+gen, der Journalismus –, die auf der Geschichte basieren und daher bestimmen müssen,
+was jeweils neu ist, werden nach und nach verschwinden.«27
+Entscheidend für das Theoriemodell der ästhetischen Moderne ist, dass sich in einem
+autonomen Kunstsystem die Kunstkommunikation auch auf ihre eigenen Negationen
+richten und über eine doppelte Negation wieder auf heben kann. Die postmoderne Kunst-
+form lässt sich dann als eine Negation der Negation des Mediums der schönen Künste re-
+konstruieren, die sich an der Wiederverwendung von tonalem Material, figurativer Male-
+rei oder des Versmaßes erkennen lässt. Diese Reinklusion des Mediums der Künste (M) in
+die Kunstkommunikation geschieht aber nicht naiv, sondern ref lektiert, d. h. man zitiert
+die Kunst- und Musikgeschichte. Zudem bleibt die Werkkategorie (W) suspendiert, weil
+die postmoderne Kunst dem Ideal eines »offenen Kunstwerks« folgt: »Ein offenes Kunst-
+werk stellt sich der Aufgabe, uns ein Bild von der Diskontinuität zu geben: es erzählt sie
+nicht, sondern ist sie.«28 In solche Werke ist ein Dekonstruktionsmechanismus eingebaut,
+der eine solche »Diskontinuität« sicherstellt und das Entstehen von komplexen »Formen-
+kombinationen«29 systematisch unterbindet. Es sind aber gerade solche Formenkombi-
+nationen, in denen sich in einem Kunstwerk Verweisungs- und Sinnzusammenhänge
+ausbilden können, die sich dann auf einen ästhetischen Gehalt hin interpretieren lassen.
+Nach derselben systemimmanenten Negationslogik wurde nicht nur die Medienkatego-
+rie (M), sondern inzwischen auch die von der Avantgarde suspendierte Werkkategorie (W)
+in die Kunstkommunikation zurückgeholt, was aber keinen Rückfall in den Modus der
+schönen Künste bedeutet, sondern zu einer reflexiven Kunstform führt. Jetzt lassen sich –
+so wäre das Modell zu lesen – alle Stile und Ismen, alle Formen der Populär- und der Hoch-
+kultur, alle Medien und selbst der Werkcharakter der Kunst affirmieren oder negieren –
+und können so zum Ref lexionsmittel für einen konkreten ästhetischen Gehalt werden.
+Die Geschichte der modernen Künste im 20. Jahrhundert war so gesehen weder
+eine Fortschrittsgeschichte noch ist die postmoderne Kunst eine reaktionäre Abkehr
+von den Prinzipien der Moderne, sondern die beiden Phasen der Exklusion und der an-
+schließenden Re-Inklusion der Medien- und Werkkomponente führten im Resultat zu
+einer Entkoppelung von Werk, Medium und Konzept (im Modell wird diese Entkoppe -
+lung durch Spalten zwischen den drei Kreissegmenten dargestellt). Diese immanente
+Ausdif ferenzierung der modernen Künste führt, im Vergleich zu den schönen Künsten,
+zu einem enormen Zugewinn an immanenten Freiheitsgraden in der Kunstkommuni-
+27 Danto 1993, S. 145.
+28 Eco 1977, S. 164 f.
+
+29 Luhmann 1995, S. 349.
+Harry Lehmann — Gehalt 225
+kation, wodurch sich das Ausdrucksvermögen der ref lexiven Kunst um ein Vielfaches
+potenziert hat.
+In der Klassischen Moderne, der Avantgarde oder der Postmoderne waren entweder
+die Werk- oder die Medienkomponente oder beide Komponenten zugleich suspendiert,
+was das Ausdrucksvermögen dieser Kunstformen stark limitiert. Man kann hier zwar
+immer noch einen Weltbezug herstellen, aber eher im Sinne von Umberto Eco, der von
+einer »epistemologischen Metapher« spricht:
+»Von hier aus erhält eine offene Kunst ihre Funktion als epistemologische Metapher: in 
+einer
+Welt, in der die Diskontinuität der Phänomene die Möglichkeit für ein einheitliches und de-
+finitives Weltbild in Frage gestellt hat, zeigt sie uns einen Weg, wie wir diese Welt, in der 
+wir
+leben, sehen und damit anerkennen und unsere Sensibilität integrieren können.«30
+Genau in diesem Sinne hatte auch Adorno in den Werken der Klassischen Moderne eine
+epistemologische Metapher gesehen und sie als negative Utopie gedeutet, und selbst ein
+Werk der radikalen Avantgarde wie Joseph Beuys’ Fettstuhl (1964) ist eine epistemologi-
+sche Metapher für die Privatmythologie des Künstlers, in welcher Fett eine sehr spezi-
+fische Bedeutung besitzt. Insofern kommt die moderne Kunst nach einem Jahrhundert
+der systemimmanenten Ausdifferenzierung erst heute wieder in die Lage, im Kunstwerk
+ein komplexes Spiel von Selbst- und Fremdreferenzen zu organisieren, das sich als ein
+konkreter ästhetischer Gehalt interpretieren lässt und nicht nur abstrakt, unbestimmt
+oder formal auf die Welt verweist.
+Man erkennt im Rückblick, dass die Preisgabe des Neuheitsanspruches der Kunst, über
+den sich die postmoderne Kunstform legitimiert hat, nur eine Zwischenlösung blieb und
+in den Nullpunktwerken der Konzeptkunst noch ganz andere Optionen verborgen waren.
+Auch für Peter Osborne erfüllt die Konzeptkunst eine Scharnierfunktion in der modernen
+Kunst, die er in die drei aufeinanderfolgenden Phasen formaler Modernismus / Konzept-
+kunst / postkonzeptuelle Kunst unterteilt.31 Seine Leitthese lautet entsprechend: »Zeitgenös-
+sische Kunst ist postkonzeptuelle Kunst«.32 Allerdings fehlt dem Begriff des Postkon-
+zeptionellen eine nähere Charakterisierung, wie diese ›Kunst nach der Konzeptkunst‹
+spezifisch beschaffen ist.
+In unserem Theoriemodell lässt sich eine solche Spezifizierung vornehmen. Der Neu-
+heitsanspruch der Kunst wird nicht länger über das ästhetische Material, sondern mehr
+und mehr über den ästhetischen Gehalt der Werke eingelöst. Die historische Konzept-
+kunst triggert diesen Phasenwechsel von der Material- zur Gehaltsästhetik, weil es an
+diesem Nullpunkt fast keinen Unterschied mehr macht, ob ein Konzept das ästhetische
+30 Eco 1977, S. 164 f.
+31 Osborne 2013, S. 47.
+32 Ebd., S. 37.
+II
+ 
+Kunstwerk / Aufführung226
+Material organisiert oder ein Thema definiert (vgl. Abb. 1). Gerade bei einschlägigen Kon-
+zeptkünstlern wie Joseph Kosuth kann man im Spätwerk eine Hinwendung zur Gehalts-
+ästhetik beobachten, die aus der Konzeptkunst hervorgeht.33 Aber auch die postmoderne
+Kunst bereitet durch ihre Inklusion von Populärästhetik in die Hochkultur den Boden für
+die gehaltsästhetische Kunst, weil es zu den Wesensmerkmalen der populären Kunstfor-
+men gehört, dass sie mit Fremdreferenzen arbeiten.
+Gehaltsästhetiken sind zweipolige Theorien, die sowohl den Kunst- als auch den Welt-
+begriff näher bestimmen. Der Weltbezug jener reflexiv gewordenen Kunst lässt sich dann
+als eine »Provokation neuer Selbstbeschreibungen der Gesellschaft« begreifen.34 Auch diese
+Idee ist im Kontext der Luhmann’schen Systemtheorie entwickelt worden und beruht auf
+
+der Überlegung, dass eine moderne Gesellschaft Folgeprobleme der eigenen Evolution er-
+zeugt, auf die sie mit den Mitteln der Politik reagieren muss. Das politische System kann
+aber auf neue Problemlagen nur dann reagieren, wenn sie in der öffentlichen Meinung ad-
+äquat abgebildet sind, und dies heißt zunächst einmal, dass sie in der Gesellschaft als sol-
+che wahrnehmbar sein müssen. Die Kunst vermag in ihren Werken die hierfür fehlenden
+neuen Schemata der Erfahrung zu generieren und kann so – im Zusammenspiel mit der
+Kunstkritik, den Wissenschaften, der Philosophie und den Massenmedien – einen genui-
+nen Beitrag beim Umschreiben von historisch verbrauchten Selbstbeschreibungen leisten.35
+Im Vergleich zu den Gehaltsästhetiken von Hegel und Adorno verzichtet diese sys -
+temtheoretisch fundierte Gehaltsästhetik auf eine Geschichtsphilosophie, also auf kon-
+krete Thesen darüber, wie sich die Gesellschaft und die Kunst entwickeln werden. Sie be-
+hauptet lediglich, dass die moderne Gesellschaft evolviert und es für eine ref lexive Kunst
+hier eine Funktionsstelle gibt
+
