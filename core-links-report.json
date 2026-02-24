@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-24T02:02:49.433Z",
+  "generatedAt": "2026-02-24T10:47:39.626Z",
   "total": 25,
   "ok": 25,
   "failed": 0,
@@ -41,10 +41,10 @@
     },
     {
       "key": "2kmschmidtrottluff.jpeg",
-      "url": "https://www.smb.museum/en/museums-institutions/neue-nationalgalerie/collections-research/conservation-care/the-art-of-society/",
+      "url": "https://www.bildindex.de/document/obj02510711",
       "ok": true,
       "status": 200,
-      "finalUrl": "https://www.smb.museum/en/museums-institutions/neue-nationalgalerie/collections-research/conservation-care/the-art-of-society/"
+      "finalUrl": "https://www.bildindex.de/document/obj02510711"
     },
     {
       "key": "2kmboccioni.jpg",
@@ -55,10 +55,10 @@
     },
     {
       "key": "2kmrichier.jpeg",
-      "url": "https://de.wikipedia.org/wiki/Germaine_Richier",
+      "url": "https://www.meisterdrucke.uk/fine-art-prints/Germaine-Richier/1105106/Christ-Dassie.html",
       "ok": true,
       "status": 200,
-      "finalUrl": "https://de.wikipedia.org/wiki/Germaine_Richier"
+      "finalUrl": "https://www.meisterdrucke.uk/fine-art-prints/Germaine-Richier/1105106/Christ-Dassie.html"
     },
     {
       "key": "2kmlecorbusier.jpeg",
@@ -76,10 +76,10 @@
     },
     {
       "key": "3afontana.jpeg",
-      "url": "https://de.wikipedia.org/wiki/Lucio_Fontana",
+      "url": "https://www.meisterdrucke.uk/fine-art-prints/Lucio-Fontana/1105340/Konzett-spaziale-attesa.html",
       "ok": true,
       "status": 200,
-      "finalUrl": "https://de.wikipedia.org/wiki/Lucio_Fontana"
+      "finalUrl": "https://www.meisterdrucke.uk/fine-art-prints/Lucio-Fontana/1105340/Konzett-spaziale-attesa.html"
     },
     {
       "key": "3aduchamp.jpeg",
@@ -90,10 +90,10 @@
     },
     {
       "key": "3abeuys.jpeg",
-      "url": "https://de.wikipedia.org/wiki/Joseph_Beuys",
+      "url": "https://www.meisterdrucke.uk/fine-art-prints/Joseph-Beuys/1376347/Kreuzigung-1962.html",
       "ok": true,
       "status": 200,
-      "finalUrl": "https://de.wikipedia.org/wiki/Joseph_Beuys"
+      "finalUrl": "https://www.meisterdrucke.uk/fine-art-prints/Joseph-Beuys/1376347/Kreuzigung-1962.html"
     },
     {
       "key": "3awotruba.jpeg",
@@ -111,10 +111,10 @@
     },
     {
       "key": "4pmliechtenstein.jpeg",
-      "url": "https://de.wikipedia.org/wiki/Roy_Lichtenstein",
+      "url": "https://whitney.org/collection/works/8046",
       "ok": true,
       "status": 200,
-      "finalUrl": "https://de.wikipedia.org/wiki/Roy_Lichtenstein"
+      "finalUrl": "https://whitney.org/collection/works/8046"
     },
     {
       "key": "4pmwarhol.jpeg",
@@ -125,17 +125,17 @@
     },
     {
       "key": "4pmkippenberger.jpeg",
-      "url": "https://de.wikipedia.org/wiki/Martin_Kippenberger",
+      "url": "https://de.wikipedia.org/wiki/Zuerst_die_F%C3%BC%C3%9Fe",
       "ok": true,
       "status": 200,
-      "finalUrl": "https://de.wikipedia.org/wiki/Martin_Kippenberger"
+      "finalUrl": "https://de.wikipedia.org/wiki/Zuerst_die_F%C3%BC%C3%9Fe"
     },
     {
       "key": "4pmmoore.jpeg",
-      "url": "https://de.wikipedia.org/wiki/Piazza_d%E2%80%99Italia",
+      "url": "https://deliriousla.com/2018/09/19/church-of-the-nativity/",
       "ok": true,
       "status": 200,
-      "finalUrl": "https://de.wikipedia.org/wiki/Piazza_d%E2%80%99Italia"
+      "finalUrl": "https://deliriousla.com/2018/09/19/church-of-the-nativity/"
     },
     {
       "key": "4pmschnittke.jpg",
@@ -146,10 +146,10 @@
     },
     {
       "key": "5rktuymans.jpeg",
-      "url": "https://de.wikipedia.org/wiki/Luc_Tuymans",
+      "url": "https://www.meisterdrucke.uk/fine-art-prints/Luc-Tuymans/1186972/Himmler%2C-1998.html",
       "ok": true,
       "status": 200,
-      "finalUrl": "https://de.wikipedia.org/wiki/Luc_Tuymans"
+      "finalUrl": "https://www.meisterdrucke.uk/fine-art-prints/Luc-Tuymans/1186972/Himmler%2C-1998.html"
     },
     {
       "key": "5rkai.jpeg",
