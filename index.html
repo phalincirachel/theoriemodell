@@ -5457,8 +5457,9 @@
         // Zuerst eine globale Variable definieren (falls nicht vorhanden, wird sie hier erstellt)
         let currentMobileIndex = -1;
         let mobileTheoryPulseAnimations = [];
+        let mobileTheoryPulseStartTime = null;
         const MOBILE_SLICE_PULSE_DISTANCE = 4;
-        const MOBILE_SLICE_PULSE_DURATION = 3600;
+        const MOBILE_SLICE_PULSE_DURATION = 4200;
 
         function clearMobileTheorySlicePulse() {
             if (!mobileTheoryPulseAnimations.length) return;
@@ -5466,6 +5467,7 @@
                 try { anim.cancel(); } catch (_) { }
             });
             mobileTheoryPulseAnimations = [];
+            mobileTheoryPulseStartTime = null;
         }
 
         function getFallbackSliceDirection(sliceId) {
@@ -5528,25 +5530,38 @@
             };
         }
 
-        function animateMobileTheorySlice(el, dx, dy, delayMs) {
+        function buildSliceFloatKeyframes(dx, dy, steps) {
+            const frameCount = Math.max(12, steps || 24);
+            const frames = [];
+            for (let i = 0; i <= frameCount; i++) {
+                const t = i / frameCount;
+                const amp = 0.5 - 0.5 * Math.cos(2 * Math.PI * t); // smooth out-and-back
+                frames.push({
+                    transform: `translate(${(dx * amp).toFixed(3)}px, ${(dy * amp).toFixed(3)}px)`,
+                    offset: t
+                });
+            }
+            return frames;
+        }
+
+        function animateMobileTheorySlice(el, dx, dy, startTime) {
             if (!el || typeof el.animate !== 'function') return;
             el.style.transformBox = 'view-box';
             el.style.transformOrigin = '50px 50px';
             const tx = Number(dx) || 0;
             const ty = Number(dy) || 0;
             const anim = el.animate(
-                [
-                    { transform: 'translate(0px, 0px)', offset: 0, easing: 'cubic-bezier(0.22, 1, 0.36, 1)' },
-                    { transform: `translate(${tx.toFixed(3)}px, ${ty.toFixed(3)}px)`, offset: 0.5, easing: 'cubic-bezier(0.32, 0, 0.67, 1)' },
-                    { transform: 'translate(0px, 0px)', offset: 1 }
-                ],
+                buildSliceFloatKeyframes(tx, ty, 24),
                 {
                     duration: MOBILE_SLICE_PULSE_DURATION,
+                    easing: 'linear',
                     iterations: Infinity,
-                    delay: delayMs || 0,
                     fill: 'both'
                 }
             );
+            if (Number.isFinite(startTime)) {
+                anim.startTime = startTime;
+            }
             mobileTheoryPulseAnimations.push(anim);
         }
 
@@ -5569,13 +5584,25 @@
                     ghostM.style.pointerEvents = 'none';
                 }
             }
+            if (index === 4) {
+                const ghostW = pieContainer.querySelector('[id$="ghost-4"]');
+                if (ghostW) {
+                    ghostW.style.opacity = '0';
+                    ghostW.style.stroke = 'transparent';
+                    ghostW.style.pointerEvents = 'none';
+                }
+            }
 
             const pulseMap = pulseMapByIndex[index] || [];
-            pulseMap.forEach((suffix, idx) => {
+            const syncStart = Number.isFinite(document.timeline && document.timeline.currentTime)
+                ? document.timeline.currentTime + 24
+                : null;
+            mobileTheoryPulseStartTime = syncStart;
+            pulseMap.forEach((suffix) => {
                 const el = pieContainer.querySelector(`[id$="${suffix}"]`);
                 if (!el) return;
                 const vec = getSlicePulseVector(el, MOBILE_SLICE_PULSE_DISTANCE);
-                animateMobileTheorySlice(el, vec.dx, vec.dy, idx * 180);
+                animateMobileTheorySlice(el, vec.dx, vec.dy, mobileTheoryPulseStartTime);
             });
         }
 
@@ -6713,7 +6740,7 @@
             const host = mode === 'mobile' && overlayHost ? overlayHost : document.body;
             host.appendChild(coach);
             coach.addEventListener('click', removeImageTextCoachmark, { once: true });
-            setTimeout(removeImageTextCoachmark, 4000);
+            setTimeout(removeImageTextCoachmark, 10000);
         }
 
         function buildEpochIndicatorIcon(groupIndex) {
