@@ -4429,13 +4429,19 @@
                 pieContainer.style.pointerEvents = 'auto';
                 pieContainer.style.zIndex = '50';
                 let pieTapLocked = false;
+                let pieTapLockUntil = 0;
                 pieContainer.onclick = async function (e) {
                     e.preventDefault(); e.stopPropagation();
-                    if (pieTapLocked) return;
+                    const now = Date.now();
+                    if (pieTapLocked || now < pieTapLockUntil) return;
                     pieTapLocked = true;
-                    await runElementPulse(pieContainer, { scale: 1.04, duration: 260 });
-                    pieTapLocked = false;
-                    openMobileLevel2(i);
+                    pieTapLockUntil = now + 900;
+                    try {
+                        await runElementPulse(pieContainer, { scale: 1.04, duration: 520 });
+                        openMobileLevel2(i);
+                    } finally {
+                        setTimeout(() => { pieTapLocked = false; }, 620);
+                    }
                 };
 
                 topDiv.appendChild(pieContainer);
@@ -5236,13 +5242,19 @@
                 pieContainer.style.pointerEvents = 'auto';
                 pieContainer.style.zIndex = '50';
                 let pieTapLocked = false;
+                let pieTapLockUntil = 0;
                 pieContainer.onclick = async function (e) {
                     e.preventDefault(); e.stopPropagation();
-                    if (pieTapLocked) return;
+                    const now = Date.now();
+                    if (pieTapLocked || now < pieTapLockUntil) return;
                     pieTapLocked = true;
-                    await runElementPulse(pieContainer, { scale: 1.04, duration: 260 });
-                    pieTapLocked = false;
-                    openMobileLevel2(i);
+                    pieTapLockUntil = now + 900;
+                    try {
+                        await runElementPulse(pieContainer, { scale: 1.04, duration: 520 });
+                        openMobileLevel2(i);
+                    } finally {
+                        setTimeout(() => { pieTapLocked = false; }, 620);
+                    }
                 };
 
                 topDiv.appendChild(pieContainer);
@@ -5445,6 +5457,8 @@
         // Zuerst eine globale Variable definieren (falls nicht vorhanden, wird sie hier erstellt)
         let currentMobileIndex = -1;
         let mobileTheoryPulseAnimations = [];
+        const MOBILE_SLICE_PULSE_DISTANCE = 4;
+        const MOBILE_SLICE_PULSE_DURATION = 3600;
 
         function clearMobileTheorySlicePulse() {
             if (!mobileTheoryPulseAnimations.length) return;
@@ -5454,21 +5468,83 @@
             mobileTheoryPulseAnimations = [];
         }
 
+        function getFallbackSliceDirection(sliceId) {
+            const id = String(sliceId || '');
+            if (id.endsWith('-m')) {
+                const a = 210 * (Math.PI / 180);
+                return { x: Math.cos(a), y: Math.sin(a) };
+            }
+            if (id.endsWith('-w')) {
+                const a = 330 * (Math.PI / 180);
+                return { x: Math.cos(a), y: Math.sin(a) };
+            }
+            const a = 90 * (Math.PI / 180);
+            return { x: Math.cos(a), y: Math.sin(a) };
+        }
+
+        function getSlicePulseVector(sliceGroup, distance) {
+            const fallbackDir = getFallbackSliceDirection(sliceGroup ? sliceGroup.id : '');
+            const fallback = {
+                dx: fallbackDir.x * distance,
+                dy: fallbackDir.y * distance
+            };
+            if (!sliceGroup) return fallback;
+
+            const basePath = sliceGroup.querySelector('path[d*="M50,50"]') || sliceGroup.querySelector('path');
+            if (!basePath) return fallback;
+
+            const d = basePath.getAttribute('d') || '';
+            const nums = d.match(/-?\d+(?:\.\d+)?/g);
+            if (!nums || nums.length < 6) return fallback;
+
+            const values = nums.map(Number);
+            const cx = values[0];
+            const cy = values[1];
+            const p1x = values[2];
+            const p1y = values[3];
+            const p2x = values[values.length - 2];
+            const p2y = values[values.length - 1];
+
+            const v1x = p1x - cx;
+            const v1y = p1y - cy;
+            const v2x = p2x - cx;
+            const v2y = p2y - cy;
+            const n1 = Math.hypot(v1x, v1y);
+            const n2 = Math.hypot(v2x, v2y);
+            if (n1 < 0.001 || n2 < 0.001) return fallback;
+
+            const u1x = v1x / n1;
+            const u1y = v1y / n1;
+            const u2x = v2x / n2;
+            const u2y = v2y / n2;
+            const bx = u1x + u2x;
+            const by = u1y + u2y;
+            const bl = Math.hypot(bx, by);
+            if (!Number.isFinite(bl) || bl < 0.001) return fallback;
+
+            return {
+                dx: (bx / bl) * distance,
+                dy: (by / bl) * distance
+            };
+        }
+
         function animateMobileTheorySlice(el, dx, dy, delayMs) {
             if (!el || typeof el.animate !== 'function') return;
             el.style.transformBox = 'view-box';
             el.style.transformOrigin = '50px 50px';
+            const tx = Number(dx) || 0;
+            const ty = Number(dy) || 0;
             const anim = el.animate(
                 [
-                    { transform: 'translate(0px, 0px)' },
-                    { transform: `translate(${dx}px, ${dy}px)` },
-                    { transform: 'translate(0px, 0px)' }
+                    { transform: 'translate(0px, 0px)', offset: 0, easing: 'cubic-bezier(0.22, 1, 0.36, 1)' },
+                    { transform: `translate(${tx.toFixed(3)}px, ${ty.toFixed(3)}px)`, offset: 0.5, easing: 'cubic-bezier(0.32, 0, 0.67, 1)' },
+                    { transform: 'translate(0px, 0px)', offset: 1 }
                 ],
                 {
-                    duration: 3000,
-                    easing: 'ease-in-out',
+                    duration: MOBILE_SLICE_PULSE_DURATION,
                     iterations: Infinity,
-                    delay: delayMs || 0
+                    delay: delayMs || 0,
+                    fill: 'both'
                 }
             );
             mobileTheoryPulseAnimations.push(anim);
@@ -5478,33 +5554,28 @@
             if (!pieContainer) return;
             clearMobileTheorySlicePulse();
             const pulseMapByIndex = {
-                0: [
-                    { suffix: 'g-0-m', dx: -3, dy: -3 },
-                    { suffix: 'g-0-w', dx: 3, dy: -3 },
-                    { suffix: 'g-0-k', dx: 0, dy: 4 }
-                ],
-                1: [
-                    { suffix: 'g-1-w', dx: 3, dy: -3 },
-                    { suffix: 'g-1-k', dx: 0, dy: 4 }
-                ],
-                2: [
-                    { suffix: 'g-2-k', dx: 0, dy: 4 }
-                ],
-                3: [
-                    { suffix: 'g-3-m', dx: -3, dy: -3 },
-                    { suffix: 'g-3-k', dx: 0, dy: 4 }
-                ],
-                4: [
-                    { suffix: 'g-4-m', dx: -3, dy: -3 },
-                    { suffix: 'g-4-w', dx: 3, dy: -3 },
-                    { suffix: 'g-4-k', dx: 0, dy: 4 }
-                ]
+                0: ['g-0-m', 'g-0-w', 'g-0-k'],
+                1: ['g-1-w', 'g-1-k'],
+                2: ['g-2-k'],
+                3: ['g-3-m', 'g-3-k'],
+                4: ['g-4-m', 'g-4-w', 'g-4-k']
             };
+
+            if (index === 3) {
+                const ghostM = pieContainer.querySelector('[id$="ghost-3"]');
+                if (ghostM) {
+                    ghostM.style.opacity = '0';
+                    ghostM.style.stroke = 'transparent';
+                    ghostM.style.pointerEvents = 'none';
+                }
+            }
+
             const pulseMap = pulseMapByIndex[index] || [];
-            pulseMap.forEach((cfg, idx) => {
-                const el = pieContainer.querySelector(`[id$="${cfg.suffix}"]`);
+            pulseMap.forEach((suffix, idx) => {
+                const el = pieContainer.querySelector(`[id$="${suffix}"]`);
                 if (!el) return;
-                animateMobileTheorySlice(el, cfg.dx, cfg.dy, idx * 140);
+                const vec = getSlicePulseVector(el, MOBILE_SLICE_PULSE_DISTANCE);
+                animateMobileTheorySlice(el, vec.dx, vec.dy, idx * 180);
             });
         }
 
