@@ -3,14 +3,14 @@ const fs = require('fs');
 const coreArtworkLinks = {
   '1skdurer.jpeg': 'https://en.wikipedia.org/wiki/Self-Portrait_(D%C3%BCrer,_Munich)',
   '1sknatiluspokal.jpeg': 'https://de.wikipedia.org/wiki/Nautiluspokal',
-  '1skmichelangelo.jpg': 'https://de.wikipedia.org/wiki/Michelangelo',
+  '1skmichelangelo.jpg': 'https://de.wikipedia.org/wiki/Kruzifix_(Michelangelo)',
   '1skfrauenkirche.jpeg': 'https://de.wikipedia.org/wiki/Frauenkirche_(Dresden)',
   '1skmozart.jpg': 'https://www.youtube.com/watch?v=_BnfZLdePCM',
-  '2kmschmidtrottluff.jpeg': 'https://de.wikipedia.org/wiki/Karl_Schmidt-Rottluff',
+  '2kmschmidtrottluff.jpeg': 'https://www.smb.museum/en/museums-institutions/neue-nationalgalerie/collections-research/conservation-care/the-art-of-society/',
   '2kmboccioni.jpg': 'https://it.wikipedia.org/wiki/Sviluppo_di_una_bottiglia_nello_spazio',
   '2kmrichier.jpeg': 'https://de.wikipedia.org/wiki/Germaine_Richier',
   '2kmlecorbusier.jpeg': 'https://de.wikipedia.org/wiki/Notre-Dame-du-Haut_(Ronchamp)',
-  '2kmlachenmann.jpg': 'https://www.youtube.com/watch?v=kQzE42VrbXg',
+  '2kmlachenmann.jpg': 'https://www.youtube.com/watch?v=PU50tF5kOLE',
   '3afontana.jpeg': 'https://de.wikipedia.org/wiki/Lucio_Fontana',
   '3aduchamp.jpeg': 'https://de.wikipedia.org/wiki/Fountain_(Duchamp)',
   '3abeuys.jpeg': 'https://de.wikipedia.org/wiki/Joseph_Beuys',
@@ -24,8 +24,8 @@ const coreArtworkLinks = {
   '5rktuymans.jpeg': 'https://de.wikipedia.org/wiki/Luc_Tuymans',
   '5rkai.jpeg': 'https://en.wikipedia.org/wiki/Dropping_a_Han_Dynasty_Urn',
   '5rkcattelan.jpeg': 'https://en.wikipedia.org/wiki/The_Ninth_Hour',
-  '5rkcielrouge.jpeg': 'https://de.wikipedia.org/wiki/Spezial:Suche?search=Ciel+rouge',
-  '5rkreinholdsen.jpg': 'https://www.youtube.com/watch?v=tRnyyd94ApI'
+  '5rkcielrouge.jpeg': 'https://www.archdaily.com/134128/harajuku-church-ciel-rouge',
+  '5rkreinholdsen.jpg': 'https://www.youtube.com/watch?v=VsT0ZkbwYdg'
 };
 
 async function checkUrl(key, url) {

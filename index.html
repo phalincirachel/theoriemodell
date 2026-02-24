@@ -60,6 +60,7 @@
             color: #111;
             overflow: hidden;
             -webkit-overflow-scrolling: touch;
+            overscroll-behavior: none;
         }
 
         #mobile-text-overlay .m-text-title {
@@ -98,7 +99,7 @@
 
         #mobile-text-overlay .m-text-content {
             margin: 0 16px 24px;
-            padding: 12px 20px 20px;
+            padding: 12px 20px 88px;
             font-size: 1rem;
             line-height: 1.6;
             color: #111;
@@ -108,6 +109,7 @@
             overflow-y: auto;
             flex: 1 1 auto;
             min-height: 0;
+            overscroll-behavior: contain;
         }
 
         #mobile-text-overlay .m-text-close {
@@ -1547,15 +1549,16 @@
         }
 
         .image-text-nav.image-text-nav-up {
-            top: 20%;
+            top: 54px;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translateX(-50%);
         }
 
         .image-text-nav.image-text-nav-down {
-            top: 80%;
+            top: auto;
+            bottom: 24px;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translateX(-50%);
         }
 
         .image-text-nav.image-text-nav-up svg {
@@ -1576,7 +1579,7 @@
             inset: 0;
             z-index: 10004;
             pointer-events: auto;
-            background: rgba(255, 255, 255, 0.88);
+            background: linear-gradient(150deg, rgba(250, 251, 253, 0.96), rgba(240, 245, 251, 0.96));
             opacity: 1;
             transition: opacity 0.32s ease;
         }
@@ -1585,21 +1588,60 @@
             opacity: 0;
         }
 
-        .it-coach-arrow {
+        .image-text-coachmark-panel {
             position: absolute;
-            color: #111;
+            inset: 40px;
+            max-width: 920px;
+            max-height: 560px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.94);
+            border: 1px solid rgba(16, 20, 26, 0.14);
+            border-radius: 22px;
+            box-shadow: 0 30px 80px rgba(10, 22, 36, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 26px 28px 22px;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .it-coach-title {
             font-size: 0.95rem;
-            letter-spacing: 0.02em;
+            letter-spacing: 0.14em;
             text-transform: uppercase;
+            font-weight: 700;
+            color: #2a313a;
+            text-align: center;
+            margin-bottom: 12px;
         }
 
-        .it-coach-arrow svg {
-            display: block;
-            width: 180px;
-            height: 54px;
+        .it-coach-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(220px, 1fr));
+            gap: 16px;
+            align-items: stretch;
         }
 
-        .it-coach-arrow path {
+        .it-coach-card {
+            border-radius: 16px;
+            background: linear-gradient(160deg, rgba(247, 249, 252, 0.96), rgba(237, 241, 247, 0.94));
+            border: 1px solid rgba(34, 42, 53, 0.14);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 176px;
+        }
+
+        .it-coach-icon {
+            width: 100%;
+            height: 74px;
+            margin-bottom: 8px;
+        }
+
+        .it-coach-icon path {
             fill: none;
             stroke: #111;
             stroke-width: 2.2;
@@ -1609,38 +1651,93 @@
             animation: itCoachDash 1.4s linear infinite;
         }
 
-        .it-coach-arrow span {
-            display: inline-block;
-            margin-top: 8px;
+        .it-coach-card-label {
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 0.01em;
+            color: #111;
+            margin-bottom: 6px;
         }
 
-        .it-coach-right {
-            top: 44%;
-            left: 54%;
-            transform: translateY(-50%);
+        .it-coach-card-sub {
+            font-size: 0.9rem;
+            color: #3c4652;
+            line-height: 1.4;
         }
 
-        .it-coach-down {
-            left: 38%;
-            top: 54%;
-            transform: translateX(-50%);
-        }
-
-        .it-coach-down svg {
-            width: 54px;
-            height: 190px;
-        }
-
-        .it-coach-down span {
-            writing-mode: vertical-rl;
-            text-orientation: mixed;
-            margin-top: 0;
-            margin-left: 10px;
+        .it-coach-dismiss {
+            margin-top: 14px;
+            text-align: center;
+            font-size: 0.82rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #4a5562;
         }
 
         @keyframes itCoachDash {
             to {
                 stroke-dashoffset: -28;
+            }
+        }
+
+        .image-text-epoch-indicator {
+            opacity: 1 !important;
+            pointer-events: none !important;
+            z-index: 10003 !important;
+            left: 40px;
+            right: auto;
+            padding: 0;
+            overflow: hidden;
+            background: #fff;
+            border-width: 2px;
+        }
+
+        .image-text-epoch-indicator svg {
+            width: 34px;
+            height: 34px;
+            display: block;
+            margin: auto;
+            pointer-events: none;
+        }
+
+        #image-text-overlay {
+            overscroll-behavior: none;
+        }
+
+        body.image-text-mode-active {
+            overscroll-behavior-y: none;
+        }
+
+        #image-text-panel {
+            overscroll-behavior: contain;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .image-text-coachmark-panel {
+                inset: 16px;
+                padding: 18px 16px;
+                border-radius: 16px;
+            }
+
+            .it-coach-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .it-coach-card {
+                min-height: 148px;
+            }
+
+            .image-text-epoch-indicator {
+                top: 16px !important;
+                left: 16px !important;
+            }
+
+            .image-text-nav.image-text-nav-up {
+                top: 24px;
+            }
+
+            .image-text-nav.image-text-nav-down {
+                bottom: 14px;
             }
         }
 
@@ -4372,7 +4469,7 @@
             if (desktopArrowIdleTimer) clearTimeout(desktopArrowIdleTimer);
             desktopArrowIdleTimer = setTimeout(() => {
                 if (isDesktopArrowContext()) document.body.classList.add('desktop-arrows-idle');
-            }, 1300);
+            }, 2600);
         }
 
         document.addEventListener('mousemove', () => {
@@ -5879,14 +5976,14 @@
         const coreArtworkLinks = {
             "1skdurer.jpeg": { kind: "visual", url: "https://en.wikipedia.org/wiki/Self-Portrait_(D%C3%BCrer,_Munich)" },
             "1sknatiluspokal.jpeg": { kind: "visual", url: "https://de.wikipedia.org/wiki/Nautiluspokal" },
-            "1skmichelangelo.jpg": { kind: "visual", url: "https://de.wikipedia.org/wiki/Michelangelo" },
+            "1skmichelangelo.jpg": { kind: "visual", url: "https://de.wikipedia.org/wiki/Kruzifix_(Michelangelo)" },
             "1skfrauenkirche.jpeg": { kind: "visual", url: "https://de.wikipedia.org/wiki/Frauenkirche_(Dresden)" },
             "1skmozart.jpg": { kind: "music", url: "https://www.youtube.com/watch?v=_BnfZLdePCM" },
-            "2kmschmidtrottluff.jpeg": { kind: "visual", url: "https://de.wikipedia.org/wiki/Karl_Schmidt-Rottluff" },
+            "2kmschmidtrottluff.jpeg": { kind: "visual", url: "https://www.smb.museum/en/museums-institutions/neue-nationalgalerie/collections-research/conservation-care/the-art-of-society/" },
             "2kmboccioni.jpg": { kind: "visual", url: "https://it.wikipedia.org/wiki/Sviluppo_di_una_bottiglia_nello_spazio" },
             "2kmrichier.jpeg": { kind: "visual", url: "https://de.wikipedia.org/wiki/Germaine_Richier" },
             "2kmlecorbusier.jpeg": { kind: "visual", url: "https://de.wikipedia.org/wiki/Notre-Dame-du-Haut_(Ronchamp)" },
-            "2kmlachenmann.jpg": { kind: "music", url: "https://www.youtube.com/watch?v=kQzE42VrbXg" },
+            "2kmlachenmann.jpg": { kind: "music", url: "https://www.youtube.com/watch?v=PU50tF5kOLE" },
             "3afontana.jpeg": { kind: "visual", url: "https://de.wikipedia.org/wiki/Lucio_Fontana" },
             "3aduchamp.jpeg": { kind: "visual", url: "https://de.wikipedia.org/wiki/Fountain_(Duchamp)" },
             "3abeuys.jpeg": { kind: "visual", url: "https://de.wikipedia.org/wiki/Joseph_Beuys" },
@@ -5900,8 +5997,8 @@
             "5rktuymans.jpeg": { kind: "visual", url: "https://de.wikipedia.org/wiki/Luc_Tuymans" },
             "5rkai.jpeg": { kind: "visual", url: "https://en.wikipedia.org/wiki/Dropping_a_Han_Dynasty_Urn" },
             "5rkcattelan.jpeg": { kind: "visual", url: "https://en.wikipedia.org/wiki/The_Ninth_Hour" },
-            "5rkcielrouge.jpeg": { kind: "visual", url: "https://de.wikipedia.org/wiki/Spezial:Suche?search=Ciel+rouge" },
-            "5rkreinholdsen.jpg": { kind: "music", url: "https://www.youtube.com/watch?v=tRnyyd94ApI" }
+            "5rkcielrouge.jpeg": { kind: "visual", url: "https://www.archdaily.com/134128/harajuku-church-ciel-rouge" },
+            "5rkreinholdsen.jpg": { kind: "music", url: "https://www.youtube.com/watch?v=VsT0ZkbwYdg" }
         };
 
         function clamp(value, min, max) {
@@ -6120,6 +6217,7 @@
             imageTextNavState.fieldPos = nextFieldPos;
 
             renderImageTextPayload(payload, { resetTextScroll: true });
+            updateEpochIndicatorButton(nextGroup);
             pingDesktopArrowActivity();
             return true;
         }
@@ -6166,17 +6264,25 @@
             coach.id = 'image-text-coachmark';
             coach.className = 'image-text-coachmark';
             coach.innerHTML = `
-                <div class="it-coach-arrow it-coach-right">
-                    <svg viewBox="0 0 180 54" aria-hidden="true">
-                        <path d="M6,27 L152,27 M152,27 L128,10 M152,27 L128,44"></path>
-                    </svg>
-                    <span>Swipe nach rechts: gleiches Sujet, andere Epoche</span>
-                </div>
-                <div class="it-coach-arrow it-coach-down">
-                    <svg viewBox="0 0 54 190" aria-hidden="true">
-                        <path d="M27,8 L27,160 M27,160 L10,136 M27,160 L44,136"></path>
-                    </svg>
-                    <span>Swipe nach unten: weitere Werke dieser Epoche</span>
+                <div class="image-text-coachmark-panel">
+                    <div class="it-coach-title">Navigation in dieser Ansicht</div>
+                    <div class="it-coach-grid">
+                        <div class="it-coach-card">
+                            <svg class="it-coach-icon" viewBox="0 0 220 70" aria-hidden="true">
+                                <path d="M10,35 L190,35 M190,35 L162,16 M190,35 L162,54"></path>
+                            </svg>
+                            <div class="it-coach-card-label">Nach rechts swipen</div>
+                            <div class="it-coach-card-sub">gleiches Feld in der nächsten Epoche</div>
+                        </div>
+                        <div class="it-coach-card">
+                            <svg class="it-coach-icon" viewBox="0 0 220 70" aria-hidden="true">
+                                <path d="M110,8 L110,58 M110,58 L90,38 M110,58 L130,38"></path>
+                            </svg>
+                            <div class="it-coach-card-label">Nach unten swipen</div>
+                            <div class="it-coach-card-sub">weiteres Werk derselben Epoche</div>
+                        </div>
+                    </div>
+                    <div class="it-coach-dismiss">Tippen oder klicken zum Schließen</div>
                 </div>
             `;
             const host = mode === 'mobile' && overlayHost ? overlayHost : document.body;
@@ -6185,12 +6291,119 @@
             setTimeout(removeImageTextCoachmark, 5000);
         }
 
+        function buildEpochIndicatorIcon(groupIndex) {
+            const src = document.querySelector(`#item-${groupIndex} svg`);
+            if (!src) return null;
+            const clone = src.cloneNode(true);
+
+            const cleanNode = (node) => {
+                if (!node || !node.attributes) return;
+                [...node.attributes].forEach(attr => {
+                    if (attr.name.toLowerCase().startsWith('on')) node.removeAttribute(attr.name);
+                });
+            };
+
+            cleanNode(clone);
+            clone.querySelectorAll('*').forEach(el => {
+                cleanNode(el);
+                if (el.classList && el.classList.contains('anim-group')) {
+                    el.style.opacity = '1';
+                    el.style.transform = 'translate(0px, 0px)';
+                    el.style.display = 'block';
+                }
+            });
+
+            if (groupIndex === 1) {
+                const ag1 = clone.querySelector('#anim-group-1');
+                if (ag1) ag1.style.display = 'none';
+                const g1 = clone.querySelector('#ghost-1');
+                if (g1) { g1.style.opacity = '1'; g1.classList.add('ghost-visible'); }
+            }
+
+            if (groupIndex === 2) {
+                const ag2 = clone.querySelector('#anim-group-2');
+                if (ag2) ag2.style.display = 'none';
+                const pText = clone.querySelector('#anim-2-p');
+                if (pText) pText.style.opacity = '1';
+            }
+
+            if (groupIndex === 3) {
+                const g3 = clone.querySelector('#ghost-3');
+                if (g3) { g3.style.opacity = '0'; g3.classList.remove('ghost-visible'); }
+            }
+
+            if (groupIndex === 4) {
+                const g4 = clone.querySelector('#ghost-4');
+                if (g4) { g4.style.opacity = '0'; g4.classList.remove('ghost-visible'); }
+            }
+
+            clone.querySelectorAll('[id]').forEach(el => el.removeAttribute('id'));
+            clone.setAttribute('width', '34');
+            clone.setAttribute('height', '34');
+            return clone;
+        }
+
+        function createEpochIndicatorButton(groupIndex, isMobile) {
+            const btn = document.createElement('div');
+            btn.className = 'close-btn image-text-epoch-indicator';
+            btn.style.top = isMobile ? '16px' : '40px';
+            btn.style.left = isMobile ? '16px' : '40px';
+            btn.style.width = '40px';
+            btn.style.height = '40px';
+            btn.style.display = 'flex';
+            btn.style.alignItems = 'center';
+            btn.style.justifyContent = 'center';
+            const icon = buildEpochIndicatorIcon(groupIndex);
+            if (icon) btn.appendChild(icon);
+            return btn;
+        }
+
+        function updateEpochIndicatorButton(groupIndex) {
+            if (!imageTextNavState || !imageTextNavState.refs || !imageTextNavState.refs.epochIndicator) return;
+            const btn = imageTextNavState.refs.epochIndicator;
+            btn.innerHTML = '';
+            const icon = buildEpochIndicatorIcon(groupIndex);
+            if (icon) btn.appendChild(icon);
+        }
+
         function clearImageTextCleanup(state) {
             if (!state || !state.cleanup || !state.cleanup.length) return;
             state.cleanup.forEach(fn => {
                 try { fn(); } catch (_) { }
             });
             state.cleanup = [];
+        }
+
+        function attachTextOverscrollGuard(textBox) {
+            if (!imageTextNavState || !textBox) return;
+            let touchStartY = 0;
+            let touchStartX = 0;
+
+            const onTouchStart = (e) => {
+                if (!e.touches || e.touches.length !== 1) return;
+                touchStartY = e.touches[0].clientY;
+                touchStartX = e.touches[0].clientX;
+            };
+
+            const onTouchMove = (e) => {
+                if (!e.touches || e.touches.length !== 1) return;
+                const currentY = e.touches[0].clientY;
+                const currentX = e.touches[0].clientX;
+                const dy = currentY - touchStartY;
+                const dx = currentX - touchStartX;
+                if (Math.abs(dy) <= Math.abs(dx)) return;
+
+                const atTop = textBox.scrollTop <= 0;
+                const atBottom = textBox.scrollTop + textBox.clientHeight >= textBox.scrollHeight - 1;
+                if ((atTop && dy > 0) || (atBottom && dy < 0)) {
+                    e.preventDefault();
+                }
+            };
+
+            textBox.addEventListener('touchstart', onTouchStart, { passive: true });
+            textBox.addEventListener('touchmove', onTouchMove, { passive: false });
+            imageTextNavState.cleanup.push(() => textBox.removeEventListener('touchstart', onTouchStart));
+            imageTextNavState.cleanup.push(() => textBox.removeEventListener('touchmove', onTouchMove));
         }
 
         function closeImageTextByState(event) {
@@ -6292,7 +6505,7 @@
 
             const desiredTextWidth = layout.baseWidthPx + (layout.baseWidthPx - mediaWidth);
             const desiredTextHeight = layout.baseHeightPx + (layout.baseHeightPx - mediaHeight);
-            const maxTextHeight = window.innerHeight - layout.topGapPx - 22;
+            const maxTextHeight = window.innerHeight - layout.topGapPx - 96;
             refs.textBox.style.right = `${layout.edgeGapPx}px`;
             refs.textBox.style.top = `${layout.topGapPx}px`;
             refs.textBox.style.width = `${desiredTextWidth}px`;
@@ -6481,7 +6694,7 @@
                 indices: context ? context.indices : [],
                 dataIndex: context ? context.dataIndex : -1,
                 fieldPos: context ? context.fieldPos : 0,
-                refs: { overlay, imgBox, textBox, titleBox },
+                refs: { overlay, imgBox, textBox, titleBox, epochIndicator: null },
                 cleanup: [],
                 currentPayload: null,
                 layoutReady: false,
@@ -6500,12 +6713,20 @@
                 }
             };
 
+            const epochIndicator = createEpochIndicatorButton(imageTextNavState.groupIndex, true);
+            overlay.appendChild(epochIndicator);
+            imageTextNavState.refs.epochIndicator = epochIndicator;
+            imageTextNavState.cleanup.push(() => {
+                if (epochIndicator.parentNode) epochIndicator.parentNode.removeChild(epochIndicator);
+            });
+
             imgBox.addEventListener('click', handleImageTextMediaActivation);
             imageTextNavState.cleanup.push(() => imgBox.removeEventListener('click', handleImageTextMediaActivation));
 
             const onTextScroll = () => applyMobileImageTextScale();
             textBox.addEventListener('scroll', onTextScroll, { passive: true });
             imageTextNavState.cleanup.push(() => textBox.removeEventListener('scroll', onTextScroll));
+            attachTextOverscrollGuard(textBox);
 
             attachImageTextGestureHandlers();
             renderImageTextPayload(payload, { resetTextScroll: true });
@@ -6616,7 +6837,7 @@
             textBox.style.transitionDelay = '0.3s';
             textBox.style.color = '#111';
             textBox.style.background = '#fff';
-            textBox.style.padding = '12px 24px 24px';
+            textBox.style.padding = '12px 24px 88px';
             textBox.style.boxSizing = 'border-box';
             textBox.style.lineHeight = '1.6';
             textBox.style.fontSize = '1rem';
@@ -6655,6 +6876,7 @@
             const navUp = createDesktopImageTextArrow(-1, 'y');
             const navDown = createDesktopImageTextArrow(1, 'y');
             const navElements = [navLeft, navRight, navUp, navDown];
+            const epochIndicator = createEpochIndicatorButton(context ? context.groupIndex : -1, false);
 
             const closeDesktop = function (e) {
                 if (e) {
@@ -6670,6 +6892,7 @@
             document.body.appendChild(textBox);
             document.body.appendChild(sharedTitle);
             document.body.appendChild(closeBtn);
+            document.body.appendChild(epochIndicator);
             navElements.forEach(el => document.body.appendChild(el));
 
             imageTextNavState = {
@@ -6678,7 +6901,7 @@
                 indices: context ? context.indices : [],
                 dataIndex: context ? context.dataIndex : -1,
                 fieldPos: context ? context.fieldPos : 0,
-                refs: { flyingImg, textBox, sharedTitle, overlay, closeDesktop },
+                refs: { flyingImg, textBox, sharedTitle, overlay, closeDesktop, epochIndicator },
                 cleanup: [],
                 currentPayload: null,
                 layoutReady: false,
@@ -6691,6 +6914,10 @@
             const onTextScroll = () => applyDesktopImageTextScale();
             textBox.addEventListener('scroll', onTextScroll, { passive: true });
             imageTextNavState.cleanup.push(() => textBox.removeEventListener('scroll', onTextScroll));
+            attachTextOverscrollGuard(textBox);
+            imageTextNavState.cleanup.push(() => {
+                if (epochIndicator.parentNode) epochIndicator.parentNode.removeChild(epochIndicator);
+            });
 
             attachImageTextGestureHandlers();
             attachDesktopImageTextWheel();

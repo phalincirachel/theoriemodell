@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-23T16:27:12.411Z",
+  "generatedAt": "2026-02-23T22:43:38.136Z",
   "total": 25,
   "ok": 25,
   "failed": 0,
@@ -20,10 +20,10 @@
     },
     {
       "key": "1skmichelangelo.jpg",
-      "url": "https://de.wikipedia.org/wiki/Michelangelo",
+      "url": "https://de.wikipedia.org/wiki/Kruzifix_(Michelangelo)",
       "ok": true,
       "status": 200,
-      "finalUrl": "https://de.wikipedia.org/wiki/Michelangelo"
+      "finalUrl": "https://de.wikipedia.org/wiki/Kruzifix_(Michelangelo)"
     },
     {
       "key": "1skfrauenkirche.jpeg",
@@ -41,10 +41,10 @@
     },
     {
       "key": "2kmschmidtrottluff.jpeg",
-      "url": "https://de.wikipedia.org/wiki/Karl_Schmidt-Rottluff",
+      "url": "https://www.smb.museum/en/museums-institutions/neue-nationalgalerie/collections-research/conservation-care/the-art-of-society/",
       "ok": true,
       "status": 200,
-      "finalUrl": "https://de.wikipedia.org/wiki/Karl_Schmidt-Rottluff"
+      "finalUrl": "https://www.smb.museum/en/museums-institutions/neue-nationalgalerie/collections-research/conservation-care/the-art-of-society/"
     },
     {
       "key": "2kmboccioni.jpg",
@@ -69,10 +69,10 @@
     },
     {
       "key": "2kmlachenmann.jpg",
-      "url": "https://www.youtube.com/watch?v=kQzE42VrbXg",
+      "url": "https://www.youtube.com/watch?v=PU50tF5kOLE",
       "ok": true,
       "status": 200,
-      "finalUrl": "https://www.youtube.com/watch?v=kQzE42VrbXg"
+      "finalUrl": "https://www.youtube.com/watch?v=PU50tF5kOLE"
     },
     {
       "key": "3afontana.jpeg",
@@ -167,17 +167,17 @@
     },
     {
       "key": "5rkcielrouge.jpeg",
-      "url": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Ciel+rouge",
+      "url": "https://www.archdaily.com/134128/harajuku-church-ciel-rouge",
       "ok": true,
       "status": 200,
-      "finalUrl": "https://de.wikipedia.org/wiki/Spezial:Suche?search=Ciel+rouge"
+      "finalUrl": "https://www.archdaily.com/134128/harajuku-church-ciel-rouge"
     },
     {
       "key": "5rkreinholdsen.jpg",
-      "url": "https://www.youtube.com/watch?v=tRnyyd94ApI",
+      "url": "https://www.youtube.com/watch?v=VsT0ZkbwYdg",
       "ok": true,
       "status": 200,
-      "finalUrl": "https://www.youtube.com/watch?v=tRnyyd94ApI"
+      "finalUrl": "https://www.youtube.com/watch?v=VsT0ZkbwYdg"
     }
   ]
 }
