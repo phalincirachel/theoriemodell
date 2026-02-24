@@ -308,7 +308,7 @@
         }
 
         body.gallery-mode .art-item:not(.hovered-item) {
-            opacity: 0 !important;
+            opacity: 0.08 !important;
             pointer-events: none;
         }
 
@@ -535,6 +535,8 @@
             max-height: calc(100vh - 130px);
             overflow-y: auto;
             overscroll-behavior: contain;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
             align-content: flex-start;
 
             display: flex;
@@ -545,6 +547,12 @@
             opacity: 0;
             visibility: hidden;
             transition: opacity 0.4s ease, visibility 0s 0.4s;
+        }
+
+        .gallery-overlay::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+            display: none;
         }
 
         body.gallery-mode .gallery-overlay {
@@ -1882,11 +1890,20 @@
         }
 
         body.gallery-mode .header-item {
-            opacity: 0.1 !important;
+            opacity: 0.04 !important;
         }
 
         body.gallery-mode .header-item.highlighted {
-            opacity: 1 !important;
+            opacity: 0.18 !important;
+        }
+
+        body.gallery-mode.gallery-scrolled .art-item.hovered-item {
+            opacity: 0 !important;
+            pointer-events: none;
+        }
+
+        body.gallery-mode.gallery-scrolled .header-item.highlighted {
+            opacity: 0 !important;
         }
 
         body.is-active .gallery-overlay {
@@ -2330,7 +2347,7 @@
             opacity: 0;
             visibility: hidden;
             transition: opacity 0.3s ease;
-            overflow-y: auto;
+            overflow: hidden;
         }
 
         #m-level-2-overlay.active {
@@ -2343,6 +2360,36 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+
+        #m-level-2-overlay .m-l2-content {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            display: block;
+            overflow: hidden;
+        }
+
+        #m-level-2-overlay .m-l2-page {
+            position: absolute;
+            inset: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-y: auto;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            background: #fff;
+            box-sizing: border-box;
+            will-change: transform;
+        }
+
+        #m-level-2-overlay .m-l2-page::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+            display: none;
         }
 
         .m-l2-text-block {
@@ -3072,7 +3119,7 @@
 
     <!-- NEU: Replay Button und Skip Overlay -->
     <div class="skip-overlay" id="skip-overlay" onclick="skipAnimation()"></div>
-    <div class="close-btn" onclick="resetView()">&#10005;</div>
+    <div class="close-btn" onclick="resetView('x')">&#10005;</div>
 
 
     <div id="mobile-root">
@@ -3936,9 +3983,11 @@
         const galleryTiles = document.querySelectorAll('.gallery-tile');
         const headerItems = document.querySelectorAll('.header-item');
         const artItems = document.querySelectorAll('.art-item');
+        const galleryOverlayElement = document.getElementById('gallery-overlay');
 
         let activeGalleryIndex = -1;
         let animTimers = [];
+        let mobileLevel2SlideLock = false;
 
         // --- SCROLL MEMORY VARIABLES ---
         let currentL3Type = null;
@@ -4035,6 +4084,20 @@
             setTimeout(() => { startAnimation(); }, 100);
         }
 
+        function syncGalleryScrollState() {
+            if (!galleryOverlayElement) return;
+            if (!document.body.classList.contains('gallery-mode')) {
+                document.body.classList.remove('gallery-scrolled');
+                return;
+            }
+            const isScrolled = galleryOverlayElement.scrollTop > 8;
+            document.body.classList.toggle('gallery-scrolled', isScrolled);
+        }
+
+        if (galleryOverlayElement) {
+            galleryOverlayElement.addEventListener('scroll', syncGalleryScrollState, { passive: true });
+        }
+
         function enterHover(index) {
             if (document.body.classList.contains('is-active') || document.body.classList.contains('animating')) return;
             if (leaveTimeout) clearTimeout(leaveTimeout);
@@ -4045,6 +4108,8 @@
 
             activeGalleryIndex = index;
             document.body.classList.add('gallery-mode');
+            if (galleryOverlayElement) galleryOverlayElement.scrollTop = 0;
+            syncGalleryScrollState();
 
             artItems.forEach((item, i) => { if (i === index) item.classList.add('hovered-item'); else item.classList.remove('hovered-item'); });
             headerItems.forEach(h => h.classList.remove('highlighted')); if (headerItems[index]) headerItems[index].classList.add('highlighted');
@@ -4076,7 +4141,7 @@
                     } else {
                         tile.style.pointerEvents = 'auto';
                         tile.style.opacity = 1;
-                        tile.style.backgroundColor = 'rgba(255, 255, 255, 0.86)';
+                        tile.style.backgroundColor = 'rgba(255, 255, 255, 0.68)';
                         tile.onmouseenter = () => enterHover(i);
                         tile.onclick = (e) => {
                             e.preventDefault();
@@ -4141,6 +4206,7 @@
                     tile.style.opacity = 1;
                 }
             }
+            syncGalleryScrollState();
         }
 
         let leaveTimeout;
@@ -4156,6 +4222,8 @@
 
                 activeGalleryIndex = -1;
                 document.body.classList.remove('gallery-mode');
+                document.body.classList.remove('gallery-scrolled');
+                if (galleryOverlayElement) galleryOverlayElement.scrollTop = 0;
                 artItems.forEach(item => item.classList.remove('hovered-item'));
                 headerItems.forEach(h => h.classList.remove('highlighted'));
                 galleryTiles.forEach(t => { t.style.pointerEvents = "none"; });
@@ -4753,6 +4821,7 @@
         }
 
         function navigateMobileLevel2(direction) {
+            if (mobileLevel2SlideLock) return;
             let nextIndex = currentMobileIndex + direction;
 
             // Grenzen: Wir haben 5 Items (Index 0 bis 4)
@@ -4761,7 +4830,7 @@
             if (nextIndex > 4) return;
 
             // Overlay aktualisieren
-            openMobileLevel2(nextIndex);
+            openMobileLevel2(nextIndex, { slideDirection: direction });
 
             // Hintergrund syncen (ohne Animation, damit es nicht stört)
             // Cover ist Seite 0, Item 0 ist Seite 1. Also nextIndex + 1
@@ -4845,12 +4914,22 @@
 
         function activateItem(element, index) {
             if (document.body.classList.contains('animating')) return;
+            const sourceRectCandidate = element.getBoundingClientRect();
+            const sourceRect = (sourceRectCandidate.width > 0 && sourceRectCandidate.height > 0) ? sourceRectCandidate : null;
+            const headerSourceEl = document.getElementById(`h-${index}`);
+            const headerSourceRectCandidate = headerSourceEl ? headerSourceEl.getBoundingClientRect() : null;
+            const headerSourceRect = (
+                headerSourceRectCandidate &&
+                headerSourceRectCandidate.width > 0 &&
+                headerSourceRectCandidate.height > 0
+            ) ? headerSourceRectCandidate : null;
 
             // Set Global Index
             currentActiveIndex = index;
 
             // When entering level 2 detail mode, gallery must be fully hidden/disabled.
             document.body.classList.remove('gallery-mode');
+            document.body.classList.remove('gallery-scrolled');
             activeGalleryIndex = -1;
             artItems.forEach(item => item.classList.remove('hovered-item'));
             headerItems.forEach(h => h.classList.remove('highlighted'));
@@ -4960,25 +5039,48 @@
 
                 const currentX = rect.left + rect.width / 2;
                 const currentY = rect.top + rect.height / 2;
-                headerEl.style.transform = `translate(${targetX - currentX}px, ${targetY - currentY}px) scale(${scaleFactor})`;
+                const sourceX = headerSourceRect ? (headerSourceRect.left + headerSourceRect.width / 2) : currentX;
+                const sourceY = headerSourceRect ? (headerSourceRect.top + headerSourceRect.height / 2) : currentY;
+                const preserveX = sourceX - currentX;
+                const preserveY = sourceY - currentY;
+
+                headerEl.style.transition = 'none';
+                headerEl.style.transform = `translate(${preserveX}px, ${preserveY}px) scale(1)`;
+                void headerEl.getBoundingClientRect();
+                headerEl.style.transition = '';
+                requestAnimationFrame(() => {
+                    headerEl.style.transform = `translate(${targetX - currentX}px, ${targetY - currentY}px) scale(${scaleFactor})`;
+                });
             }
 
             setTimeout(() => { leftContainer.classList.add('active-text'); rightContainer.classList.add('active-text'); }, 100);
 
-            // Item Centering logic
-            const rect = element.getBoundingClientRect();
-            const viewWidth = window.innerWidth;
-            const viewHeight = window.innerHeight;
-            const targetX = viewWidth / 2; const targetY = viewHeight / 2;
-            const currentX = rect.left + rect.width / 2; const currentY = rect.top + rect.height / 2;
-            element.style.transform = `translate(${targetX - currentX}px, ${targetY - currentY}px)`;
+            // FLIP animation: start from real chart position, then move to center.
+            const layoutRect = element.getBoundingClientRect();
+            const layoutX = layoutRect.left + layoutRect.width / 2;
+            const layoutY = layoutRect.top + layoutRect.height / 2;
+            const sourceX = sourceRect ? (sourceRect.left + sourceRect.width / 2) : layoutX;
+            const sourceY = sourceRect ? (sourceRect.top + sourceRect.height / 2) : layoutY;
+
+            const preserveX = sourceX - layoutX;
+            const preserveY = sourceY - layoutY;
+            const targetX = window.innerWidth / 2 - layoutX;
+            const targetY = window.innerHeight / 2 - layoutY;
+
+            element.style.transition = 'none';
+            element.style.transform = `translate(${preserveX}px, ${preserveY}px)`;
+            void element.getBoundingClientRect();
+            element.style.transition = '';
+            requestAnimationFrame(() => {
+                element.style.transform = `translate(${targetX}px, ${targetY}px)`;
+            });
 
             // UPDATE ARROWS
             if (typeof updateNavArrows === 'function') updateNavArrows();
             pingDesktopArrowActivity();
         }
 
-        function resetView() {
+        function resetView(source) {
             // Check Level 4 first
             if (document.body.classList.contains('level-4-active')) {
                 document.body.classList.remove('level-4-active');
@@ -5009,12 +5111,40 @@
             const activeElement = document.querySelector('.art-item.active');
             if (activeElement) {
                 leftContainer.classList.remove('active-text'); rightContainer.classList.remove('active-text');
+                const animateBackToOrigin = source === 'x' && !document.body.classList.contains('mobile-mode');
 
                 // Reset header
                 const activeHeader = document.querySelector('.header-item.active-header');
                 if (activeHeader) {
                     activeHeader.classList.remove('active-header');
                     activeHeader.style.transform = '';
+                }
+
+                if (animateBackToOrigin) {
+                    const startRect = activeElement.getBoundingClientRect();
+                    activeElement.classList.remove('active');
+                    document.body.classList.remove('is-active');
+                    const endRect = activeElement.getBoundingClientRect();
+
+                    const startX = startRect.left + startRect.width / 2;
+                    const startY = startRect.top + startRect.height / 2;
+                    const endX = endRect.left + endRect.width / 2;
+                    const endY = endRect.top + endRect.height / 2;
+                    const deltaX = startX - endX;
+                    const deltaY = startY - endY;
+
+                    activeElement.style.transition = 'none';
+                    activeElement.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
+                    void activeElement.getBoundingClientRect();
+                    activeElement.style.transition = '';
+                    requestAnimationFrame(() => {
+                        activeElement.style.transform = '';
+                    });
+
+                    setTimeout(() => {
+                        currentActiveIndex = -1;
+                    }, 620);
+                    return;
                 }
 
                 setTimeout(() => {
@@ -5501,15 +5631,19 @@
             const content = document.getElementById('m-l2-content');
             if (!content || !overlay) return;
             clearMobileTheorySlicePulse();
+            mobileLevel2SlideLock = false;
 
             content.innerHTML = "";
             const data = footerData[key];
             if (!data) return;
 
+            const page = document.createElement('div');
+            page.className = 'm-l2-page current';
             const t = document.createElement('div');
             t.className = 'm-l2-text-block';
             t.innerHTML = `<div class="m-l2-title">${data.title}</div><div>${data.text}</div>`;
-            content.appendChild(t);
+            page.appendChild(t);
+            content.appendChild(page);
 
             overlay.classList.add('active');
             overlay.scrollTop = 0;
@@ -5640,25 +5774,18 @@
             applyMobileTheorySlicePulse(currentMobileIndex, chart);
         }
 
-        function openMobileLevel2(index, type) {
-            currentMobileIndex = index;
-            clearMobileTheorySlicePulse();
-
-            const overlay = document.getElementById('m-level-2-overlay');
-            const content = document.getElementById('m-l2-content');
-            if (!content) return;
-
-            content.scrollTop = 0;
-            if (overlay) overlay.scrollTop = 0;
-
-            content.innerHTML = "";
+        function buildMobileLevel2Page(index) {
             const data = fullContentData[`item-${index}`];
-            if (!data) return;
+            if (!data) return null;
+
+            const page = document.createElement('div');
+            page.className = 'm-l2-page';
+            page.dataset.index = String(index);
 
             const t1 = document.createElement('div');
             t1.className = 'm-l2-text-block';
             t1.innerHTML = `<div class="m-l2-title">${data.titleL}</div><div>${data.textL}</div>`;
-            content.appendChild(t1);
+            page.appendChild(t1);
 
             const pieContainer = document.createElement('div');
             pieContainer.className = 'm-l2-chart';
@@ -5684,7 +5811,6 @@
                         pText.style.opacity = '1';
                         pText.classList.add('p-visible');
                         pText.style.transform = 'none';
-                        // FIX: Text nicht klickbar machen
                         pText.style.pointerEvents = 'none';
                     }
 
@@ -5693,7 +5819,6 @@
                         dashedPath.style.transform = 'none';
                         dashedPath.style.transformOrigin = '50px 50px';
                         dashedPath.style.transformBox = 'view-box';
-                        // FIX: Gestrichelte Linie nicht klickbar machen
                         dashedPath.style.pointerEvents = 'none';
                     }
                 }
@@ -5775,8 +5900,6 @@
                     const parts = id.split('-');
                     const typeCode = parts[parts.length - 1];
 
-                    // --- FIX: Klick-Blockade für Werk bei Avantgarde & Postmoderne ---
-                    // Hier verhindern wir strikt, dass diese Bereiche klickbar sind
                     if (index === 2 && typeCode === 'w') {
                         slice.style.pointerEvents = 'none';
                         return;
@@ -5785,7 +5908,6 @@
                         slice.style.pointerEvents = 'none';
                         return;
                     }
-                    // ----------------------------------------------------------------
 
                     let t = null;
                     if (typeCode === 'm') t = 'medium';
@@ -5816,18 +5938,95 @@
                     ghostGroup.addEventListener('touchend', l4Handler, { passive: false });
                 }
             }
-            content.appendChild(pieContainer);
-            applyMobileTheorySlicePulse(index, pieContainer);
+            page.appendChild(pieContainer);
 
             const t2 = document.createElement('div');
             t2.className = 'm-l2-text-block';
             t2.innerHTML = `<div class="m-l2-title">${data.titleR}</div><div>${data.textR}</div>`;
-            content.appendChild(t2);
+            page.appendChild(t2);
 
+            return page;
+        }
+
+        function openMobileLevel2(index, options) {
+            currentMobileIndex = index;
+            clearMobileTheorySlicePulse();
+
+            const overlay = document.getElementById('m-level-2-overlay');
+            const content = document.getElementById('m-l2-content');
+            if (!content || !overlay) return;
+
+            const opts = (options && typeof options === 'object') ? options : {};
+            const slideDirection = Number(opts.slideDirection) || 0;
+            const shouldSlide = (
+                slideDirection !== 0 &&
+                overlay.classList.contains('active') &&
+                !mobileLevel2SlideLock &&
+                !!content.querySelector('.m-l2-page')
+            );
+
+            const nextPage = buildMobileLevel2Page(index);
+            if (!nextPage) return;
+
+            if (!shouldSlide) {
+                mobileLevel2SlideLock = false;
+                content.innerHTML = '';
+                nextPage.classList.add('current');
+                nextPage.style.transform = 'translateX(0)';
+                nextPage.style.pointerEvents = 'auto';
+                content.appendChild(nextPage);
+                const chart = nextPage.querySelector('.m-l2-chart');
+                if (chart) applyMobileTheorySlicePulse(index, chart);
+                overlay.classList.add('active');
+                return;
+            }
+
+            const prevPage = content.querySelector('.m-l2-page.current') || content.querySelector('.m-l2-page');
+            if (!prevPage) {
+                content.innerHTML = '';
+                nextPage.classList.add('current');
+                content.appendChild(nextPage);
+                const chart = nextPage.querySelector('.m-l2-chart');
+                if (chart) applyMobileTheorySlicePulse(index, chart);
+                overlay.classList.add('active');
+                return;
+            }
+
+            mobileLevel2SlideLock = true;
+            const incomingFrom = slideDirection > 0 ? '100%' : '-100%';
+            const outgoingTo = slideDirection > 0 ? '-100%' : '100%';
+            const transition = 'transform 430ms cubic-bezier(0.22, 0.61, 0.36, 1)';
+
+            nextPage.classList.add('current');
+            nextPage.style.transform = `translateX(${incomingFrom})`;
+            nextPage.style.pointerEvents = 'none';
+            content.appendChild(nextPage);
+
+            requestAnimationFrame(() => {
+                prevPage.style.transition = transition;
+                prevPage.style.pointerEvents = 'none';
+                prevPage.style.transform = `translateX(${outgoingTo})`;
+
+                nextPage.style.transition = transition;
+                nextPage.style.transform = 'translateX(0)';
+            });
+
+            const finishSlide = () => {
+                if (prevPage.parentNode === content) prevPage.parentNode.removeChild(prevPage);
+                nextPage.style.transition = '';
+                nextPage.style.transform = 'translateX(0)';
+                nextPage.style.pointerEvents = 'auto';
+                const chart = nextPage.querySelector('.m-l2-chart');
+                if (chart) applyMobileTheorySlicePulse(index, chart);
+                mobileLevel2SlideLock = false;
+            };
+
+            setTimeout(finishSlide, 460);
             overlay.classList.add('active');
         }
         function closeMobileLevel2() {
             clearMobileTheorySlicePulse();
+            mobileLevel2SlideLock = false;
             document.getElementById('m-level-2-overlay').classList.remove('active');
         }
 
