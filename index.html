@@ -3890,26 +3890,6 @@
         const headerItems = document.querySelectorAll('.header-item');
         const artItems = document.querySelectorAll('.art-item');
 
-        function bindDesktopPieHoverPulse() {
-            artItems.forEach(item => {
-                if (!item || item.dataset.desktopPulseBound === '1') return;
-                item.dataset.desktopPulseBound = '1';
-                let cooling = false;
-                item.addEventListener('mouseenter', () => {
-                    if (document.body.classList.contains('mobile-mode')) return;
-                    if (document.body.classList.contains('is-active')) return;
-                    if (cooling) return;
-                    const chart = item.querySelector('.pie-chart');
-                    if (!chart) return;
-                    cooling = true;
-                    runElementPulse(chart, { scale: 1.035, duration: 260 }).finally(() => {
-                        setTimeout(() => { cooling = false; }, 140);
-                    });
-                });
-            });
-        }
-        bindDesktopPieHoverPulse();
-
         let activeGalleryIndex = -1;
         let animTimers = [];
 
@@ -5457,17 +5437,23 @@
         // Zuerst eine globale Variable definieren (falls nicht vorhanden, wird sie hier erstellt)
         let currentMobileIndex = -1;
         let mobileTheoryPulseAnimations = [];
-        let mobileTheoryPulseStartTime = null;
+        let mobileTheoryChartPulseAnimation = null;
         const MOBILE_SLICE_PULSE_DISTANCE = 4;
         const MOBILE_SLICE_PULSE_DURATION = 4200;
+        const MOBILE_CHART_PULSE_SCALE = 1.04;
+        const MOBILE_SLICE_CLICK_MULTIPLIER = 2;
+        const MOBILE_SLICE_CLICK_DURATION = 620;
 
         function clearMobileTheorySlicePulse() {
+            if (mobileTheoryChartPulseAnimation) {
+                try { mobileTheoryChartPulseAnimation.cancel(); } catch (_) { }
+                mobileTheoryChartPulseAnimation = null;
+            }
             if (!mobileTheoryPulseAnimations.length) return;
             mobileTheoryPulseAnimations.forEach(anim => {
                 try { anim.cancel(); } catch (_) { }
             });
             mobileTheoryPulseAnimations = [];
-            mobileTheoryPulseStartTime = null;
         }
 
         function getFallbackSliceDirection(sliceId) {
@@ -5544,7 +5530,23 @@
             return frames;
         }
 
-        function animateMobileTheorySlice(el, dx, dy, startTime) {
+        function buildScalePulseKeyframes(minScale, maxScale, steps) {
+            const frameCount = Math.max(12, steps || 24);
+            const frames = [];
+            const delta = maxScale - minScale;
+            for (let i = 0; i <= frameCount; i++) {
+                const t = i / frameCount;
+                const amp = 0.5 - 0.5 * Math.cos(2 * Math.PI * t); // smooth out-and-back
+                const s = minScale + (delta * amp);
+                frames.push({
+                    transform: `scale(${s.toFixed(4)})`,
+                    offset: t
+                });
+            }
+            return frames;
+        }
+
+        function animateMobileTheorySlice(el, dx, dy) {
             if (!el || typeof el.animate !== 'function') return;
             el.style.transformBox = 'view-box';
             el.style.transformOrigin = '50px 50px';
@@ -5553,29 +5555,80 @@
             const anim = el.animate(
                 buildSliceFloatKeyframes(tx, ty, 24),
                 {
+                    duration: MOBILE_SLICE_CLICK_DURATION,
+                    easing: 'linear',
+                    iterations: 1,
+                    fill: 'both'
+                }
+            );
+            mobileTheoryPulseAnimations.push(anim);
+            return new Promise(resolve => {
+                let done = false;
+                const finish = () => {
+                    if (done) return;
+                    done = true;
+                    resolve();
+                };
+                anim.onfinish = finish;
+                anim.oncancel = finish;
+            });
+        }
+
+        function waitForMobileTheoryChartPulseRest() {
+            return new Promise(resolve => {
+                const anim = mobileTheoryChartPulseAnimation;
+                if (!anim || !Number.isFinite(anim.currentTime)) {
+                    resolve();
+                    return;
+                }
+                const duration = MOBILE_SLICE_PULSE_DURATION;
+                const epsilon = 24;
+                const mod = ((anim.currentTime % duration) + duration) % duration;
+                if (mod <= epsilon || (duration - mod) <= epsilon) {
+                    resolve();
+                    return;
+                }
+                const waitMs = duration - mod;
+                setTimeout(resolve, waitMs);
+            });
+        }
+
+        function startMobileTheoryChartPulse(pieContainer) {
+            if (!pieContainer || typeof pieContainer.animate !== 'function') return;
+            if (mobileTheoryChartPulseAnimation) {
+                try { mobileTheoryChartPulseAnimation.cancel(); } catch (_) { }
+                mobileTheoryChartPulseAnimation = null;
+            }
+            pieContainer.style.transformOrigin = '50% 50%';
+            pieContainer.style.willChange = 'transform';
+            mobileTheoryChartPulseAnimation = pieContainer.animate(
+                buildScalePulseKeyframes(1, MOBILE_CHART_PULSE_SCALE, 24),
+                {
                     duration: MOBILE_SLICE_PULSE_DURATION,
                     easing: 'linear',
                     iterations: Infinity,
                     fill: 'both'
                 }
             );
-            if (Number.isFinite(startTime)) {
-                anim.startTime = startTime;
+        }
+
+        async function playMobileTheorySliceTransition(sliceEl) {
+            if (!sliceEl) return;
+            await waitForMobileTheoryChartPulseRest();
+            if (mobileTheoryChartPulseAnimation) {
+                try { mobileTheoryChartPulseAnimation.cancel(); } catch (_) { }
+                mobileTheoryChartPulseAnimation = null;
             }
-            mobileTheoryPulseAnimations.push(anim);
+            const vec = getSlicePulseVector(
+                sliceEl,
+                MOBILE_SLICE_PULSE_DISTANCE * MOBILE_SLICE_CLICK_MULTIPLIER
+            );
+            await animateMobileTheorySlice(sliceEl, vec.dx, vec.dy);
         }
 
         function applyMobileTheorySlicePulse(index, pieContainer) {
             if (!pieContainer) return;
             clearMobileTheorySlicePulse();
-            const pulseMapByIndex = {
-                0: ['g-0-m', 'g-0-w', 'g-0-k'],
-                1: ['g-1-w', 'g-1-k'],
-                2: ['g-2-k'],
-                3: ['g-3-m', 'g-3-k'],
-                4: ['g-4-m', 'g-4-w', 'g-4-k']
-            };
-
             if (index === 3) {
                 const ghostM = pieContainer.querySelector('[id$="ghost-3"]');
                 if (ghostM) {
@@ -5592,18 +5645,7 @@
                     ghostW.style.pointerEvents = 'none';
                 }
             }
-
-            const pulseMap = pulseMapByIndex[index] || [];
-            const syncStart = Number.isFinite(document.timeline && document.timeline.currentTime)
-                ? document.timeline.currentTime + 24
-                : null;
-            mobileTheoryPulseStartTime = syncStart;
-            pulseMap.forEach((suffix) => {
-                const el = pieContainer.querySelector(`[id$="${suffix}"]`);
-                if (!el) return;
-                const vec = getSlicePulseVector(el, MOBILE_SLICE_PULSE_DISTANCE);
-                animateMobileTheorySlice(el, vec.dx, vec.dy, mobileTheoryPulseStartTime);
-            });
+            startMobileTheoryChartPulse(pieContainer);
         }
 
         function restoreMobileTheorySlicePulseIfVisible() {
@@ -5727,6 +5769,21 @@
                 pieContainer.innerHTML = temp.innerHTML;
 
                 // Event Listeners for Pieces (Level 3 Verlinkung)
+                let l2SelectionLocked = false;
+                let l2SelectionLastTs = 0;
+                const runL2Selection = async (targetEl, onDone) => {
+                    const now = Date.now();
+                    if (l2SelectionLocked || (now - l2SelectionLastTs) < 700) return;
+                    l2SelectionLocked = true;
+                    l2SelectionLastTs = now;
+                    try {
+                        await playMobileTheorySliceTransition(targetEl);
+                        onDone();
+                    } finally {
+                        setTimeout(() => { l2SelectionLocked = false; }, 180);
+                    }
+                };
+
                 const slices = pieContainer.querySelectorAll('.l2-slice-group');
                 slices.forEach(slice => {
                     const id = slice.id;
@@ -5753,12 +5810,12 @@
 
                     if (t) {
                         slice.style.cursor = 'pointer';
-                        const handler = function (e) {
+                        const handler = async function (e) {
                             e.preventDefault(); e.stopPropagation();
-                            openMobileLevel3(t);
+                            await runL2Selection(slice, () => openMobileLevel3(t));
                         };
                         slice.addEventListener('click', handler);
-                        slice.addEventListener('touchend', handler);
+                        slice.addEventListener('touchend', handler, { passive: false });
                     }
                 });
 
@@ -5767,12 +5824,12 @@
                 if (ghostGroup) {
                     ghostGroup.style.cursor = 'pointer';
                     ghostGroup.style.pointerEvents = 'auto';
-                    const l4Handler = function (e) {
+                    const l4Handler = async function (e) {
                         e.preventDefault(); e.stopPropagation();
-                        openMobileLevel4();
+                        await runL2Selection(ghostGroup, () => openMobileLevel4());
                     };
                     ghostGroup.addEventListener('click', l4Handler);
-                    ghostGroup.addEventListener('touchend', l4Handler);
+                    ghostGroup.addEventListener('touchend', l4Handler, { passive: false });
                 }
             }
             content.appendChild(pieContainer);
