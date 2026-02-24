@@ -1631,17 +1631,23 @@
         }
 
         .it-coach-icons {
-            min-width: 84px;
+            min-width: 72px;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            gap: 2px;
             flex-shrink: 0;
         }
 
+        .it-coach-icons-vertical {
+            flex-direction: column;
+            gap: 4px;
+            min-width: 34px;
+        }
+
         .it-coach-icon {
-            width: 36px;
-            height: 36px;
+            width: 34px;
+            height: 34px;
             flex-shrink: 0;
         }
 
@@ -3884,6 +3890,26 @@
         const headerItems = document.querySelectorAll('.header-item');
         const artItems = document.querySelectorAll('.art-item');
 
+        function bindDesktopPieHoverPulse() {
+            artItems.forEach(item => {
+                if (!item || item.dataset.desktopPulseBound === '1') return;
+                item.dataset.desktopPulseBound = '1';
+                let cooling = false;
+                item.addEventListener('mouseenter', () => {
+                    if (document.body.classList.contains('mobile-mode')) return;
+                    if (document.body.classList.contains('is-active')) return;
+                    if (cooling) return;
+                    const chart = item.querySelector('.pie-chart');
+                    if (!chart) return;
+                    cooling = true;
+                    runElementPulse(chart, { scale: 1.035, duration: 260 }).finally(() => {
+                        setTimeout(() => { cooling = false; }, 140);
+                    });
+                });
+            });
+        }
+        bindDesktopPieHoverPulse();
+
         let activeGalleryIndex = -1;
         let animTimers = [];
 
@@ -4402,8 +4428,13 @@
                 }
                 pieContainer.style.pointerEvents = 'auto';
                 pieContainer.style.zIndex = '50';
-                pieContainer.onclick = function (e) {
+                let pieTapLocked = false;
+                pieContainer.onclick = async function (e) {
                     e.preventDefault(); e.stopPropagation();
+                    if (pieTapLocked) return;
+                    pieTapLocked = true;
+                    await runElementPulse(pieContainer, { scale: 1.04, duration: 260 });
+                    pieTapLocked = false;
                     openMobileLevel2(i);
                 };
 
@@ -5204,8 +5235,13 @@
                 }
                 pieContainer.style.pointerEvents = 'auto';
                 pieContainer.style.zIndex = '50';
-                pieContainer.onclick = function (e) {
+                let pieTapLocked = false;
+                pieContainer.onclick = async function (e) {
                     e.preventDefault(); e.stopPropagation();
+                    if (pieTapLocked) return;
+                    pieTapLocked = true;
+                    await runElementPulse(pieContainer, { scale: 1.04, duration: 260 });
+                    pieTapLocked = false;
                     openMobileLevel2(i);
                 };
 
@@ -5391,6 +5427,7 @@
             const overlay = document.getElementById('m-level-2-overlay');
             const content = document.getElementById('m-l2-content');
             if (!content || !overlay) return;
+            clearMobileTheorySlicePulse();
 
             content.innerHTML = "";
             const data = footerData[key];
@@ -5407,9 +5444,81 @@
 
         // Zuerst eine globale Variable definieren (falls nicht vorhanden, wird sie hier erstellt)
         let currentMobileIndex = -1;
+        let mobileTheoryPulseAnimations = [];
+
+        function clearMobileTheorySlicePulse() {
+            if (!mobileTheoryPulseAnimations.length) return;
+            mobileTheoryPulseAnimations.forEach(anim => {
+                try { anim.cancel(); } catch (_) { }
+            });
+            mobileTheoryPulseAnimations = [];
+        }
+
+        function animateMobileTheorySlice(el, dx, dy, delayMs) {
+            if (!el || typeof el.animate !== 'function') return;
+            el.style.transformBox = 'view-box';
+            el.style.transformOrigin = '50px 50px';
+            const anim = el.animate(
+                [
+                    { transform: 'translate(0px, 0px)' },
+                    { transform: `translate(${dx}px, ${dy}px)` },
+                    { transform: 'translate(0px, 0px)' }
+                ],
+                {
+                    duration: 3000,
+                    easing: 'ease-in-out',
+                    iterations: Infinity,
+                    delay: delayMs || 0
+                }
+            );
+            mobileTheoryPulseAnimations.push(anim);
+        }
+
+        function applyMobileTheorySlicePulse(index, pieContainer) {
+            if (!pieContainer) return;
+            clearMobileTheorySlicePulse();
+            const pulseMapByIndex = {
+                0: [
+                    { suffix: 'g-0-m', dx: -3, dy: -3 },
+                    { suffix: 'g-0-w', dx: 3, dy: -3 },
+                    { suffix: 'g-0-k', dx: 0, dy: 4 }
+                ],
+                1: [
+                    { suffix: 'g-1-w', dx: 3, dy: -3 },
+                    { suffix: 'g-1-k', dx: 0, dy: 4 }
+                ],
+                2: [
+                    { suffix: 'g-2-k', dx: 0, dy: 4 }
+                ],
+                3: [
+                    { suffix: 'g-3-m', dx: -3, dy: -3 },
+                    { suffix: 'g-3-k', dx: 0, dy: 4 }
+                ],
+                4: [
+                    { suffix: 'g-4-m', dx: -3, dy: -3 },
+                    { suffix: 'g-4-w', dx: 3, dy: -3 },
+                    { suffix: 'g-4-k', dx: 0, dy: 4 }
+                ]
+            };
+            const pulseMap = pulseMapByIndex[index] || [];
+            pulseMap.forEach((cfg, idx) => {
+                const el = pieContainer.querySelector(`[id$="${cfg.suffix}"]`);
+                if (!el) return;
+                animateMobileTheorySlice(el, cfg.dx, cfg.dy, idx * 140);
+            });
+        }
+
+        function restoreMobileTheorySlicePulseIfVisible() {
+            const l2Overlay = document.getElementById('m-level-2-overlay');
+            if (!l2Overlay || !l2Overlay.classList.contains('active')) return;
+            const chart = document.querySelector('#m-l2-content .m-l2-chart');
+            if (!chart) return;
+            applyMobileTheorySlicePulse(currentMobileIndex, chart);
+        }
 
         function openMobileLevel2(index, type) {
             currentMobileIndex = index;
+            clearMobileTheorySlicePulse();
 
             const overlay = document.getElementById('m-level-2-overlay');
             const content = document.getElementById('m-l2-content');
@@ -5569,6 +5678,7 @@
                 }
             }
             content.appendChild(pieContainer);
+            applyMobileTheorySlicePulse(index, pieContainer);
 
             const t2 = document.createElement('div');
             t2.className = 'm-l2-text-block';
@@ -5578,10 +5688,12 @@
             overlay.classList.add('active');
         }
         function closeMobileLevel2() {
+            clearMobileTheorySlicePulse();
             document.getElementById('m-level-2-overlay').classList.remove('active');
         }
 
         function openMobileLevel3(type) {
+            clearMobileTheorySlicePulse();
             const overlay = document.getElementById('m-level-3-overlay');
             const content = document.getElementById('m-l3-content');
 
@@ -5769,9 +5881,11 @@
         function closeMobileLevel3() {
             const overlay = document.getElementById('m-level-3-overlay');
             if (overlay) overlay.style.display = 'none';
+            restoreMobileTheorySlicePulseIfVisible();
         }
 
         function openMobileLevel4() {
+            clearMobileTheorySlicePulse();
             const overlay = document.getElementById('m-level-4-overlay');
             const content = document.getElementById('m-l4-content');
             if (!content) return;
@@ -5884,6 +5998,7 @@
 
         function closeMobileLevel4() {
             document.getElementById('m-level-4-overlay').style.display = 'none';
+            restoreMobileTheorySlicePulseIfVisible();
             // Pfeile aktualisieren (wieder anzeigen)
             updateMobileArrows();
         }
@@ -6125,6 +6240,40 @@
         function easeInOutSine(t) {
             const x = clamp(t, 0, 1);
             return -(Math.cos(Math.PI * x) - 1) / 2;
+        }
+
+        function runElementPulse(element, options) {
+            const opts = Object.assign({
+                scale: 1.04,
+                duration: 280,
+                easing: 'cubic-bezier(0.22, 1, 0.36, 1)'
+            }, options || {});
+            return new Promise(resolve => {
+                if (!element || typeof element.animate !== 'function') {
+                    resolve();
+                    return;
+                }
+                const anim = element.animate(
+                    [
+                        { transform: 'scale(1)' },
+                        { transform: `scale(${opts.scale})` },
+                        { transform: 'scale(1)' }
+                    ],
+                    {
+                        duration: opts.duration,
+                        easing: opts.easing,
+                        iterations: 1
+                    }
+                );
+                let done = false;
+                const finish = () => {
+                    if (done) return;
+                    done = true;
+                    resolve();
+                };
+                anim.onfinish = finish;
+                anim.oncancel = finish;
+            });
         }
 
         function getLineHeightPx(el) {
@@ -6459,7 +6608,7 @@
             coach.innerHTML = `
                 <div class="image-text-coachmark-panel">
                     <div class="it-coach-row">
-                        <div class="it-coach-icons" aria-hidden="true">
+                        <div class="it-coach-icons it-coach-icons-horizontal" aria-hidden="true">
                             <svg class="it-coach-icon" viewBox="0 0 50 100">
                                 <path d="M40,10 L15,50 L40,90"></path>
                             </svg>
@@ -6474,7 +6623,7 @@
                     </div>
                     <div class="it-coach-divider"></div>
                     <div class="it-coach-row">
-                        <div class="it-coach-icons" aria-hidden="true">
+                        <div class="it-coach-icons it-coach-icons-vertical" aria-hidden="true">
                             <svg class="it-coach-icon it-coach-icon-up" viewBox="0 0 50 100">
                                 <path d="M10,10 L35,50 L10,90"></path>
                             </svg>
