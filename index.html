@@ -98,8 +98,8 @@
         }
 
         #mobile-text-overlay .m-text-content {
-            margin: 0 clamp(52px, 14vw, 64px) calc(56px + env(safe-area-inset-bottom));
-            padding: 12px 20px 104px;
+            margin: 0 clamp(14px, 4vw, 20px) calc(42px + env(safe-area-inset-bottom));
+            padding: 12px 20px 92px;
             font-size: 1rem;
             line-height: 1.6;
             color: #111;
@@ -1557,14 +1557,14 @@
         }
 
         .image-text-nav.image-text-nav-up {
-            top: 54px;
+            top: 6px;
             left: 50%;
             transform: translateX(-50%);
         }
 
         .image-text-nav.image-text-nav-down {
             top: auto;
-            bottom: 24px;
+            bottom: 6px;
             left: 50%;
             transform: translateX(-50%);
         }
@@ -1587,105 +1587,87 @@
             inset: 0;
             z-index: 10004;
             pointer-events: auto;
-            background: linear-gradient(150deg, rgba(250, 251, 253, 0.96), rgba(240, 245, 251, 0.96));
+            background: rgba(0, 0, 0, 0.82);
+            display: flex;
+            align-items: center;
+            justify-content: center;
             opacity: 1;
-            transition: opacity 0.32s ease;
+            transition: opacity 0.4s ease;
+            cursor: pointer;
         }
 
         .image-text-coachmark.fade-out {
             opacity: 0;
+            pointer-events: none;
         }
 
         .image-text-coachmark-panel {
-            position: absolute;
-            inset: 40px;
-            max-width: 920px;
-            max-height: 560px;
-            margin: auto;
-            background: rgba(255, 255, 255, 0.94);
-            border: 1px solid rgba(16, 20, 26, 0.14);
-            border-radius: 22px;
-            box-shadow: 0 30px 80px rgba(10, 22, 36, 0.2);
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            padding: 26px 28px 22px;
-            box-sizing: border-box;
-            overflow: hidden;
+            align-items: center;
+            gap: 36px;
+            padding: 0 24px;
+            max-width: 420px;
         }
 
-        .it-coach-title {
-            font-size: 0.95rem;
-            letter-spacing: 0.14em;
-            text-transform: uppercase;
-            font-weight: 700;
-            color: #2a313a;
-            text-align: center;
-            margin-bottom: 12px;
-        }
-
-        .it-coach-grid {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(220px, 1fr));
-            gap: 16px;
-            align-items: stretch;
-        }
-
-        .it-coach-card {
-            border-radius: 16px;
-            background: linear-gradient(160deg, rgba(247, 249, 252, 0.96), rgba(237, 241, 247, 0.94));
-            border: 1px solid rgba(34, 42, 53, 0.14);
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
-            padding: 16px;
+        .it-coach-row {
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            min-height: 176px;
+            align-items: center;
+            gap: 20px;
         }
 
         .it-coach-icon {
-            width: 100%;
-            height: 74px;
-            margin-bottom: 8px;
+            width: 48px;
+            height: 48px;
+            flex-shrink: 0;
         }
 
         .it-coach-icon path {
             fill: none;
-            stroke: #111;
-            stroke-width: 2.2;
+            stroke: rgba(255, 255, 255, 0.85);
+            stroke-width: 1.8;
             stroke-linecap: round;
             stroke-linejoin: round;
-            stroke-dasharray: 6 8;
-            animation: itCoachDash 1.4s linear infinite;
         }
 
-        .it-coach-card-label {
-            font-size: 1rem;
-            font-weight: 700;
-            letter-spacing: 0.01em;
-            color: #111;
-            margin-bottom: 6px;
+        .it-coach-text {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
         }
 
-        .it-coach-card-sub {
-            font-size: 0.9rem;
-            color: #3c4652;
+        .it-coach-action {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        .it-coach-desc {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 0.82rem;
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            color: rgba(255, 255, 255, 0.55);
             line-height: 1.4;
         }
 
-        .it-coach-dismiss {
-            margin-top: 14px;
-            text-align: center;
-            font-size: 0.82rem;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            color: #4a5562;
+        .it-coach-divider {
+            width: 60px;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.18);
         }
 
-        @keyframes itCoachDash {
-            to {
-                stroke-dashoffset: -28;
-            }
+        .it-coach-dismiss {
+            margin-top: 8px;
+            text-align: center;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 0.7rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.3);
         }
 
         .image-text-epoch-indicator {
@@ -1721,8 +1703,8 @@
 
         #mobile-text-overlay .m-image-text-arrow {
             position: fixed;
-            width: 46px;
-            height: 92px;
+            width: 42px;
+            height: 88px;
             border: none;
             background: transparent;
             padding: 0;
@@ -1737,8 +1719,8 @@
         }
 
         #mobile-text-overlay .m-image-text-arrow svg {
-            width: 34px;
-            height: 68px;
+            width: 30px;
+            height: 62px;
             fill: none;
             stroke: #c0c0c0;
             stroke-width: 3;
@@ -1749,31 +1731,31 @@
         }
 
         #mobile-text-overlay .m-image-text-arrow-right {
-            right: 6px;
+            right: 0;
             top: 50%;
             transform: translateY(-50%);
         }
 
         #mobile-text-overlay .m-image-text-arrow-left {
-            left: 6px;
+            left: 0;
             top: 50%;
             transform: translateY(-50%);
         }
 
         #mobile-text-overlay .m-image-text-arrow-up {
-            top: calc(8px + env(safe-area-inset-top));
+            top: calc(env(safe-area-inset-top) + 2px);
             left: 50%;
             transform: translateX(-50%);
-            width: 92px;
-            height: 46px;
+            width: 88px;
+            height: 42px;
         }
 
         #mobile-text-overlay .m-image-text-arrow-down {
-            bottom: calc(8px + env(safe-area-inset-bottom));
+            bottom: calc(env(safe-area-inset-bottom) + 2px);
             left: 50%;
             transform: translateX(-50%);
-            width: 92px;
-            height: 46px;
+            width: 88px;
+            height: 42px;
         }
 
         #mobile-text-overlay .m-image-text-arrow-down svg {
@@ -1822,17 +1804,7 @@
 
         @media only screen and (max-width: 768px) {
             .image-text-coachmark-panel {
-                inset: 16px;
-                padding: 18px 16px;
-                border-radius: 16px;
-            }
-
-            .it-coach-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .it-coach-card {
-                min-height: 148px;
+                gap: 28px;
             }
 
             .image-text-epoch-indicator {
@@ -1841,11 +1813,11 @@
             }
 
             .image-text-nav.image-text-nav-up {
-                top: 24px;
+                top: 4px;
             }
 
             .image-text-nav.image-text-nav-down {
-                bottom: 14px;
+                bottom: 4px;
             }
         }
 
@@ -2241,9 +2213,9 @@
             position: fixed;
             top: 50%;
             transform: translateY(-50%);
-            width: 60px;
+            width: 50px;
             /* Große Trefferfläche */
-            height: 120px;
+            height: 110px;
             z-index: 22000;
             /* Über allem */
             cursor: pointer;
@@ -2282,13 +2254,13 @@
 
         .m-nav-left {
             left: 0;
-            padding-left: 10px;
+            padding-left: 2px;
             justify-content: flex-start;
         }
 
         .m-nav-right {
             right: 0;
-            padding-right: 10px;
+            padding-right: 2px;
             justify-content: flex-end;
         }
 
@@ -2368,6 +2340,7 @@
         }
 
         @media only screen and (max-width: 768px) {
+
             .m-close-btn,
             .mobile-gallery-close {
                 top: 16px;
@@ -2606,8 +2579,8 @@
             position: fixed;
             top: 50%;
             transform: translateY(-50%);
-            width: 60px;
-            height: 120px;
+            width: 50px;
+            height: 110px;
             cursor: pointer;
             z-index: 95;
             /* Über dem Content */
@@ -2653,11 +2626,11 @@
         }
 
         .nav-arrow-left-c {
-            left: 20px;
+            left: 2px;
         }
 
         .nav-arrow-right-c {
-            right: 20px;
+            right: 2px;
         }
 
         /* --- MOBILES DECKBLATT (Cover) --- */
@@ -2857,8 +2830,8 @@
             position: fixed;
             top: 50%;
             transform: translateY(-50%);
-            width: 60px;
-            height: 120px;
+            width: 50px;
+            height: 110px;
             cursor: pointer;
             z-index: 95;
             /* Über dem Content, unter Overlays */
@@ -2904,11 +2877,11 @@
         }
 
         .nav-arrow-left-c {
-            left: 20px;
+            left: 2px;
         }
 
         .nav-arrow-right-c {
-            right: 20px;
+            right: 2px;
         }
 
 
@@ -3561,31 +3534,31 @@
         // ... (Content Data Omitted) ...
         const contentData = {
             "item-0": {
-                "titleL": "DIE KONSTITUTIONSPHASE",
+                "titleL": "SCHÖNE KÜNSTE",
                 "textL": "<p>Ausgangspunkt dieses Modells sind die sch\u00F6nen K\u00FCnste des 19. Jahrhunderts, in denen Werk, Medium und Konzepte noch strikt aneinandergekoppelt waren. Man kann davon ausgehen, dass zu Beginn der neuzeitlichen Kunst diese drei basalen Komponenten eine feste, unhinterfragte Einheit bildeten. Es handelt sich hierbei um ein Erbe aus dem Mittelalter, als die Kunst noch \u00FCber keine systemeigenen Programme verf\u00FCgte, sondern \u00FCber das \u00BBQuasiprogramm\u00AB eines gesamtgesellschaftlich verbindlichen religi\u00F6sen Weltbilds ihre wesentlichen Sinn- und Formvorgaben zugewiesen bekam. In dieser Konstitutionsphase etablierte das Kunstsystem seine operative Grenze zwischen System und Umwelt und setzte die Autonomisierung in allen K\u00FCnsten und ihren Gattungen durch. Das bedeutet, dass Kunstwerke nicht mehr prim\u00E4r kultischen Zwecken dienten, sondern als eigenst\u00E4ndige Objekte der Betrachtung und des Genusses legitimiert wurden, solange sie sich innerhalb der Grenzen der \u00BBsch\u00F6nen Kunst\u00AB bewegten.</p>",
                 "titleR": "INHALTS\u00C4STHETIK & REPR\u00C4SENTATION",
                 "textR": "<p>Das Konzept, dass Kunst sich in Kunstwerken manifestiert und dass Kunstwerke sch\u00F6n sind, war in dieser Phase selbstverst\u00E4ndlich. Die \u00C4sthetik des Sch\u00F6nen wurde in gattungsspezifischen Medien pr\u00E4pariert, die als nat\u00FCrlich gegeben hingenommen wurden: etwa durch das tonale System in der Musik oder die Zentralperspektive in der Malerei. Die Kunstwerke der Neuzeit funktionierten mithin als Zeichen und besa\u00DFen eine inhalts\u00E4sthetische Orientierung. Da sie ganz selbstverst\u00E4ndlich in einem vorgegebenen, kulturell stabilisierten Verst\u00E4ndigungshorizont eingebettet waren, reflektierten diese Werke \u00BBvon sich aus\u00AB, was sie in Bezug auf die Welt darstellten. Sie fungierten als Repr\u00E4sentation einer als geordnet empfundenen Wirklichkeit. Der Betrachter musste das Werk nicht erst durch ein externes Konzept entschl\u00FCsseln, da die \u00E4sthetische Erfahrung unmittelbar an die gesellschaftlich geteilten Inhalte gekoppelt war.</p>"
             },
             "item-1": {
-                "titleL": "NEGATION DES MEDIUMS",
+                "titleL": "KLASSISCHE MODERNE",
                 "textL": "<p>Den Schritt in die Moderne vollziehen die K\u00FCnste konkret durch eine Negation der Medien der sch\u00F6nen K\u00FCnste. Es war jene gegen f\u00FCnf Jahrhunderte Kunstgeschichte gerichtete Suspendierung der traditionellen Kunstmedien, die in der Klassischen Moderne jene \u00BBMateriallogik\u00AB freisetzte, welche die gesamte \u00E4sthetische Moderne bis heute in ihrem Selbstverst\u00E4ndnis bestimmt. Die Bilder fallen aus der Zentralperspektive heraus, die Musik verl\u00E4sst das tonale System, und die Gedichte verlieren ihre gebundene metrische Form. Die Kunst wird modern, indem sie sich gegen ihr traditionelles Sch\u00F6nheitsideal wendet; der Code des Kunstsystems stellt sich radikal von Sch\u00F6nheit auf Neuheit um. Diese Negation ist die Voraussetzung daf\u00FCr, dass das Material selbst zum Tr\u00E4ger des Ausdrucks wird und nicht mehr nur Mittel zum Zweck einer harmonischen Darstellung ist.</p>",
                 "titleR": "WERKAUTONOMIE & MATERIALFORTSCHRITT",
                 "textR": "<p>Hierdurch entsteht die charakteristische Kunstform der Klassischen Moderne, wo anstelle der vertrauten Medien jetzt ausschlie\u00DFlich die Konzepte das \u00E4sthetische Material im Kunstwerk organisieren. Die Klassische Moderne l\u00F6st die Kunst aus ihren Kunstmedien heraus und macht ihren Werkcharakter sichtbar; sie legt die Struktur des Kunstwerks frei: die \u00E4sthetischen Selbstbindungskr\u00E4fte seiner an ihm wahrnehmbaren Formen. Es ist diese klassisch moderne \u00BBWerkautonomie\u00AB, die dem Rezipienten eine vollkommen neue \u00E4sthetische Einstellung abverlangt, da das Werk sich nicht mehr von selbst versteht. Der Anspruch auf Neuheit wird hier prim\u00E4r \u00FCber das \u00E4sthetische Material eingel\u00F6st, sodass die Kunstgeschichte \u2013 ganz im Sinne Adornos \u2013 als eine Geschichte des Materialfortschritts geschrieben werden kann, in der jedes Werk den Stand des Materials reflektieren und vorantreiben muss. Aus der Perspektive der Negation des Mediums und des Materialfortschritts erscheinen Ereignis, Ambivalenz und Erhabenes als Marker daf\u00FCr, wie weit ein Werk die \u00FCberlieferten Medienordnungen \u00FCberschritten hat, weil sie jeweils auf einer systematischen Aufk\u00FCndigung der alten Kopplung von Material und Gestalt beruhen. Ein Werk gilt in dieser Logik als avanciert, wenn es etwa durch radikale Br\u00FCche, extreme Kontraste und unerwartete Eins\u00E4tze die Parameter Pl\u00F6tzlichkeit und Intensit\u00E4t maximiert, durch Aufl\u00F6sung stabiler Raumordnungen, Reduktion der Farbigkeit oder Ger\u00E4uschspieltechniken Unsch\u00E4rfe und Verfremdung erzeugt oder durch fl\u00E4chige, konturlose Kontinua den Eindruck einer unabsehbaren Weite inszeniert. Materialfortschritt bedeutet hier, dass sp\u00E4tere Werke diese Eigenwerte nicht nur reproduzieren, sondern in immer komplexere Konstellationen bringen \u2013 indem sie Ereignishaftigkeit mit ambivalenten Wahrnehmungsschwellen verschr\u00E4nken oder erhabene Unbegrenztheit unter den Bedingungen hochgradig reflektierter, medienbewusster Kompositionsweisen realisieren und so den historischen Stand des Materials als Stand der Eigenwertsteuerung ausweisen.</p>"
             },
             "item-2": {
-                "titleL": "NEGATION DES WERKS",
+                "titleL": "AVANTGARDE",
                 "textL": "<p>Nachdem der Motor der Negationslogik im Kunstsystem angesprungen war, konnte eine radikale Avantgarde auch diese klassisch moderne Kunst noch einmal \u00FCberbieten. Sie begn\u00FCgte sich nicht mit der Negation des Mediums, sondern negierte deren Pr\u00E4misse, dass Kunst notwendigerweise die Gestalt von Kunstwerken annehmen muss. Die verbl\u00FCffende Strategie, welche die Avantgarde fand, bestand darin, Werke herzustellen, die im klassisch modernen Sinne keine sind \u2013 etwa Marcel Duchamps Readymades, die keinen handwerklichen Sch\u00F6pfungsprozess mehr aufweisen. Damit vollzog sie ein re-exit: Sie setzte tempor\u00E4r die Unterscheidung von Kunst und Nichtkunst au\u00DFer Kraft, um Gegenst\u00E4nde, die an\u00E4sthetisch waren, in den Kunstkontext zu \u00FCberf\u00FChren. Diese radikale Geste f\u00FChrte zu einer Kunst, die sich der \u00E4sthetischen Wahrnehmung verweigert und stattdessen eine rein intellektuelle Rezeption einfordert.</p>",
                 "titleR": "ISOMORPHISMUS & KONZEPTKUNST",
                 "textR": "<p>Die Kunstkommunikation reduziert sich in diesem Stadium auf ein Konzept (K) und wird zur Konzeptkunst. Konzeptkunst und Konzeptmusik beruhen auf einem &quot;Isomorphismusprinzip&quot;, d. h. auf einer eineindeutigen Abbildrelation zwischen einem Konzept (K) und einem einfachen, nicht f&uuml;r die differenzierte &auml;sthetische Beobachtung geschaffenen Wahrnehmungseindruck, einem Perzept (P). Das Kunstwerk wird auf die blo&szlig;e Wahrnehmung einer Idee reduziert; es ist Kunst mit gekapptem medialem und ergonalem Moment, die sich allein auf ihre reflexive Komponente st&uuml;tzt. Da das sinnliche Erleben (das &quot;Wie&quot; der Darstellung) fast vollst&auml;ndig zugunsten der Idee (des &quot;Was&quot;) zur&uuml;cktritt, wird die Kunst &quot;an&auml;sthetisch&quot;. Der Betrachter sieht nicht mehr ein Werk, sondern liest eine Idee, die durch ein beliebiges Objekt lediglich markiert wird. (K ↔ P)</p>"
             },
             "item-3": {
-                "titleL": "RE-INKLUSION DES MEDIUMS",
+                "titleL": "POSTMODERNE",
                 "textL": "<p>Die postmoderne Kunst machte die Fortschreibung der linearen Fortschrittserz\u00E4hlung unm\u00F6glich, da ihre historische Leistung in der Enttabuisierung der Tradition im Kunstsystem lag. Nachdem die Avantgarde alles negiert hatte, blieb nur der R\u00FCckgriff auf das Vergangene. Diese Reinklusion des Mediums der K\u00FCnste (M) in die Kunstkommunikation geschieht aber nicht naiv, sondern reflektiert: Man zitiert die Kunst- und Musikgeschichte. Es kommt zu einer Wiederaneignung alter Medien, Gattungen und Stile, allerdings oft ironisch gebrochen oder als \u00BBDoppelcodierung\u00AB, die sowohl den Kenner als auch den Laien anspricht. Die Postmoderne rehabilitiert das Medium, h\u00E4lt aber an der Negation des Werks fest. Sie spielt mit den Formen der Vergangenheit, ohne sich ihnen zu unterwerfen, und markiert so das \u00BBEnde der Geschichte\u00AB als ein Ende des Zwangs zum st\u00E4ndigen Materialfortschritt. Neben der Doppelcodierung muss ein genuin Postmodernes Werk im engeren Sinne noch zwei weitere Kriterien erf\u00FCllen: Einerseits muss sie \u00BBpopul\u00E4r\u00AB sein, das hei\u00DFt auf Gehalte der Popkultur zur\u00FCckgreifen, ein erster Ausblick auf die Gehalts\u00E4sthetik; diese doppelcodierte Verwendung popul\u00E4rer Elemente erfolgt aber zweitens so gut wie immer im Modus der \u00BBPostmodernen Ironie\u00AB. Das Durchbrechen der Vierten Wand, die Unernsthaftigkeit, die Ungebundenheit, die gro\u00DFe Erz\u00E4hlung der frechen Absage an alle \u00BBgro\u00DFen Erz\u00E4hlungen\u00AB und - wie Kritiker sagen w\u00FCrden: Der aus der Ironie folgende Zynismus - zeichnen sie aus.</p>",
                 "titleR": "DAS OFFENE KUNSTWERK",
                 "textR": "<p>Die Werkkategorie (W) bleibt suspendiert, weil die postmoderne Kunst dem Ideal eines \u00BBoffenen Kunstwerks\u00AB (Umberto Eco) folgt: Ein offenes Kunstwerk stellt sich der Aufgabe, uns ein Bild von der Diskontinuit\u00E4t zu geben; es erz\u00E4hlt sie nicht, sondern ist sie. Es sind aber gerade solche Formenkombinationen, in denen sich keine festen Verweisungs- und Sinnzusammenh\u00E4nge ausbilden k\u00F6nnen, die das Werk im Ungef\u00E4hren lassen und die Interpretation dem Betrachter \u00FCberantworten. Es entsteht eine Leerstelle in der Mitte des Diagramms: Da es kein verbindliches Zentrum mehr gibt, werden Stile zitiert und vermischt (Pluralismus), ohne dass sich eine neue, verbindliche Werkgestalt formt. Diese Beliebigkeit f\u00FChrt dazu, dass Kunstwerke oft nur noch als Zitate ihrer selbst erscheinen, ohne die Kraft zur Bildung einer neuen, eigenst\u00E4ndigen \u00E4sthetischen Einheit.</p>"
             },
             "item-4": {
-                "titleL": "VOLLE AUSDIFFERENZIERUNG",
+                "titleL": "REFLEXIVE KUNST",
                 "textL": "<p>Nach derselben systemimmanenten Negationslogik wurde nicht nur die Medienkategorie (M), sondern inzwischen auch die von der Avantgarde suspendierte Werkkategorie (W) in die Kunstkommunikation zur\u00FCckgeholt. Diese immanente Ausdifferenzierung der modernen K\u00FCnste f\u00FChrt, im Vergleich zu den sch\u00F6nen K\u00FCnsten, zu einem enormen Zugewinn an immanenten Freiheitsgraden. Werk, Medium und Konzept stehen nun als autonome Komponenten zur Verf\u00FCgung, die frei kombiniert werden k\u00F6nnen, ohne dass sie \u2013 wie in der Tradition \u2013 starr aneinander gekoppelt sind oder \u2013 wie in der Moderne \u2013 sich gegenseitig ausschlie\u00DFen m\u00FCssen. Dies erm\u00F6glicht den Schritt von der Postmoderne in eine \u00BBReflexive Moderne\u00AB, in der K\u00FCnstler souver\u00E4n \u00FCber alle drei Elemente verf\u00FCgen k\u00F6nnen, um spezifische \u00E4sthetische Erfahrungen zu konstruieren, die weder rein formal noch rein konzeptionell sind.</p>",
                 "titleR": "GEHALTS\u00C4STHETISCHE WENDE",
                 "textR": "<p>Die singul\u00E4ren Kunstwerke sind Kommunikationsobjekte und werden entsprechend als \u00BBKompaktkommunikationen\u00AB bezeichnet, die das Bewusstsein von Subjekten emphatisch inkludieren. Der Neuheitsanspruch der Kunst wird nicht l\u00E4nger \u00FCber das \u00E4sthetische Material (wie in der klassischen Moderne), sondern mehr und mehr \u00FCber den \u00E4sthetischen Gehalt der Werke eingel\u00F6st. Die Kunst vermag in ihren Werken die hierf\u00FCr fehlenden neuen Schemata der Erfahrung zu generieren und kann so \u2013 im Zusammenspiel mit der Kunstkritik \u2013 einen genuinen Beitrag beim Umschreiben von historisch verbrauchten Selbstbeschreibungen der Gesellschaft leisten (Provokation neuer Selbstbeschreibungen). In dieser gehalts\u00E4sthetischen Wende wird das Kunstwerk zum Medium einer reflexiven Weltbeobachtung, die zeigt, was im Begrifflichen noch nicht sagbar, aber im \u00C4sthetischen bereits erfahrbar ist.</p>"
@@ -6326,12 +6299,32 @@
 
             renderImageTextPayload(payload, { resetTextScroll: true });
             updateEpochIndicatorButton(nextGroup);
+            updateMobileImageTextHorizontalArrows();
             pingDesktopArrowActivity();
             return true;
         }
 
         function moveImageTextOverlay(step) {
             moveImageTextOverlayAxis('y', step);
+        }
+
+        function updateMobileImageTextHorizontalArrows() {
+            if (!imageTextNavState || imageTextNavState.mode !== 'mobile') return;
+            const refs = imageTextNavState.refs || {};
+            const left = refs.navLeft;
+            const right = refs.navRight;
+            if (left) {
+                const showLeft = imageTextNavState.groupIndex > EPOCH_MIN;
+                left.style.opacity = showLeft ? '1' : '0';
+                left.style.pointerEvents = showLeft ? 'auto' : 'none';
+                left.setAttribute('aria-hidden', showLeft ? 'false' : 'true');
+            }
+            if (right) {
+                const showRight = imageTextNavState.groupIndex < EPOCH_MAX;
+                right.style.opacity = showRight ? '1' : '0';
+                right.style.pointerEvents = showRight ? 'auto' : 'none';
+                right.setAttribute('aria-hidden', showRight ? 'false' : 'true');
+            }
         }
 
         function createDesktopImageTextArrow(direction, axis) {
@@ -6400,30 +6393,32 @@
             coach.className = 'image-text-coachmark';
             coach.innerHTML = `
                 <div class="image-text-coachmark-panel">
-                    <div class="it-coach-title">Navigation in dieser Ansicht</div>
-                    <div class="it-coach-grid">
-                        <div class="it-coach-card">
-                            <svg class="it-coach-icon" viewBox="0 0 220 70" aria-hidden="true">
-                                <path d="M10,35 L190,35 M190,35 L162,16 M190,35 L162,54"></path>
-                            </svg>
-                            <div class="it-coach-card-label">Nach rechts swipen</div>
-                            <div class="it-coach-card-sub">gleiches Feld in der nächsten Epoche</div>
-                        </div>
-                        <div class="it-coach-card">
-                            <svg class="it-coach-icon" viewBox="0 0 220 70" aria-hidden="true">
-                                <path d="M110,8 L110,58 M110,58 L90,38 M110,58 L130,38"></path>
-                            </svg>
-                            <div class="it-coach-card-label">Nach unten swipen</div>
-                            <div class="it-coach-card-sub">weiteres Werk derselben Epoche</div>
+                    <div class="it-coach-row">
+                        <svg class="it-coach-icon" viewBox="0 0 48 48" aria-hidden="true">
+                            <path d="M8,24 L38,24 M38,24 L30,16 M38,24 L30,32"></path>
+                        </svg>
+                        <div class="it-coach-text">
+                            <div class="it-coach-action">Horizontal wischen</div>
+                            <div class="it-coach-desc">Gleiches Feld – nächste Epoche</div>
                         </div>
                     </div>
-                    <div class="it-coach-dismiss">Tippen oder klicken zum Schließen</div>
+                    <div class="it-coach-divider"></div>
+                    <div class="it-coach-row">
+                        <svg class="it-coach-icon" viewBox="0 0 48 48" aria-hidden="true">
+                            <path d="M24,8 L24,38 M24,38 L16,30 M24,38 L32,30"></path>
+                        </svg>
+                        <div class="it-coach-text">
+                            <div class="it-coach-action">Vertikal wischen</div>
+                            <div class="it-coach-desc">Weiteres Werk derselben Epoche</div>
+                        </div>
+                    </div>
+                    <div class="it-coach-dismiss">Tippen zum Schließen</div>
                 </div>
             `;
             const host = mode === 'mobile' && overlayHost ? overlayHost : document.body;
             host.appendChild(coach);
             coach.addEventListener('click', removeImageTextCoachmark, { once: true });
-            setTimeout(removeImageTextCoachmark, 5000);
+            setTimeout(removeImageTextCoachmark, 4000);
         }
 
         function buildEpochIndicatorIcon(groupIndex) {
@@ -6900,7 +6895,17 @@
                 indices: context ? context.indices : [],
                 dataIndex: context ? context.dataIndex : -1,
                 fieldPos: context ? context.fieldPos : 0,
-                refs: { overlay, imgBox, textBox, titleBox, epochIndicator: null },
+                refs: {
+                    overlay,
+                    imgBox,
+                    textBox,
+                    titleBox,
+                    epochIndicator: null,
+                    navLeft: null,
+                    navRight: null,
+                    navUp: null,
+                    navDown: null
+                },
                 cleanup: [],
                 currentPayload: null,
                 layoutReady: false,
@@ -6934,6 +6939,11 @@
             overlay.appendChild(navRight);
             overlay.appendChild(navUp);
             overlay.appendChild(navDown);
+            imageTextNavState.refs.navLeft = navLeft;
+            imageTextNavState.refs.navRight = navRight;
+            imageTextNavState.refs.navUp = navUp;
+            imageTextNavState.refs.navDown = navDown;
+            updateMobileImageTextHorizontalArrows();
             imageTextNavState.cleanup.push(() => {
                 if (navLeft.parentNode) navLeft.parentNode.removeChild(navLeft);
                 if (navRight.parentNode) navRight.parentNode.removeChild(navRight);
