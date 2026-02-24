@@ -1578,7 +1578,7 @@
         }
 
         .image-text-nav.image-text-nav-up {
-            top: 0;
+            top: -34px;
             left: 50%;
             transform: translateX(-50%);
         }
@@ -1634,6 +1634,13 @@
         .image-text-coachmark.fade-out {
             opacity: 0;
             pointer-events: none;
+        }
+
+        body.image-text-coachmark-active #mob-arrow-left,
+        body.image-text-coachmark-active #mob-arrow-right,
+        body.image-text-coachmark-active #mobile-text-overlay .m-image-text-arrow {
+            opacity: 0 !important;
+            pointer-events: none !important;
         }
 
         .image-text-coachmark-panel {
@@ -5109,8 +5116,9 @@
 
                 if (animateBackToOrigin) {
                     const startRect = activeElement.getBoundingClientRect();
-                    activeElement.classList.remove('active');
                     document.body.classList.remove('is-active');
+                    activeElement.classList.remove('active');
+                    activeElement.style.transform = '';
                     const endRect = activeElement.getBoundingClientRect();
 
                     const startX = startRect.left + startRect.width / 2;
@@ -6915,6 +6923,7 @@
         function removeImageTextCoachmark() {
             const el = document.getElementById('image-text-coachmark');
             if (!el) return;
+            document.body.classList.remove('image-text-coachmark-active');
             el.classList.add('fade-out');
             setTimeout(() => {
                 if (el.parentNode) el.parentNode.removeChild(el);
@@ -6932,11 +6941,12 @@
             const verticalAction = desktopMode ? 'Pfeile oben/unten' : 'Vertikal wischen';
             const horizontalDesc = 'Gleiches Werkfeld in einer anderen Epoche';
             const verticalDesc = 'Anderes Werk derselben Epoche';
-            const dismissText = desktopMode ? 'Klicken zum Schließen' : 'Tippen zum Schließen';
+            const dismissText = desktopMode ? 'Klicken zum Schließen' : '';
 
             const coach = document.createElement('div');
             coach.id = 'image-text-coachmark';
             coach.className = 'image-text-coachmark';
+            const dismissHtml = dismissText ? `<div class="it-coach-dismiss">${dismissText}</div>` : '';
             coach.innerHTML = `
                 <div class="image-text-coachmark-panel">
                     <div class="it-coach-row">
@@ -6968,11 +6978,12 @@
                             <div class="it-coach-desc">${verticalDesc}</div>
                         </div>
                     </div>
-                    <div class="it-coach-dismiss">${dismissText}</div>
+                    ${dismissHtml}
                 </div>
             `;
             const host = mode === 'mobile' && overlayHost ? overlayHost : document.body;
             host.appendChild(coach);
+            document.body.classList.add('image-text-coachmark-active');
             coach.addEventListener('click', removeImageTextCoachmark, { once: true });
             setTimeout(removeImageTextCoachmark, 10000);
         }
