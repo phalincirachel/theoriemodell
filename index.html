@@ -3687,27 +3687,27 @@
                 { imgUrl: "1skmichelangelo.jpg" },
                 { imgUrl: "1skfrauenkirche.jpeg" },
                 { imgUrl: "1skmozart.jpg" },
-                { imgUrl: "1skplaten.jpeg" },
-                { imgUrl: "1skwanderer.jpeg" },
-                { imgUrl: "1skbach.jpeg" },
-                { imgUrl: "1skbeethoven.jpeg" },
-                { imgUrl: "1skstilleben.jpeg" }
+                { imgUrl: "1skplaten.jpeg", linkUrl: "https://www.planetlyrik.de/lyrikkalender/august-von-platens-gedicht-wer-wusste-je-das-leben-recht-zu-fassen/" },
+                { imgUrl: "1skwanderer.jpeg", linkUrl: "https://de.wikipedia.org/wiki/Der_Wanderer_%C3%BCber_dem_Nebelmeer" },
+                { imgUrl: "1skbach.jpeg", linkUrl: "https://www.youtube.com/watch?v=f-ezSE-TmP0" },
+                { imgUrl: "1skbeethoven.jpeg", linkUrl: "https://www.youtube.com/watch?v=uj8w0Sm7l-M" },
+                { imgUrl: "1skstilleben.jpeg", linkUrl: "https://en.wikipedia.org/wiki/File:Vanitas,_Hendrick_Andriessen,_1600,_Koninklijk_Museum_voor_Schone_Kunsten_Gent,_1914-DE_(zonder_frame).jpg" }
             ],
             "item-1": [
-                { imgUrl: "2kmschoenberg.jpeg" },
-                { imgUrl: "2kmbraque.jpeg" },
-                { imgUrl: "2kmlachenmannkontrakadenz.jpeg" },
-                { imgUrl: "2kmstockhausen.jpeg" },
+                { imgUrl: "2kmschoenberg.jpeg", linkUrl: "https://www.youtube.com/watch?v=F8RsGgnDEO8" },
+                { imgUrl: "2kmbraque.jpeg", linkUrl: "https://sammlungonline.kunstmuseumbasel.ch/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=1107" },
+                { imgUrl: "2kmlachenmannkontrakadenz.jpeg", linkUrl: "https://www.youtube.com/watch?v=kQzE42VrbXg" },
+                { imgUrl: "2kmstockhausen.jpeg", linkUrl: "https://www.youtube.com/watch?v=oIxGi_bI1CI" },
                 { imgUrl: "2kmschmidtrottluff.jpeg" },
                 { imgUrl: "2kmboccioni.jpg" },
                 { imgUrl: "2kmrichier.jpeg" },
                 { imgUrl: "2kmlecorbusier.jpeg" },
                 { imgUrl: "2kmlachenmann.jpg" },
-                { imgUrl: "2kmholz.jpeg" },
-                { imgUrl: "2kmligeti.jpeg" },
-                { imgUrl: "2kmmoenchammeer.jpeg" },
+                { imgUrl: "2kmholz.jpeg", linkUrl: "https://gedichte.xbib.de/Holz_gedicht_09.+Ich+zeigte+dir+den+Mond+-+I..htm" },
+                { imgUrl: "2kmligeti.jpeg", linkUrl: "https://www.youtube.com/watch?v=vOlXgCaKhIQ" },
+                { imgUrl: "2kmmoenchammeer.jpeg", linkUrl: "https://de.wikipedia.org/wiki/Der_M%C3%B6nch_am_Meer" },
                 { imgUrl: "https://upload.wikimedia.org/wikipedia/commons/2/22/Bundesarchiv_Bild_183-1984-1116-500%2C_Gottfried_Benn-Arzt_und_Schriftsteller.jpg", linkUrl: "https://www.planetlyrik.de/klaus-schuhmann-gottfried-benns-gedicht-kleine-aster/2013/04/" },
-                { imgUrl: "2kmkirchner.jpeg" }
+                { imgUrl: "2kmkirchner.jpeg", linkUrl: "https://commons.wikimedia.org/wiki/File:Ernst_Ludwig_Kirchner_-_Zwei_Br%C3%BCder_M._(Mardersteig)_1921.jpg" }
             ],
             "item-2": [
                 { imgUrl: "3kreidler.jpeg" },
@@ -4171,11 +4171,9 @@
                     tile.dataset.textKey = textKey;
                 }
 
-                // Nur Zeile 2+3 (Slots 5-14) öffnen den Text-Overlay-Modus.
+                // Ab Zeile 2 (inkl. dritter Zeile) öffnen alle Kacheln den Text-Overlay-Modus.
                 const opensTextOverlay =
-                    i >= DESKTOP_GALLERY_TEXT_SLOT_START &&
-                    i <= DESKTOP_GALLERY_TEXT_SLOT_END &&
-                    sourceIndex >= DESKTOP_GALLERY_LEADING_COUNT;
+                    i >= DESKTOP_GALLERY_TEXT_SLOT_START;
 
                 if (opensTextOverlay) {
                     tile.href = "javascript:void(0)";
@@ -6556,7 +6554,7 @@
             "5rkaihelme.jpeg": "Ai Weiwei: Helm-Objekt (Werkbeispiel)",
             "5rkdresdensynagoge.jpeg": "Neue Synagoge Dresden",
             "5rkschulze.jpeg": "Ingo Schulze: Simple Storys",
-            "1skplaten.jpeg": "Platen Werje",
+            "1skplaten.jpeg": "Platen: Wer wusste je... (1826)",
             "2kmholz.jpeg": "Arno Holz: Gewesenes Jahr",
             "3agomringer.jpeg": "Eugen Gomringer: schweigen",
             "4pmgernhardt.jpeg": "Robert Gernhardt: Roma aeterna",
@@ -6766,13 +6764,13 @@
             if (resolvedMode === 'mobile') {
                 const entries = getMobileGalleryEntries(groupIndex);
                 return entries
-                    .filter(entry => Number.isInteger(entry._sourceIndex) && entry._sourceIndex >= MOBILE_GALLERY_SHIFT_COUNT)
+                    .filter(entry => entry && entry.imgUrl && Number.isInteger(entry._sourceIndex))
                     .map(entry => entry._sourceIndex);
             }
 
             const entries = getDesktopGalleryEntries(groupIndex);
-            return (entries.row23 || [])
-                .filter(entry => Number.isInteger(entry._sourceIndex) && entry._sourceIndex >= DESKTOP_GALLERY_LEADING_COUNT)
+            return [...(entries.row23 || []), ...(entries.row4 || [])]
+                .filter(entry => entry && entry.imgUrl && Number.isInteger(entry._sourceIndex))
                 .map(entry => entry._sourceIndex);
         }
 
