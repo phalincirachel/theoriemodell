@@ -3678,20 +3678,20 @@
 
         const galleryConfig = {
             "item-0": [
-                { imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Johann_Sebastian_Bach.jpg/960px-Johann_Sebastian_Bach.jpg?20250418020553", linkUrl: "https://www.youtube.com/watch?v=hs5UOELqtIM" },
-                { imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Beethoven.jpg/960px-Beethoven.jpg?20191119194851", linkUrl: "https://www.youtube.com/watch?v=3TiYGxOQDYw" },
-                { imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Vanitas%2C_Hendrick_Andriessen%2C_1600%2C_Koninklijk_Museum_voor_Schone_Kunsten_Gent%2C_1914-DE_%28zonder_frame%29.jpg/960px-Vanitas%2C_Hendrick_Andriessen%2C_1600%2C_Koninklijk_Museum_voor_Schone_Kunsten_Gent%2C_1914-DE_%28zonder_frame%29.jpg?20230701121304", linkUrl: "https://www.mskgent.be/collectie/1914-de" },
-                { imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Cranach%27s_altarpiece%2C_Stadtkirche%2C_Wittenberg.jpg/1200px-Cranach%27s_altarpiece%2C_Stadtkirche%2C_Wittenberg.jpg?20190510191442", linkUrl: "https://lucascranach.org/de/DE_ESKStMW_NONE-ESKStMW001a/" },
+                { imgUrl: "" },
+                { imgUrl: "" },
+                { imgUrl: "" },
+                { imgUrl: "" },
                 { imgUrl: "1skdurer.jpeg" },
                 { imgUrl: "1sknatiluspokal.jpeg" },
                 { imgUrl: "1skmichelangelo.jpg" },
                 { imgUrl: "1skfrauenkirche.jpeg" },
                 { imgUrl: "1skmozart.jpg" },
+                { imgUrl: "1skplaten.jpeg" },
                 { imgUrl: "1skwanderer.jpeg" },
                 { imgUrl: "1skbach.jpeg" },
                 { imgUrl: "1skbeethoven.jpeg" },
-                { imgUrl: "1skstilleben.jpeg" },
-                { imgUrl: "1skcranach.jpeg" }
+                { imgUrl: "1skstilleben.jpeg" }
             ],
             "item-1": [
                 { imgUrl: "2kmschoenberg.jpeg" },
@@ -3703,13 +3703,14 @@
                 { imgUrl: "2kmrichier.jpeg" },
                 { imgUrl: "2kmlecorbusier.jpeg" },
                 { imgUrl: "2kmlachenmann.jpg" },
+                { imgUrl: "2kmholz.jpeg" },
                 { imgUrl: "2kmligeti.jpeg" },
                 { imgUrl: "2kmmoenchammeer.jpeg" },
                 { imgUrl: "https://upload.wikimedia.org/wikipedia/commons/2/22/Bundesarchiv_Bild_183-1984-1116-500%2C_Gottfried_Benn-Arzt_und_Schriftsteller.jpg", linkUrl: "https://www.planetlyrik.de/klaus-schuhmann-gottfried-benns-gedicht-kleine-aster/2013/04/" },
                 { imgUrl: "2kmkirchner.jpeg" }
             ],
             "item-2": [
-                { imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Eugen_Gomringer_auf_dem_Poesiefestival_Berlin_01.jpg/1280px-Eugen_Gomringer_auf_dem_Poesiefestival_Berlin_01.jpg", linkUrl: "https://www.lyrikline.org/de/gedichte/schweigen-10152?showmodal=tr" },
+                { imgUrl: "3kreidler.jpeg" },
                 { imgUrl: "3arauschenberg.jpeg" },
                 { imgUrl: "3akosuth.jpeg" },
                 { imgUrl: "3alucier.jpeg" },
@@ -3718,10 +3719,10 @@
                 { imgUrl: "3abeuys.jpeg" },
                 { imgUrl: "3awotruba.jpeg" },
                 { imgUrl: "3acagejpg.jpg" },
-                { imgUrl: "3kreidler.jpeg" }
+                { imgUrl: "3agomringer.jpeg" }
             ],
             "item-3": [
-                { imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Robert_gernhardt.jpg/960px-Robert_gernhardt.jpg", linkUrl: "https://lyricstranslate.com/de/robert-gernhardt-roma-aeterna-lyrics" },
+                { imgUrl: "4pmeggert.jpeg" },
                 { imgUrl: "4pmkoons.jpeg" },
                 { imgUrl: "4pmplazaditalia.jpeg" },
                 { imgUrl: "4pmeco.jpeg" },
@@ -3730,7 +3731,7 @@
                 { imgUrl: "4pmkippenberger.jpeg" },
                 { imgUrl: "4pmmoore.jpeg" },
                 { imgUrl: "4pmschnittke.jpg" },
-                { imgUrl: "4pmeggert.jpeg" }
+                { imgUrl: "4pmgernhardt.jpeg" }
             ],
             "item-4": [
                 { imgUrl: "5rkaihelme.jpeg" },
@@ -3742,6 +3743,7 @@
                 { imgUrl: "5rkcattelan.jpeg" },
                 { imgUrl: "5rkcielrouge.jpeg" },
                 { imgUrl: "5rkreinholdsen.jpg" },
+                { imgUrl: "5rkgruenbein.jpeg" },
                 { imgUrl: "5rkfesten.jpeg" },
                 { imgUrl: "5rkthesquare.jpeg" },
                 { imgUrl: "5rklibeskind.jpeg" },
@@ -4628,22 +4630,18 @@
                 grid.className = 'm-gallery-grid';
                 const images = getMobileGalleryEntries(i);
                 images.forEach((imgData, imgIndex) => {
+                    if (!imgData || !imgData.imgUrl) return;
                     const a = document.createElement('a');
                     a.className = 'm-gallery-tile';
                     a.dataset.groupIndex = String(i);
                     const sourceIndex = Number.isInteger(imgData._sourceIndex) ? imgData._sourceIndex : imgIndex;
                     a.dataset.imgIndex = String(sourceIndex);
                     a.dataset.dataIndex = String(sourceIndex);
-                    if (imgData.imgUrl) {
-                        a.style.backgroundImage = `url('${imgData.imgUrl}')`;
-                        const cleanUrl = imgData.imgUrl.split('#')[0].split('?')[0];
-                        let textKey = cleanUrl.split('/').pop() || "";
-                        try { textKey = decodeURIComponent(textKey); } catch (_) { }
-                        a.dataset.textKey = textKey;
-                    } else {
-                        a.innerHTML = "IMG";
-                        a.dataset.textKey = "";
-                    }
+                    a.style.backgroundImage = `url('${imgData.imgUrl}')`;
+                    const cleanUrl = imgData.imgUrl.split('#')[0].split('?')[0];
+                    let textKey = cleanUrl.split('/').pop() || "";
+                    try { textKey = decodeURIComponent(textKey); } catch (_) { }
+                    a.dataset.textKey = textKey;
 
                     const opensTextOverlay = sourceIndex >= MOBILE_GALLERY_SHIFT_COUNT;
                     if (opensTextOverlay) {
@@ -5542,22 +5540,18 @@
                 grid.className = 'm-gallery-grid';
                 const images = getMobileGalleryEntries(i);
                 images.forEach((imgData, imgIndex) => {
+                    if (!imgData || !imgData.imgUrl) return;
                     const a = document.createElement('a');
                     a.className = 'm-gallery-tile';
                     a.dataset.groupIndex = String(i);
                     const sourceIndex = Number.isInteger(imgData._sourceIndex) ? imgData._sourceIndex : imgIndex;
                     a.dataset.imgIndex = String(sourceIndex);
                     a.dataset.dataIndex = String(sourceIndex);
-                    if (imgData.imgUrl) {
-                        a.style.backgroundImage = `url('${imgData.imgUrl}')`;
-                        const cleanUrl = imgData.imgUrl.split('#')[0].split('?')[0];
-                        let textKey = cleanUrl.split('/').pop() || "";
-                        try { textKey = decodeURIComponent(textKey); } catch (_) { }
-                        a.dataset.textKey = textKey;
-                    } else {
-                        a.innerHTML = "IMG";
-                        a.dataset.textKey = "";
-                    }
+                    a.style.backgroundImage = `url('${imgData.imgUrl}')`;
+                    const cleanUrl = imgData.imgUrl.split('#')[0].split('?')[0];
+                    let textKey = cleanUrl.split('/').pop() || "";
+                    try { textKey = decodeURIComponent(textKey); } catch (_) { }
+                    a.dataset.textKey = textKey;
 
                     const opensTextOverlay = sourceIndex >= MOBILE_GALLERY_SHIFT_COUNT;
                     if (opensTextOverlay) {
@@ -6561,7 +6555,12 @@
             "5rkrheinholdsenopra.jpeg": "Trond Reinholdtsen: Opra (Werkbeispiel)",
             "5rkaihelme.jpeg": "Ai Weiwei: Helm-Objekt (Werkbeispiel)",
             "5rkdresdensynagoge.jpeg": "Neue Synagoge Dresden",
-            "5rkschulze.jpeg": "Ingo Schulze: Simple Storys"
+            "5rkschulze.jpeg": "Ingo Schulze: Simple Storys",
+            "1skplaten.jpeg": "Platen Werje",
+            "2kmholz.jpeg": "Arno Holz: Gewesenes Jahr",
+            "3agomringer.jpeg": "Eugen Gomringer: schweigen",
+            "4pmgernhardt.jpeg": "Robert Gernhardt: Roma aeterna",
+            "5rkgruenbein.jpeg": "Durs Gruenbein: Nachbilder. Sonette VIII"
         };
 
         const coreArtworkLinks = {
@@ -6708,6 +6707,8 @@
             if (!imgUrl) return null;
             const meta = getImageMetaFromUrl(imgUrl);
             const key = datasetKey || "";
+            const keyBase = key ? key.replace(/\.[^.]+$/, "") : "";
+            const filenameBase = meta.filename ? meta.filename.replace(/\.[^.]+$/, "") : "";
             const artworkTitle = getArtworkTitle(key, meta.filename);
             const coreMeta = getCoreArtworkMeta(key, meta.filename);
 
@@ -6715,7 +6716,9 @@
             if (typeof artworkTexts !== 'undefined') {
                 textContent =
                     artworkTexts[key] ||
+                    artworkTexts[keyBase] ||
                     artworkTexts[meta.filename] ||
+                    artworkTexts[filenameBase] ||
                     artworkTexts[meta.cleanUrl] ||
                     artworkTexts[imgUrl];
             }
