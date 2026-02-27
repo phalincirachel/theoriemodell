@@ -7413,7 +7413,17 @@
                 const horizontal = Math.abs(dx) > Math.abs(dy) * IMAGE_TEXT_GESTURE_LOCK_RATIO;
                 const vertical = Math.abs(dy) > Math.abs(dx) * IMAGE_TEXT_GESTURE_LOCK_RATIO;
                 if (!horizontal && !vertical) return;
-                if (startedInTextBox && !horizontal) { startedInTextBox = false; return; }
+                if (startedInTextBox && vertical && textBox) {
+                    const atTop = textBox.scrollTop <= 1;
+                    const atBottom = textBox.scrollTop + textBox.clientHeight >= textBox.scrollHeight - 1;
+                    const wantsNext = dy < 0;
+                    const wantsPrev = dy > 0;
+                    const canLeaveTextBox = (wantsNext && atBottom) || (wantsPrev && atTop);
+                    if (!canLeaveTextBox) {
+                        startedInTextBox = false;
+                        return;
+                    }
+                }
 
                 if (horizontal) {
                     moveImageTextOverlayAxis('x', dx < 0 ? 1 : -1);
@@ -7455,7 +7465,14 @@
                 if (absX < 10 && absY < 10) return;
 
                 const isInsideText = textBox && textBox.contains(e.target);
-                if (isInsideText && absY >= absX) return;
+                if (isInsideText && absY >= absX) {
+                    const atTop = textBox.scrollTop <= 1;
+                    const atBottom = textBox.scrollTop + textBox.clientHeight >= textBox.scrollHeight - 1;
+                    const wantsNext = e.deltaY > 0;
+                    const wantsPrev = e.deltaY < 0;
+                    const canLeaveTextBox = (wantsNext && atBottom) || (wantsPrev && atTop);
+                    if (!canLeaveTextBox) return;
+                }
                 e.preventDefault();
 
                 const now = Date.now();
