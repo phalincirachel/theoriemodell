@@ -1,0 +1,1734 @@
+Ästhetik
+H E R A U S G E G E B E N  V O N  L U D W I G  H O L T M E I E R ,  
+R I C H A R D  K L E I N  U N D  C L A U S -S T E F F E N  M A H N K O P F
+Musik
+10. Jahrgang, Heft 38, April 2006
+Klett-Cotta Stuttgart
+43199
+Harry Lehmann
+Avantgarde heute
+Jürg Stenzl
+For Ever Mozart von 
+Jean-Luc Goddard
+Beatrix Darmstädter
+Josef Matthias Hauer 
+und Johannes Itten
+Johanna Dombois
+Geschichte des
+Musiktheaters 
+Markus Gärtner
+Beethovens 
+»poetische Idee« 
+Eckehard Kiem
+Versuch über Jacobus Vaet
+Dalibor Davidovi
+Morton Feldman – 
+ein Rückblick
+Hanns-Peter Mederer
+Conlon Nancarrows 
+study no. 20
+Matteo Nanni
+Konstruktion bei Scelsi
+Frankfurter Bob Dylan 
+Symposion
+
+5
+Avantgarde heute
+Ein Theoriemodell der ästhetischen Moderne
+Harry Lehmann
+I. Das Kunstsystem – II. Die Entkoppelung von Werk, Medium und Reflexion
+– III. Das Medium der Kunst – IV. Klassische Moderne – V. Avantgarde –
+VI. Postmoderne – VII. Reflexive Moderne – VIII. Gehaltsästhetische Wende
+– IX. Naive Moderne – X. Kunstkritik – XI. Kunstphilosophie
+Die Philosophie könnte ihre Restkompetenz schließlich darin sehen, Fragen
+zu stellen, für die sich niemand interessiert – zum Beispiel die Frage nach der
+Avantgarde heute. Das bis vor kurzem vorherrschende Desinteresse an die-
+sem wieder aufflackernden Thema hatte seine guten Gründe: Die Geschichte
+hielt eine gute Antwort parat. Es war offensichtlich, daß die künstlerischen
+Avantgarden mit all ihren theoretischen und ästhetischen Ansprüchen von
+der Postmoderne abgelöst wurden. Die Kunst, die seit drei Jahrzehnten
+angesagt ist, definiert sich weitgehend über eine Absage an das, was die
+Kunst der Avantgarde einmal war.
+Stellt die Philosophie ihre Fragen, dann ist davon auszugehen, daß sie die
+selbstverständliche Antwort auf sie nicht akzeptiert. Sie meint, beobachten
+zu können, daß eben diese trivial beantwortete und entsprechend stillge-
+stellte Frage eine erhebliche Unschärfe an Problembewußtsein erzeugt, und
+sie wird darauf spekulieren, daß genau dieser Punkt von der betroffenen
+Diskursgemeinschaft gespürt wird – und diese zu polarisieren beginnt: in
+diejenigen, welche die Frage als uninteressant zurückweisen, und jene, wel-
+che sie spannend finden. Die Polarisierung findet dabei aus ein und demsel-
+ben Grund statt; man rechnet damit, daß sich die Kommunikationsverhält-
+nisse grundsätzlich verändern könnten, wenn man solche Unfragen nicht
+auf sich beruhen läßt.
+Die philosophische Frage enthält mithin unter ihrer Hülle sozialen Des-
+interesses einen provokativen Kern; und die Philosophie findet einen Anfang
+(der ihr von jeher fraglich war), sobald sie sich auf die Suche nach ihm begibt.
+Was also wäre das Unruhepotential an der Frage nach der Avantgarde heute?
+Sie zielt auf eine Situation der normativen Hilflosigkeit, auf den Unterschei-
+dungs- und Entscheidungsbedarf, der sich unter dem dominanten Selbstver-
+ständnis der Postmoderne in allen Reflexionszonen der Gesellschaft anstaut
+und sich unter den Sichtverhältnissen dieses Weltbilds nicht mehr abbauen
+läßt. Die Frage nach der Avantgarde heute richtet sich gegen die postmoderne
+Selbstbeschreibung der zeitgenössischen Kunst, die es tendenziell unmöglich
+
+6
+macht, zwischen gelungener und mißlungener Kunst noch zu unterscheiden.
+Sie hat ihren kommunikativen Widerhaken im alten Anspruch der Avant-
+garde, aller anderen Kunst voraus zu sein. Damit markiert sie eine normative
+Differenz, die sich heutzutage weder denken noch kommunizieren läßt. An
+dieser Alternative, ob man für diese abhanden gekommene normative Unter-
+scheidung Ersatz braucht oder nicht, werden sich die Lager der Kunstszene
+spalten, sobald sich absehen, spüren oder erkennen läßt, daß damit die post-
+moderne Selbstbeschreibung der Kunst auf dem Spiel steht.
+Gesetzt also, die Frage nach der Avantgarde heute ist eine philosophische
+Frage von latenter Relevanz: Welche Anschlußfragen zieht sie nach sich, wie
+läßt sie sich entfalten? Zuerst wird man klären müssen, was Avantgarde
+einstmals war, woraus sie ihre Überzeugungskraft zog und warum sie eine
+tiefe Zäsur in der Kunstgeschichtsschreibung hinterlassen konnte. Zweitens
+wird sich dann um so drängender die Anschlußfrage stellen, weshalb sich die
+historische Avantgarde offensichtlich überlebt hat. Erst im Zusammenhang
+mit diesen beiden Vorfragen ließe sich schließlich, drittens, eine These
+formulieren, was avancierte Kunst heute ist.
+Eine philosophische Frage ist aber nicht nur die Frage, die sich selbst
+motiviert – die soziales Interesse erzeugt, wo keines ist –, sondern sie muß
+auch halten können, was sie verspricht, nämlich: eine strittige Antwort provo-
+zieren. Fragen, die nur gestellt werden, um ›das Fragen offenzuhalten‹ – so
+ein beliebter Topos der philosophischen Selbstlegitimation –, halten lediglich
+den Betrieb der Philosophie im Modus von Absichtserklärungen in Gang.
+Von daher gehört zur philosophischen Frage auch die philosophische Theo-
+rie, welche den ganzen Fragekomplex, der durch jene Unfrage aufgeworfen
+wird, ›in einem Zug‹ aufzulösen vermag. Gesucht wäre also ein Denkansatz,
+der die dreifache Frage nach dem Status der Avantgarde – nach ihrer glorrei-
+chen Vergangenheit, nach ihrer fatalen Gegenwart und nach ihrer möglichen
+Zukunft – gleichzeitig und in sich stimmig beantworten kann. Generell steht
+mit der historischen Avantgarde der Anspruch aller modernen Kunst auf
+dem Spiel, neu zu sein; die Avantgarde trieb dieses Moment nur ins Extrem.
+So steht hinter der Leitfrage nach der Avantgarde heute die weit darüber
+hinausweisende Frage nach dem Selbstverständnis aller zeitgenössischen
+Kunst, modern, neu und letztendlich avanciert zu sein.
+I. Das Kunstsystem
+Um jene drei Teilfragen zur Avantgarde im Zusammenhang beantworten zu
+können, bedarf es einer modellhaften Rekonstruktion der modernen Kunst.
+Dabei kann es nicht darum gehen, die Kunstgeschichte im Detail umzu-
+schreiben, sondern es kann sich einzig und allein um eine philosophische
+Wiederbeschreibung der großen kunstgeschichtlichen Zäsuren handeln, die
+allgemein akzeptiert sind.
+
+Avantgarde heute −Harry Lehmann
+7
+1
+Daß die ästhetische Moderne, bzw. der ›Modernismus‹, ein gattungsübergreifendes Phänomen ist, das
+sich in allen Künsten mit einiger Zeitversetzung beobachten läßt, betont etwa Clement Greenberg,
+Modern und postmodern (1980), in: ders., Die Essenz der Moderne, hg. v. Karlheinz Lüdeking, S. 432. Hans
+Robert Jauß spricht in diesem Zusammenhang von dem »heute fast schon kanonisierten Beginn unserer
+Moderne« (vgl. ders., Der literarische Prozeß des Modernismus von Rousseau bis Adorno, in: Ludwig v.
+Friedeburg/Jürgen Habermas [Hg.], Adorno Konferenz 1983, Frankfurt a. M. 1983, S. 99). Vgl. auch die
+»Schlußbetrachtung: Zum Begriff der ästhetischen Moderne« von Peter Bürger, Prosa der Moderne,
+Frankfurt a.M. 1988, S.439-443.
+2
+Zum Begriff der Avantgarde vgl. Peter Bürger, Theorie der Avantgarde, Frankfurt a. M. 1974, S. 44 f., Fn. 4.
+3
+Zum Postmodernebegriff vgl. Heinrich Klotz, Kunst im 20.Jahrhundert, München 1999, S. 57-149; Dieter
+Lamping, Moderne Lyrik. Eine Einführung, Göttingen 1991, S.112-117.
+4
+Niklas Luhmann, Die Kunst der Gesellschaft, Frankfurt a.M. 1995, S. 257 ff.
+Gemeint ist zuerst der Übergang von der sich bereits selbst als ›modern‹
+beschreibenden Kunst der Neuzeit hin zur klassischen Moderne zwischen
+1850 und dem ersten Jahrzehnt des 20. Jahrhunderts. Dieser Bruch ist so
+gravierend, daß man hier auch vom Beginn der ästhetischen Moderne
+spricht.1 Als nächstes wäre die darauffolgende, schwer definierbare Ableh-
+nung, Zersetzung oder Überbietung dieser Kunst durch die historische
+Avantgarde verständlich zu machen2, und schließlich müßte das Erscheinen
+der postmodernen Kunst, welche mit der Tradition der klassischen und der
+avantgardistischen Moderne gleichermaßen wieder bricht, rekonstruiert und
+reinterpretiert werden.3 Wenn sich klären läßt, wie und warum sich inner-
+halb der Geschichte der modernen Kunst deren Verhältnis zur Modernität
+selbst verändert hat, dann, so das Versprechen dieses philosophischen Ge-
+dankenexperiments, wird man auch die Frage nach dem Status der Avant-
+garde in der heutigen Kunst beantworten können.
+Die grundlegende Idee für eine solche Wiederbeschreibung der Kunstge-
+schichte lautet: Man kann die Geschichte der modernen Kunst als eine
+Geschichte ihrer Ausdifferenzierung rekonstruieren.
+Ein erster Schritt in dieser Ausdifferenzierungsgeschichte war bereits im
+15. Jahrhundert getan, als die Kunst an den italienischen Fürstenhöfen auf-
+grund der sich durchsetzenden funktionalen Differenzierung der Gesell-
+schaft in die Lage versetzt wurde, künstlerische Entscheidungen unabhängig
+von der Letztentscheidungsinstanz der katholischen Kirche zu treffen. Dieser
+prinzipiellen Unabhängigkeit von religiösen, kunstfremden Gesichtspunk-
+ten, die das gesamte mittelalterliche Weltbild integrierten, entspricht die
+Bildung eines autonomen sozialen Teilsystems der Kunst.4 Man kann von
+Ausdifferenzierung im allgemeinen immer dann sprechen, wenn Unter-
+schiede in die Welt kommen, die einen Unterschied machen – also gravie-
+rende Folgen haben. In diesem Sinne kam in der Renaissance der Unter-
+schied von Kunst und Nichtkunst in die Welt, obwohl man natürlich auch
+schon im Mittelalter zwischen kunstbezogenen und allen übrigen Themen
+unterscheiden konnte. Aber dies war eine sprachliche Unterscheidung ohne
+jeglichen ›ontologischen‹ Halt. Die Situation ändert sich grundlegend, wenn
+die Differenz zwischen Kunst und Nichtkunst nun in einer gesellschafts-
+
+8
+strukturellen System/Umwelt-Differenz verankert wird. Man ist dann zwar
+weiterhin so frei, über Kunst zu reden, wie man möchte, wenn man aber
+diese Differenz ignoriert, was vor allem heißt, daß man über die Systemauto-
+nomie der Kunst hinwegkommuniziert, dann macht sich dies im Kunstsy-
+stem als Mangel an kommunikativer Anschlußfähigkeit bemerkbar. Die Aus-
+differenzierung der Kunst betrifft also eine Transformation der Kommunika-
+tionsformen, welche der Kunstkommunikation zu Grunde liegen und diese –
+hinter dem Rücken der Künstler, Kunstkritiker und Kunstliebhaber – diri-
+gieren.
+Neben diesem Objektivitätsanspruch, der sich mit der Rede von Ausdiffe-
+renzierung verbindet, bedeutet Ausdifferenzierung einen Zugewinn an Frei-
+heitsgraden, konkret von Freiheitsgraden der Kommunikation im Kunstsy-
+stem. Es ist dieser Gedanke, um den wir Luhmanns Kunsttheorie erweitern
+wollen und der erst eine philosophische Aneignung der Kunstgeschichte
+unterm Vorzeichen der Avantgarde erlaubt. Wir werden zunächst den
+Grundgedanken dieser systemtheoretischen Kunstsoziologie kurz nach-
+zeichnen, um in diese Skizze dann jene Idee eintragen zu können, die hier
+entfaltet werden soll.
+Wie Luhmann gehen wir davon aus, daß es genau dann zur Systembildung
+kommt, wenn innerhalb eines bestimmten Kommunikationsbereiches wie
+dem der Wirtschaft, der Wissenschaft, des Rechts oder eben der Kunst sich
+eine Leitdifferenz herauskristallisiert, die den gesamten Informationsfluß in
+einem solchen Areal zu kanalisieren vermag. Das heißt zum Beispiel, daß an
+allen Aussagen, Anmerkungen, Urteilen und Fragen, die das Thema Kunst
+tangieren, plötzlich die Unterscheidung, ob etwas schön oder häßlich ist, mit
+ins Spiel kommt. In der hierarchisch differenzierten mittelalterlichen Gesell-
+schaft verfügte man selbstverständlich auch über dieses sprachliche Differen-
+zierungsvermögen, aber diese Differenzen waren in einem großen scholasti-
+schen Unterscheidungskosmos integriert und so stark miteinander vernetzt,
+daß jedes Urteil über Kunst immer auch ein Urteil über Gott und die Welt,
+die Natur und die Geschichte enthielt. Derart war die Unterscheidung zwi-
+schen dem Schönen und dem Häßlichen starr in ein Weltbild eingepaßt und
+als solche nicht frei verfügbar. Erst mit dem Übergang zur funktionalen
+Differenzierung der Gesellschaft gewannen diese semantischen Differenzen
+ihre Autonomie, d. h. sie konnten nun durch spezifische, in unserem Fall
+kunstspezifische Programme näher bestimmt werden, die nicht bloß heraus-
+gelöste Teilstücke eines gesamtgesellschaftlich verbindlichen, nichthinter-
+gehbaren Weltbilds waren. Solche Programme erlaubten erstmals, diese
+Leitdifferenz autonom zu spezifizieren, d. h. relativ unabhängig von dem,
+was man außerhalb der künstlerischen Kommunikation wie in der Theologie
+über das Schöne und das Häßliche dachte. Damit verwandelt sich diese
+semantische Differenz in einen Code der Kommunikation oder anders for-
+
+Avantgarde heute −Harry Lehmann
+9
+5
+A.a.O., S.309 u. 376.
+muliert: Es kommt zur Trennung von Codierung und Programmierung.5
+Diese strukturelle Differenz von Code und Codiervorschrift ist der geheime
+Motor aller Systembildung, weil nun im System ein Unterscheidungsmecha-
+nismus bereitsteht, der autopoietisch, sprich aus eigener Kraft, Strukturen
+generieren kann. Daß sich die Kunst nun selbst ihre Programme schreibt
+(und nicht länger von der Theologie vorgeschrieben bekommt), über die sie
+ihre beiden abstrakten Codewerte konkretisiert, ist der eigentliche Grund
+dafür, daß sich das Kunstsystem operativ schließt und eine Grenze zwischen
+System und Umwelt, d. h. zwischen Kunst und Nichtkunst ausbildet.
+II. Die Entkoppelung von Werk, Medium und Reflexion
+Aus dem Blickwinkel der systemtheoretischen Gesellschaftstheorie entsteht
+die ›moderne Gesellschaft‹ bereits zu Beginn der Neuzeit, weil sich zu
+diesem Zeitpunkt die Gesellschaftsstruktur zu verändern beginnt, und zwar
+von einer hierarchisch differenzierten zu einer funktional differenzierten
+Gesellschaftsformation. Der Begriff der Moderne wird also mit Hilfe eines
+Konzepts der Gesellschaftsstruktur bestimmt, und jeder alternative Moder-
+nebegriff, von dem aus man sicherlich zu ganz anderen Geschichtsmodellen
+gelangen könnte, stünde vor der schwierigen Aufgabe, eine ähnlich fundierte
+Begriffsbestimmung vorzulegen, wie sie Luhmanns Gesellschaftstheorie an-
+zubieten hat. Geht man von diesem Modernebegriff aus, dann muß man den
+Startpunkt der modernen Kunst ebenfalls in der Renaissance, mit der Ausdif-
+ferenzierung eines autonomen Kunstsystems ansetzen. Wir haben es hierbei
+mit einer externen Ausdifferenzierung der Kunst, mit ihrer Ablösung von
+außerkünstlerischen Bestimmungsgründen zu tun, in der das Kunstsystem
+seine operative Grenze zwischen System und Umwelt etabliert. In dieser
+Konstitutionsphase des Kunstsystems (vgl. Theoriemodell), die sich histo-
+risch von der Renaissance bis zur Romantik erstreckt, wird diese Autonomi-
+sierung in allen Künsten und ihren Gattungen durchgesetzt und befestigt.
+Soviel zu den systemtheoretischen Theorievorgaben, auf die wir unbese-
+hen zurückgreifen können. Die Frage, die über Luhmanns systemtheoreti-
+sche Kunstsoziologie hinausweist, ist, was in den kunstspezifischen Pro-
+grammen des Kunstsystems eigentlich festgeschrieben wird. Hier lautet die
+Folgethese: Es ist die immanente Relation zwischen Werk, Medium und
+Reflexion, welche die Grammatik der Kunstprogramme definiert und deren
+Transformation wiederum zu den markantesten Zäsuren der Kunstge-
+schichtsschreibung führte.
+Man kann davon ausgehen, daß zu Beginn der neuzeitlichen Kunst diese
+drei basalen Komponenten fest miteinander verkoppelt waren. Es handelt
+sich hierbei um ein Erbe aus dem Mittelalter, als die Kunst noch über keine
+
+10
+Theoriemodell
+Gesellschaftsgeschichte
+0. Moderne:
+Tradition
+1. Moderne:
+Industrie-Moderne
+2. Moderne:
+Reflexive Modernisierung
+Kunstgeschichte
+Neuzeit
+Klassische Moderne
+Avantgarde
+Postmoderne
+Reflexive Moderne
+Modernisierungsphase
+Konstitutionsphase
+Ausdifferenzierungsphase
+Reflexionsphase
+Orientierung der Kunst
+inhaltsästhetisch
+materialästhetisch
+gehaltsästhetisch
+Autonomiegewinne
+Systemautonomie
+gesellschaftliche Autonomie des
+Kunstsystems; Autonomie der
+fest gekoppelten Momente von
+Werk, Medium und Reflexion
+Autonomie der fest
+gekoppelten
+Momente von Werk
+und Reflexion
+Reflexionsautonomie
+Medienautonomie
+Werkautonomie
+Negationsmöglichkeiten
+keine Negation der Kunst im
+Kunstsystem möglich; Evolution
+findet nur über Stilwandel statt.
+abstrakte Negation
+des Kunstmediums
+abstrakte Negation
+des Kunstwerks
+Aufhebung der
+Negation des
+Kunstmediums
+Aufhebung der Negation
+des Kunstwerks
+Werk, Medium und
+Reflexion sind differente
+Komponenten der Kunst
+W = Werk, M = Medium, R = Reflexion
+M
+W
+R
+W
+R
+R
+M
+R
+M
+W
+R
+
+Avantgarde heute −Harry Lehmann
+11
+systemeigenen Programme verfügte, sondern über das ›Quasiprogramm‹
+eines gesamtgesellschaftlich verbindlichen religiösen Weltbilds seine we-
+sentlichen Sinn- und Formvorgaben zugewiesen bekam. Mit der Ausbildung
+eines autonomen Kunstsystems in der Renaissance wurde dieses externe
+Vorschriftensystem internalisiert und gewann damit erst im eigentlichen
+Sinne des Wortes den Status eines Programms: eines Programms, das vom
+Kunstsystem selbst, nach den Maßgaben seiner eigenen Entwicklungslogik
+geschrieben und überschrieben werden konnte. Diese gewonnene Freiheit
+der Kunst zeigt sich vor allem an deren Fähigkeit, unabhängig von gesamtge-
+sellschaftlichen Evolutionsprozessen, aus eigener Kraft heraus eine Vielzahl
+von miteinander konkurrierenden und einander ablösenden Kunststilen zu
+kreieren.
+Wenn wir allerdings an der mittelalterlichen Kunst verschiedene Stile
+unterscheiden, dann handelt es sich um eine Rückprojektion der autonomen
+auf die vorautonome Kunst. Sie verdeckt, daß diese Stildifferenzen ihren
+Ursprung nicht in der Kunst selbst, sondern in kunstfremden Gründen
+hatten, wie zum Beispiel in einer Kirchenpolitik, welche die Herstellung von
+Ikonen, Messen und Sakralbauten jeweils mit Rücksicht auf den lokalen
+kulturellen und politischen Kontext kodifizierte. Die Kunstgeschichte der
+Neuzeit läßt sich von der Renaissance bis zur klassischen Moderne als
+Stilgeschichte nachvollziehen, aber sowohl ihre Rückprojektion ins Mittelal-
+ter als auch ihre Vorausprojektion in die ästhetische Moderne werden den
+großen Einschnitten in der Kunstgeschichte nicht gerecht. Oder kurz gesagt:
+Die großen Strukturbrüche der Kunst gehen im Stilbruch nicht auf.
+Unsere Aufgabe besteht vor allem darin, ein Modell der Kunst zu entwik-
+keln, daß auch jene einschneidenden Veränderungen erfassen kann, die seit
+der Mitte des 19. Jahrhunderts die Kommunikationsverhältnisse im Kunstsy-
+stem radikal verändert haben. Es handelt sich hierbei um Transformations-
+prozesse, welche ihrem Format nach unterhalb der Systembildung zu Beginn
+der Neuzeit bleiben – weil sie nicht mit einer Veränderung der Gesellschafts-
+struktur einhergehen –, aber deutlich über das neuzeitliche Bewegungsge-
+setz der Kunst, die Stilerfindung, hinausgehen. Es handelt sich, wie schon
+gesagt, um eine schrittweise Entkoppelung der ergonalen, medialen und
+reflexiven Komponente auf der Programmebene der Kunst. Hier finden die
+Gewinne an Freiheitsgraden statt, die es vordem nicht gab und deren schritt-
+weises In-die-Welt-Kommen sich rekonstruieren läßt.
+Der Bruch zwischen der neuzeitlichen und der modernen Kunst kündigte
+sich bereits lang vordem an. Das Entstehen der philosophischen Ästhetik als
+einer neuen akademischen Disziplin in der Mitte des 18. Jahrhunderts ist
+nicht zuletzt eine Reaktion darauf, daß die Komplexitätslasten aufgrund
+jener voll ausgebildeten und evident gewordenen Systemautonomie in der
+Kunst erstmals so groß wurden, daß diese sich nur noch mit einer eigens
+
+12
+6
+Vgl. Georg Wilhelm Friedrich Hegel, Die Auflösung der romantischen Kunstform, in: Vorlesungen über die
+Ästhetik II (= Gesammelte Werke, Bd.14), hg. v. Eva Moldenhauer u. Karl Markus Michel, Frankfurt a. M.
+1976, S.220ff.
+7
+Vgl. hierzu das Kapitel »Medium und Form« in: Luhmann, Die Kunst der Gesellschaft (Anm. 4), S.165 ff.
+dafür geschaffenen Reflexionstheorie bewältigen ließen. Und in dieser Äs-
+thetiktradition war es dann Hegel, der hellsichtig bemerkte, daß die Kunst
+diese Form der Selbstentfaltung zu Beginn des 19. Jahrhunderts voll ausge-
+schöpft hatte und daß sie dementsprechend nur noch in einer qualitativ ganz
+anderen Weise fortbestehen könne. Das von Hegel verkündete »Ende der
+Kunst« war das Ende der Konstitutionsphase des Kunstsystems, wobei Hegel
+nicht voraussehen konnte, daß ihr noch eine Ausdifferenzierungsphase,
+sprich die ästhetische Moderne folgen wird.6 Möglicherweise können hierfür
+andere Theorien andere Erklärungen anbieten; die Reichweite und Erklä-
+rungskraft einer philosophischen Theorie zeigt sich aber daran, ob sie derart
+heterogene und für die Kommunikationsgeschichte bedeutsame Ereignisse
+wie den »Anfang der Ästhetik« bei Baumgarten, den »Beginn der ästheti-
+schen Moderne« mit Baudelaire, das »Ende der Kunst« von Hegel sowie
+Dantos Echo hierauf im 20. Jahrhundert in einen Sinnzusammenhang
+bringen kann.
+III. Das Medium der Kunst
+Die gebundene Kommunikation von Werk, Medium und Reflexion wäre
+mithin die Ausgangslage der neuzeitlichen Kunst, in bezug auf die, so die
+These, sich die eigentlich moderne Kunst ausdifferenziert hat. Um die starre
+Tiefengrammatik dieser Kunstepoche beschreiben zu können, bedarf es
+jedoch noch einiger Vorüberlegungen, vor allem hinsichtlich des hoch infla-
+tionierten Medienbegriffs. Der Begriff des Mediums kann systemtheoretisch
+über die Unterscheidung von Medium und Form eingeführt werden, wobei
+das Medium wiederum näher als »lose Koppelung von Elementen«, die Form
+hingegen als »feste« oder »rigide Koppelung von Elementen« bestimmbar
+ist.7 Angewandt auf das Medium der Kunst heißt dies, daß die beobachtbaren
+Formen am Kunstwerk feste Koppelungen sind, welche sich im Medium der
+Kunst bilden lassen. Die losen Koppelungen, die zwischen den Elementen
+dieses Mediums existieren, bilden sozusagen einen begrenzten Möglich-
+keitsraum für die Schaffung von Kunstwerken.
+Eine weitere Einschränkung ist, daß die Medien der Kunst immer auf
+Wahrnehmungsmedien basieren, seien sie nun visueller, akustischer oder
+linguistischer Natur, in denen die Wahrnehmung zusätzlich präpariert wird.
+Die Elemente des Kunstmediums sind Wahrnehmungsereignisse, die einem
+zusätzlichen Ordnungsschema unterworfen werden, und diese ›künstliche‹
+apriorische Relation, die jede Wahrnehmung überlagert, macht aus dem
+basalen Medium der Wahrnehmung ein Medium der Kunst. Oder anders
+
+Avantgarde heute −Harry Lehmann
+13
+gesagt, das Medium der Kunst transformiert das Wahrnehmungsmedium in
+ein Medium der ästhetischen Erfahrung. Mithin sind die in einem Medium
+der Kunst gebildeten Formen immer wahrnehmbare Formen, denen von
+vornherein eine bestimmte Affinität zueinander einprogrammiert ist. Auf-
+grund dieser ästhetischen Bindungskräfte können sich die generierten Ein-
+zelformen wiederum zu einer stabilen Formenkomplexion – sprich dem
+Kunstwerk – zusammenschließen. Genau diese Qualität der autopoietischen
+Wahrnehmungsorganisation macht den Werkcharakter eines Artefaktes aus,
+das sich im Medium der Kunst bilden läßt.
+Man kann sich nun noch einmal die Frage stellen, wie das Medium der
+Kunst traditionell beschaffen war, aus welchen Elementen es bestand und in
+welcher Art und Weise diese lose miteinander verknüpft waren. In der Musik
+zum Beispiel kann man die Töne (genaugenommen die Intervalle zwischen
+den Tönen) als deren Elemente auffassen. Das Medium der traditionellen
+Musik war in dieser Hinsicht das tonale System, das jedes musikalische
+Kunstwerk a priori daraufhin einschränkte, daß es bestimmte Töne bzw.
+Intervalle gegenüber anderen präferierte. Die Tragweite dieses Medienbegrif-
+fes wird sichtbar, wenn man bedenkt, was mit der Unterstellung und Inan-
+spruchnahme eines solchen Mediums alles schon festgeschrieben war: Aus
+dem Bereich des Hörbaren wurden die Töne und Klänge isoliert, Geräusche
+aber ausgeschlossen; diese Töne und Klänge umfaßten nicht ein lineares
+Spektrum, sondern konnten nur als zwölf verschiedene diskrete Werte in
+Erscheinung treten, und auch diese zwölf Halbtöne einer Oktave standen bei
+der konkreten Komposition nicht gleichwertig zur Verfügung, sondern muß-
+ten je nach Tonart selektiv gehandhabt werden. Allein an diesem Beispiel
+müßte die Grundidee in ersten Umrissen deutlich werden, daß nämlich die
+Geschichte der modernen Kunst als eine Geschichte der Auflösung solcher
+basalen losen Koppelungen rekonstruiert werden könnte. Die Neue Musik
+definierte sich eben dadurch, daß sie das tonale System sprengte und eine
+Möglichkeit fand, mit allen zwölf Tönen zu komponieren, daß sie den Halb-
+tonschritt nicht mehr als kleinstes mögliches Intervall akzeptierte und Vier-
+tel- oder gar Achteltöne zu verwenden begann; bis hin zu einem musikali-
+schen Negativismus, der das Geräusch anstelle des Tones zum musikali-
+schen Element umdefiniert – oder sogar die Stille zur eigentlichen Musik
+erklärt.
+Normalerweise definieren sich Kunstwerke nicht bloß über einen einzigen
+Parameter. Neben der Tonalität (im engeren Sinne) ist in der Musik zum
+Beispiel auch der Rhythmus oder der Klang eine Größe, welche der Komposi-
+tion bis zur Neuen Musik seine apriorische Form gab. Analog zum tonalen
+System existierte in der traditionellen Musik auch ein rhythmisches System,
+das die musikalische Zeit ›vor aller Erfahrung‹ organisierte: das Mensur- und
+das Taktsystem. Und auch hier kommt es in der Neuen Musik zunächst zu
+
+14
+8
+Mit einer solchen Unterscheidung arbeitet Lamping, Moderne Lyrik (Anm. 3), wenn er die Innovationen in
+der Lyrik zum einen in bezug auf die »neue lyrische Sprache« (Kap. II) und zum anderen als »Revolution
+der Mittel«, sprich in bezug auf die freien und gebundenen Versformen beschreibt (Kap. III).
+einer Suspendierung des Mediums, indem die rhythmischen Systeme als
+Kompositionsprogramm aufgelöst wurden, bis im Extremfall ›Werke‹ ent-
+standen, die wie bei John Cage auf jede zeitliche Ordnung des musikalischen
+Materials verzichten. Die Elemente des Mediums Musik wurden also über
+mehrere Parameter zugleich lose miteinander verkoppelt, und über jeden
+dieser Parameter läßt sich eine Geschichte der Auflösung dieser traditionell
+vorgegebenen Kompositionsstruktur rekonstruieren.
+Mit Hilfe dieses medientheoretischen Ansatzes lassen sich nun alle tradi-
+tionellen Kunstgattungen analysieren, ganz gleich ob diese nun auf einem
+akustischen, visuellen oder linguistischen Wahrnehmungsmedium basieren.
+Das Analyseschema ist jeweils das gleiche: Zuerst geht es darum, die wesent-
+lichen Parameter einer traditionellen Gattung zu bestimmen; anschließend
+gilt es, für jeden dieser Parameter die Elemente und die charakteristische lose
+Koppelung zwischen diesen Elementen zu suchen.
+So wird das Gedicht in erster Linie über Metrik und Metaphorik zur
+Kunstform und gewinnt über diese Größen seinen ästhetischen Gehalt.8 Die
+metrische Grundeinheit der Poesie wäre die Silbe, welche sowohl betont als
+auch unbetont, als Hebung oder Senkung auftreten kann. Die losen Koppe-
+lungen zwischen diesen Elementen werden wiederum durch ein metrisches
+System realisiert, das nach einem bestimmten Muster den Wechsel von
+betonten und unbetonten Silben reguliert und dem Gedicht damit seine
+metrische Versform (im Sinne einer festen Koppelung) gibt. Weniger an-
+schaulich, aber analog, ließe sich der metaphorische Parameter rekonstruie-
+ren, auch hier wird der Satz als basale sprachliche Sinneinheit (die Elemente)
+noch einmal von einem bestimmten Erwartungssystem der ›Übertragung‹
+präpariert (die losen Koppelungen), so daß dann in diesem Medium die je
+konkreten Formen der poetischen Sprache zum Ausdruck kommen (d. h.,
+sich als feste Koppelungen realisieren können). – In der Malerei wiederum
+sind Linien und Farben in der Fläche die Grundelemente im Bild, welche
+traditionellerweise durch das Abbildprinzip, und noch eingeschränkter
+durch das Darstellungssystem der Zentralperspektive, flexibel miteinander
+verbunden waren. Für die Darstellung der Farbflächen etwa hat lange Zeit
+das Lokalfarbenprinzip gegolten, das eine realistische Übertragung der Farb-
+werte aus der Natur aufs Bild vorschrieb. Auch dies läßt sich als eine lose
+Koppelung der Farbelemente im Medium des Tafelbildes begreifen. – In der
+Architektur wird das Medienkonzept besonders sinnfällig, da man hier von
+vornherein von Bau-Elementen wie Wänden, Türen, Fenstern, Säulen, Gie-
+beln, Dächern und ähnlichem spricht, und es verstand sich lange Zeit von
+selbst, daß diese architektonischen Elemente zu einer Fassade zusammen-
+
+Avantgarde heute −Harry Lehmann
+15
+9
+Erst Luhmann formuliert wieder einen solchen Einheitsanspruch, wie er vordem nur von der Kunstphilo-
+sophie bis Adorno erhoben wurde: »Es war von Beginn an unsere Absicht gewesen, Kunst als einheitli-
+ches Thema zu behandeln, also abzusehen von den Unterschieden, die sich aus den verschiedenen
+Medien ihrer sinnlichen bzw. imaginären Realisierung ergeben.« (Luhmann, Die Kunst der Gesellschaft
+[Anm.4], S.499)
+10
+Die Idee, daß die Funktion der Kunst etwas mit einer »Realitätsverdoppelung« zu tun haben müsse, findet
+sich bei Luhmann, Die Kunst der Gesellschaft, a.a.O., S.229.
+gefügt werden müssen, welche dem Bauwerk ein ›Gesicht‹ gibt. Selbst dieses
+anthropomorphe Gestaltungsprinzip ist eine lose Koppelung, welche das
+Medium der Architektur einst konstituierte.
+Es dürfte absehbar sein, daß man mit Hilfe dieser medientheoretischen
+Parameteranalyse auch die übrigen Gattungen der Kunst wie etwa die Plastik,
+den Roman oder die künstlerische Fotografie erschließen kann. Der entschei-
+dende Gewinn des medientheoretischen Ansatzes besteht darin, daß er ein
+Theoriemittel bereitstellt, um die Kunst gattungsübergreifend analysieren zu
+können. Der Medienbegriff erlaubt es, die verschiedenen Künste untereinan-
+der vergleichbar zu machen und jene Strukturen freizulegen, welche sich in
+allen Gattungen gleichermaßen unter dem Modernisierungsdruck der Ge-
+sellschaft umgebildet haben.
+Über die Medientheorie vermag die Kunstphilosophie sich wieder zu reha-
+bilitieren, die seit langem ihren Untersuchungsgegenstand – ›die Kunst‹ –
+verloren hatte und seit dem Erscheinen der letzten großen Kunstphilosophie,
+Adornos Ästhetischer Theorie, in permanente Rückzugsgefechte verwickelt
+war. Ihr schleichender Kompetenzverlust machte sich vor allem daran be-
+merkbar, daß sie von einer Vielzahl gattungsspezifischer Kunsttheorien er-
+setzt und verdrängt wurde und wird. Einerseits wissen diese aufgrund ihrer
+Spezialisierung immer schon besser, was sich in ihren Disziplinen abspielt,
+und andererseits war in der Zeit zwischen Adorno und Luhmann kein
+tragfähiges theoretisches Konzept verfügbar, das ohne metaphysische und
+geschichtsphilosophische Hintergrundannahmen die Einheit der Künste
+noch einmal grundsätzlich neu zu denken erlaubt.9 Die systemtheoretische
+Medientheorie jedoch gibt der Kunstphilosophie ihr Thema zurück.
+IV. Klassische Moderne
+Wir können also davon ausgehen, daß in allen Gattungen der neuzeitlichen
+Kunst eine vergleichbare Situation vorgeherrscht hat: daß jedes Kunstwerk
+sich als Kompaktform eines gattungsspezifischen Kunstmediums realisierte,
+das über mehrere Parameter hinweg sich als lose Koppelung je eigener
+Elemente wiederbeschreiben läßt. Hinzu kommt, daß diese medienkonstitu-
+ierten Werke wiederum als Realitätsverdoppelung der realen Welt interpre-
+tiert wurden.10 Diese hochabstrakte Rekonstruktion der neuzeitlichen Kunst
+erlaubt es, die Bruchlinie nachzuzeichnen, welche die Klassische Moderne in
+der Kunstgeschichtsschreibung hinterließ. Was den Kubismus in der bilden-
+
+16
+den Kunst, die freie atonale Musik und die freie Versdichtung eint, ist, daß sie
+im historischen Moment ihres erstmaligen Erscheinens Kunstwerke hervor-
+bringen, die von keinem Medium mehr vorprogrammiert sind – und in
+diesem Sinne sich auch von der Tradition frei gemacht hatten. Die Bilder
+fallen aus der Zentralperspektive heraus, die Musik verläßt das tonale Sy-
+stem, und die Gedichte verlieren ihre gebundene metrische Form – und
+sollen nichtsdestotrotz als Kunst wahrgenommen werden. Das heißt: Diese
+Werke setzen das Medium außer Kraft, das sie traditionell konstituierte.
+Damit werden diese Kunstwerke der Klassischen Moderne zu selbstpro-
+grammierten und sich selbst reflektierenden Werken, welche allein aus sich
+heraus den Prozeß der ästhetischen Erfahrung organisieren. Unabhängig
+von den in den Medien der Kunst ansonsten präparierten Erwartungen
+vermag das Werk mit Hilfe seiner eigenen Formen im Rezipienten eine
+Erwartung zu erzeugen, welche Form als nächste folgen und welche Form zu
+den bisherigen Formen passen könnte und welche nicht. Die Kunst der
+Klassischen Moderne löst die Kunst aus ihren Kunstmedien heraus und
+macht ihren Werkcharakter sichtbar; sie legt die Struktur des Kunstwerks
+frei: die ästhetischen Selbstbindungskräfte seiner an ihm wahrnehmbaren
+Formen.
+Wichtig ist, daß die Formfindung in der Klassischen Moderne noch streng
+an vorgegebene Interpretationsprogramme gekoppelt ist, welche einen Zu-
+sammenhang von Kunst und Welt a priori festlegen. Trotzdem gewinnt die
+Kunst Anfang des 20. Jahrhunderts gerade in dieser Gestalt einen neuen
+Grad an Autonomie, der sich auf der Basis der bereits vorhandenen System-
+autonomie erst ausbilden kann: die Autonomie des reflexiv gebundenen
+Kunstwerks (vgl. Theoriemodell). Es ist diese klassisch moderne ›Werkauto-
+nomie‹, die mit allen bis dahin in der Kunst vertrauten Seh- und Hörgewohn-
+heiten bricht und den Rezipienten eine vollkommen neue ästhetische Ein-
+stellung abverlangt.
+Die Schwierigkeit, welche das Verständnis solcher historischen Zäsuren
+wie der Klassischen Moderne extrem erschwert, ist, daß diese Ausdifferenzie-
+rung nicht einfach in der Wirklichkeit stattfindet, die man nur richtig zu
+beschreiben braucht, sondern daß sie sich in einem autonomen Sozialsystem
+vollzieht. Man muß als Beobachter mithin zuerst eine hypothetische Beob-
+achterposition in diesem System einnehmen, um solche Trennvorgänge ad-
+äquat wiederbeschreiben zu können. Das Kunstsystem kann, wenn es seine
+Autonomie einmal erlangt hat, sich nur noch aus eigener Kraft verändern
+und reagiert eben nicht mehr direkt auf die externen Veränderungen in der
+Gesellschaft, seien es nun Revolutionen, große technische Erfindungen,
+Kriege oder Weltwirtschaftskrisen. Die Möglichkeiten der Selbstveränderung
+werden kurz gesagt durch die Negationsmöglichkeiten begrenzt, über die ein
+System verfügt; und genau diese verändern sich in der Geschichte der Kunst.
+
+Avantgarde heute −Harry Lehmann
+17
+11
+Der Begriff der Kommentarbedürftigkeit wurde von Arnold Gehlen geprägt und in bezug auf die
+kubistische Malerei wie folgt erläutert: »Die innere Bildrationalität des Kubismus war außerordentlich
+hoch ..., sie wurzelte aber in geistvollen und entlegenen Theorien der Künstler über das Wesen der
+Wahrnehmung, die bis in die Definition ihres Vokabulars, bis in die sprachlosen Elemente der Bildfläche
+hineinreichten und aus der bloßen Betrachtung überhaupt nicht zurückzugewinnen waren. . . . Die aus
+dem Bilde nicht mehr eindeutig ablesbare Bedeutung etablierte sich neben dem Bild als Kommentar, als
+Kunstliteratur und, wie jedermann weiß, auch als Kunstgerede.« (Arnold Gehlen, Zeit-Bilder, Frankfurt
+a. M. 1960, S.53f.)
+Die ganze Neuzeit hindurch besaß man nur ein einziges probates Mittel zur
+Selbsttransformation: den Stilwechsel. Die Kunst konnte sich erneuern, in-
+dem sie mit Hilfe eines neuen Kunststils einen alten Kunststil negierte. Die
+Kunstwerke der Klassischen Moderne negieren nun aber nicht nur die eta-
+blierten Stile ihrer Zeit, sondern sie negieren die medienkonstituierte Kunst
+an sich und führen damit eine bis dahin unverfügbare Möglichkeit der
+Negation ins Kunstsystem ein. Von nun an läßt sich Kunst herstellen, die das
+Medium der Kunst negiert. Damit erlangt das Kunstsystem einen zusätzli-
+chen Freiheitsgrad, der sich rückblickend als Trennung von Medium und
+Werk im Kunstsystem verstehen läßt.
+Die Klassische Moderne wird deshalb zum einschneidenden Ereignis in
+der Kunstgeschichte, weil sich mit ihr viele für die Kunst konstitutiven
+Größen zugleich transformieren. Die sich hier vollziehende Ausdifferenzie-
+rung der Kunst ist sowohl eine Trennung von Werk und Medium, ihr ent-
+spricht zugleich eine Einführung der Negation des Mediums der Kunst ins
+Kunstsystem und sie zeigt sich als Autonomiegewinn, nämlich der Autono-
+mie des klassisch modernen Kunstwerks gegenüber dem Kunstsystem. Wo
+solche Beschreibungen gefragt sind, die zugleich eine Umschreibung aller
+Beschreibungsgrößen erfordern, dort dürfte nach wie vor die Philosophie
+und speziell die Kunstphilosophie gefragt sein.
+Trotz dieser Entkoppelung von Werk und Medium blieb die Kunst der
+Klassischen Moderne der ästhetischen Tradition verhaftet: Die sich selbst
+organisierenden Kunstwerke sind nämlich noch ganz traditionell an eine
+Hintergrundphilosophie gebunden, welche die am Werk beobachtbare For-
+mensprache in einen bestimmten Ausdruck der Realität übersetzte. Auch
+hier hat man es mit einem Programm der Kunst zu tun, das ihre Rezeption in
+einer bestimmten Weise präpariert und vorab das Verhältnis von Kunst und
+Welt organisiert. Da aber nun weder das Kunstwerk noch seine Reflexion
+weiterhin in einem Medium verankert sind, das die Selbstverständlichkeiten
+der Kunst reproduziert, werden die Werke der Klassischen Moderne »kom-
+mentarbedürftig«.11
+Festzuhalten ist: Die Klassische Moderne setzte noch nicht wirklich das
+autonome Kunstwerk frei, sondern diese kommentarbedürftige Werk-Refle-
+xions-Einheit erlangt Autonomie gegenüber dem Medium der Kunst (vgl.
+Theoriemodell). Dieses in sich reflektierte, sich selbst schaffende, monadi-
+
+18
+12
+»Die Auflösung der traditionellen Werkeinheit läßt sich ganz formal als gemeinsamer Zug der Moderne
+nachweisen. Kohärenz und Selbstständigkeit des Werkes werden bewußt in Frage gestellt oder gar
+planmäßig zerstört. In der Erfindung immer neuer, die Werkgesinnung irritierender Formen oder
+Verfahren der Auflösung bzw. Dementierung der sinnhaften Einheit des Werks überbieten sich die
+unterscheidbaren Epochen der Moderne gegenseitig«, schreibt diesbezüglich Rüdiger Bubner, Ästhetische
+Erfahrung, Frankfurt a.M. 1989, S.19.
+13
+Ein Beispiel unter vielen einer derart klassischen Avantgarde war der Beitrag von Daniel Knorr, European
+Influenza, auf der Biennale von Venedig 2005. Das ›Objekt‹ der Kunst war der leere, unrenovierte
+rumänische Ausstellungspavillon, sein ›Konzept‹ bestand darin, daß man vorab das politisch assozia-
+sche Werk verkörpert das klassisch moderne Kunstwerk schlechthin; es sucht
+aus sich heraus, frei von jeder medialen Vermittlung, einen direkten Zugang
+zur Ordnung der Welt.
+V. Avantgarde
+Gegen diese apriorische Auffassung von Kunst rebellierte die historische
+Avantgarde; ihre eigentliche Errungenschaft besteht eben darin, diesen seit
+Jahrhunderten als natürlich und notwendig betrachteten Ordnungszusam-
+menhang zwischen Werk und Welt in Frage zu stellen und kontingent zu
+setzen. Wie gesagt kann die autonome Kunst eine solche radikale Zurückwei-
+sung ihrer eigenen Tradition nur aus eigener Kraft und nur mit eigenen
+künstlerischen Mitteln durchsetzen. Es mußte also im Kunstsystem selbst
+eine Möglichkeit gefunden werden, den auch noch für die klassische Mo-
+derne konstitutiven Zusammenhang zwischen dem Kunstwerk und seiner
+weltmäßigen Auslegung, sprich zwischen Werk und Reflexion aufzulösen.
+Die verblüffende Strategie, welche die Avantgarde fand, bestand darin, Werke
+herzustellen, die im klassisch modernen Sinne keine sind, an denen sich
+eben keine Formenkombinationen wahrnehmen lassen, die sich wechselsei-
+tig einschränken und erläutern.12 Der kunstgeschichtliche Sinn der Objekt-
+kunst war, daß hier erstmals Gegenstände in die Kunstkommunikation tra-
+ten, deren Verständnis weder von einem Medium der Kunst noch über ein
+sich selbst verständlich machendes Werk gewährleistet wird, sondern daß
+diese Artefakte sich allein über die Reflexion zur Kunst erklärten. Die Kunst
+der Avantgarde ist sozusagen eine Kunst mit gekapptem medialem und
+ergonalem Moment, die sich allein auf ihre reflexive Komponente reduziert.13
+Indem sie eine polemische Negation des Werkcharakters impliziert, ist sie
+Objektkunst, insofern sie auf eine Reflexion des Konzepts angewiesen ist, das
+solche Objekte zur Kunst erklärt, wird sie zur Konzeptkunst. Objekt- und
+Konzeptkunst sind somit zwei Erscheinungsformen der historischen Avant-
+garde bzw. zwei Seiten ihrer theoretischen Beschreibung.
+Wie schon im Fall der klassischen Moderne, so wird auch die Avantgarde
+zur einschneidenden kunstgeschichtlichen Zäsur, weil sie eine Vielzahl von
+grundlegenden Begriffsverschiebungen auslöst. Zunächst einmal wird eine
+weitere Form der Negation im Kunstsystem verfügbar: die Negation des
+Kunstwerks. Über die Inklusion von Antiwerken erreicht die Avantgarde
+
+Avantgarde heute −Harry Lehmann
+19
+tionsreiche Thema der ›Europäischen Grippe‹ mit besonderem Blick auf Rumänien diskutierte und die
+entsprechenden Texte in einem Reader zusammenfaßte – den sich der Besucher dann durchlesen konnte.
+14
+Wie Arthur C. Danto seine These vom »Ende der Kunst« rückblickend interpretiert vgl. die instruktive
+»Einleitung« in ders., Kunst nach dem Ende der Kunst, München 1996, S.16-25. Zum »Ende der Kunstge-
+schichte« vgl. Hans Belting, Das Ende der Kunstgeschichte. Eine Revision nach zehn Jahren, München 1995,
+S.121ff.
+15
+Danto erweist sich an unserem Modell als der eigentliche Theoretiker der Avantgarde, da er wie kein
+schließlich auch eine Trennung von Werk und Reflexion, was zu einer weite-
+ren Entfaltung des Begriffs der Kunstautonomie führt. Das kann so weit
+gehen, daß es bis zum symbolischen – d. h. die Kunst symbolisierenden –
+Verzicht auf Kunst überhaupt kommt (man kann sich diesen Extremfall so
+veranschaulichen, daß der ganze ›Kreis der Kunst‹ leer bleibt und selbst noch
+das Reflexionssegment ausfällt [vgl. Theoriemodell]). Insgesamt erlangt die
+Kunst neben ihrer System- und ihrer Werkautonomie jetzt auch eine Refle-
+xionsautonomie, was in der Konzeptkunst nur besonders deutlich zum Aus-
+druck kommt.
+Damit hätten wir eine erste skizzenhafte Antwort auf unsere Frage, was
+historisch gesehen die Avantgarde einstmals war und woraus sie ihre Wir-
+kungsmacht ziehen konnte: Es handelt sich um einen weiteren Ausdifferen-
+zierungsschritt im Kunstsystem. Der ganze Ansatz, die Kunstgeschichte als
+Autonomisierungsgeschichte zu rekonstruieren, zielt darauf, sowohl das ver-
+meintliche ›Ende der Kunst‹ als auch das ›Ende der Kunstgeschichte‹ – in
+ihrer Wahrheit und in ihrem Schein – verständlich zu machen.14 Auch dieses
+Ende der Geschichtsschreibung ist von der Geschichte überholt worden, und
+doch ist nicht zu übersehen, daß mit der Avantgarde etwas in der Kunst zum
+Abschluß gekommen ist. Hier wäre unsere These, daß das geschichtsphilo-
+sophische Fortschrittsmodell, mit dessen Hilfe man knapp anderthalb Jahr-
+hunderte den Ausdifferenzierungsprozeß beschreiben und natürlich auch
+verklären konnte, Anfang der Siebziger Jahre (zunächst) an die Grenzen
+seiner Leistungsfähigkeit stieß. Wie wir gesehen haben, konnten sich die
+beiden großen Ausdifferenzierungsschübe nur durch zwei Fundamentalne-
+gationen im Kunstsystem vollziehen, die von ihrem Wesen her zwei extreme
+Abstraktionsschritte waren: Es entstand zuerst Kunst, die von ihrem Medien-
+charakter, und anschließend Kunst, die auch noch von ihrem Werkcharakter
+abstrahierte. Dies hatte zur Folge, daß man durch die Kunstgeschichte hin-
+durch eine gerade Linie fortschreitender Abstraktion legen konnte, wobei es
+sich genaugenommen immer um eine radikale Abstraktion von vertrauten
+Traditionsbeständen handelte. Es gehörte damit zum Wesen dieser Kunst,
+alle Erwartungen des Publikums zu enttäuschen, und in diesem Sinne folgte
+die Kunst von der klassischen Moderne bis zur Avantgarde der Parole Rim-
+bauds: »Man muß absolut modern sein.« Das anschließend von Danto zum
+zweiten Mal ausgerufene »Ende der Kunst« war diesmal ein Ende der Avant-
+garde.15
+
+20
+anderer das Reflexivwerden der Avantgarde-Kunst gesehen und beschrieben hat. Auf der einen Seite zieht
+er als erster aus der »Verklärung des Gewöhnlichen« zur Objektkunst den radikalen Schluß, daß zwei für
+die Wahrnehmung vollkommen identische Gegenstände einmal Kunst und einmal keine Kunst sein
+können, daß mithin das Kunstwerk kein Kriterium der Kunst abgibt. Man kann hier zu Recht von einer
+Auflösung der Werkkategorie sprechen. Auf der anderen Seite bedeutet dieser Ausfall der primären
+ästhetischen Erfahrung für die Kunst der Avantgarde, daß sie konzeptuell wird. Danto prägte hier das
+Wort von der »philosophischen Entmündigung der Kunst«, was soviel besagt, als daß in der Avantgarde
+allein die philosophische Reflexion ein Ereignis zur Kunst erklären kann und es nur noch von der Qualität
+dieser Erklärung abhängt, ob etwas als gelungene Kunst im Kunstsystem akzeptiert wird oder nicht.
+Eine unmittelbare Folge dieser Abstraktionsspirale ist, daß sich jenes Ideal
+des Neuen nur über einen kompromißlosen Materialfortschritt realisieren
+läßt. Dieser findet aber in bezug auf jede vorgegebene Gattung an irgend-
+einem Punkt sein Ende, wovon die ›letzten Bilder‹ ein anschauliches Zeugnis
+abgeben. Will man dieser Logik der historischen Avantgarde dennoch folgen,
+muß man sich auf die permanente Erschließung neuer Materialien speziali-
+sieren, d. h. auf die Inklusion neuer Realitätselemente in die Kunst, die aller
+Wahrscheinlichkeit nach aber nicht das Potential in sich bergen, ein ›neues
+Medium‹ der Kunst auszubilden – auch nicht durch fortgesetzten Gebrauch
+und lang andauernde kulturelle Prägungen. Die Alltagsgegenstände, die ins
+Museum gestellt werden, sind auf der Ebene der Erfahrung eben keineswegs
+lose miteinander gekoppelt (oder koppelbar), wie es Töne, Farben, geometri-
+sche Figuren, Silben oder Worte sind. Vielmehr muß das Defizit an natürli-
+chen Verweisungszusammenhängen in der ästhetischen Erfahrung durch
+intellektuelle Konzepte kompensiert werden, in denen reflexiv festgelegt
+wird, wie diese Kunst als Sinn- oder Unsinnszusammenhang wahrgenom-
+men werden soll. Honig, Fett und Filz bleiben Materialien und bilden für sich
+genommen noch kein Medium der Kunst; erst im Licht von Beuys’ Künstler-
+ästhetik und ihrer Auslegung durch die Kuratoren und Kritiker werden sie,
+erklärtermaßen, zur Kunst.
+VI. Postmoderne
+Die Erfahrungen mit der Postmoderne ließen es notwendig erscheinen, das
+ganze Fortschrittsmodell zu verabschieden, in dem man bislang Kunstge-
+schichte schrieb. Die durchgängige Tendenz, die man von der Mitte des
+19. Jahrhunderts an aus dem Innovationsstrom der Künste herausdestillieren
+konnte, waren Abstraktionsgewinne, welche die Kunst auf einen stetigen
+Materialfortschritt verpflichteten.
+Die postmoderne Kunst machte die Fortschreibung dieser Erzählung
+scheinbar unmöglich, da ihre historische Leistung in der Enttabuisierung der
+Tradition im Kunstsystem lag. Das Wiederverwenden des traditionellen For-
+menrepertoires – d. h. alter Kunststile unter dem Vorzeichen avancierter
+Kunst – unterminierte das alte, bis dahin gut funktionierende geschichtsphi-
+losophische Modell und legte aus Mangel an Beschreibungsalternativen zu-
+nächst einmal den Schluß vom Ende der Kunst nahe. Was aber zu Ende
+
+Avantgarde heute −Harry Lehmann
+21
+gegangen ist, war nicht die Kunst, sondern nur diese lineare Form der
+Geschichtsschreibung. Genaugenommen aber blieb selbst die Postmoderne
+noch jener Fortschrittslogik verhaftet – nur daß sie diese jetzt gegenläufig
+realisiert.
+Anfang der siebziger Jahre wurden diese Schwierigkeiten mit der Ge-
+schichtsphilosophie offensichtlich, so daß sich ein Generalverdacht gegen-
+über Theorien der Geschichte überhaupt durchsetzen konnte, was in der
+Rede vom »Ende der großen Erzählungen« seine wirkungsmächtige Meta-
+pher gefunden hat. Über diesen Totpunkt gelangte der philosophische Dis-
+kurs der Moderne bis heute nicht hinweg, was ein Indiz dafür ist, daß wir uns
+nach wie vor unterm Selbstverständigungshorizont der Postmoderne befin-
+den. Das hier projektierte Gedankenexperiment sucht entsprechend nach
+einer Möglichkeit, diese Horizontlinie zu überschreiten. Es gilt, die Ge-
+schichtsphilosophie nicht einfach zu verabschieden, sondern ihr traditionel-
+les Modell durch ein neues zu ersetzen. Das geschichtsphilosophische Mo-
+dell, das sich unmittelbar in der historischen Avantgarde und ihrem Ideal des
+Materialfortschritts legitimierte, war das Modell einer unendlichen Entgren-
+zung der Künste; das Gegenmodell, das eine Antwort auf die Frage nach der
+Avantgarde heute liefern könnte, wäre das einer endlichen Ausdifferenzierung
+der Kunst.
+Vergegenwärtigen wir uns noch einmal mit Hilfe der Medientheorie den
+Sinn jener Entgrenzungsmetapher. Medien werden von der Art und Anzahl
+ihrer Elemente und Relationen begrenzt. Man kann dann sagen, daß die
+historische Avantgarde eine Entgrenzungsstrategie verfolgt hat, weil sie die
+Menge der Medienelemente, sprich den Materialbestand der Kunst, ständig
+zu erweitern versucht. Bildete lange Zeit das tonale System mit seinen
+normalerweise aus sieben Tönen bestehenden Tonleitern die Grenzen der
+abendländischen Musik, so bedeutet die Verwendung aller zwölf Halbtöne in
+der freien atonalen Musik klarerweise eine Entgrenzung des Mediums ›Mu-
+sik‹. Sobald solche Erweiterungen mit nichtkoppelungsfähigem Material
+realisiert werden, also mit Elementen, zwischen denen sich keine losen
+Koppelungen mehr für den Rezipienten einstellen, kommt es zu einer kon-
+zeptuellen Erweiterung der Kunstmedien durch ihre Antimedien, etwa wenn
+in das Medium der Musik Geräusche oder Zufallsereignisse inkludiert wer-
+den. So definiert sich die historische Avantgarde nicht nur über die Herstel-
+lung von Antiwerken, sondern auch über die Erschließung und Einschlie-
+ßung von Antimedien ins Kunstsystem. Es ist nicht abzusehen, daß sich
+diese Option einer Innovation durch Materialerneuerung im Kunstsystem
+jemals erschöpfen könnte; in diesem Sinne handelt es sich tatsächlich um
+eine ›unendliche‹ Entgrenzung der Kunst – aber es ist fraglich, ob das auch in
+Zukunft noch das Kriterium für avancierte Kunst sein kann.
+Weder diese Möglichkeit der Kunst noch ihr prinzipieller Sinn soll hinter-
+
+22
+fragt oder gar bestritten werden, uns interessiert allein ihre kunstphilosophi-
+sche Interpretation. Aus Sicht der Avantgarde agiert die postmoderne Kunst,
+welche die alten ›verbrauchten‹ Medien wieder benutzt, reaktionär. Die Post-
+moderne hingegen kann im Unterschied zur Avantgarde ihre eigene Ge-
+schichtlichkeit überhaupt nicht mehr denken – deshalb ihre Verlegenheits-
+formel vom ›Ende der Kunst‹. Man könnte aber sagen, daß die Postmoderne
+ihr historisches Verdienst in einer Aufhebung des Tabus über den Medienge-
+brauch besitzt. Es kommt terminologisch gesprochen zur Negation der Nega-
+tion der alten Medien der Kunst (vgl. Theoriemodell). Wie gesagt erfolgte die
+paradigmatische Negation des Kunstmediums in der klassischen Moderne.
+Wenn man die anschließende Gegenbewegung durch die Postmoderne als
+reaktionären Rückschritt bagatellisiert und als einschneidende Zäsur der
+Kunstgeschichte nicht ernst nimmt, dann kann man diese erste Negation des
+Mediums als Entgrenzung der Künste begreifen. Wenn man aber die post-
+moderne Negation dieser Negation mitsieht, dann handelt es sich nicht um
+eine Entgrenzung, sondern um eine Ausdifferenzierung der Kunst: um die
+Einführung einer Differenz zwischen Medium und Werk, sprich eines neuen
+Freiheitsgrades ins Kommunikationssystem Kunst.
+Wichtig ist, daß diese Re-Inklusion des Mediums der Kunst während der
+Postmoderne unter einem Vorbehalt stand: Sie muß sich als genuin postmo-
+derne Kunst identifizieren lassen und sich entsprechend von der ›traditionel-
+len‹ Kunst, die mit und nicht gegen ihr Medium gearbeitet hatte, unterschei-
+den. Gefordert war also ein distanzierter und in diesem Sinne unernster,
+ironischer Mediengebrauch. Das probate Mittel hierfür war, daß man diesen
+Rückgriff auf die Tradition als solchen noch einmal markierte, sprich den
+Gebrauch der alten Kunstformen als Zitate kenntlich machte. Damit wurden
+vergangene Kunststile als Stile erkennbar, und da der zitierte Stil von seiner
+ehemaligen Funktion – ein Werk zu konstituieren – entbunden war, konnten
+auch viele Stile zugleich in das Werk einfließen. Der zitierte Stil ermöglichte
+insofern erst den Stil der ›Polystilistik‹, jenen ästhetischen Pluralismus, der
+für die Postmoderne zum eigentlichen Erkennungsmerkmal wurde. Auf
+diese distanzierte Weise der Traditionsaneignung gelang es der Postmo-
+derne, auch noch die historische Avantgarde zu überbieten und ›absolut
+modern‹ zu sein. Dies war ihre Option, mit der sie sich radikal von aller
+vorhandenen und als avanciert und modern geltenden Kunst absetzen
+konnte. Auch die Postmoderne fand also noch eine kunstgeschichtlich rele-
+vante Möglichkeit der Negation der Kunst im Kunstsystem – nur eben mit
+materialästhetisch umgekehrten Vorzeichen.
+Man könnte meinen, daß die Rehabilitierung des Mediums der Kunst
+automatisch das Kunstwerk rehabilitiert, aber dieser theoretisch nahelie-
+gende Schluß ist nur teilweise richtig. Zwar entstehen mit der Enttabuisie-
+rung des Kunstmediums wieder Artefakte, die sich nicht mehr als Antiwerke
+
+Avantgarde heute −Harry Lehmann
+23
+16
+»Ein offenes Kunstwerk stellt sich der Aufgabe, uns ein Bild von der Diskontinuität zu geben: es erzählt sie
+nicht, sondern ist sie.« (Umberto Eco, Das offene Kunstwerk, Frankfurt a. M. 1977, S.164 f.) Dieser Werkbe-
+griff geht in die Selbstbeschreibung der Postmoderne ein, obwohl Eco ihn anhand der Literatur der
+Klassischen Moderne entwickelt hat, wo ›Offenheit‹ ein Oberflächenphänomen ist, die Werke aber auf
+Selbstorganisation und entsprechend auch auf ›Selbstschließung‹ ihres Sinnzusammenhangs hin ange-
+legt sind.
+17
+Die Rolle der Ironie als wesentliches Unterscheidungsmerkmal der Postmoderne betont zum Beispiel
+Heinrich Klotz, Kunst im 20.Jahrhundert (Anm.3), S.128, wenn er sagt: »Die Strategien von Moores und
+Venturis zielen also darauf, durch ironische Brechung der historisierenden Form auch deshalb eine
+weitreichende Wirkung zu verschaffen, weil gleichzeitig ein fundamentales Gattungsmerkmal zerbro-
+chen ist: der ›Ernst der Architektur‹.«
+18
+Zum Begriff der Doppelcodierung vgl. Leslie A. Fiedler, Überquert die Grenze, schließt den Graben! Über die
+Postmoderne, in: Wolfgang Welsch (Hg.), Wege aus der Moderne. Schlüsseltexte der Postmoderne-Diskussion,
+Weinheim 1988, S.57-74.
+präsentieren, aber der Werkcharakter der postmodernen Kunst ist von beson-
+derer Art: Es sind die offenen und nicht die sich schließenden Kunstwerke,
+für die sich eine klare Präferenz im Kunstsystem ausbildet.16 Das offene
+Kunstwerk ist die logische Folge der besonderen ironischen und spieleri-
+schen Wiederaneignung alter Medien mit ihren Gattungen und Stilen, wel-
+che die Kunst in der Postmoderne erfahren hat.17 Eine polystilistische Kom-
+position erschließt sich dem Hörer eben nicht in derselben Weise von selbst,
+wie ein klassisches oder klassisch modernes Konzert mit seiner vorprogram-
+mierten bzw. sich selbst programmierenden Organisationsstruktur. Sie lebt
+vom Stilbruch, der durch das Metakonzept der postmodernen Kunst für den
+Beobachter erst erwartbar gemacht wird. Mit der Rehabilitierung der alten
+Medien verändern sich gleichzeitig die Rezeptionsbedingungen der neuesten
+Kunst: Sie wird für den Laien wieder ästhetisch erfahrbar und verständlich.
+Für den Kenner hingegen spielt sie mit der Tradition, macht deren Versatz-
+stücke als Zitate kenntlich, sie entzaubert etwa ein figuratives Gemälde mit
+einer ironischen Bildunterschrift oder – unübertrefflich – stellt das ganze
+Bild auf den Kopf. In dieser doppelten Lesbarkeit der Kunstwerke gründet
+dann auch die schon frühzeitig erkannte »Doppelcodierung« der postmoder-
+nen Kunst.18
+Die Negation ihres Mediums durch die Kunst der klassischen Moderne
+war nicht bloß eine Eigenheit der Kunstgeschichte, die von der Postmoderne
+wieder zurückgenommen werden konnte, sondern diese doppelte Negation
+war der Münchhausentrick eines autonomen, von außen nicht mehr dirigier-
+baren Kommunikationssystems, sich mit Hilfe eigener Werke aus dem
+Sumpf seiner Tradition herauszuziehen. Sie diente im historischen Rück-
+blick der Freisetzung des noch reflexiv gebundenen Kunstwerks vom Me-
+dium der Kunst. Es wurde die Möglichkeit aufgezeigt, daß Kunstwerke auch
+ohne feste Verankerung in einem je spezifischen Medium der Künste existie-
+ren, erfahren und interpretiert werden können. Wenn diese Negation in der
+Postmoderne erneut negiert wird, sind genau drei Interpretationen dieses
+Vorgangs denkbar: Erstens kann man aus dem Selbstverständnis der ästheti-
+
+24
+schen Moderne und ihres Entgrenzungsmodells (d. h. der klassischen und
+der avantgardistischen Moderne) diesen erneuten Zugriff der Kunst auf ihr
+Medium, der ja immer auch ein Rückgriff auf das traditionelle Formenreper-
+toire ist, als konservativen Rückfall hinter den Stand der Kunstgeschichte
+betrachten. Zweitens kann man aus dem Blickwinkel der Postmoderne die-
+sen Zug als eine erfolgreiche Neutralisierung jener ersten Negation auffas-
+sen, so als ob die klassische Moderne derart bloß ihre eigene stilistische Spur
+in der Kunstgeschichte hinterlassen hat – ein skandalträchtiger Zug, der aber
+für die Gegenwartskunst irrelevant geworden sei. Drittens, und dies wäre
+unsere These, kann man diese zweifache Negation als einen immanenten
+Ausdifferenzierungsmechanismus begreifen, bei dem die erste Negation der
+Auflösung der historisch tradierten festen Verankerung von Werk und Me-
+dium diente, die zweite Negation aber die damit verbundene Behauptung
+zurücknimmt, daß Kunst prinzipiell ihr Medium negieren müsse, um als
+modern gelten zu können. Man gewinnt damit ein Erklärungsmodell, das
+weder postmodernistisch den geschichtlichen Sinn der ersten Negation be-
+streitet noch modernistisch die zweite Negation zurückweist, sondern in
+diesem seltsamen Doppelschritt: Ein-Schritt-vor, Ein-Schritt-zurück einen
+Ausdifferenzierungsprozeß sieht. Der historische Sinn liegt in der Entkoppe-
+lung von Werk und Medium, im Gewinn eines neuen Freiheitsgrades im
+Kunstsystem, der eben darin besteht, daß diese Verbindung für die Kunst
+weder notwendig (wie in der Neuzeit) noch unmöglich (wie in der ästhetischen
+Moderne), sondern kontingent, d. h. frei wählbar und in diesem Sinne mög-
+lich ist – für eine Kunst im Zeitalter der reflexiven Moderne.
+VII. Reflexive Moderne
+Mit dieser Wiederbeschreibung der Postmoderne berühren wir den Gegen-
+wartshorizont der zeitgenössischen Kunst. Alle weiteren Thesen weisen über
+ihn hinaus, d. h., das hier entwickelte deskriptive Modell der modernen
+Kunstgeschichte wird normativ. Dies gilt insbesondere für die Behauptung,
+daß die postmoderne Kunst, welche sich selbst als Telos und Ende der
+Kunstgeschichte versteht, durch einen weiteren Ausdifferenzierungsschritt
+überwunden werden kann.
+Es ist eine immanente Möglichkeit des ganzen Denkmodells, daß es in
+Analogie zur postmodernen Re-Inklusion des Mediums der Kunst auch noch
+zu einer Re-Inklusion des Kunstwerks ins Kunstsystem kommen kann. Die
+Negation des Kunstwerks durch die Avantgarde würde durch eine erneute
+Negation dieser Negation aufgehoben (vgl. Theoriemodell). Nachdem durch
+die Avantgarde die Kunstreflexion autonom gesetzt wurde und mit der Post-
+moderne auch das Medium der Kunst seine Autonomie erlangte, würde
+zuletzt auch noch das Kunstwerk aus allen apriorischen Verankerungen in
+der medialen und reflexiven Komponente der Kunst herausgelöst und könnte
+
+Avantgarde heute −Harry Lehmann
+25
+19
+Daß Kunstwerke als »Formenkombination« zu begreifen seien, sagt Luhmann in Die Kunst der Gesellschaft
+(Anm.4), S.271, 349 u. 351 – allerdings ohne diesen Gedanken einerseits zu konkretisieren, sprich zu
+zeigen, wie sich die Formen in einem Kunstwerk ›kombinieren‹, und andererseits den normativen Status
+dieser Aussage zu reflektieren. Zu beiden Punkten vgl. Harry Lehmann, Die flüchtige Wahrheit der Kunst.
+Ästhetik nach Luhmann, München 2006, insb. S.29-50.
+20 Ulrich Beck, Das Zeitalter der Nebenfolgen und die Politisierung der Moderne, in: Ulrich Beck/Anthony
+Giddens/Scott Lash: Reflexive Modernisierung. Eine Kontroverse, Frankfurt a. M. 1996, S. 27.
+21
+Vgl. hierzu Claus-Steffen Mahnkopf, Neue Musik am Beginn der Zweiten Moderne, in: Postmoderne. Eine
+Bilanz, Sonderheft Merkur 9/10 1998, S.864-875; ders., Thesen zur Zweiten Moderne, in: Musik & Ästhetik
+36 (2005), S.81-91; Ulrich Schwarz (Hg.), Neue Deutsche Architektur. Eine Reflexive Moderne, Ostfildern-Ruit
+2002; Heinrich Klotz, »3.Teil: Zweite Moderne«, in: ders.: Kunst im 20. Jahrhundert (Anm. 3), S.153-191;
+ders. (Hg.), Zweite Moderne, München 1996.
+22
+Scott Lash, Reflexivität und ihre Doppelungen. Struktur, Ästhetik und Gemeinschaft, in: Beck u. a., Reflexive
+Modernisierung (Anm.20), S.200.
+erstmals als autonomes (d. h. restlos entkoppeltes) Kunstwerk erfolgreich im
+Kunstsystem kommuniziert werden. Das heißt, der innovative Zug, mit dem
+man über das Kunstverständnis der Postmoderne hinausgelangen könnte,
+bestünde in einer im Kunstsystem offen ausgetragenen Rehabilitierung des
+Kunstwerks als einer autonomen, sich selbst organisierenden »Formenkom-
+bination«.19 Die Kunstwerke, die hierbei entstehen, hätten einen höheren
+Grad an Verbindlichkeit als die offenen, ambivalenten, sich selbst dekonstru-
+ierenden Werke der Postmoderne, da sie ihr Medium nicht länger ironisch
+gebrochen, sondern wieder funktional benutzen. Dieser letzte Schritt inner-
+halb dieses Ausdifferenzierungsprozesses wäre aber gleichzeitig ein Schritt
+aus ihm heraus: Man verläßt die Postmoderne und käme in eine reflexive
+Phase der ästhetischen Moderne oder kurz: in die Reflexive Moderne.
+Der Begriff der Reflexiven Moderne stammt aus einem gesellschaftstheo-
+retischen Diskursfeld: »›Reflexive Modernisierung‹ soll heißen: Selbsttrans-
+formation der Industriegesellschaft . . . also Auf- und Ablösung der ersten
+durch eine zweite Moderne, deren Konturen und Prinzipien es zu entdecken
+und zu gestalten gilt.« 20 Das hier entwickelte Theoriemodell stellt den Ver-
+such dar, diesen Epochenbegriff für die Kunst der Moderne zu explizieren;
+insbesondere in der Neuen Musik und in der Architektur dringt der Begriff
+bereits diffus in die Selbstbeschreibungsmuster ein.21 Hier wie dort, in der
+Gesellschaftsgeschichte wie in der Kunstgeschichte, geht es um »ein dreistu-
+figes Modell des sozialen Wandels – von der Tradition über die (einfache)
+Moderne zur reflexiven Moderne« 22 (vgl. Theoriemodell). Die entscheidende
+Parallele stellt sich dabei über jene Fortschrittslogik her, von welcher Kunst
+und Gesellschaft in der Industriemoderne gleichermaßen codiert wurden.
+Diese Logik, welche von den Idealen des wissenschaftlich-technischen Fort-
+schritts, des Wirtschaftswachstums oder auch des prosperierenden Wohl-
+fahrtsstaates definiert war, verinnerlichte die (erste) ästhetische Moderne zur
+gleichen Zeit in ihrer Orientierung am Materialfortschritt der Kunst. Wenn
+es nun heißt: »Im Zuge reflexiver Modernisierung entstehen eine neue Art
+von Kapitalismus, eine neue Art von Arbeit, eine neue Art globaler Ordnung,
+
+26
+23
+Ulrich Beck/Wolfgang Bonß/Christoph Lau, Theorie reflexiver Modernisierung – Fragestellungen, Hypothe-
+sen, Forschungsprogramme, in: Ulrich Beck/Wolfgang Bonß (Hg.) Modernisierung der Moderne, Frankfurt
+a.M. 2001, S.13.
+eine neue Art von Gesellschaft . . .« 23 – dann lautet unsere Anschlußthese: Es
+entsteht auch eine neue Art von Kunst.
+Daß es sich bei der Reflexiven Moderne nicht nur um eine gesellschaftsge-
+schichtliche, sondern tatsächlich auch um eine einschneidende kunstge-
+schichtliche Zäsur handelt, läßt sich in bezug auf das vorliegende Modell
+relativ einfach erläutern: Die Überbietungslogik der ästhetischen Moderne
+hat sich erschöpft, nachdem sie ihre beiden großen Abstraktionen von Me-
+dium und Werk wieder zurückgenommen hat. Man ist in den je einzelnen
+Künsten die Leiter des Materialfortschritts bis zur letzten Sprosse hinauf und
+bis zur untersten Sprosse wieder hinabgestiegen – und sowohl die Aufwärts-
+als auch die Abwärtsbewegung folgten der Devise der Avantgarde, allen
+anderen Bewegungen im je historischen Augenblick absolut voraus zu sein.
+Weitaus schwieriger ist es, diesem neuen Epochenbegriff für die Kunst eine
+positive Bedeutung zu geben. Von einer Reflexiven Moderne kann man hier
+vor allem deswegen sprechen, weil sich die Folgeprobleme jener erfolgrei-
+chen Ausdifferenzierung nur mit den Mitteln einer forcierten Reflexivität im
+Kunstsystem abfangen lassen.
+Wichtig ist es bei dem ganzen hier entwickelten Modell, sich den Status der
+Argumente zu vergegenwärtigen. Zweifellos gab und gibt es immer genü-
+gend Künstler (wahrscheinlich stellen sie sogar die zahlenmäßig größte
+Gruppe), welche die Werkkategorie in ihrer Kunst nie preisgaben und ganz
+traditionalistisch weiterhin Bilder malten, Gedichte verfaßten oder Klavier-
+konzerte komponierten. Dennoch haben sie im letzten Jahrhundert keine
+Kunstgeschichte geschrieben, und erst recht sollen sie jetzt nicht als die
+eigentliche, zu Unrecht vergessene Avantgarde rehabilitiert werden. Über-
+haupt koexistieren im Kunstsystem seit langem alle nur denkbaren Kunstfor-
+men synchron nebeneinander – sie wurden und werden aber nicht in glei-
+cher Weise präferiert. Unser Rekonstruktionsmodell bietet eine Erklärung
+für diese Merkwürdigkeit an: Künstler wie Schönberg, Picasso und Joyce;
+Cage and Warhol; Schnittke, Baselitz und Charles Moore hatten nicht bloß
+eine neue Stilrichtung geschaffen, sondern ihre Innovationen waren derart
+an der Zeit, daß sie den größtmöglichen Zugewinn an immanenter Freiheit
+und Autonomie im Kunstsystem ermöglichten; deswegen sind sie allen
+traditionell weiterarbeitenden Künstlern so unendlich überlegen gewesen,
+wie es der etablierte Kanon besagt. Insofern markieren sie mit ihren Werken
+auch zu Recht die einschneidenden Zäsuren der Kunstgeschichte. Sie konn-
+ten Geschichte schreiben, weil sie die Ausdifferenzierung des Kunstsystems
+– wie dies im jeweils historischen Moment überhaupt nur möglich war –
+vorantrieben.
+
+Avantgarde heute −Harry Lehmann
+27
+Dieser Ausdifferenzierungsprozeß vollzog sich bislang in drei Schritten, in
+der Klassischen Moderne durch eine Exklusion des Mediums, in der histori-
+schen Avantgarde durch eine zusätzliche Exklusion des Kunstwerks, in der
+Postmoderne durch eine Re-Inklusion der tabuisierten Medien und – so läßt
+sich diese historische Reihe weiterführen – durch eine hier und jetzt möglich
+gewordene Re-Inklusion des systematisch exkludierten Kunstwerks ins Sy-
+stem der Kunst. Erst jetzt, als größtmöglicher Distanzgewinn gegenüber der
+alternden Postmoderne, gewänne das werkbezogene Arbeiten in der Kunst
+wieder einen zusätzlichen systemlogischen Sinn. Dabei kann man davon
+ausgehen, daß die entsprechenden Werke längst vorliegen, aber in dieser
+kunstsoziologischen Dimension weder wahrgenommen noch kommuniziert
+werden und deshalb auch das dominante postmoderne Selbstverständnis des
+Kunstsystems kaum in Frage stellen. Wenn die hier entwickelte Theorie die
+Geschichte der Kunst wirklichkeitsnah zu fassen bekommt, dann ist genau
+diese Rückorientierung auf das Kunstwerk ein wahrscheinlicher Zug, weil er
+noch einmal dem Gebot der ästhetischen Moderne folgt: die jeweils vorherr-
+schende Gegenwartskunst zu überbieten. Der heimliche Bezugspunkt dieses
+Modernitätskonzepts war allerdings stets das Kunstsystem; relativ zur sy-
+stemimmanenten Kunstkommunikation kam es stets darauf an, sich mög-
+lichst radikal von den bereits im System etablierten Erwartungsstrukturen
+abzusetzen. Der größtmögliche Skandal bestand immer darin, eine spezifi-
+sche Negation des Systems ins Kunstsystem einzuführen, und genau das
+wurde letztendlich als Fortschritt, auf den es in der Kunstgeschichte an-
+kommt, honoriert.
+So lautet die erste Antwort auf unsere Leitfrage nach der Avantgarde heute:
+Avantgarde ist im gegenwärtigen historischen Moment eine sich auf die alten
+Medien zurückbesinnende, werkzentrierte Kunst – wenn dies im Kunstsy-
+stem als Schritt in die Reflexive Moderne erkannt, interpretiert und kommu-
+niziert wird und nicht geradewegs in ein vormodernes Selbstverständnis der
+Kunst führt.
+Die werkorientierte Kunst erlaubt es den Künstlern noch einmal, im Kunst-
+system maximal auf Distanz zum Kunstsystem zu gehen, wobei diese Option
+erst jetzt – als explizites Gegenprogramm zum postmodernen Systemzu-
+stand der Gegenwartskunst – erfolgversprechend wird. Das autonome Kunst-
+werk kommt, nachdem es in der Avantgarde und der Postmoderne mit einer
+deutlichen Dispräferenz belegt war, nun in die Lage, als Selektionskriterium
+für gelungene Kunst in deren Sozialsystem zu arbeiten und nicht bloß als
+Bagatellereignis auf den Reflexionsschirmen des Kunstsystems folgenlos
+aufzublitzen, so wie in den letzten Jahren immer wieder einmal eine Renais-
+sance der Malerei ausgerufen wurde, die dann doch nicht stattgefunden hat.
+Die Ratlosigkeit über das Ende der Kunst und die Beliebigkeit ihres derzeiti-
+gen Fortbestehens muß groß genug sein, damit sich im Kunstsystem die
+
+28
+24 Das Paradebeispiel für eine solche systemrelevante Werkorientierung ist die derzeitige Rehabilitierung
+der figurativen Malerei in der bildenden Kunst durch die Leipziger Schule. Lange Zeit war das Tafelbild als
+altes Medium der Kunst von den Neuen Medien wie Fotografie und Video- und Installationskunst fast
+vollständig aus der aktuellen Kunstszene verdrängt worden. Wenn überhaupt, dann konnte sich die
+Malerei nur in einem derart kanonischen Stil der Moderne wie dem Expressionismus behaupten, dem die
+Modernität wie ein Markenzeichen eingeschrieben war. Die Wiederkehr der gegenständlichen, zum
+Realismus tendierenden Malerei heute – ohne alle Brechung und Ironie – markiert einen wirklichen
+Bruch. Allein daß sich dieser ›Stilbruch‹ mit der ästhetischen Moderne unter der Losung einer ›Schule‹
+vollzieht, weist darauf hin, daß hier noch einmal die Überbietungslogik der historischen Avantgarde ins
+Spiel kommt. Daß diese Entwicklung in Leipzig ihren Ausgangspunkt nahm, hat zum einen den Grund,
+daß hier das Handwerk der Malerei im Schatten des sozialistischen Realismus überlebt hatte, zum
+anderen, daß sich im Osten – abgeschnitten von der Materiallogik des westlichen Kunstsystems – ein
+ursprüngliches Realitätsinteresse in der Kunst erhalten hatte. Beide Momente zusammengenommen,
+Metier und Realitätssinn, bilden den evolutionären Attraktor für eine Renaissance der gegenständlichen
+Malerei in der bildenden Kunst.
+25
+Vgl. Luhmann, Die Kunst der Gesellschaft (Anm.4), S.272.
+Einsicht durchsetzen kann, daß die Wahl eines alten Mediums und die
+Rückbesinnung auf handwerkliche Perfektion, welche eine Werkorientie-
+rung in der Kunst automatisch mit sich bringt, nicht notwendigerweise ein
+Zeichen von Naivität und mangelnder Reflektiertheit der Künstler ist, son-
+dern ihre Antwort auf ebendiese problematische Situation.24
+VIII. Gehaltsästhetische Wende
+Man kann die Kunst in ihrer Konstitutionsphase, in der Medium, Werk und
+Reflexion fest gekoppelte Momente der Kunstkommunikation waren, allge-
+mein als eine repräsentationale Kunst beschreiben. Wegen dieser apriori-
+schen Verwiesenheit des Kunstwerks auf sein Medium konnten die Bilder,
+Musikstücke oder Gedichte immer als etwas Bedeutsames erfahren werden,
+und insofern diese wahrnehmbare Sinneinheit ganz selbstverständlich in
+einem vorgegebenen Verständigungshorizont eingebettet war, reflektierten
+diese Werke ›von sich aus‹, was sie in bezug auf die Welt darstellten. Die
+Kunstwerke der Neuzeit funktionierten mithin als Zeichen und besaßen eine
+inhaltsästhetische Orientierung.25
+Diese repräsentationale Funktion verliert die Kunst in ihrer Ausdifferen-
+zierungsphase, zumindest die avancierten Strömungen besitzen für das irri-
+tierte Publikum keinen Repräsentationscharakter mehr, sondern ihre Wir-
+kung ist tendenziell eine Apräsentation von Welt im Werk: Die Welt wird in
+der einen oder anderen Weise in ihrer Undarstellbarkeit gezeigt, und die
+Kunstwerke verwandeln sich entsprechend in referenzlose Zeichen. Am
+plausibelsten kommt dies zum Ausdruck in der Tendenz zur Abstraktion –
+von Realität.
+Die Erklärung für diesen gravierenden Unterschied wäre dann, daß die
+Kunst der Neuzeit, gerade weil sie als gebundene Kommunikation der media-
+len, ergonalen und reflexiven Momente von Kunst stattgefunden hat, reprä-
+sentational funktionieren konnte. Im Gegensatz dazu war die Kunst der
+ästhetischen Moderne viel weniger weltorientiert, da sie primär von einer
+
+Avantgarde heute −Harry Lehmann
+29
+26 Zu nennen wären hier vor allem Niklas Luhmann, der den Sinn der zeitgenössischen Kunst in einer
+»Beobachtung der unbeobachtbaren Welt« sieht (Die Kunst der Gesellschaft, a. a. O., S. 288), und die
+Negativitätsästhetik von Christoph Menke, dessen zentrale These es ist, »daß die ästhetische Erfahrung
+nicht als gelingendes Verstehen beschrieben werden kann« (Die Souveränität der Kunst. Ästhetische
+Erfahrung nach Adorno und Derrida, Frankfurt a.M. 19912, S.129). Im einen wie im anderen Fall wird der
+Weltbezug der Kunst gekappt. Der Kunst wird in beiden Fällen ein apräsentationales Weltverhältnis
+zugeschrieben: als paradoxe Beobachtung und als radikal negative ästhetische Erfahrung.
+27
+Am deutlichsten zeichnet sich eine solche gehaltsästhetische Wende in der zeitgenössischen Architektur
+ab, die sich bereits selbst als eine ›Reflexive Moderne‹ beschreibt. So sagt Ulrich Schwarz anläßlich der
+2002 in Berlin gezeigten Ausstellung Neue Deutsche Architektur. Eine Reflexive Moderne, es sei »heute
+definitiv nicht mehr möglich, allein an der Form, am Stil eines Gebäudes festzumachen, ob es nun
+›fortschrittlich‹ oder ›rückschrittlich‹ sei. Die Modernität von Architektur läßt sich gegenwärtig überhaupt
+nicht mehr stilistisch, formal oder innerarchitektonisch bestimmen. Architektur kann und muß heute in
+einem gesellschaftlichen Sinne modern sein – oder sie ist es nicht«. (Ulrich Schwarz, Neue Deutsche
+Architektur – Eine Ausstellung, in: Neue Deutsche Architektur [Anm. 21], S.16)
+systemimmanenten Logik der Ausdifferenzierung bestimmt wurde. Eine
+solche Fokussierung auf die eigenen Autonomiegewinne führte zu einem
+nicht repräsentationalen Selbstverständnis der Kunst, was wiederum die
+entscheidende Voraussetzung dafür war, daß gerade jene ästhetischen Inno-
+vationen in den Kanon der modernen Kunstgeschichte aufgenommen wur-
+den, welche dieses Bilderverbot am kreativsten und radikalsten durchgesetzt
+haben. Nur leitet sich dieses Gebot aus keiner Idee der Kunst ab, die in der
+Geschichte zur Entfaltung kommt, sondern es verdankte sich dem Maschi-
+nengeist eines Sozialsystems, das einen Bonus auf immanente Autonomie-
+gewinne verteilte. Wenn Kunsttheorien heutzutage einen antihermeneuti-
+schen Impetus aufweisen, dann denken sie die immanente Logik der histori-
+schen Avantgarde konsequent zu Ende – nicht aber über sie hinaus.26
+Die Frage ist nun, was passiert, wenn die großen Freiheitsspielräume im
+Kunstsystem erschlossen sind, welche sich durch die Entkoppelung von
+Werk, Medium und Reflexion in den einzelnen Gattungen früher oder später
+freisetzen lassen. Zum einen kommt es wie gesagt zu einer verstärkten
+Hinwendung zu den neuen und multiplen Medien, wodurch sich die
+heroischen Zeiten der Avantgarde aber nicht fortsetzen, sondern nur nach-
+ahmen lassen. Sobald diese Erfolgsstrategie durch Gewöhnung vertraut wird,
+dürfte es wahrscheinlich werden, daß es in der Selbstbeschreibung der
+einzelnen Kunstszenen zu einer expliziten Rehabilitierung des Kunstwerks
+und seiner alten Medien kommt, welche die in der ästhetischen Moderne
+vorherrschende Überbietungslogik im Material selbst noch ein letztes Mal
+auszunutzen versteht – und insofern immer noch dem alten Geist der histori-
+schen Avantgarde treu ergeben bleibt. Zum anderen wird in dieser Situation
+ein Paradigmenwechsel wahrscheinlich, den man als eine gehaltsästhetische
+Wende bezeichnen kann.27
+Die Hinwendung zum Gehalt impliziert eine Abwendung vom Material.
+Solange die ›Materialorientierung‹ in der Kunst etwas Selbstverständliches
+ist, mag die Materialmetapher für sich genügend Plausibilität besitzen, so-
+bald diese brüchig wird, entstehen Nachfragen, die nach einer expliziteren
+
+30
+Begriffsbestimmung verlangen. Was also ist unter einem ästhetischen Mate-
+rial zu verstehen? Wie, wann und weshalb kam es zu einer solchen Orientie-
+rung der modernen Kunst? Wiederum vermag die systemtheoretische Me-
+dientheorie diese Erklärungslücke ein Stück weit zu schließen.
+Es war jene gegen fünf Jahrhunderte Kunstgeschichte gerichtete Suspen-
+dierung der Kunstmedien, die in der Klassischen Moderne jene ›Materiallo-
+gik‹ freisetzte, welche die gesamte ästhetische Moderne bis heute in ihrem
+Selbstverständnis bestimmt. Die systematische Auflösung der losen, medien-
+konstitutiven Koppelungen verwandelt die bis dahin in einen Relationszu-
+sammenhang eingebundenen Elemente der Kunst in ein unverbundenes
+ästhetisches Material: in Tonhöhen, Tondauern, Farben, Linien, Silben, Worte
+und Sätze – für die man zunächst ein andere neue Form der Zusammen-
+hangbildung fand. Man suchte nach basalen Relationen zwischen den Ele-
+menten der Malerei, der Musik oder Sprache, die nicht schon kulturell
+präformiert und mit einem historischen Bedeutungsgehalt aufgeladen wa-
+ren. Nach dem Vorbild der Naturwissenschaften und von ihren Erkenntnis-
+fortschritten inspiriert unternahmen die avancierten Künstler Materialexpe-
+rimente, um das Wesen ihrer Kunst von ihrer materialen Seite her zu klären.
+Der Pointillismus baute z. B. seine Bilder aus ungemischten Farbpunkten
+auf, um so den Wahrnehmungsprozeß so ›naturgetreu‹ wie möglich nachzu-
+ahmen. Der Kubismus nutzte die gestaltpsychologischen Gesetzmäßigkeiten
+aus, nach denen eine Figur ›im Auge des Betrachters‹ entsteht. Generell
+könnte man sagen, daß in der Klassischen Moderne ein ganz spezifischer
+Typus von Kunstwerken aufkam, in welchen der Wegfall der traditionellen
+Darstellungssysteme durch die ›natürlichen Systeme‹ der menschlichen
+Wahrnehmungsorganisation kompensiert wurde.
+Die Kosten für eine solche amediale Kunst sind allerdings hoch, man kann
+in dieser hochgradig angespannten Formensprache kaum noch großforma-
+tige Werke herstellen, wie das Beispiel der freien atonalen Musik vielleicht
+am deutlichsten gezeigt hat; und auch der Kubismus hat sich in seinen
+Motiven und Themen sehr schnell erschöpft. Die reinen Selbstorganisations-
+kräfte der menschlichen Wahrnehmung sind zu schwach, um im einen wie
+im anderen Fall noch weitreichende kompositorische Entscheidungen treffen
+zu können – genau aus diesem ›Grund‹ kam es ja während der Neuzeit zur
+Evolution der alten Medien der Kunst. Es sind Medien, in denen eine ästheti-
+sche Erfahrung wahrscheinlich wird. Entsprechend suchte man zum Beispiel
+in der Musik der freien Atonalität auf der einen Seite die Anlehnung an den
+Text bzw. schrieb wie Webern Miniaturen; und man überwand auf der ande-
+ren Seite diese Phase relativ schnell, indem man Halt in einem rationalen
+technischen Bezugssystem suchte: in der Zwölftontechnik. Damit hatte die
+Neue Musik den Übergang zur Avantgarde vollzogen, wo die Organisation
+des ästhetischen Materials durch ein abstraktes – und nicht mehr in der
+
+Avantgarde heute −Harry Lehmann
+31
+28 Daß die Avantgarde in der Neuen Musik sich kaum noch ästhetisch erfahren, sondern höchstens noch
+empfinden läßt, hatte bereits Adorno ›gehört‹, wenn er in bezug auf Cage, Stockhausen und Boulez sagt:
+»Meine produktive Einbildungskraft vollzieht sie [diese Werke] nicht ebenso mit; ich vermöchte sie nicht
+hörend mitzukomponieren wie noch das Streichtrio von Webern, gewiß kein gar zu simples Stück«
+(Theodor W. Adorno, Vers une musique informelle, in: Musikalische Schriften I-III [= Gesammelte Schriften,
+Bd.16], Frankfurt a.M. 1997, S.494).
+29 Das heißt für die Bestimmung der gesellschaftlichen Funktion der Kunst, daß sie sich, durch die
+ästhetische Erfahrung hindurch, in einer »Provokation neuer Selbstbeschreibungen der Gesellschaft«
+erfüllt. (Vgl. »Die gesellschaftliche Funktion der Kunst«, in: Lehmann, Die flüchtige Wahrheit der Kunst
+[Anm.19], S.81-85)
+30
+Zur Rückprojektion dieser Funktionsbestimmung in die Kunstgeschichte vgl. a. a. O., S.120-122.
+31
+Zur politischen Utopie von Pop Art und Minimalismus, die ein ›Paradies jetzt‹ forderten, vgl. Danto,
+Kunst nach dem Ende der Kunst (Anm.14), S.15.
+menschlichen Wahrnehmung basiertes – System der Materialorganisation
+gewährleistet wird.
+Hatte die traditionelle Kunst die Grundprinzipien der ästhetischen Erfah-
+rung extrapoliert und zur Bildung der alten Medien der Kunst ausgenutzt, so
+abstrahiert die Avantgarde bewußt von ihnen und wird konzeptionell.28 Die
+Avantgarde untersucht das Material der einzelnen Künste unter den Laborbe-
+dingungen einer anästhetischen Theorie, welche auf die ein oder andere
+Weise den Kunstbegriff mitreflektiert und neu bestimmt. Und wenn man
+schließlich in der Postmoderne beginnt, die alten Darstellungssysteme wie-
+der zu zitieren, dann verwendet man die alten Medien nicht etwa wie ehedem
+als Medien der Formerfindung, sondern man benutzt sie als ein von der
+Kunstgeschichte vorgefertigtes Spielmaterial. In diesem medientheoreti-
+schen Sinne kann man also davon sprechen, daß die gesamte ästhetische
+Moderne – in je anderer Weise – einer Materiallogik folgte.
+In dem Moment nun, wo die interne Ausdifferenzierung des Kunstsy-
+stems sich vollendet hat und die Materialorientierung der ästhetischen Mo-
+derne einen strukturellen Plausibilitätsverlust erleidet, wird eine ästhetische
+Kommunikation wahrscheinlich, welche die Welt weder repräsentiert noch
+apräsentiert, sondern in der die Kunst die Welt, wie sie geworden ist, präsent
+werden läßt.29
+Auf der einen Seite kann man diese Funktion der Kunst dann in die
+Kunstgeschichte zurückprojizieren, insofern man die innovativsten Stilerfin-
+dungen der Neuzeit nicht nur als bloße Repräsentationsleistungen begreift,
+sondern als eben solche Vorwegnahmen einer neuen Sichtweise auf die sich
+wandelnde Welt.30 Und selbstverständlich lassen sich auch die großen mate-
+rialorientierten Stilbrüche der ästhetischen Moderne in dieser Weise ›ge-
+haltsästhetisch‹ interpretieren. Vor allem die Avantgarde hat ihre ästhetische
+Revolution immer auch als Weltrevolution verstanden.31 Aber nicht wegen
+seiner Sozialromantik hat Beuys Kunstgeschichte geschrieben, sondern weil
+er im rechten Moment einen im Kunstsystem eingefrorenen Freiheitsgrad
+entdeckt hatte; und diese anarchistische Freiheit in der Kunst paßte dann zur
+anarchischen Umbruchstimmung in den sechziger Jahren. Jene sprichwört-
+
+32
+liche »Versöhnung von Kunst und Leben« avancierte nicht deshalb zur Leit-
+idee der Avantgarde, weil sie von ihr mehr als zu anderen Zeiten verwirklicht
+wurde, sondern es war ein Ideal, das seine Überzeugungskraft aus der
+Tatsache gewann, daß die Kunst der Avantgarde als Reflexionskunst an einer
+strukturellen Weltfremdheit litt. Die Geschichte der gesamten Kunst ließe
+sich also – auf den zweiten Blick – auch als eine latente Geschichte der
+ästhetischen Welterschließung lesen, die sich aber insbesondere im letzten
+Jahrhundert primär als Ausdifferenzierungsgeschichte des Kunstsystems
+abgespielt hat und deshalb an materialästhetischen Kriterien manifest
+wurde.
+Auf der anderen Seite vermag das Kunstsystem aber auch erst jetzt, nach-
+dem es jene immanente Autonomie erlangt hat, die Welterschließung als
+seine eigentliche gesellschaftliche Funktion direkt zu realisieren. Erst nach-
+dem die Kunst einen Weg findet, die Postmoderne vermittels Kunstwerken
+zu negieren, wird sie so frei, sich auf ihren eigenen Sinn zu besinnen. Ob und
+vor allem wie dies geschieht, hängt, wie immer, von den konkreten geschicht-
+lichen Rahmenbedingungen ab.
+IX. Naive Moderne
+Sind Werk, Medium und Reflexion autonome Komponenten der Kunstkom-
+munikation, dann kommt alles darauf an, in welchen konkreten Zusammen-
+hang sie treten. Es macht einen Unterschied ums Ganze, ob Werk, Medium
+und Reflexion als autonome Komponenten der Kunst kommuniziert werden
+oder nicht – und dies versteht sich keineswegs von selbst.
+An unserem Modell läßt sich diese Alternative leicht ablesen: Entweder die
+drei Segmente behalten ihren Charakter als getrennte Komponenten der
+Kunstkommunikation oder sie verschmelzen wieder zu einem einheitlichen
+Ganzen, sprich zu einer naiven Erwartungshaltung im Kunstsystem, welche
+dem vormodernen Kunstverständnis während der Neuzeit strukturell iden-
+tisch ist (vgl. Theoriemodell). Wenn die materialästhetische Orientierung in
+der zeitgenössischen Kunst immer mehr an Orientierungskraft einbüßt,
+dann wird gerade ein solches Szenario wahrscheinlich, dann spitzt sich diese
+natürlich immer schon vorhandene Alternative – die sich vordem leicht auf
+die Unterscheidung von unterhaltender und ernster Kunst, Fortschritt und
+Reaktion, Kunst und Kitsch bringen ließ – noch einmal erheblich zu.
+In diesem Sinne besitzt die zeitgenössische Moderne ein Janusgesicht:
+Wenn sie ihre eigene Ausdifferenzierung aushält, dann wird sie zur Kunst
+einer Reflexiven Moderne; wenn sie ihre selbstgeschaffene Binnenkomplexi-
+tät nicht zu bewältigen vermag, dann kommt sie ins Fahrwasser einer Naiven
+Moderne.
+
+Avantgarde heute −Harry Lehmann
+33
+32
+In Ulrich Becks Theorie der Reflexiven Modernisierung ist die Möglichkeit, daß sich in der Moderne
+jederzeit auch eine »Gegenmoderne« ausbilden kann, mitgedacht. Er definiert diese »als hergestellte,
+herstellbare Fraglosigkeit. Genauer: Tilgung, Entsorgung der Frage, in die die Moderne zerfällt. Die
+Gegenmoderne absorbiert, verteufelt, fegt die Fragen vom Tisch, die die Moderne aufwirft, auftischt und
+auffrischt« (Ulrich Beck, Das Zeitalter der Nebenfolgen und die Politisierung der Moderne, in: Beck u. a.,
+Reflexive Modernisierung [Anm.20], S.59). Unsere Unterscheidung von Reflexiver und Naiver Moderne
+konkretisiert für die Kunst die beiden in einer Zweiten Moderne denkbaren »reflexiven Reaktionsfor-
+men«: den »reflexiven Pluralismus« und den »reflexiven Fundamentalismus«. (Beck u. a., Theorie reflexi-
+ver Modernisierung [Anm.23], S.48f.)
+Für eine solche Gegenmoderne sprechen bereits heute einige Trends.32 So
+wird die aktuelle Kunst entweder auf eine direkte politische Funktion ver-
+pflichtet – man denke etwa an die vielen Dokumentarvideos auf der letzten
+Documenta –, oder sie wird als Lifestyle-Segment vermarktet, wie dies mehr
+und mehr auf den großen Kunstmessen geschieht. Sicherlich könnte man
+einwenden, daß dies schon immer der Fall war, der Punkt ist aber, daß sich
+die professionelle Einstellung zu diesen Phänomenen zu verändern beginnt
+und die Selbstbeschreibung des Kunstsystems allmählich infiltriert. Es ist
+also durchaus denkbar, daß die Postmoderne in der Kunst nicht von einer
+Reflexiven, sondern von einer Naiven Moderne beerbt wird.
+Wovon aber hängt es ab, daß solche Trends strukturbildend werden? Was
+sind die Bedingungen der Möglichkeit einer Naiven Moderne? Man kann
+diese Frage von zwei Seiten her beleuchten: Erstens läßt sich die Naive
+Moderne generell als Folge der an ihre Grenzen gekommenen kulturellen
+Postmoderne begreifen. Zweitens kann man sie aus der Perspektive einer
+überwundenen ästhetischen Postmoderne verstehen, also vor allem in bezug
+auf das rehabilitierte Kunstwerk und die Situation, welche im Kunstsystem
+aufgrund seiner damit verbundenen Autonomiegewinne entsteht.
+Zum ersten Punkt: Die Möglichkeit einer Naiven Moderne ist eine unmit-
+telbare Konsequenz der Postmoderne selbst. Ihr Verdienst ist es, gezeigt zu
+haben, daß sich alle normativen Differenzen im Prinzip dekonstruieren
+lassen. Infolgedessen hat sich ein normatives Vakuum in der Gesellschaft
+ausgebildet, das sich mit allen nur denkbaren Traditionalismen zu füllen
+beginnt. Eine solche, durch den bloßen Rückgriff auf die Tradition herge-
+stellte Fraglosigkeit, etwa eine Remoralisierung der Gesellschaft mit der
+einfachen Unterscheidung von gut und böse, führt zu einem naiven Selbst-
+bild der Gesellschaft, das auf ihre Kunst durchschlagen wird.
+Wenn die letzten Fragen nach dem Sinn und Zweck der Kunst, nach ihrer
+Wahrheit und ihrem Gesellschaftsbezug blockiert sind, wenn es Kommuni-
+kationsschablonen gibt, welche den Gebrauch von Kollektivsingularen aus-
+schließen und Aussagen über ›die Kunst‹ oder ›das Medium‹ der Kunst für
+unproduktiv erklären, wenn die Geschichte der Kunst nicht rekonstruiert
+wird, weil man die Sinnhaftigkeit von ›großen Erzählungen‹ bezweifelt –
+dann wird die Konstruktion eines generellen Gesichtspunkts und damit
+Kritik an sich unmöglich.
+
+34
+33
+Wir haben es hier mit einem typischen Fall von »Problemen zweiter Ordnung« zu tun, von denen Ulrich
+Beck sagt, sie »entstammen ... dem Institutionensystem der Industriemoderne selbst« (Das Zeitalter der
+Diese strukturelle Blockierung der Kritik führt die Kunst geradewegs in die
+Naive Moderne, da es die im Kunstsystem dominierenden Selbstbeschrei-
+bungen sind, welche bestimmen, was als neu, avanciert und modern selek-
+tiert und präferiert wird. Verliert das Kunstsystem seine selbstkritische Kraft,
+und zwar weil der Kritik an sich die begrifflichen Instrumente abhanden
+gekommen sind, beginnen alle möglichen sekundären, kunstfremden Krite-
+rien zu greifen. Die Kunst gerät in einen Betriebsmodus, in welchem aus
+Mangel an kunstimmanenten Kriterien immer stärker parasitäre Kriterien
+diese Funktionslücke füllen und wo sich jene Kunst durchsetzen kann, für
+die die meisten sekundären Gründe sprechen. Das Neue in der Kunst wird
+dann nicht mehr geschaffen, Neuheit – als Letztkriterium für Modernität –
+wird dann simuliert. Solange die Materiallogik im Kunstsystem noch greift,
+stößt man dann auf so seltsame Phänomene wie eine ›simulierte Avant-
+garde‹: auf Kunst, welche die Strategien der negativen Erwartungsab-
+weichung blind (für die Welt) imitiert.
+Generell würde ich hier von einer Heteronomie zweiter Ordnung, von
+einer Fremdbestimmung durch Selbstbestimmung der modernen Kunst
+sprechen.33 Es handelt sich um einen Zustand der sprichwörtlichen »selbst-
+verschuldeten Unmündigkeit«, da die Autonomie der Kunst als eines sozia-
+len Systems ja keinesfalls von äußeren Mächten wie der Religion, dem Recht
+oder der Politik in irgendeiner Weise angetastet wird. Vielmehr bilden sich in
+diesem Freiraum Tauschbeziehungen zwischen den Akteuren heraus, die
+ihren eigenen undurchsichtigen Markt hervorbringen, auf dem alles und
+jedes gehandelt wird und seinen Preis hat, nur eben nicht eines: der Eigen-
+wert der modernen Kunst. Das Kunstsystem pegelt sich in einen Betriebsmo-
+dus ein, wo es seine eigenen Erwartungen an sich selbst wie eine Werbeagen-
+tur auszurechnen und zu bedienen versucht.
+Wie gesagt bleibt die Postmoderne der Materiallogik der ästhetischen
+Moderne verbunden, indem sie mit der Avantgarde ironisch bricht. Deshalb
+ist die Floskel von der postmodernen Beliebigkeit letztendlich irreführend,
+vor allem wenn man sich ausrechnet, welche Geisteshaltung sie abzulösen
+beginnt. Die postmoderne Kunst verfügt durchaus über harte ästhetische
+Selektionskriterien wie zum Beispiel die Pluralität der Sichtweisen, das Ver-
+fransen der Künste, die Inklusion traditioneller Medien und Gattungen, die
+Doppelcodierung der Werke, ihre strukturelle Offenheit – was generell in
+eine Strategie mündet, sich in der eigenen Formensprache nicht festzulegen,
+die Ambivalenz der gemachten Unterscheidungen zu betonen und sich
+damit unbeobachtbar und auch unangreifbar zu machen. Erst wenn auch
+diese Kriterien erodieren, weil sie allzu durchsichtig werden, ist ein Zustand
+
+Avantgarde heute −Harry Lehmann
+35
+Nebenfolgen und die Politisierung der Moderne [Anm.32], S.88). Ausführlich zu diesem defizienten Modus
+des Kunstsystems vgl. Lehmann, Die flüchtige Wahrheit der Kunst (Anm.19), S. 244-269.
+radikaler Kontingenz erreicht. Auf eine derart neue Unübersichtlichkeit kann
+die Kunst heute reflexiv oder naiv reagieren, wobei die letzte Form der
+Komplexitätsbewältigung zunächst die wahrscheinlichere ist – schlichtweg
+deswegen, weil für eine reflexive Modernisierung des Kunstbetriebs noch die
+ideellen und institutionellen Voraussetzung fehlen.
+Zum zweiten Punkt: Die Möglichkeit, daß die moderne Kunst in einem
+ganz spezifischen Sinne naiv wird und nicht bloß traditionalistisch oder
+konventionell auf die gegenwärtige Situation reagiert, ist aufs engste mit der
+Tatsache verbunden, daß die Kunst nach der Postmoderne auch ihr Selbstver-
+hältnis zum Werkcharakter normalisiert, sprich daß man wieder realistische
+Romane schreibt, gegenständliche Bilder malt oder in klassischen Gedicht-
+formen dichtet – und damit ›offiziell‹ im Kunstsystem Erfolg hat.
+Sobald man es nämlich wieder mit Werken zu tun bekommt, die nicht
+mehr die Botschaft enthalten, daß sie keine sind, kann sich die Kunst prinzi-
+piell auch wieder mit einer vormodernen Inhaltsästhetik arrangieren. Die
+Kunstwerke würden wieder als Zeichen gelesen, welche die Welt, wie sie ist,
+repräsentieren. Die gehaltsästhetische Wende wäre sozusagen inhaltsästhe-
+tisch mißglückt. Die materialästhetische Orientierung der ästhetischen Mo-
+derne hatte einen solchen ›Rückfall‹ bislang immer ausgeschlossen, denn
+durch sie war die interne Wertehierarchie des Kunstsystems auf eine Über-
+bietungslogik jenseits von Inhalten und Gehalten geeicht, die jeden Zuge-
+winn an Freiheitsspielräumen als avancierte Kunst honorierte. Wenn aber
+selbst die Barrieren der ironischen Selbstdistanzierung wegfallen, können
+sich plötzlich eine Rezeptionshaltung ohne Hintergedanken und ein Werk-
+verständnis ohne doppelten Boden durchsetzen. Fehlt es an einer widerstän-
+digen Kunstkritik in bezug auf solche Werke, wird sich diese ästhetische
+Haltung auch in einer entsprechenden Selbstbeschreibung der Kunst nieder-
+schlagen. Ihr Motto wird in etwa lauten: »Kunst ist, was gefällt, und was
+gefällt, bestimmen Sie!« Wird diese Einstellung dominant, zersetzt die ästhe-
+tische Moderne ihren eigenen Begriff und wird naiv.
+X. Kunstkritik
+Die Frage nach der Avantgarde heute würde sich in der zeitgenössischen
+Moderne also einerseits neu stellen und andererseits eine gehaltsästhetische
+Antwort nach sich ziehen. Die normative Differenz zwischen avancierter
+Kunst, die kunstgeschichtlich relevant werden kann, und aller übrigen Kunst,
+welche dies nicht vermag, würde sich viel stärker als bisher am konkreten
+Werk und seinen Interpretationen entzünden. Es käme mehr denn je auf die
+konkrete Kunstbeobachtung an, auf eine Analyse der Formensprache, auf die
+
+36
+Kristallisation der ästhetischen Erfahrung am Werk und auf das Entdecken
+ihrer Interferenzen mit den sprachlichen Weltbildern, aus denen sich neue
+Selbstbeschreibungen der Gesellschaft generieren. Genau an diesem Punkt
+läßt sich der Unterschied zwischen einer inhaltsästhetischen und einer ge-
+haltsästhetischen Orientierung festmachen: Es geht nicht um die Repräsen-
+tation einer sozial bereits akzeptierten Selbstbeschreibung der Gesellschaft,
+sondern um die Präsentation eines dem Kunstwerk eingeschriebenen Erfah-
+rungsmusters, das von Einzelnen probeweise übernommen wird und in der
+Gesellschaft punktuell ein neues Selbstverständnis provoziert.
+Daß die moderne Gesellschaft überhaupt ihre Selbstbeschreibung regene-
+rieren muß, ist eine Folge des Evolutionsdrucks, unter dem sie heute steht. Es
+gibt jetzt einen permanenten Bedarf an Neubeschreibungen, weil die alten
+Selbstbilder sofort an Problemschärfe verlieren, wenn sich die Problemlage
+in der Gesellschaft verändert. Die avancierte Kunst stellt Erfahrungsmuster
+bereit, an denen sich eine neue probleminduzierte und sozial relevante
+Weltwahrnehmungsweise auskristallisieren kann. Wenn die aktuelle Kunst
+diese Funktion als ihren Eigenwert erkennt und in ihr systeminternes Selbst-
+bild integriert, dann wäre dies gleichbedeutend mit einer gehaltsästhetischen
+Wende im Kunstsystem: einer Abkehr von der bis in die Postmoderne hinein-
+reichenden Materialorientierung hin zu einer Gehaltsorientierung in einer
+reflexiv gewordenen ästhetischen Moderne. All dies wäre eine Folge davon,
+daß es jetzt weniger um Autonomiegewinne als vielmehr um den rechten
+Autonomiegebrauch im Kunstsystem geht.
+Gesetzt also: Das Neue in der zeitgenössischen Kunst ist ihr neuer ästheti-
+scher Gehalt, und genau der müßte im Kunstsystem je konkret erschlossen
+und nach außen kommuniziert werden. Dann würden sich aus einer solchen
+gehaltsästhetischen Orientierung des Kunstsystems noch einmal ganz an-
+dere Anforderungen an seine Selbstreflexivität stellen. Das Feld des Mögli-
+chen hat sich nach der immanenten Ausdifferenzierung extrem geweitet:
+Man kann nicht nur mit Werken, Medien und Reflexionen in der Kunst
+rechnen, sondern auch mit deren spezifischen Negationen. Kunst kann als
+offenes Werk, als geschlossenes Werk oder als Antiwerk hergestellt werden,
+sie kann sowohl alte als auch neue Medien in Anspruch nehmen oder auf ein
+vorgegebenes Medium verzichten, und ihr kann, aber muß nicht ein system-
+immanentes Konzept zugrunde liegen (inklusive aller Kreuzvarianten). In
+bezug auf diese unbegrenzten Möglichkeiten stellt sich dann erneut die
+Frage nach dem ästhetischen ›Wozu‹, nur läßt sie sich jetzt überhaupt nicht
+mehr mit Hilfe von Materialkriterien beantworten. So wie man es jetzt schon
+am modernen Stadtbild beobachten kann, wo gleichzeitig ein dekonstruktivi-
+stischer Museumsbau neben einem postmodernen Regierungsgebäude und
+einem klassisch modernen Bürohochhaus errichtet wird – und die Formen-
+sprache der Gebäude sich allein von ihrer Funktion im urbanen Kontext
+
+Avantgarde heute −Harry Lehmann
+37
+herleitet –, so dürften auch in allen anderen Künsten die Errungenschaften
+der ästhetischen Moderne parallel verfügbar werden und sich die Gestalt der
+jeweiligen ›Werke‹ an ihrem konkreten Gehalt bestimmen. Die Frage ist nur,
+welchen Richtungssinn diese Abkehr von der materialästhetischen Orientie-
+rung bekommt.
+An diesem Bifurkationspunkt der Geschichte markiert unser Modell eine
+Unbestimmtheitsstelle der Wirklichkeit, an der die Zukunft offen steht: Die
+Kunst nach der Postmoderne unterscheidet sich von dieser entweder durch
+ein gesteigertes Maß an Reflexivität oder Naivität.
+Welchen Weg hier die zeitgenössische Kunst einschlägt, hängt in erster
+Linie und konkret davon ab, welche Rolle die Kunstkritik im Kunstsystem
+spielt. Die Situation derzeit ist, daß sie eine Art Dienstleisterfunktion erfüllt
+und keineswegs als autonome, konstitutive Komponente moderner Kunst
+begriffen wird. Größtenteils bleibt sie außerhalb des Kunstsystems angesie-
+delt; die Kunstkritiker, ganz gleich ob es sich nun um Musik-, Literatur-,
+Theater- und Film- oder Architekturkritiker handelt, sind professionell zu-
+meist in kunstfremden Subsystemen verankert, vor allem als Journalisten in
+den Massenmedien oder als Lehrkräfte an den Universitäten. Im Feuilleton
+oder in der Kultursendung wird die Kunstkritik mehr oder weniger gut
+mitbetreut, steht aber letztendlich immer im Widerstreit zu deren eigentli-
+chen Funktion: zu informieren, d. h. zu berichten, was es in den Kunstszenen
+Neues gibt, plus einer Empfehlung, ob das Neue die Aufmerksamkeit lohnt
+oder nicht. Für eine Tiefenanalyse der Werke, für ihre essayistische Einbin-
+dung in einen ästhetischen Diskurs bleibt nur in Ausnahmefällen Raum. Für
+die Akademiker hingegen muß Kunstkritik eine Nebentätigkeit bleiben, die
+man je nach Gelegenheit übernimmt. Damit wird die Kunstkritik eigentüm-
+lich ortlos in der Gesellschaft und anfällig für Auftragskritik aus dem Kunst-
+system selbst. Die Karriere des Kunstkritikers ist bislang eine Zufallskarriere,
+die – im Vergleich zu Künstlern, aber auch zu Kunstmanagern – weder durch
+Stipendien, Preise und Studienaufenthalte noch durch eine entsprechende
+Ausbildung oder durch eine Berufsperspektive im Kunstsystem normalisiert
+wird. Wenn die Kunstreflexion aber tatsächlich ein konstitutives Moment
+aller modernen Kunst ist, wenn sie wesensmäßig konzeptuell und kommen-
+tarbedürftig wurde, dann müßte sich dies auch in der ›Institution Kunst‹
+niederschlagen. Zur Zeit fehlt einer solchen Kunstkritik noch jegliche ökono-
+mische und ideenpolitische Basis. Kunstkritik ist ein Luxus, den man sich
+leisten können muß. Es mangelt an der nötigen Gewaltenteilung zwischen
+Legislative, Exekutive und Judikative im Kunstsystem: zwischen den Künst-
+lern, die mit ihren Werken die gesetzgebende Macht der Kunst verkörpern,
+den Sachwaltern des Mediums: den Galeristen, Museumsdirektoren, Inten-
+danten, Kuratoren, Lektoren, Festivalleitern und Kulturmanagern, welche die
+Kunst im sozialen Raum der Gesellschaft ›vollziehen‹, und eben einer Kunst-
+
+38
+kritik, welche ihre ästhetischen Urteile nach der ›Verfassung der Moderne‹
+spricht, indem sie die Kunst in ihrem Verhältnis zur Welt reflektiert. Gemes-
+sen an den hohen Autonomieansprüchen zeitgenössischer Kunst und ihrer
+Ästhetik heißt das: Es existiert keine autonome Kunstkritik.
+Die vordringlichste Aufgabe einer zeitgenössischen Kunstkritik ist es, die
+Autonomiegewinne der ästhetischen Moderne über den Epochenbruch hin-
+weg zu retten, der die westliche Gesellschaft bereits heute von den Selbstver-
+ständlichkeiten ihrer in Auflösung begriffenen Industriemoderne trennt.
+Das hieße zuerst einmal: die konstitutiven Momente der Kunst divergent zu
+halten. Nur eine Kunst, die weiterhin über jene immanenten Freiheitsgrade
+der voll ausdifferenzierten ästhetischen Moderne verfügt, kann ihre welter-
+schließende Funktion in einer radikal zukunftsoffenen Gesellschaft erfüllen.
+Die ästhetischen Mittel müssen so vielfältig sein, wie sie die Kunstgeschichte
+hervorgebracht hat. Im unendlichen Meer einer derart möglichkeitsgesättig-
+ten Gegenwartskunst gilt es für die Kunstkritik jene neuralgischen Punkte zu
+identifizieren, an denen die wirklich relevanten Schemata der sozialen Erfah-
+rung überraschend umgedeutet werden.
+Vor allem, wenn man es, am Ausgang der Postmoderne, verstärkt mit
+Kunst in den alten Medien wie dem Tafelbild, dem Roman oder dem Klavier-
+konzert zu tun bekommt, führt dies in zwei Hinsichten zu einem anderen
+Selbstverständnis der Kunst. Zum einen garantieren gerade die alten Medien
+in einem weit höheren Maße wieder die Kommunizierbarkeit der zeitgenös-
+sischen Kunst, zum anderen müssen diese Werke auch anders rezipiert
+werden, damit sie ihren ästhetischen Gehalt überhaupt freisetzen können.
+Für diese hochgradig experimentelle Kunstbeobachtung – welche die Zeit
+und den Raum besitzen muß, ihre ästhetischen Erfahrungen mit den avan-
+ciertesten Analysen ihrer Zeit zu verknüpfen – muß die Kunstkritik zur
+gleichberechtigten dritten Kraft im Kommunikationshaushalt des Kunst-
+systems werden.
+Der entscheidende Punkt ist, daß jede emphatische ästhetische Erfahrung
+sich erst aus der Spannung zwischen Medium und Werk generiert. In den
+Spalten der Inkongruenz, dort wo das konkrete Kunstwerk den von seinem
+Medium erzeugten Erwartungen zuwiderläuft, entsteht das wahrnehmbar
+Neue der Kunst, welche sich nicht mehr am Materialfortschritt und der
+Überbietungslogik des Kunstsystems orientiert, sondern wieder einen direk-
+ten Wirklichkeitskontakt sucht. Diese konstitutive Lücke der zeitgenössi-
+schen Kunst läßt sich nur kraft einer ästhetischen Reflexion offenhalten, die
+sich auf den Selbstorganisationsprozeß der je einzelnen Kunstwerke tatsäch-
+lich einläßt, die fragt, was das technische Problem ist, das ein Künstler ein
+ums andere Mal in seinem Werk zu bewältigen versucht, und welchen
+lebensweltlichen Erfahrungsgehalt er bewußt oder unbewußt in dieser inner-
+ästhetischen Anstrengung erfahrbar und kommunizierbar macht. In diesem
+
+Avantgarde heute −Harry Lehmann
+39
+Sinne wäre die Kunstkritik der Reflexiven Moderne immer auch eine ›ret-
+tende Kritik‹.
+Die Errungenschaften der ästhetischen Moderne zu bewahren, hieße auch,
+daß der Spalt zwischen den anderen Kunstkomponenten nicht mit einer
+generalisierten Erwartung überbrückt wird, d. h., daß die Differenz zwischen
+Medium und Reflexion bzw. zwischen Werk und Reflexion offengehalten
+wird. Weder kann man heute noch davon ausgehen, daß ein altes Medium für
+ein altes Weltbild und ein neues Medium für eine neue Weise, die Welt
+wahrzunehmen, steht. Noch symbolisieren die offenen Werke eine offene
+Gesellschaft und die selbstreferentiell geschlossenen ein totalitäres Gesell-
+schaftssystem. Das Verhältnis sowohl zwischen der Form der Medien als
+auch der Form der Werke und dem in ihnen sedimentierten ästhetischen
+Gehalt ist radikal kontingent zu denken und wäre jeweils konkret in einer
+emphatischen Interpretation zu bestimmen. Dieses Kontingenzbewußtsein
+definierte die ›Verfassung‹ einer reflexiven Moderne in der Kunst. Wo Werk,
+Medium und Reflexion frei koppelbare Komponenten der Kunstkommunika-
+tion bleiben und nicht kommunikativ kurzgeschlossen werden, wird die
+Kunst so frei, das Erfahrungsbild einer im evolutionären Fluß befindlichen
+Gesellschaft zu entwerfen.
+Das Ende der großformatigen Ausdifferenzierung des Kunstsystems birgt
+vor allem eine Chance: die Freisetzung des Kunstwerks und die Emanzipa-
+tion des Rezipienten vom Kunstsystem. Sowohl die Künstler als auch die
+Kunstliebhaber können zu den im Kunstsystem hergestellten Beobachtungs-
+programmen wieder Distanz gewinnen. Möglich wird eine Befreiung des
+Subjekts der ästhetischen Erfahrung von der systemimmanenten Überbie-
+tungslogik, welche das Kunstsystems in den letzten anderthalb Jahrhunder-
+ten vorangetrieben hat. Es wäre durchaus ein Gewinn, wenn der Kunstlieb-
+haber nicht erst wissen muß, mit welcher Negation man sich im Kunstsy-
+stem gegenüber anderer Kunst distanziert, um die avancierteste zeitgenössi-
+sche Kunst erfahren und verstehen zu können.
+XI. Kunstphilosophie
+An den Bifurkationspunkten der Geschichte sammeln sich die philosophi-
+schen Fragen. Im Übergang zu einer Reflexiven Moderne gewinnt auch die
+Kunstphilosophie verloren geglaubtes Terrain zurück. Vier Fragestellungen
+dürften in diesem Zusammenhang wichtig werden:
+Erstens wäre das hier entfaltete Theoriemodell der ästhetischen Moderne
+kunstgeschichtlich zu konkretisieren. Das Projekt besteht darin, die entspre-
+chenden Ausdifferenzierungsschritte in der ästhetischen Moderne tatsäch-
+lich einmal gattungsübergreifend an den kanonischen Kunstwerken aufzu-
+zeigen. Durch die Geschichte der ästhetischen Moderne sind also mehrere
+horizontale Schnitte zu legen, so daß die Epochenzäsuren zwischen Klassi-
+
+40
+34
+Beck, Das Zeitalter der Nebenfolgen und die Politisierung der Moderne (Anm. 32), S. 65.
+35
+Vgl. Harry Lehmann, Ästhetische Erfahrung. Ein deutscher Diskurs, Paderborn 2006 (i. Vorb.), 1. Teil, wo
+dieses Dreiphasenmodell zur Rekonstruktion von Diskursen entwickelt wird.
+36
+Vgl. a.a.O., 2.Teil, wo der Versuch unternommen wird, einen basalen Begriff der ästhetischen Erfahrung
+aus dem Spannungsverhältnis dieser komplementären Eigenwerte der Wahrnehmung zu entwickeln.
+scher Moderne, Avantgarde und Postmoderne nicht nur verständlich, son-
+dern an ganz verschiedenen Künsten auch zugleich wahrnehmbar würden.
+Die Form von Gedichten, Bildern und Musikstücken ist durchaus vergleich-
+bar auf der Ebene dieser idealtypischen Rekonstruktion.
+Zweitens muß in dieser Theorie der ästhetischen Moderne die Kunstge-
+schichte mit der Gesellschaftsgeschichte synchronisiert und verknüpft wer-
+den, was hier nur ansatzweise geschehen ist. Die soziologische Theorie der
+reflexiven Modernisierung stellt den entsprechenden Bezugskontext bereit.
+Drittens benötigt die Kunsttheorie nicht nur einen Anknüpfungspunkt zur
+Gesellschaftstheorie, sondern auch zur Erkenntnistheorie. Wie gesagt, sind
+große Erzählungen unterm Selbstbeschreibungshorizont der Postmoderne
+abwegig. Dem wäre zu entgegnen: »Erst die (idealtypische) Unterscheidung
+verschiedener, verschieden moderner Gesellschaften ermöglicht das ›Redi-
+gieren‹ der Moderne.« 34 Wenn also die gesellschaftstheoretischen Prognosen
+zur reflexiven Modernisierung stimmen, dann benötigt man ein vollkommen
+anderes begriffliches Orientierungsinstrumentarium, um die Risiken der
+ersten Moderne abschätzen zu können. Gefragt sind also allgemeine Mo-
+delle, um Zukunftsszenarien von autopoietischen Prozessen modellieren zu
+können, die ihre eigene Geschichte haben, seien dies nun Diskurse, Intimbe-
+ziehungen, Funktionssysteme oder Gesellschaften. Ein sehr allgemeines
+Konzept ist es, solche Selbstorganisationsprozesse anhand des hier verwen-
+deten Dreiphasenmodells zu beschreiben: In einer Konstitutionsphase setzt
+der jeweilige Prozeß seine eigenen Grenzen fest, in einer Ausdifferenzie-
+rungsphase realisiert und entfaltet er die in diesem Freiraum angelegten
+Möglichkeiten und Freiheitsgrade, um schließlich in eine Reflexionsphase
+überzugehen, wo er aufgrund selbsterzeugter »Nebenfolgen« auf interne
+Widersprüche, Konflikte und Probleme stößt, die entweder eine Selbsttrans-
+formation auslösen oder zur Autodestruktion dieser historischen Entität
+führen.35
+Viertens steht die Kunstphilosophie vor der Aufgabe, aus dem sich ab-
+zeichnenden gesellschaftsstrukturellen Bruch in Kunst und Gesellschaft die
+kategorialen Konsequenzen zu ziehen. Die wichtigsten ästhetischen Katego-
+rien, welche in einer Reflexiven Moderne zu rekonzeptualisieren wären, sind
+die beiden zentralen »Eigenwerte der Wahrnehmung«: das Schöne und das
+Neue.36 Die Kunst der Neuzeit war ›schöne Kunst‹ und immer am Schönen
+als Höchstwert der Kunst orientiert. Die Kunst der ästhetischen Moderne
+hingegen folgte der Leitidee des Neuen, sie war in einem materialästheti-
+
+Avantgarde heute −Harry Lehmann
+41
+37
+Helmut Lachenmann hat wie kein anderer einen Zusammenhang zwischen Schönem und Neuem
+gesehen, wenn er einerseits bemerkt, daß die Avantgarde bei Strafe ihres Untergangs auf einen eigenen
+Schönheitsbegriff nicht verzichten kann und andererseits die Schönheit als »Verweigerung des Gewohn-
+ten« bestimmt. (Vgl. Zum Problem des musikalisch Schönen heute, in: ders., Musik als existentielle Erfahrung,
+Wiesbaden 1996, S.104-110) Aber diese handstreichartige ›Lösung‹, welche das radikal Neue einfach als
+Schönheit definiert, wird weder den alltäglichen noch den traditionellen Schönheitsidealen gerecht, die
+eine weitaus stabilere Wahrnehmungsbasis als die der bloßen ›Gewohnheit‹ besitzen.
+schen Sinne ›absolut modern‹ und drängte die Schönheit zu einem Neben-
+wert ab, bis sie schließlich auf Schönheit als einen positiven Wert überhaupt
+verzichtete und in der Avantgarde zur ›nicht mehr schönen Kunst‹ geworden
+ist.37 Die Vermutung wäre, daß sich die Kunst nach einer gehaltsästhetischen
+Wende weniger an der Unterscheidung als an der Einheit der Unterschei-
+dung von Schönem und Neuem ausrichten wird. Die Grundstruktur einer
+jeden ästhetischen Erfahrung liegt im Spannungsverhältnis von Schönem
+und Neuem gegründet, und in genau dieser ausgehaltenen Polarität vermag
+die Kunst wohl am sinnfälligsten die ästhetischen Gehalte einer zukunftsof-
+fenen Welt zu erschließen. Insofern aber der Begriff des ›Neuen‹ die Leitidee
+der ästhetischen Moderne gebildet hat und dieser Höchstwert in der Avant-
+garde in Reinform zur Ausprägung kam, wird die ›Avantgarde‹ selbst zum
+Schlüsselbegriff für eine reflexive Modernisierung der ästhetischen Mo-
+derne. So stellte sich die Gegenwartskunst am meisten in Frage, wenn sie
+sich die Frage nach der ›Avantgarde heute‹ stellt.
+Summary
+Avant-garde Today. A theoretical model of aesthetic modernity – In order still to be able to
+answer the central question of the avant-garde today, it is necessary to have a model of
+aesthetic modernity showing what the »avant-garde« once was and what became of it.
+According to the author’s model, the major divisions in art historiography such as classical
+modernity, avant-garde and post-modernity can be reconstructed ideal-typically as steps in
+the progressive differentiation of art, here leading to a gradual separation of work, medium
+and reflection in art. If this process of differentiation has been completed, then art can react
+in two ways to its self-created hyper-complexity: reflexively or naïvely. Accordingly, art has
+now reached a point of bifurcation in its history at which it can evolve either into a reflexive
+or a naïve modernity. The fundamental precondition for a reflexive modernisation of art
+would be the development of an art criticism that was autonomous in every respect,
+enabling a paradigm shift in the self-definition of advanced art: namely from a material-
+aesthetic to a content-aesthetic orientation.
